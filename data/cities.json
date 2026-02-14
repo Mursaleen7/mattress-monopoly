@@ -1,0 +1,62 @@
+[
+  {
+    "city": "phoenix",
+    "cityName": "Phoenix",
+    "state": "arizona",
+    "stateName": "Arizona",
+    "stateAbbr": "AZ",
+    "population": 1608139,
+    "disposalOptions": [
+      "City Bulk Trash Collection",
+      "Local Recycling Centers",
+      "Donation to Charities"
+    ],
+    "localServices": [
+      {
+        "name": "Phoenix Solid Waste Services",
+        "phone": "(602) 262-7251",
+        "website": "https://www.phoenix.gov/publicworks"
+      }
+    ]
+  },
+  {
+    "city": "los-angeles",
+    "cityName": "Los Angeles",
+    "state": "california",
+    "stateName": "California",
+    "stateAbbr": "CA",
+    "population": 3898747,
+    "disposalOptions": [
+      "LASAN Bulky Item Collection",
+      "Mattress Recycling Council",
+      "Local Drop-off Centers"
+    ],
+    "localServices": [
+      {
+        "name": "LA Sanitation",
+        "phone": "(800) 773-2489",
+        "website": "https://www.lacitysan.org"
+      }
+    ]
+  },
+  {
+    "city": "new-york",
+    "cityName": "New York",
+    "state": "new-york",
+    "stateName": "New York",
+    "stateAbbr": "NY",
+    "population": 8336817,
+    "disposalOptions": [
+      "NYC Sanitation Bulk Pickup",
+      "Donation Programs",
+      "Private Haulers"
+    ],
+    "localServices": [
+      {
+        "name": "NYC Department of Sanitation",
+        "phone": "311",
+        "website": "https://www.nyc.gov/dsny"
+      }
+    ]
+  }
+]
