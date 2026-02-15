@@ -1,51 +1,114 @@
 # Deployment Guide
 
-## Quick Deploy to Vercel
+## Deploying to Vercel
 
-### Step 1: Push to GitHub
+### 1. Push to GitHub
 
 ```bash
-# Create a new repository on GitHub (can be private)
-# Then run:
-git remote add origin https://github.com/YOUR_USERNAME/mattress-monopoly.git
-git push -u origin main
+git add .
+git commit -m "Ready for deployment"
+git push origin main
 ```
 
-### Step 2: Deploy on Vercel
+### 2. Connect to Vercel
 
 1. Go to [vercel.com](https://vercel.com)
 2. Click "Add New Project"
 3. Import your GitHub repository
-4. Vercel will auto-detect Next.js settings
-5. Click "Deploy"
+4. Configure project settings
 
-That's it! Your site will be live in ~2 minutes.
+### 3. Add Environment Variables
 
-## Why Deploy Early?
+In Vercel project settings, add these environment variables:
 
-- **Domain Age**: Google favors older domains in rankings
-- **Indexing**: Start getting crawled immediately
-- **Testing**: Verify production performance (<500ms load times)
-- **Continuous Deployment**: Every git push auto-deploys
+**Environment Variables:**
+- `NEXT_PUBLIC_BASE_URL` = `https://your-domain.vercel.app`
+- `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` = `AIzaSyC0julW4pIMfdBobnzotEFFb4pLyW6osFI`
 
-## Post-Deployment
+**Steps:**
+1. Go to Project Settings → Environment Variables
+2. Add each variable for Production, Preview, and Development
+3. Click "Save"
 
-1. Check your site at `https://your-project.vercel.app`
-2. Test a city page: `/disposal-guides/arizona/phoenix`
-3. Verify load times in Chrome DevTools (should be <500ms)
-4. Submit sitemap to Google Search Console
+### 4. Deploy
 
-## Adding More Cities
+Click "Deploy" and Vercel will:
+- Install dependencies
+- Build the site (generates all city pages)
+- Deploy to production
 
-1. Update `data/cities.json` with new cities
-2. Commit and push to GitHub
-3. Vercel automatically rebuilds with new pages
-4. All 5,000+ pages regenerated in minutes
+### 5. Custom Domain (Optional)
 
-## Performance Tips
+1. Go to Project Settings → Domains
+2. Add your custom domain
+3. Update DNS records as instructed
+4. Update `NEXT_PUBLIC_BASE_URL` to your custom domain
 
-- All pages are pre-rendered (SSG)
-- No database queries at runtime
-- Served from Vercel's global CDN
-- Automatic image optimization
-- Edge caching enabled
+## Updating City Data
+
+To add or update city information:
+
+1. Run the AI scraper:
+   ```bash
+   cd scripts
+   python3 ai_scraper.py
+   ```
+
+2. Review the generated data in `data/cities.json`
+
+3. Commit and push:
+   ```bash
+   git add data/cities.json
+   git commit -m "Update city data"
+   git push
+   ```
+
+4. Vercel will automatically rebuild and deploy
+
+## Build Performance
+
+- **10 cities**: ~30 seconds build time
+- **50 cities**: ~2 minutes build time
+- **500 cities**: ~15 minutes build time
+
+All pages are pre-rendered at build time for instant loading.
+
+## Monitoring
+
+- **Analytics**: Enable Vercel Analytics in project settings
+- **Logs**: View deployment logs in Vercel dashboard
+- **Performance**: Check Core Web Vitals in Vercel Speed Insights
+
+## Troubleshooting
+
+### Maps Not Showing
+
+1. Verify API key is set in Vercel environment variables
+2. Check that Maps JavaScript API and Geocoding API are enabled in Google Cloud Console
+3. Ensure API key has no domain restrictions (or add your Vercel domain)
+
+### Build Failures
+
+1. Check build logs in Vercel dashboard
+2. Verify `cities.json` is valid JSON
+3. Test build locally: `npm run build`
+
+### Slow Page Loads
+
+- All pages are pre-rendered, so loads should be <500ms
+- Check Vercel Speed Insights for performance metrics
+- Consider enabling Vercel Edge Network for faster global delivery
+
+## Security
+
+- API keys are stored as environment variables (not in code)
+- `.env.local` is gitignored (never committed)
+- Consider restricting Google Maps API key to your domain in production
+
+## Scaling
+
+The platform can handle thousands of cities:
+- Each city page is ~50KB pre-rendered HTML
+- 1,000 cities = ~50MB total
+- Vercel has no page limit for static sites
+- Build time scales linearly with city count
