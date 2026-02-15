@@ -24,14 +24,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {citiesData.map((city) => (
               <Link
-                key={`${city.state}-${city.city}`}
-                href={`/disposal-guides/${city.state}/${city.city}`}
+                key={`${city.state_slug}-${city.city_slug}`}
+                href={`/disposal-guides/${city.state_slug}/${city.city_slug}`}
                 className="block p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition-all"
               >
                 <h3 className="font-semibold text-lg text-gray-900">
-                  {city.cityName}
+                  {city.city_name}
                 </h3>
-                <p className="text-gray-600 text-sm">{city.stateName}</p>
+                <p className="text-gray-600 text-sm">{city.state_name}</p>
                 <p className="text-gray-500 text-xs mt-1">
                   Population: {city.population.toLocaleString()}
                 </p>
