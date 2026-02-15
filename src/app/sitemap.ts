@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // All city pages
   citiesData.forEach((city) => {
     routes.push({
-      url: `${baseUrl}/disposal-guides/${city.state}/${city.city}`,
+      url: `${baseUrl}/disposal-guides/${city.state_slug}/${city.city_slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
