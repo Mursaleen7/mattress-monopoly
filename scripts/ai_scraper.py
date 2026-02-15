@@ -16,7 +16,7 @@ GEMINI_API_KEY = "AIzaSyDbDek1fvT6yln-jR0yVQ1CUb1QB3IXEPA"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Initialize Gemini model
-model = genai.GenerativeModel('gemini-2.0-flash-exp')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # Target cities for data collection
 TARGET_CITIES = [
@@ -98,6 +98,7 @@ Provide accurate, factual information from official sources. If you cannot find 
         
         # Extract JSON from response
         response_text = response.text
+        print(f"📄 Raw response preview: {response_text[:200]}...")
         
         # Find JSON in the response (it might be wrapped in markdown code blocks)
         if "```json" in response_text:
@@ -109,13 +110,37 @@ Provide accurate, factual information from official sources. If you cannot find 
             json_end = response_text.find("```", json_start)
             json_text = response_text[json_start:json_end].strip()
         else:
-            json_text = response_text.strip()
+            # Try to find JSON object directly
+            json_start = response_text.find("{")
+            json_end = response_text.rfind("}") + 1
+            if json_start != -1 and json_end > json_start:
+                json_text = response_text[json_start:json_end].strip()
+            else:
+                json_text = response_text.strip()
         
         # Parse JSON
         city_data = json.loads(json_text)
         print(f"✓ Successfully extracted data for {city}")
         return city_data
         
+    except json.JSONDecodeError as e:
+        print(f"✗ JSON Parse Error for {city}: {str(e)}")
+        print(f"   Response text: {response_text[:500]}")
+        # Return template data as fallback
+        return {
+            "city_slug": f"{city.lower().replace(' ', '-')}-{state_abbr.lower()}",
+            "city_name": city,
+            "state_name": state,
+            "state_slug": state.lower().replace(' ', '-'),
+            "state_abbr": state_abbr,
+            "population": 0,
+            "mattress_rules": "Contact local sanitation department for specific disposal rules.",
+            "dropoff_locations": [],
+            "pickup_service_available": True,
+            "pickup_phone": "311",
+            "illegal_dumping_fine": "$500+",
+            "last_updated": "2026-02-14"
+        }
     except Exception as e:
         print(f"✗ Error processing {city}: {str(e)}")
         # Return template data as fallback
@@ -161,7 +186,7 @@ def main():
             time.sleep(3)
     
     # Save to JSON
-    output_file = 'data/cities.json'
+    output_file = '../data/cities.json'
     with open(output_file, 'w') as f:
         json.dump(results, f, indent=2)
     

@@ -1,62 +1,24 @@
 [
   {
-    "city": "phoenix",
-    "cityName": "Phoenix",
-    "state": "arizona",
-    "stateName": "Arizona",
-    "stateAbbr": "AZ",
-    "population": 1608139,
-    "disposalOptions": [
-      "City Bulk Trash Collection",
-      "Local Recycling Centers",
-      "Donation to Charities"
-    ],
-    "localServices": [
+    "city_slug": "austin-tx",
+    "city_name": "Austin",
+    "state_name": "Texas",
+    "state_slug": "texas",
+    "state_abbr": "TX",
+    "population": 987709,
+    "mattress_rules": "Austin Resource Recovery (ARR) requires mattresses and box springs to be wrapped in plastic for curbside bulk collection. Plastic mattress bags can be purchased at most major retail or moving supply stores. Bulk items, including mattresses, must be placed at the curb by 6:30 AM on the scheduled collection day, but no earlier than 8 PM the night before. Items must weigh less than 150 lbs, be less than 8 feet long, and require no more than 2 people to lift safely. ARR customers receive two free bulk item collections per year.",
+    "dropoff_locations": [
       {
-        "name": "Phoenix Solid Waste Services",
-        "phone": "(602) 262-7251",
-        "website": "https://www.phoenix.gov/publicworks"
+        "name": "Recycle & Reuse Drop-off Center (Austin Resource Recovery)",
+        "address": "2600 Warbler Lane, Austin, TX 78723",
+        "phone": "512-974-2000 (General ARR/311)",
+        "hours": "Tuesday - Saturday, 8 a.m. - 3 p.m.",
+        "accepts_mattresses": true
       }
-    ]
-  },
-  {
-    "city": "los-angeles",
-    "cityName": "Los Angeles",
-    "state": "california",
-    "stateName": "California",
-    "stateAbbr": "CA",
-    "population": 3898747,
-    "disposalOptions": [
-      "LASAN Bulky Item Collection",
-      "Mattress Recycling Council",
-      "Local Drop-off Centers"
     ],
-    "localServices": [
-      {
-        "name": "LA Sanitation",
-        "phone": "(800) 773-2489",
-        "website": "https://www.lacitysan.org"
-      }
-    ]
-  },
-  {
-    "city": "new-york",
-    "cityName": "New York",
-    "state": "new-york",
-    "stateName": "New York",
-    "stateAbbr": "NY",
-    "population": 8336817,
-    "disposalOptions": [
-      "NYC Sanitation Bulk Pickup",
-      "Donation Programs",
-      "Private Haulers"
-    ],
-    "localServices": [
-      {
-        "name": "NYC Department of Sanitation",
-        "phone": "311",
-        "website": "https://www.nyc.gov/dsny"
-      }
-    ]
+    "pickup_service_available": true,
+    "pickup_phone": "512-494-9400 (to schedule bulk collection) or 311",
+    "illegal_dumping_fine": "Up to $500 for a Class C misdemeanor under city code, plus potential cleanup costs. State law penalties (Texas Health and Safety Code, Chapter 365) for illegal dumping can range from a Class C misdemeanor to a state jail felony, with fines up to $10,000 and/or jail time, depending on the amount and type of waste.",
+    "last_updated": "2024-05-16"
   }
 ]
