@@ -177,28 +177,36 @@ export default async function CityPage({ params }: PageProps) {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Option 1 - Self-Haul */}
+            {/* Option 1 - Self-Haul or Curbside */}
             <div className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 hover:border-blue-400">
               <div className="absolute top-6 right-6">
                 <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">
-                  FREE
+                  {cityData.curbside_rules.is_available ? 'CURBSIDE' : 'DROP-OFF'}
                 </span>
               </div>
 
               <div className="mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-                  </svg>
+                  {cityData.curbside_rules.is_available ? (
+                    <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                  ) : (
+                    <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                    </svg>
+                  )}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  I Have a Truck & Time
+                  {cityData.curbside_rules.is_available ? 'Schedule Curbside Pickup' : 'I Have a Truck & Time'}
                 </h3>
-                <p className="text-gray-600 mb-4">View free drop-off rules</p>
+                <p className="text-gray-600 mb-4">
+                  {cityData.curbside_rules.is_available ? 'Free city pickup service' : 'View free drop-off locations'}
+                </p>
               </div>
 
               <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2">
-                View Regulations
+                View Details
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -266,12 +274,46 @@ export default async function CityPage({ params }: PageProps) {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-amber-900 text-xl mb-3">
-                  Important: Read Before Disposing
+                  {cityData.curbside_rules.is_available ? 'Curbside Pickup Rules' : 'Important: Read Before Disposing'}
                 </h3>
-                <p className="text-gray-800 leading-relaxed mb-4">
-                  {cityData.curbside_rules.mattress_specific_rule || cityData.curbside_rules.placement_time || 'Contact the city sanitation department for specific mattress disposal requirements.'}
-                </p>
-                <div className="flex items-center gap-2 text-sm text-amber-900 font-semibold">
+                
+                {cityData.curbside_rules.is_available ? (
+                  <div className="space-y-3">
+                    {cityData.curbside_rules.mattress_specific_rule && (
+                      <div>
+                        <p className="text-gray-800 font-semibold mb-1">Mattress Requirements:</p>
+                        <p className="text-gray-700 leading-relaxed">{cityData.curbside_rules.mattress_specific_rule}</p>
+                      </div>
+                    )}
+                    
+                    {cityData.curbside_rules.placement_time && (
+                      <div>
+                        <p className="text-gray-800 font-semibold mb-1">Placement Time:</p>
+                        <p className="text-gray-700 leading-relaxed">{cityData.curbside_rules.placement_time}</p>
+                      </div>
+                    )}
+                    
+                    {cityData.curbside_rules.size_limits && (
+                      <div>
+                        <p className="text-gray-800 font-semibold mb-1">Size & Weight Limits:</p>
+                        <p className="text-gray-700 leading-relaxed">{cityData.curbside_rules.size_limits}</p>
+                      </div>
+                    )}
+                    
+                    <div className="pt-2 border-t border-amber-200">
+                      <p className="text-gray-800 font-semibold mb-1">Contact Information:</p>
+                      <p className="text-gray-700">
+                        {cityData.contacts.department_name} • {cityData.contacts.official_phone}
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-gray-800 leading-relaxed mb-4">
+                    Contact {cityData.contacts.department_name} at {cityData.contacts.official_phone} for mattress disposal requirements.
+                  </p>
+                )}
+                
+                <div className="flex items-center gap-2 text-sm text-amber-900 font-semibold mt-4 pt-4 border-t border-amber-200">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
@@ -303,28 +345,33 @@ export default async function CityPage({ params }: PageProps) {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Drop-off Locations</h3>
                 {cityData.drop_off_locations.map((location, index) => (
                   <div key={index} className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-orange-500 hover:shadow-lg transition-all duration-300">
-                    <h4 className="font-bold text-lg text-gray-900 mb-3">
-                      {location.name}
-                    </h4>
+                    <div className="flex items-start justify-between mb-3">
+                      <h4 className="font-bold text-lg text-gray-900">
+                        {location.name}
+                      </h4>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">
+                        {location.type}
+                      </span>
+                    </div>
                     <div className="space-y-2 text-gray-600">
                       <div className="flex items-start gap-3">
-                        <svg className="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                         </svg>
                         <span>{location.address}</span>
                       </div>
                       <div className="flex items-center gap-3">
-                        <svg className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                         </svg>
                         <span>{location.hours}</span>
                       </div>
                       {location.notes && (
-                        <div className="flex items-start gap-3">
-                          <svg className="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="flex items-start gap-3 mt-3 pt-3 border-t border-gray-200">
+                          <svg className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                           </svg>
-                          <span className="text-sm">{location.notes}</span>
+                          <span className="text-sm italic">{location.notes}</span>
                         </div>
                       )}
                     </div>
