@@ -10,19 +10,45 @@ interface City {
   state_slug: string;
   state_name: string;
   state_abbr: string;
-  population: number;
-  mattress_rules: string;
-  dropoff_locations: {
+  population: {
+    count: number;
+    year: number;
+    source: string;
+  };
+  contacts: {
+    official_phone: string;
+    department_name: string;
+    website_url: string;
+  };
+  curbside_rules: {
+    is_available: boolean;
+    mattress_specific_rule: string;
+    placement_time: string;
+    size_limits: string;
+  };
+  drop_off_locations: {
     name: string;
     address: string;
-    phone: string;
+    type: string;
     hours: string;
-    accepts_mattresses: boolean;
+    notes: string;
   }[];
-  pickup_service_available: boolean;
-  pickup_phone: string;
-  illegal_dumping_fine: string;
-  last_updated: string;
+  illegal_dumping: {
+    fine_amount: string;
+    citation: string;
+  };
+  audit_metadata: {
+    confidence_score: string;
+    verification_checklist: {
+      gov_source_found: boolean;
+      mattress_rule_verified: boolean;
+      facility_hours_verified: boolean;
+      facility_type_verified: boolean;
+      population_census_verified: boolean;
+    };
+    sources_used: string[];
+    last_updated: string;
+  };
 }
 
 interface PageProps {
@@ -122,13 +148,13 @@ export default async function CityPage({ params }: PageProps) {
                 <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
                 </svg>
-                <span className="text-white text-sm">{cityData.population.toLocaleString()} residents</span>
+                <span className="text-white text-sm">{cityData.population.count.toLocaleString()} residents</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg">
                 <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
-                <span className="text-white text-sm">Updated {cityData.last_updated}</span>
+                <span className="text-white text-sm">Updated {cityData.audit_metadata.last_updated}</span>
               </div>
             </div>
           </div>
@@ -243,20 +269,20 @@ export default async function CityPage({ params }: PageProps) {
                   Important: Read Before Disposing
                 </h3>
                 <p className="text-gray-800 leading-relaxed mb-4">
-                  {cityData.mattress_rules}
+                  {cityData.curbside_rules.mattress_specific_rule || cityData.curbside_rules.placement_time || 'Contact the city sanitation department for specific mattress disposal requirements.'}
                 </p>
                 <div className="flex items-center gap-2 text-sm text-amber-900 font-semibold">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
-                  Illegal dumping fine: {cityData.illegal_dumping_fine}
+                  Illegal dumping fine: {cityData.illegal_dumping.fine_amount}
                 </div>
               </div>
             </div>
           </div>
 
           {/* Drop-off Locations */}
-          {cityData.dropoff_locations.length > 0 && (
+          {cityData.drop_off_locations && cityData.drop_off_locations.length > 0 && (
             <div className="grid md:grid-cols-2 gap-8">
               {/* Map Placeholder */}
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-80 flex items-center justify-center relative overflow-hidden group">
@@ -275,7 +301,7 @@ export default async function CityPage({ params }: PageProps) {
               {/* Locations List */}
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Drop-off Locations</h3>
-                {cityData.dropoff_locations.map((location, index) => (
+                {cityData.drop_off_locations.map((location, index) => (
                   <div key={index} className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-orange-500 hover:shadow-lg transition-all duration-300">
                     <h4 className="font-bold text-lg text-gray-900 mb-3">
                       {location.name}
@@ -289,16 +315,18 @@ export default async function CityPage({ params }: PageProps) {
                       </div>
                       <div className="flex items-center gap-3">
                         <svg className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                        </svg>
-                        <span>{location.phone}</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <svg className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                         </svg>
                         <span>{location.hours}</span>
                       </div>
+                      {location.notes && (
+                        <div className="flex items-start gap-3">
+                          <svg className="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                          </svg>
+                          <span className="text-sm">{location.notes}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}
