@@ -3,6 +3,7 @@ import Link from 'next/link';
 import citiesData from '@/../data/cities.json';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LocationMap from '@/components/LocationMap';
 
 interface City {
   city_slug: string;
@@ -326,19 +327,11 @@ export default async function CityPage({ params }: PageProps) {
           {/* Drop-off Locations */}
           {cityData.drop_off_locations && cityData.drop_off_locations.length > 0 && (
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Map Placeholder */}
-              <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-80 flex items-center justify-center relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10"></div>
-                <div className="relative text-center">
-                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
-                    <svg className="w-10 h-10 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-gray-600 font-semibold">Interactive Map</p>
-                  <p className="text-gray-500 text-sm">View {cityData.city_name} locations</p>
-                </div>
-              </div>
+              {/* Interactive Map */}
+              <LocationMap 
+                locations={cityData.drop_off_locations} 
+                cityName={cityData.city_name}
+              />
 
               {/* Locations List */}
               <div className="space-y-6">
