@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,14 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mattress Disposal Guides | Find Local Recycling & Pickup Services",
-  description: "Complete guides for mattress disposal and recycling in your city. Find local pickup services, drop-off centers, and eco-friendly disposal options.",
-  keywords: ["mattress disposal", "mattress recycling", "bulk trash pickup", "furniture disposal", "eco-friendly disposal"],
+  title: "DisposalGrid | Mattress & Bulk Item Disposal Made Simple",
+  description: "Find local mattress disposal regulations and book professional eco-friendly pickup services in your city. Trusted by thousands of homeowners nationwide.",
+  keywords: ["mattress disposal", "mattress recycling", "bulk trash pickup", "furniture disposal", "eco-friendly disposal", "junk removal"],
   openGraph: {
-    title: "Mattress Disposal Guides",
-    description: "Find local mattress disposal and recycling options in your city",
+    title: "DisposalGrid | Mattress & Bulk Item Disposal Made Simple",
+    description: "Find local disposal rules and book professional pickup services in seconds.",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#1a2830",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
       </body>
