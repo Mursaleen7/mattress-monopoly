@@ -69,9 +69,9 @@ export default function Home() {
               <p className="text-gray-600 mb-6">
                 Schedule a professional team to remove items from inside your home. Fast & secure.
               </p>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-semibold transition">
-                Learn More
-              </button>
+              <Link href="/book" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-semibold transition">
+                Book Pickup
+              </Link>
             </div>
           </div>
         </div>

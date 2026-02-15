@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import citiesData from '@/../data/cities.json';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -109,9 +110,9 @@ export default async function CityPage({ params }: PageProps) {
                 [Option 2: I want it gone NOW]
               </h3>
               <p className="text-sm mb-4">Schedule affordable pickup</p>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-semibold transition">
-                Learn More
-              </button>
+              <Link href="/book" className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-semibold transition">
+                Book Now
+              </Link>
             </div>
           </div>
         </div>
@@ -187,9 +188,9 @@ export default async function CityPage({ params }: PageProps) {
           </div>
 
           {/* Primary CTA */}
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 rounded-lg text-lg font-bold shadow-lg transition">
+          <Link href="/book" className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 rounded-lg text-lg font-bold shadow-lg transition">
             Check Pickup Availability in {cityData.city_name}
-          </button>
+          </Link>
 
           <p className="text-gray-600 text-sm mt-4">
             Vetted partners • Insured • Eco-friendly disposal
