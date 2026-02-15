@@ -200,7 +200,7 @@ export default function BookingPage() {
             </div>
 
             {/* CTA Button */}
-            <button className="w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-lg font-bold text-lg transition shadow-lg">
+            <button className="w-full bg-[#2f3e45] hover:bg-[#3a4d54] text-white py-4 rounded-lg font-bold text-lg transition shadow-lg">
               Book Now
             </button>
           </div>

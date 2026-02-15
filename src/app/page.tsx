@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-slate-700 py-24">
+      <section className="bg-[#2f3e45] py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-white font-bold text-5xl mb-6 leading-tight">
             Mattress & Bulk Item<br />Disposal, Simplified
@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <footer className="bg-slate-700 py-12">
+      <footer className="bg-[#2f3e45] py-12">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             {/* Trust Badges */}

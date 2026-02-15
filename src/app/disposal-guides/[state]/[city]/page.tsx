@@ -78,7 +78,7 @@ export default async function CityPage({ params }: PageProps) {
       <Header />
 
       {/* City Hero Section */}
-      <section className="bg-slate-900 py-16">
+      <section className="bg-[#2f3e45] py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-white font-extrabold text-3xl mb-4">
             Mattress Disposal Guide: {cityData.city_name}, {cityData.state_abbr} (2026 Rules)
@@ -90,11 +90,11 @@ export default async function CityPage({ params }: PageProps) {
       </section>
 
       {/* Decision Matrix */}
-      <section className="bg-slate-800 py-8">
+      <section className="bg-[#2f3e45] py-8">
         <div className="max-w-2xl mx-auto px-6">
           <div className="grid grid-cols-2 gap-4">
             {/* Left Half - Self-Haul */}
-            <div className="bg-slate-700 text-white p-6 rounded-lg text-center">
+            <div className="bg-[#3a4d54] text-white p-6 rounded-lg text-center">
               <h3 className="font-bold text-lg mb-2">
                 [Option 1: I have a Truck & Time]
               </h3>
@@ -105,7 +105,7 @@ export default async function CityPage({ params }: PageProps) {
             </div>
 
             {/* Right Half - Paid Pickup */}
-            <div className="bg-slate-600 border-2 border-orange-500 text-white p-6 rounded-lg text-center">
+            <div className="bg-[#3a4d54] border-2 border-orange-500 text-white p-6 rounded-lg text-center">
               <h3 className="font-bold text-lg mb-2">
                 [Option 2: I want it gone NOW]
               </h3>

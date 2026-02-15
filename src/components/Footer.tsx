@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white py-12">
+    <footer className="bg-[#2f3e45] text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
         {/* Trust Badges */}
         <div className="flex justify-center gap-12 mb-8">
