@@ -5,20 +5,314 @@
     "state_name": "Texas",
     "state_slug": "texas",
     "state_abbr": "TX",
-    "population": 987709,
-    "mattress_rules": "Austin Resource Recovery (ARR) requires mattresses and box springs to be wrapped in plastic for curbside bulk collection. Plastic mattress bags can be purchased at most major retail or moving supply stores. Bulk items, including mattresses, must be placed at the curb by 6:30 AM on the scheduled collection day, but no earlier than 8 PM the night before. Items must weigh less than 150 lbs, be less than 8 feet long, and require no more than 2 people to lift safely. ARR customers receive two free bulk item collections per year.",
+    "population": 979031,
+    "mattress_rules": "Mattress disposal in Austin, TX, is managed by Austin Resource Recovery (ARR) through both bulk item collection and a drop-off center.\n\n**Bulk Item Collection (Residential Curbside Pickup):**\n*   Austin Resource Recovery provides free bulk item collection service to residential customers once per year, typically on a scheduled day specific to your address.\n*   **Required Action for Mattresses:** Mattresses and box springs *must be wrapped in plastic and sealed* before placing them at the curb for bulk collection. This measure is crucial to prevent the spread of bed bugs.\n*   Set out items by 6:30 a.m. on your scheduled collection day, but no earlier than 8 p.m. the night before.\n*   Items must be placed at the curb, at least 5 feet from parked cars, mailboxes, and utility meters.\n*   There is a limit of 15 cubic yards per collection.\n\n**Drop-off at Customer Convenience Center:**\n*   Residents can drop off mattresses at the Austin Resource Recovery Customer Convenience Center.\n*   A fee for disposal is charged, calculated by weight.\n*   While not explicitly stated as mandatory for drop-off, wrapping mattresses in plastic is a recommended best practice for bed bug prevention.",
     "dropoff_locations": [
       {
-        "name": "Recycle & Reuse Drop-off Center (Austin Resource Recovery)",
-        "address": "2600 Warbler Lane, Austin, TX 78723",
-        "phone": "512-974-2000 (General ARR/311)",
-        "hours": "Tuesday - Saturday, 8 a.m. - 3 p.m.",
+        "name": "Austin Resource Recovery Customer Convenience Center",
+        "address": "2514 Center Point Dr, Austin, TX 78744",
+        "phone": "512-974-4343",
+        "hours": "Monday - Saturday, 8 a.m. - 4 p.m.",
         "accepts_mattresses": true
       }
     ],
     "pickup_service_available": true,
-    "pickup_phone": "512-494-9400 (to schedule bulk collection) or 311",
-    "illegal_dumping_fine": "Up to $500 for a Class C misdemeanor under city code, plus potential cleanup costs. State law penalties (Texas Health and Safety Code, Chapter 365) for illegal dumping can range from a Class C misdemeanor to a state jail felony, with fines up to $10,000 and/or jail time, depending on the amount and type of waste.",
+    "pickup_phone": "3-1-1 or 512-974-4343",
+    "illegal_dumping_fine": "$2,000 - $4,000",
+    "last_updated": "2024-05-18"
+  },
+  {
+    "city_slug": "new-york-ny",
+    "city_name": "New York",
+    "state_name": "New York",
+    "state_slug": "new-york",
+    "state_abbr": "NY",
+    "population": 8335897,
+    "mattress_rules": "Mattresses and box springs must be completely sealed in a plastic bag or wrap before being placed at the curb for collection. This is a legal requirement in New York City to prevent the spread of bed bugs. Items should be placed at the curb after 4 PM the day before your regular trash and recycling collection day. No appointment is needed for bulk items like mattresses; they are collected with your regular household waste.",
+    "dropoff_locations": [],
+    "pickup_service_available": true,
+    "pickup_phone": "311",
+    "illegal_dumping_fine": "$1,500 - $10,000 for a first offense",
+    "last_updated": "2026-02-14"
+  },
+  {
+    "city_slug": "los-angeles-ca",
+    "city_name": "Los Angeles",
+    "state_name": "California",
+    "state_slug": "california",
+    "state_abbr": "CA",
+    "population": 3822238,
+    "mattress_rules": "Los Angeles Sanitation & Environment (LASAN) provides free bulky item collection for residential customers. Mattresses and box springs are accepted as bulky items. A critical requirement is that all mattresses and box springs must be wrapped completely in plastic and sealed (e.g., with tape) for bed bug prevention before placement at the curb. Collection is by appointment only, and residential customers are typically allowed up to four bulky item collections per calendar year.",
+    "dropoff_locations": [
+      {
+        "name": "City of Los Angeles Sanitation \u2013 Hyperion Treatment Plant Drop Off",
+        "address": "7660 West Imperial Hwy, Los Angeles, CA 90045",
+        "phone": "(800) 773-2489",
+        "hours": "Monday - Friday: 7:00 AM - 4:00 PM, Saturday: 7:00 AM - 1:00 PM",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "City of Los Angeles Sanitation \u2013 Lopez Canyon Environmental Center",
+        "address": "12101 Lopez Canyon Rd, Sylmar, CA 91342",
+        "phone": "(800) 773-2489",
+        "hours": "Monday - Friday: 7:00 AM - 4:00 PM, Saturday: 7:00 AM - 1:00 PM",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Recycle LA",
+        "address": "2341 E 26th St, Los Angeles, CA 90058",
+        "phone": "(323) 266-9694",
+        "hours": "Monday - Friday: 7:00 AM - 4:00 PM, Saturday: 7:00 AM - 12:00 PM",
+        "accepts_mattresses": true
+      }
+    ],
+    "pickup_service_available": true,
+    "pickup_phone": "1-800-773-2489 (LA Sanitation & Environment Customer Care) or MyLA311 app/website",
+    "illegal_dumping_fine": "Up to $10,000 for a first offense, with potential jail time of up to six months and responsibility for cleanup costs.",
     "last_updated": "2024-05-16"
+  },
+  {
+    "city_slug": "chicago-il",
+    "city_name": "Chicago",
+    "state_name": "Illinois",
+    "state_slug": "illinois",
+    "state_abbr": "IL",
+    "population": 2660379,
+    "mattress_rules": "For residential properties (1-4 units) serviced by the City of Chicago's Department of Streets and Sanitation (DSS), mattresses are collected as bulk items. No appointment is explicitly required for bulk item pickup; residents should place mattresses at the curb or in the alley on their regular bulk collection day. The City of Chicago DSS does not explicitly state a requirement for mattresses to be wrapped in plastic for curbside collection. For properties not serviced by DSS (e.g., larger residential buildings, commercial properties), disposal must be arranged through a private waste hauler.",
+    "dropoff_locations": [],
+    "pickup_service_available": true,
+    "pickup_phone": "311",
+    "illegal_dumping_fine": "Not less than $1,500 nor more than $2,500 for the first offense; not less than $2,500 nor more than $5,000 for the second and each subsequent offense (per City of Chicago Municipal Code 7-28-065).",
+    "last_updated": "2026-02-14"
+  },
+  {
+    "city_slug": "houston-tx",
+    "city_name": "Houston",
+    "state_name": "Texas",
+    "state_slug": "texas",
+    "state_abbr": "TX",
+    "population": 2314000,
+    "mattress_rules": "Mattresses are collected as 'Heavy Trash' once a month on your designated collection day. Items must be placed at the curb by 6 a.m. on the collection day. All items must be free of food and liquids. The City of Houston Solid Waste Management Department does not explicitly state a requirement for wrapping mattresses for curbside collection, but it is generally recommended to wrap mattresses in plastic for sanitary reasons and to prevent the spread of bed bugs.",
+    "dropoff_locations": [
+      {
+        "name": "North Neighborhood Depository",
+        "address": "9003 N Main, Houston, TX 77022",
+        "phone": "311",
+        "hours": "Seven days a week, 10 a.m. to 7 p.m. (except City holidays)",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Northwest Neighborhood Depository",
+        "address": "14400 Sommermeyer, Houston, TX 77041",
+        "phone": "311",
+        "hours": "Seven days a week, 10 a.m. to 7 p.m. (except City holidays)",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Northeast Neighborhood Depository",
+        "address": "5565 Kirkpatrick, Houston, TX 77028",
+        "phone": "311",
+        "hours": "Seven days a week, 10 a.m. to 7 p.m. (except City holidays)",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "South Neighborhood Depository",
+        "address": "5100 Sunbeam, Houston, TX 77033",
+        "phone": "311",
+        "hours": "Seven days a week, 10 a.m. to 7 p.m. (except City holidays)",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Southwest Neighborhood Depository",
+        "address": "10700 Hammerly, Houston, TX 77041",
+        "phone": "311",
+        "hours": "Seven days a week, 10 a.m. to 7 p.m. (except City holidays)",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Southeast Neighborhood Depository",
+        "address": "2240 Holmes Rd, Houston, TX 77045",
+        "phone": "311",
+        "hours": "Seven days a week, 10 a.m. to 7 p.m. (except City holidays)",
+        "accepts_mattresses": true
+      }
+    ],
+    "pickup_service_available": true,
+    "pickup_phone": "311",
+    "illegal_dumping_fine": "$2,000 to $10,000 for a first offense, with potential jail sentences.",
+    "last_updated": "2026-02-14"
+  },
+  {
+    "city_slug": "phoenix-az",
+    "city_name": "Phoenix",
+    "state_name": "Arizona",
+    "state_slug": "arizona",
+    "state_abbr": "AZ",
+    "population": 1650070,
+    "mattress_rules": "The City of Phoenix Public Works Department provides curbside bulk trash collection service five times a year. Mattresses and box springs are accepted as part of this service. There are no specific wrapping requirements for mattresses listed by the city. Bulk trash piles must be no larger than 20 feet long, 6 feet wide, and 6 feet high. Items must be placed at the curb, clear of sidewalks, street parking, and traffic. Residents should consult the City of Phoenix Public Works website for their scheduled collection week.",
+    "dropoff_locations": [
+      {
+        "name": "North Gateway Transfer Station",
+        "address": "30205 N. 32nd St., Phoenix, AZ 85083",
+        "phone": "(602) 262-6251",
+        "hours": "Mon-Fri: 5:00 AM - 5:00 PM; Sat-Sun: 6:00 AM - 1:00 PM (Residential only on weekends)",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "27th Avenue Transfer Station",
+        "address": "3060 S. 27th Ave., Phoenix, AZ 85009",
+        "phone": "(602) 262-6251",
+        "hours": "Mon-Fri: 5:00 AM - 5:00 PM; Sat-Sun: 6:00 AM - 1:00 PM (Residential only on weekends)",
+        "accepts_mattresses": true
+      }
+    ],
+    "pickup_service_available": true,
+    "pickup_phone": "311 (or 602-262-6251)",
+    "illegal_dumping_fine": "$250 - $2,500 (for a first offense; subsequent violations may incur higher fines up to $2,500)",
+    "last_updated": "2024-05-18"
+  },
+  {
+    "city_slug": "philadelphia-pa",
+    "city_name": "Philadelphia",
+    "state_name": "Pennsylvania",
+    "state_slug": "pennsylvania",
+    "state_abbr": "PA",
+    "population": 1550542,
+    "mattress_rules": "Mattresses and box springs must be sealed in clear plastic mattress bags before being placed for collection. Residential customers can set out up to two bulk items (which include mattresses and box springs) per week with their regular trash and recycling collection. No prior scheduling is required for bulk items if properly prepared. Mattress bags can be purchased at most hardware or home improvement stores.",
+    "dropoff_locations": [
+      {
+        "name": "Northwest Philadelphia Sanitation Convenience Center",
+        "address": "30th & Callowhill St., Philadelphia, PA 19104",
+        "phone": "311",
+        "hours": "Monday - Saturday, 8:00 A.M. to 6:00 P.M.",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Northeast Philadelphia Sanitation Convenience Center",
+        "address": "State Rd. & Ashburner St., Philadelphia, PA 19136",
+        "phone": "311",
+        "hours": "Monday - Saturday, 8:00 A.M. to 6:00 P.M.",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Southwest Philadelphia Sanitation Convenience Center",
+        "address": "3033 S. 63rd St., Philadelphia, PA 19142",
+        "phone": "311",
+        "hours": "Monday - Saturday, 8:00 A.M. to 6:00 P.M.",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "West Philadelphia Sanitation Convenience Center",
+        "address": "5100 Grays Ave., Philadelphia, PA 19143",
+        "phone": "311",
+        "hours": "Monday - Saturday, 8:00 A.M. to 6:00 P.M.",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "North Philadelphia Sanitation Convenience Center",
+        "address": "2601 W. Glenwood Ave., Philadelphia, PA 19121",
+        "phone": "311",
+        "hours": "Monday - Saturday, 8:00 A.M. to 6:00 P.M.",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Strawberry Mansion Sanitation Convenience Center",
+        "address": "2600 W. Glenwood Ave., Philadelphia, PA 19121",
+        "phone": "311",
+        "hours": "Monday - Saturday, 8:00 A.M. to 6:00 P.M.",
+        "accepts_mattresses": true
+      }
+    ],
+    "pickup_service_available": true,
+    "pickup_phone": "311",
+    "illegal_dumping_fine": "$2,000",
+    "last_updated": "2026-02-14"
+  },
+  {
+    "city_slug": "san-antonio-tx",
+    "city_name": "San Antonio",
+    "state_name": "Texas",
+    "state_slug": "texas",
+    "state_abbr": "TX",
+    "population": 1495219,
+    "mattress_rules": "For curbside bulky item collection, mattresses must be wrapped in plastic and sealed to prevent the spread of bed bugs. Bulky items should be placed at least 3 feet away from your garbage cart on your regular collection day. Items should be set out no earlier than 6 p.m. the day before collection and no later than 7 a.m. on your collection day. Regular collection does not require scheduling. For additional bulk item collections outside of your regular service day, residents must call 311 to schedule.",
+    "dropoff_locations": [
+      {
+        "name": "Bitters Road Brush Recycling Center & Drop-off",
+        "address": "1800 Bitters Rd, San Antonio, TX 78216",
+        "phone": "311",
+        "hours": "Monday - Sunday: 8:00 AM - 5:00 PM (Closed Thanksgiving Day, Christmas Day, and New Year\u2019s Day)",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Nelson Road Brush Recycling Center & Drop-off",
+        "address": "9310 Nelson Rd, San Antonio, TX 78252",
+        "phone": "311",
+        "hours": "Monday - Sunday: 8:00 AM - 5:00 PM (Closed Thanksgiving Day, Christmas Day, and New Year\u2019s Day)",
+        "accepts_mattresses": true
+      }
+    ],
+    "pickup_service_available": true,
+    "pickup_phone": "311",
+    "illegal_dumping_fine": "$200 to $2,000 per offense",
+    "last_updated": "2026-02-14"
+  },
+  {
+    "city_slug": "san-diego-ca",
+    "city_name": "San Diego",
+    "state_name": "California",
+    "state_slug": "california",
+    "state_abbr": "CA",
+    "population": 1386932,
+    "mattress_rules": "For curbside bulky item pickup: Mattresses and box springs *must be wrapped in plastic* for collection. Unwrapped mattresses or box springs will not be collected. Items must be placed directly in front of your home, away from other objects such as parked cars or trees, by 6:00 a.m. on your scheduled collection day. A limit of 10 items will be picked up per appointment. Residents with city-provided trash collection services are eligible for two free bulky item pickups per calendar year.",
+    "dropoff_locations": [
+      {
+        "name": "City of San Diego Miramar Landfill",
+        "address": "5180 Convoy St, San Diego, CA 92111",
+        "phone": "858-492-5063",
+        "hours": "Monday - Friday: 7:00 a.m. - 4:30 p.m., Saturday - Sunday: 7:30 a.m. - 4:30 p.m.",
+        "accepts_mattresses": true
+      }
+    ],
+    "pickup_service_available": true,
+    "pickup_phone": "858-694-7000",
+    "illegal_dumping_fine": "$1,000 - $10,000 (fines vary based on the offense and severity; first offense minimum is $1,000).",
+    "last_updated": "2024-05-15"
+  },
+  {
+    "city_slug": "dallas-tx",
+    "city_name": "Dallas",
+    "state_name": "Texas",
+    "state_slug": "texas",
+    "state_abbr": "TX",
+    "population": 1302298,
+    "mattress_rules": "Mattresses are collected as part of the City of Dallas' monthly Brush & Bulky Item Collection service. Residents must place mattresses at the curb by 7:00 AM on the Monday of their scheduled collection week, but no earlier than the Thursday before the collection week. Each individual item, including mattresses, should not exceed 12 feet in length or weigh more than 150 lbs. The total volume of all bulk items collected per household per month is limited to 10 cubic yards. There are no explicit official requirements from the City of Dallas for wrapping mattresses for curbside pickup, though it may be recommended by some for sanitary reasons.",
+    "dropoff_locations": [
+      {
+        "name": "McCommas Bluff Landfill (Transfer Station)",
+        "address": "5100 Youngblood Rd, Dallas, TX 75241",
+        "phone": "(214) 670-0975",
+        "hours": "Mon-Sat: 7:00 AM - 5:00 PM",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Northwest Transfer Station",
+        "address": "9500 N Stemmons Fwy, Dallas, TX 75247",
+        "phone": "(214) 670-6590",
+        "hours": "Mon-Sat: 7:00 AM - 5:00 PM",
+        "accepts_mattresses": true
+      },
+      {
+        "name": "Northeast Transfer Station",
+        "address": "10205 Plano Rd, Dallas, TX 75238",
+        "phone": "(214) 670-6595",
+        "hours": "Mon-Sat: 7:00 AM - 5:00 PM",
+        "accepts_mattresses": true
+      }
+    ],
+    "pickup_service_available": true,
+    "pickup_phone": "311",
+    "illegal_dumping_fine": "$200 - $2,000",
+    "last_updated": "2026-02-14"
   }
 ]
