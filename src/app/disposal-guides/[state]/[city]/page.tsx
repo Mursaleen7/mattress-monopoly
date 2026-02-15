@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import citiesData from '@/../data/cities.json';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 interface City {
   city_slug: string;
@@ -51,8 +53,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Mattress Disposal in ${cityData.city_name}, ${cityData.state_abbr} | Free Guide`,
-    description: `Complete guide to mattress disposal and recycling in ${cityData.city_name}, ${cityData.state_name}. Find local services, pickup options, and eco-friendly solutions.`,
+    title: `Mattress Disposal Guide: ${cityData.city_name}, ${cityData.state_abbr} (2026 Rules)`,
+    description: `Official municipal drop-off regulations & fast private pickup options for ${cityData.city_name}, ${cityData.state_name}.`,
   };
 }
 
@@ -71,179 +73,131 @@ export default async function CityPage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-slate-800 to-slate-700 text-white">
-        <div className="max-w-5xl mx-auto px-4 py-16">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Mattress Disposal Guide:<br />
-              {cityData.city_name}, {cityData.state_abbr} (2026 Rules)
-            </h1>
-            <p className="text-xl text-slate-200 mb-8">
-              Official Regulations & Fast Pickup Services Nationwide
-            </p>
-            
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition">
-                📦 Schedule Pickup
-              </button>
-              <button className="bg-slate-600 hover:bg-slate-500 text-white px-8 py-4 rounded-lg font-semibold text-lg transition">
-                📍 Find Drop-off
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <main className="min-h-screen">
+      <Header />
 
-      <div className="max-w-5xl mx-auto px-4 py-12">
-        {/* Two Ways to Dispose */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center text-slate-800 mb-8">
-            How do you envision this?
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Self-Haul Option */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-slate-200 hover:border-blue-400 transition">
-              <div className="text-center mb-4">
-                <div className="text-6xl mb-4">🚚</div>
-                <h3 className="text-2xl font-bold text-slate-800 mb-2">Self-Haul</h3>
-                <p className="text-slate-600 mb-4">(Free, Requires Effort)</p>
-              </div>
-              <ul className="text-sm text-slate-700 space-y-2 mb-6">
-                <li>✓ Free disposal at city facilities</li>
-                <li>✓ Must transport yourself</li>
-                <li>✓ Requires truck/vehicle</li>
-                <li>✓ Limited facility hours</li>
-              </ul>
-              <button className="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 py-3 rounded-lg font-semibold transition">
+      {/* City Hero Section */}
+      <section className="bg-slate-900 py-16">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h1 className="text-white font-extrabold text-3xl mb-4">
+            Mattress Disposal Guide: {cityData.city_name}, {cityData.state_abbr} (2026 Rules)
+          </h1>
+          <p className="text-white">
+            Official municipal drop-off regulations & fast private pickup options
+          </p>
+        </div>
+      </section>
+
+      {/* Decision Matrix */}
+      <section className="bg-slate-800 py-8">
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="grid grid-cols-2 gap-4">
+            {/* Left Half - Self-Haul */}
+            <div className="bg-slate-700 text-white p-6 rounded-lg text-center">
+              <h3 className="font-bold text-lg mb-2">
+                [Option 1: I have a Truck & Time]
+              </h3>
+              <p className="text-sm mb-4">View free rules</p>
+              <button className="text-white underline hover:text-gray-300 transition">
                 Learn More
               </button>
             </div>
 
-            {/* Paid Pickup Option */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl shadow-lg p-8 border-2 border-orange-300 relative">
-              <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs px-3 py-1 rounded-full font-semibold">
-                RECOMMENDED
-              </div>
-              <div className="text-center mb-4">
-                <div className="text-6xl mb-4">👷</div>
-                <h3 className="text-2xl font-bold text-slate-800 mb-2">Paid Pickup</h3>
-                <p className="text-slate-600 mb-4">(Easy, Zero Effort)</p>
-              </div>
-              <ul className="text-sm text-slate-700 space-y-2 mb-6">
-                <li>✓ Same-day or next-day service</li>
-                <li>✓ We lift and haul everything</li>
-                <li>✓ No truck needed</li>
-                <li>✓ Eco-friendly disposal</li>
-              </ul>
-              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-semibold shadow-md transition">
-                Get Quote
+            {/* Right Half - Paid Pickup */}
+            <div className="bg-slate-600 border-2 border-orange-500 text-white p-6 rounded-lg text-center">
+              <h3 className="font-bold text-lg mb-2">
+                [Option 2: I want it gone NOW]
+              </h3>
+              <p className="text-sm mb-4">Schedule affordable pickup</p>
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-semibold transition">
+                Learn More
               </button>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* City Regulations Alert */}
-        <div className="bg-amber-50 border-l-4 border-amber-400 rounded-lg p-6 mb-12">
-          <div className="flex items-start">
-            <span className="text-3xl mr-4">⚠️</span>
+      {/* Regulations Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-gray-900 font-bold text-2xl mb-6">
+            City of {cityData.city_name} Drop-off Regulations
+          </h2>
+
+          {/* Alert Box */}
+          <div className="bg-amber-100 border-2 border-amber-500 rounded-lg p-6 mb-8 flex gap-4">
+            <span className="text-3xl">⚠️</span>
             <div>
-              <h3 className="font-bold text-amber-900 text-lg mb-2">
-                Important Alert: {cityData.city_name} Drop-off Regulations
-              </h3>
-              <div className="text-amber-800 text-sm space-y-2">
-                <p className="font-semibold">Before you self-haul, know these rules:</p>
-                <p>{cityData.mattress_rules}</p>
-              </div>
+              <h3 className="font-bold text-amber-900 mb-2">Important Alert:</h3>
+              <p className="text-gray-800">{cityData.mattress_rules}</p>
+              <p className="text-sm text-gray-700 mt-2">
+                Illegal dumping fine: <span className="font-semibold">{cityData.illegal_dumping_fine}</span>
+              </p>
             </div>
           </div>
-        </div>
 
-        {/* Drop-off Locations */}
-        {cityData.dropoff_locations.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 className="text-2xl font-bold text-slate-800 mb-6">
-              📍 Drop-off Locations
-            </h2>
+          {/* Data Layout */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Left Column - Map Placeholder */}
+            <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+              <div className="text-center text-gray-600">
+                <span className="text-4xl mb-2 block">📍</span>
+                <p>Map of {cityData.city_name}</p>
+              </div>
+            </div>
+
+            {/* Right Column - Locations */}
             <div className="space-y-6">
               {cityData.dropoff_locations.map((location, index) => (
-                <div key={index} className="border-l-4 border-blue-500 pl-6 py-2">
-                  <h3 className="font-bold text-lg text-slate-800 mb-2">
+                <div key={index} className="border-l-4 border-blue-600 pl-4">
+                  <h3 className="font-bold text-lg text-gray-900 mb-2">
                     {location.name}
                   </h3>
-                  <div className="text-slate-600 space-y-1">
-                    <p>📍 {location.address}</p>
-                    <p>📞 {location.phone}</p>
-                    <p>🕐 {location.hours}</p>
-                  </div>
-                  <button className="mt-3 text-blue-600 hover:text-blue-700 font-semibold text-sm">
-                    View on Map →
-                  </button>
+                  <p className="text-gray-700 text-sm">{location.address}</p>
+                  <p className="text-gray-700 text-sm">Hours: {location.hours}</p>
+                  <p className="text-gray-700 text-sm">Phone: {location.phone}</p>
                 </div>
               ))}
             </div>
           </div>
-        )}
+        </div>
+      </section>
 
-        {/* Skip the Dump Run CTA */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-2xl p-12 text-center text-white mb-12">
-          <h2 className="text-3xl font-bold mb-4">Skip the Dump Run</h2>
-          <p className="text-xl mb-8 text-blue-100">
-            Earn a day free, within your city limits, with a Junk Pickup
-          </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg transition transform hover:scale-105">
+      {/* Pickup Section */}
+      <section className="bg-sky-50 py-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-gray-900 font-bold text-3xl mb-8">
+            Skip the Dump Run. Schedule a Pickup.
+          </h2>
+
+          {/* Benefit Icons */}
+          <div className="flex justify-center gap-12 mb-10">
+            <div className="flex flex-col items-center">
+              <span className="text-5xl text-slate-700 mb-2">💪</span>
+              <p className="text-gray-700 font-semibold">No Heavy Lifting</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-5xl text-slate-700 mb-2">🚚</span>
+              <p className="text-gray-700 font-semibold">No Vehicle Needed</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-5xl text-slate-700 mb-2">⏰</span>
+              <p className="text-gray-700 font-semibold">As soon as tomorrow</p>
+            </div>
+          </div>
+
+          {/* Primary CTA */}
+          <button className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 rounded-lg text-lg font-bold shadow-lg transition">
             Check Pickup Availability in {cityData.city_name}
           </button>
-          
-          {/* Trust Badges */}
-          <div className="flex justify-center items-center gap-8 mt-8 text-sm">
-            <div className="flex flex-col items-center">
-              <span className="text-3xl mb-2">🚫</span>
-              <span>No Lifting</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl mb-2">⚡</span>
-              <span>Fast</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl mb-2">♻️</span>
-              <span>Eco-Friendly</span>
-            </div>
-          </div>
-        </div>
 
-        {/* Important Info Box */}
-        <div className="bg-red-50 border-l-4 border-red-400 rounded-lg p-6">
-          <div className="flex items-start">
-            <span className="text-3xl mr-4">🚨</span>
-            <div>
-              <h3 className="font-bold text-red-900 text-lg mb-2">
-                Illegal Dumping Penalties
-              </h3>
-              <p className="text-red-800">
-                <span className="font-semibold">Fine:</span> {cityData.illegal_dumping_fine}
-              </p>
-              <p className="text-sm text-red-700 mt-2">
-                Disposing of mattresses on streets or vacant lots is illegal and subject to heavy fines.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Footer */}
-      <footer className="bg-slate-800 text-white py-8 mt-16">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <p className="text-slate-400 text-sm">
-            Last updated: {cityData.last_updated} | Population: {cityData.population.toLocaleString()}
-          </p>
-          <p className="text-slate-500 text-xs mt-2">
-            Information sourced from official {cityData.city_name} government resources
+          <p className="text-gray-600 text-sm mt-4">
+            Vetted partners • Insured • Eco-friendly disposal
           </p>
         </div>
-      </footer>
+      </section>
+
+      <Footer />
     </main>
   );
 }
