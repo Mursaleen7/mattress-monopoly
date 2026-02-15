@@ -11,8 +11,11 @@ import requests
 from typing import Dict, List
 import google.generativeai as genai
 
-# Configure Gemini API
-GEMINI_API_KEY = "AIzaSyDbDek1fvT6yln-jR0yVQ1CUb1QB3IXEPA"
+# Configure Gemini API - Load from environment variable
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running the scraper.")
+
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Initialize Gemini model

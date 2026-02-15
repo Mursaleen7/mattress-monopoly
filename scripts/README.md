@@ -20,6 +20,17 @@ cd scripts
 pip install -r requirements.txt
 ```
 
+2. Set your Gemini API key as an environment variable:
+```bash
+# On macOS/Linux:
+export GEMINI_API_KEY="your_gemini_api_key_here"
+
+# On Windows:
+set GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+**⚠️ Security Note:** Never commit API keys to Git. Always use environment variables.
+
 ## Usage
 
 ### Step 1: Run the AI Scraper
