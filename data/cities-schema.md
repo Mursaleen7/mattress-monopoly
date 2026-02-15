@@ -1,6 +1,10 @@
-# City Data Schema (v2.0)
+# City Data Schema (v3.0 - Government Waste Data Auditor)
 
-## Required Fields for Each City
+## Overview
+
+This schema enforces strict compliance with the "Facility Capability Test" to ensure only verified heavy trash/mattress disposal facilities are listed (NOT recycling centers).
+
+## Complete Schema
 
 ```json
 {
@@ -9,106 +13,204 @@
   "state_name": "Texas",
   "state_slug": "texas",
   "state_abbr": "TX",
-  "population": 961855,
-  "mattress_rules": "Must be wrapped in plastic. Schedule bulk collection online or call 311.",
-  "dropoff_locations": [
+  "population": {
+    "count": 961855,
+    "year": 2020,
+    "source": "https://data.census.gov/profile/Austin_city,_Texas"
+  },
+  "contacts": {
+    "official_phone": "(512) 974-4343",
+    "department_name": "Austin Resource Recovery",
+    "website_url": "https://www.austintexas.gov/department/austin-resource-recovery"
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": "Must be wrapped in plastic",
+    "placement_time": "Before 7am on collection day",
+    "size_limits": "Not to exceed 200 lbs, easily handled by two people"
+  },
+  "drop_off_locations": [
     {
-      "name": "Hornsby Bend Biosolids Management Plant",
-      "address": "2210 S FM 973, Austin, TX 78725",
-      "phone": "(512) 972-1960",
-      "hours": "Mon-Sat 8am-5pm",
-      "accepts_mattresses": true
+      "name": "Austin Resource Recovery Drop-Off Center",
+      "address": "2510 Texas Avenue, Austin, TX 78704",
+      "type": "Heavy Trash",
+      "hours": "Open 7 days a week, 9am-5pm",
+      "notes": "Mattresses accepted, proof of residency required"
     }
   ],
-  "pickup_service_available": true,
-  "pickup_phone": "311",
-  "illegal_dumping_fine": "$500-$2000",
-  "last_updated": "2026-02-14",
-  "data_confidence": "HIGH",
-  "sources_checked": [
-    "https://www.austintexas.gov/department/austin-resource-recovery",
-    "https://www.austintexas.gov/page/bulk-item-collection"
-  ]
+  "illegal_dumping": {
+    "fine_amount": "Up to $2,000",
+    "citation": "Municipal Code Section 15-6-3"
+  },
+  "audit_metadata": {
+    "confidence_score": "HIGH",
+    "verification_checklist": {
+      "gov_source_found": true,
+      "mattress_rule_verified": true,
+      "facility_hours_verified": true,
+      "facility_type_verified": true,
+      "population_census_verified": true
+    },
+    "sources_used": [
+      "https://www.austintexas.gov/department/austin-resource-recovery",
+      "https://www.austintexas.gov/department/heavy-trash-collection"
+    ],
+    "last_updated": "2026-02-14"
+  }
 }
 ```
 
 ## Field Descriptions
 
 ### Core Identification
+
 - **city_slug**: URL-friendly identifier (e.g., "austin-tx")
 - **city_name**: Official city name
 - **state_name**: Full state name
 - **state_slug**: URL-friendly state identifier
 - **state_abbr**: Two-letter state abbreviation
 
-### Population
-- **population**: Official population from 2020+ census
-- Set to `0` if not found (requires manual update)
-- Must be from official census or city data, not estimated
+### Population (Nested Object)
 
-### Disposal Rules
-- **mattress_rules**: Exact rules from official sources
-- Should include: wrapping requirements, scheduling process, fees
-- Falls back to contact info if specific rules not found
+- **count**: Official population from 2020+ census (Integer)
+- **year**: Year of census data (Integer)
+- **source**: URL to official census data source
 
-### Drop-off Locations
-- **dropoff_locations**: Array of facilities accepting mattresses
-- Each location includes:
-  - **name**: Exact facility name from official source
-  - **address**: Complete street address with ZIP code
-  - **phone**: Verified phone in format (XXX) XXX-XXXX
-  - **hours**: Exact operating hours (e.g., "Mon-Fri 8AM-5PM")
-  - **accepts_mattresses**: true only if explicitly stated
-- Use empty array `[]` if no locations found
+### Contacts (Nested Object)
 
-### Pickup Service
-- **pickup_service_available**: true if city offers curbside bulk pickup
-- **pickup_phone**: Verified phone for scheduling (often 311, but must verify)
+- **official_phone**: Specific department line or "3-1-1 (City General Line)"
+- **department_name**: Official department name (e.g., "Austin Resource Recovery")
+- **website_url**: Official .gov URL for the department
 
-### Penalties
-- **illegal_dumping_fine**: Exact fine from city ordinance (e.g., "$500-$2,000")
-- Use "$500+" as conservative estimate if not found
+### Curbside Rules (Nested Object)
 
-### Metadata (NEW in v2.0)
+- **is_available**: Boolean - true only if curbside pickup exists
+- **mattress_specific_rule**: Exact quote from official source (e.g., "Must be wrapped in plastic")
+- **placement_time**: When to place items (e.g., "Before 7am on collection day")
+- **size_limits**: Any size/weight restrictions
+
+### Drop-off Locations (Array)
+
+Each location must pass the "Facility Capability Test":
+
+1. **Type Check**: Must be "Heavy Trash", "Landfill", or "Transfer Station" - NOT "Recycling Center"
+2. **Item Verification**: Must explicitly accept mattresses or bulk waste
+3. **Schedule Audit**: Exact hours verified (e.g., "Closed Mon, Tue-Sun 8am-5pm")
+
+Fields:
+
+- **name**: Exact facility name from official source
+- **address**: Complete street address with ZIP code
+- **type**: MUST be "Heavy Trash", "Landfill", or "Transfer Station"
+- **hours**: EXACT operating hours (e.g., "Tue-Sat 9am-6pm" or "Closed Mon, Tue-Sun 8am-5pm")
+- **notes**: Additional info (e.g., "Proof of residency required", "Mattresses accepted")
+
+### Illegal Dumping (Nested Object)
+
+- **fine_amount**: Exact fine from city ordinance (e.g., "Up to $4,000" or "$500-$2,000")
+- **citation**: Source of fine info (e.g., "Municipal Code Section 15-6-3")
+
+### Audit Metadata (Nested Object)
+
+- **confidence_score**: "HIGH", "MEDIUM", "LOW", or "ERROR"
+- **verification_checklist**: Object with boolean flags:
+  - gov_source_found
+  - mattress_rule_verified
+  - facility_hours_verified
+  - facility_type_verified
+  - population_census_verified
+- **sources_used**: Array of official URLs referenced
 - **last_updated**: Date data was collected (YYYY-MM-DD)
-- **data_confidence**: Quality indicator
-  - **HIGH**: All data verified from official sources
-  - **MEDIUM**: Most data verified, some fields missing
-  - **LOW**: Limited data found, mostly fallback values
-  - **ERROR**: Scraping failed, needs manual collection
-- **sources_checked**: Array of official URLs referenced during data collection
+
+## Critical Rules
+
+### The "Facility Capability" Test
+
+Before adding ANY drop-off location:
+
+1. **Type Check**: Is this a recycling center (cans/paper only) or a transfer station (heavy trash allowed)?
+2. **Item Verification**: Does the "Accepted Items" list explicitly include "Mattresses" or "Bulk Waste"?
+3. **Schedule Audit**: Are the hours exact? Look for "Closed Mondays" patterns, not generic "Mon-Sat"
+
+### Strict Constraints
+
+- **No Recycling Centers**: Never list facilities that only accept recyclables (like Westpark in Houston)
+- **Exact Hours**: If closed on Mondays, state "Closed Mon, Tue-Sun 8am-5pm" - not "Mon-Sat"
+- **Phone Format**: Use specific department line or "3-1-1 (City General Line)"
+- **Population**: Must be from 2020+ census, never estimated
+
+## Confidence Levels
+
+- **HIGH**: All data verified from official sources, all checklist items true
+- **MEDIUM**: Most data verified, some fields missing or uncertain
+- **LOW**: Limited data found, mostly fallback values used
+- **ERROR**: Scraping failed, requires manual data collection
 
 ## Data Quality Standards
 
 ### Anti-Hallucination Requirements
+
 1. ✅ Only use official .gov sources
 2. ✅ Do not estimate or make up data
-3. ✅ Mark missing data as null, 0, or empty arrays
+3. ✅ Mark missing data as empty strings, 0, or empty arrays
 4. ✅ Verify all phone numbers and addresses
 5. ✅ Cross-reference multiple official pages
-6. ✅ Provide confidence scores for transparency
+6. ✅ Distinguish between recycling centers and transfer stations
+7. ✅ Verify exact operating hours (watch for "Closed Monday" patterns)
 
 ### Verification Checklist
-- [ ] Population from official census/city data
+
+Before accepting data as HIGH confidence:
+
+- [ ] Population from official 2020+ census with source URL
 - [ ] All phone numbers verified from official sources
 - [ ] All addresses complete with street, city, state, ZIP
 - [ ] Facility names match exactly as listed on official sites
-- [ ] Hours of operation are current and verified
+- [ ] Facility type verified (Heavy Trash/Landfill/Transfer Station - NOT Recycling Center)
+- [ ] Hours of operation exact and current (not generalized)
 - [ ] Mattress rules quoted/paraphrased from official policy
 - [ ] No information fabricated or assumed
 
-## Data Sources (Priority Order)
+## Example: Houston (Correct vs Incorrect)
 
-1. **City Government Website**: Search "[City] bulk trash collection"
-2. **City .gov pages**: Look for solid waste/sanitation departments
-3. **311 Services**: Most cities have online 311 portals
-4. **State DEP**: Department of Environmental Protection pages
-5. **Earth911.com**: Recycling location database
+### ❌ INCORRECT (Recycling Center Listed)
 
-## Top 5 Cities to Start (Pilot)
+```json
+{
+  "drop_off_locations": [
+    {
+      "name": "Westpark Recycling Center",
+      "type": "Recycling Center",
+      "notes": "Accepts cans, paper, cardboard only - NO MATTRESSES"
+    }
+  ]
+}
+```
 
-1. Austin, TX
-2. Toronto, ON (Canada)
-3. Vancouver, BC (Canada)
-4. New York, NY
-5. Los Angeles, CA
+### ✅ CORRECT (Transfer Station Only)
+
+```json
+{
+  "drop_off_locations": [
+    {
+      "name": "Westpark Neighborhood Depository",
+      "address": "5900 Westpark Dr, Houston, TX 77057",
+      "type": "Heavy Trash",
+      "hours": "Closed Mon, Tue-Fri 9am-6pm, Sat-Sun 9am-5pm",
+      "notes": "Accepts mattresses and bulk waste, proof of residency required"
+    }
+  ]
+}
+```
+
+## Migration from v2.0
+
+If you have old data format, map fields as follows:
+
+- `population` (number) → `population.count`
+- `mattress_rules` (string) → `curbside_rules.mattress_specific_rule`
+- `pickup_service_available` (boolean) → `curbside_rules.is_available`
+- `pickup_phone` → `contacts.official_phone`
+- `illegal_dumping_fine` → `illegal_dumping.fine_amount`
+- `data_confidence` → `audit_metadata.confidence_score`
+- `sources_checked` → `audit_metadata.sources_used`

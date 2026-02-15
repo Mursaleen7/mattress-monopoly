@@ -5,30 +5,63 @@
     "state_name": "Texas",
     "state_slug": "texas",
     "state_abbr": "TX",
-    "population": 961855,
-    "mattress_rules": "Mattresses are accepted for curbside bulk item collection. Residents must schedule collection by calling (512) 974-4343 or using the Austin 3-1-1 mobile app. Items must be placed at the curb by 6:30 a.m. on the scheduled collection day. Each household is allowed up to three bulk collections per year, with each collection limited to three cubic yards of items. Items should be easily handled by two people and not exceed 200 lbs. While general guidelines for bulk items state they should not exceed 6 feet long and 3 feet wide, mattresses are explicitly listed as an accepted item for bulk collection. No specific wrapping requirements for mattresses are stated.",
-    "dropoff_locations": [
+    "population": {
+      "count": 961855,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/fact/table/austincitytexas/PST045222"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (City General Line)",
+      "department_name": "Austin Resource Recovery",
+      "website_url": "https://www.austintexas.gov/department/austin-resource-recovery"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Mattresses and box springs must be completely wrapped and sealed in plastic prior to collection.",
+      "placement_time": "Place items at the curb by 6:30 a.m. on your appointment day.",
+      "size_limits": "Each item must be small enough for two people to lift safely and not exceed 150 pounds. Items may not exceed 8 feet in length or 4 feet in width. Customers may place up to two cubic yards of heavy trash at the curb."
+    },
+    "drop_off_locations": [
       {
-        "name": "Austin Resource Recovery Drop-Off Center",
-        "address": "2510 Texas Avenue, Austin, TX 78704",
-        "phone": "(512) 974-4343",
-        "hours": "Open 7 days a week, 9 a.m. - 5 p.m.",
-        "accepts_mattresses": true
+        "name": "Texas Disposal Systems Landfill",
+        "address": "12200 Carl Road, Creedmoor, TX 78610",
+        "type": "Landfill",
+        "hours": "Mon-Fri 7am-6pm, Sat 7am-3pm, Closed Sun",
+        "notes": "Mattresses accepted. Call facility for current rates and requirements."
+      },
+      {
+        "name": "Austin Community Landfill (Waste Management)",
+        "address": "12805 Wetzel Dr, Austin, TX 78737",
+        "type": "Landfill",
+        "hours": "Mon-Fri 6am-5pm, Sat 6am-12pm, Closed Sun",
+        "notes": "Mattresses, couches & furniture accepted. Call facility for current rates and requirements."
       }
     ],
-    "pickup_service_available": true,
-    "pickup_phone": "(512) 974-4343",
-    "illegal_dumping_fine": "Up to $2,000",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.austintexas.gov/department/austin-resource-recovery",
-      "https://www.austintexas.gov/page/bulk-item-collection",
-      "https://www.austintexas.gov/page/arr-drop-off-center",
-      "https://www.austintexas.gov/page/illegal-dumping",
-      "https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT15SOCO_CH15-6ILDUM_ART3PE",
-      "https://data.census.gov/profile/Austin_city,_Texas?g=160XX00US4805000"
-    ]
+    "illegal_dumping": {
+      "fine_amount": "Up to $2,000",
+      "citation": "Austin City Code Section 15-6-6 (Penalty)"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.austintexas.gov/department/austin-resource-recovery",
+        "https://www.austintexas.gov/department/heavy-trash-collection",
+        "https://www.austintexas.gov/department/landfill-and-transfer-station-locations",
+        "https://www.texasdisposalsystems.com/customer-service/facility-information/",
+        "https://www.texasdisposalsystems.com/wp-content/uploads/TDS-acceptable-unacceptable-items-PDF-download.pdf",
+        "https://www.wm.com/us/en/location/tx/austin/austin-community-landfill",
+        "https://library.municode.com/tx/austin/codes/code_of_ordinances?nodeId=TIT15ENPR_CH15-6DU",
+        "https://www.census.gov/quickfacts/fact/table/austincitytexas/PST045222"
+      ],
+      "last_updated": "2024-05-16"
+    }
   },
   {
     "city_slug": "new-york-ny",
@@ -36,21 +69,47 @@
     "state_name": "New York",
     "state_slug": "new-york",
     "state_abbr": "NY",
-    "population": 8804190,
-    "mattress_rules": "Mattresses and box springs must be completely enclosed in a sealed plastic bag. If mattresses or box springs are not enclosed in a sealed plastic bag, DSNY will not collect them. Mattress bags can be purchased at most hardware or home improvement stores, or online. Residents can put out up to 6 bulk items per collection day with their regular trash on their designated collection days; no appointment is needed.",
-    "dropoff_locations": [],
-    "pickup_service_available": true,
-    "pickup_phone": "311",
-    "illegal_dumping_fine": "$4,000 to $18,000 for each offense",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.census.gov/quickfacts/fact/table/newyorkcitynewyork/PST045222",
-      "https://www1.nyc.gov/assets/dsny/site/services/collection-schedule/bulk-item-disposal",
-      "https://www1.nyc.gov/assets/dsny/site/services/waste-management/special-materials",
-      "https://www1.nyc.gov/assets/dsny/site/contact",
-      "https://www1.nyc.gov/assets/dsny/site/contact/illegal-dumping"
-    ]
+    "population": {
+      "count": 8804190,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/fact/table/newyorkcitynewyork/PST045223"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (City General Line)",
+      "department_name": "New York City Department of Sanitation",
+      "website_url": "https://www.nyc.gov/assets/dsny/site/"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "You must enclose mattresses and box springs in a sealed plastic bag to protect DSNY workers from bed bugs. Mattresses and box springs that are not in bags will not be collected.",
+      "placement_time": "Place items out for collection after 4 PM the day before your collection day.",
+      "size_limits": "No specific size or weight limits mentioned for mattresses beyond general bulk item guidelines."
+    },
+    "drop_off_locations": [],
+    "illegal_dumping": {
+      "fine_amount": "Not less than $400 nor more than $4,000 for a first offense",
+      "citation": "Rules of the City of New York Title 16, Chapter 1, Section 1-04 (l), referencing NYC Administrative Code \u00a716-119."
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.nyc.gov/site/dsny/collection-schedule/residential/large-items.page",
+        "https://www.nyc.gov/site/dsny/collection-schedule/residential/mattress-disposal.page",
+        "https://www.nyc.gov/site/dsny/about/initiatives/illegal-dumping.page",
+        "https://www.census.gov/quickfacts/fact/table/newyorkcitynewyork/PST045223",
+        "https://www.nyc.gov/site/dsny/collection-schedule/residential/what-to-do-with-your-stuff.page",
+        "https://www.nyc.gov/assets/dsny/site/",
+        "https://www.nyc.gov/site/dsny/contact/contact.page"
+      ],
+      "last_updated": "2026-02-14"
+    }
   },
   {
     "city_slug": "los-angeles-ca",
@@ -58,43 +117,44 @@
     "state_name": "California",
     "state_slug": "california",
     "state_abbr": "CA",
-    "population": 3898747,
-    "mattress_rules": "Los Angeles residents are eligible for up to four FREE bulky item collections each year, with up to 16 items collected per pick-up. Mattresses are included in bulky item collection. Mattresses and box springs must be wrapped in plastic for collection, per state law. Mattress bags can be purchased at most hardware stores and other retail outlets. To schedule a bulky item collection, call 1-800-773-2489 or use the MyLA311 app. Do not place items on the street more than 24 hours prior to your scheduled collection day. Make sure that items are placed where they are clearly visible and easily accessible for collection. Please place items 3 feet away from your bins to avoid blocking automated services.",
-    "dropoff_locations": [
-      {
-        "name": "Gaffey SAFE Center",
-        "address": "1400 N. Gaffey St., San Pedro, CA 90731",
-        "phone": "(800) 773-2489",
-        "hours": "Sat & Sun 9:00 AM - 3:00 PM",
-        "accepts_mattresses": true
+    "population": {
+      "count": 3898747,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/fact/table/losangelescitycalifornia/PST045222"
+    },
+    "contacts": {
+      "official_phone": "1-800-773-2489",
+      "department_name": "LA Sanitation & Environment (LASAN)",
+      "website_url": "https://www.lacitysan.org/"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Residents are entitled to a FREE Bulky Item pick-up service for items too large to fit in your bins, such as mattresses, furniture, or appliances.",
+      "placement_time": "Items can be placed at the curb no earlier than 12 hours prior to your scheduled collection day and no later than 6:00 AM on your collection day.",
+      "size_limits": "Items too large to fit in your bins (no specific dimension or weight limits stated beyond this)."
+    },
+    "drop_off_locations": [],
+    "illegal_dumping": {
+      "fine_amount": "Up to $1,000 (first offense)",
+      "citation": "Los Angeles Municipal Code Sections 66.25 and 66.32; Los Angeles City Administrative Code Section 22.12.1(a)"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
       },
-      {
-        "name": "Glendale Hyperion SAFE Center",
-        "address": "4600 Los Feliz Blvd., Los Angeles, CA 90027",
-        "phone": "(800) 773-2489",
-        "hours": "Sat & Sun 9:00 AM - 3:00 PM",
-        "accepts_mattresses": true
-      },
-      {
-        "name": "Nichols Canyon SAFE Center",
-        "address": "10601 W. Hollywood Way, Sun Valley, CA 91352",
-        "phone": "(800) 773-2489",
-        "hours": "Sat & Sun 9:00 AM - 3:00 PM",
-        "accepts_mattresses": true
-      }
-    ],
-    "pickup_service_available": true,
-    "pickup_phone": "(800) 773-2489",
-    "illegal_dumping_fine": "Up to $1,000",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.lacitysan.org/san/faces/home/residential/bulkyitemcollection",
-      "https://www.lacitysan.org/san/faces/home/residential/whattodo/safecenters",
-      "https://www.lacitysan.org/san/faces/wcnav_externalId/s-lsh-illegal-dumping",
-      "https://codelibrary.amlegal.com/codes/los_angeles/latest/losang_ca_mc/0-0-0-120530",
-      "https://www.census.gov/quickfacts/fact/table/losangelescitycalifornia,US/PST045221"
-    ]
+      "sources_used": [
+        "https://www.lacitysan.org/",
+        "https://www.lacitysan.org/solid-waste/waste-management/bulky-item-collection",
+        "https://www.lacitysan.org/solid-waste/waste-management/dumping",
+        "https://www.census.gov/quickfacts/fact/table/losangelescitycalifornia/PST045222"
+      ],
+      "last_updated": "2026-02-14"
+    }
   },
   {
     "city_slug": "chicago-il",
@@ -102,22 +162,47 @@
     "state_name": "Illinois",
     "state_slug": "illinois",
     "state_abbr": "IL",
-    "population": 2746388,
-    "mattress_rules": "The City of Chicago does not offer curbside collection for bulk items such as furniture or mattresses. Residents are responsible for arranging the proper disposal of these items. This may involve contacting a private waste hauling service, taking items to a private transfer station or recycling facility, or donating usable items to charity organizations.",
-    "dropoff_locations": [],
-    "pickup_service_available": false,
-    "pickup_phone": "(312) 744-5000",
-    "illegal_dumping_fine": "$1,500.00 - $10,000.00 and/or imprisonment/community service",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.census.gov/quickfacts/fact/table/chicagocityillinois/PST045223",
-      "https://www.chicago.gov/city/en/depts/dss/provdrs/san_div/svcs/garbage_collection.html",
-      "https://www.chicago.gov/city/en/depts/dss/supp_info/faqs.html",
-      "https://www.chicago.gov/city/en/depts/dss/provdrs/san_div/svcs/city_recycling.html",
-      "https://www.chicago.gov/city/en/depts/mayor/supp_info/311.html",
-      "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2646393#JD_7-28-060"
-    ]
+    "population": {
+      "count": 2746388,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/fact/table/chicagoil/PST045222"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (City General Line)",
+      "department_name": "Department of Streets and Sanitation",
+      "website_url": "https://www.chicago.gov/city/en/depts/streets.html"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Bulk items, such as furniture, mattresses, and appliances, are picked up on your regularly scheduled garbage collection day.",
+      "placement_time": "Before 6:00 a.m. on collection day",
+      "size_limits": "None explicitly stated."
+    },
+    "drop_off_locations": [],
+    "illegal_dumping": {
+      "fine_amount": "$1,500.00 - $5,000.00 for each offense",
+      "citation": "Chicago Municipal Code Section 7-28-060"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.chicago.gov/city/en/depts/streets.html",
+        "https://www.chicago.gov/city/en/depts/streets/supp_info/collections.html",
+        "https://www.chicago.gov/city/en/depts/streets/provdrs/sanitation/svcs/what_to_put_where.html",
+        "https://www.chicago.gov/city/en/depts/streets/supp_info/recycling/Recycling_Drop-Off.html",
+        "https://www.chicago.gov/city/en/depts/streets/provdrs/sanitation/svcs/illegal_dumping.html",
+        "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-264166",
+        "https://www.census.gov/quickfacts/fact/table/chicagoil/PST045222"
+      ],
+      "last_updated": "2026-02-14"
+    }
   },
   {
     "city_slug": "houston-tx",
@@ -125,46 +210,88 @@
     "state_name": "Texas",
     "state_slug": "texas",
     "state_abbr": "TX",
-    "population": 2304580,
-    "mattress_rules": "Mattresses must be wrapped and sealed in plastic prior to collection or drop-off to prevent the spread of bed bugs. Heavy trash, which includes mattresses, is collected once a month on a scheduled basis. Residents must place heavy trash items at the curb no later than 6:00 a.m. on their scheduled heavy trash collection day, and not earlier than 6:00 p.m. the Friday before their collection week. Items for collection must be less than 8 feet in length and weigh less than 500 pounds, and placed at least 3 feet from obstructions such as mailboxes, fences, and utility poles.",
-    "dropoff_locations": [
+    "population": {
+      "count": 2304780,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/fact/table/houstoncitytexas/PST045222"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (City General Line)",
+      "department_name": "City of Houston Solid Waste Management Department",
+      "website_url": "https://www.houstontx.gov/solidwaste/"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Furniture, carpet, mattresses, and other household items too large to fit in your green cart.",
+      "placement_time": "Place your junk waste at the curb no earlier than 6 p.m. on the Friday before your collection week, and no later than 6 a.m. on your collection day.",
+      "size_limits": "Items too large to fit in your green cart."
+    },
+    "drop_off_locations": [
       {
         "name": "North Main Neighborhood Depository",
-        "address": "9003 North Main, Houston, TX 77022",
-        "phone": "(713) 837-0311",
-        "hours": "Mon-Sat: 10:00 AM - 7:00 PM, Sun: Closed",
-        "accepts_mattresses": true
+        "address": "9003 North Main St, Houston, TX 77022",
+        "type": "Heavy Trash",
+        "hours": "Mon-Sun 10am-7pm",
+        "notes": "Proof of Houston residency required. Accepts household trash, tree waste, and junk waste, including mattresses."
       },
       {
-        "name": "South Park Neighborhood Depository",
-        "address": "11500 South Park, Houston, TX 77047",
-        "phone": "(713) 837-0311",
-        "hours": "Mon-Sat: 10:00 AM - 7:00 PM, Sun: Closed",
-        "accepts_mattresses": true
+        "name": "Livingston Neighborhood Depository",
+        "address": "13900 S. Post Oak, Houston, TX 77045",
+        "type": "Heavy Trash",
+        "hours": "Mon-Sun 10am-7pm",
+        "notes": "Proof of Houston residency required. Accepts household trash, tree waste, and junk waste, including mattresses."
       },
       {
-        "name": "Westpark Recycling Center and Neighborhood Depository",
-        "address": "5900 Westpark, Houston, TX 77057",
-        "phone": "(713) 837-0311",
-        "hours": "Mon-Sat: 10:00 AM - 7:00 PM, Sun: Closed",
-        "accepts_mattresses": true
+        "name": "Southwest Neighborhood Depository",
+        "address": "10700 S. Gessner, Houston, TX 77071",
+        "type": "Heavy Trash",
+        "hours": "Mon-Sun 10am-7pm",
+        "notes": "Proof of Houston residency required. Accepts household trash, tree waste, and junk waste, including mattresses."
+      },
+      {
+        "name": "North Shepherd Neighborhood Depository",
+        "address": "9003 N. Shepherd, Houston, TX 77088",
+        "type": "Heavy Trash",
+        "hours": "Mon-Sun 10am-7pm",
+        "notes": "Proof of Houston residency required. Accepts household trash, tree waste, and junk waste, including mattresses."
+      },
+      {
+        "name": "Sunnyside Neighborhood Depository",
+        "address": "5502 Bellfort, Houston, TX 77033",
+        "type": "Heavy Trash",
+        "hours": "Mon-Sun 10am-7pm",
+        "notes": "Proof of Houston residency required. Accepts household trash, tree waste, and junk waste, including mattresses."
+      },
+      {
+        "name": "Cole Creek Neighborhood Depository",
+        "address": "14400 Sommermeyer, Houston, TX 77041",
+        "type": "Heavy Trash",
+        "hours": "Mon-Sun 10am-7pm",
+        "notes": "Proof of Houston residency required. Accepts household trash, tree waste, and junk waste, including mattresses."
       }
     ],
-    "pickup_service_available": true,
-    "pickup_phone": "(713) 837-0311",
-    "illegal_dumping_fine": "Up to $4,000",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.houstontx.gov/solidwaste/",
-      "https://www.houstontx.gov/solidwaste/heavytrash.html",
-      "https://www.houstontx.gov/solidwaste/frequently-asked-questions.html",
-      "https://www.houstontx.gov/solidwaste/collectionschedule.html",
-      "https://www.houstontx.gov/solidwaste/contactus.html",
-      "https://www.houstontx.gov/solidwaste/depositories.html",
-      "https://www.houstontx.gov/news/2021/Illegal-Dumping-Task-Force-Expansion.html",
-      "https://www.census.gov/quickfacts/houstoncitytexas"
-    ]
+    "illegal_dumping": {
+      "fine_amount": "Up to $4,000",
+      "citation": "https://www.houstontx.gov/solidwaste/illegal_dumping.html"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.houstontx.gov/solidwaste/",
+        "https://www.houstontx.gov/solidwaste/junkwaste.html",
+        "https://www.houstontx.gov/solidwaste/depositories.html",
+        "https://www.houstontx.gov/solidwaste/illegal_dumping.html",
+        "https://www.census.gov/quickfacts/fact/table/houstoncitytexas/PST045222"
+      ],
+      "last_updated": "2026-02-14"
+    }
   },
   {
     "city_slug": "phoenix-az",
@@ -172,44 +299,61 @@
     "state_name": "Arizona",
     "state_slug": "arizona",
     "state_abbr": "AZ",
-    "population": 1608139,
-    "mattress_rules": "Mattresses must be wrapped in plastic. The bulk trash pile can be up to 10 feet long, 5 feet wide and 5 feet high. Materials must be placed at the curb no earlier than one week prior to and no later than 5 a.m. on the scheduled collection day. Check your collection schedule on the City of Phoenix Public Works website for specific dates.",
-    "dropoff_locations": [
+    "population": {
+      "count": 1608139,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/fact/table/phoenixcityarizona/PST045222"
+    },
+    "contacts": {
+      "official_phone": "602-262-6251, option 3",
+      "department_name": "City of Phoenix Public Works Department - Solid Waste Services",
+      "website_url": "https://www.phoenix.gov/publicworks/garbage"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Items commonly collected include: furniture, mattresses, appliances (with refrigerants removed), yard waste (cut and bundled).",
+      "placement_time": "Place bulk trash at the curb no earlier than eight days prior to your collection week and no later than Sunday evening before collection week.",
+      "size_limits": "Bulk trash piles must be no larger than 20 feet long, 6 feet wide and 4 feet high."
+    },
+    "drop_off_locations": [
       {
         "name": "North Gateway Transfer Station",
         "address": "30205 N Black Canyon Hwy, Phoenix, AZ 85085",
-        "phone": "(602) 262-7251",
-        "hours": "Mon-Sat 5:30 AM - 5:00 PM",
-        "accepts_mattresses": true
+        "type": "Transfer Station",
+        "hours": "Mon-Sat 5am-5pm",
+        "notes": "Accepts mattresses. Proof of City of Phoenix residency required for free disposal (up to 1,000 lbs per month). Non-residents and commercial customers pay a fee."
       },
       {
         "name": "27th Avenue Transfer Station",
         "address": "3060 S 27th Ave, Phoenix, AZ 85009",
-        "phone": "(602) 262-7251",
-        "hours": "Mon-Sat 5:30 AM - 5:00 PM",
-        "accepts_mattresses": true
-      },
-      {
-        "name": "Skunk Creek Landfill",
-        "address": "22000 N 67th Ave, Glendale, AZ 85310",
-        "phone": "(602) 495-2000",
-        "hours": "Mon-Sat 6:00 AM - 5:00 PM",
-        "accepts_mattresses": true
+        "type": "Transfer Station",
+        "hours": "Mon-Sat 5am-5pm",
+        "notes": "Accepts mattresses. Proof of City of Phoenix residency required for free disposal (up to 1,000 lbs per month). Non-residents and commercial customers pay a fee."
       }
     ],
-    "pickup_service_available": true,
-    "pickup_phone": "(602) 262-6251",
-    "illegal_dumping_fine": "$500-$2,500",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.phoenix.gov/publicworks/bulktrash",
-      "https://www.phoenix.gov/publicworks/contact",
-      "https://www.phoenix.gov/publicworks/services/residential/other-services",
-      "https://www.phoenix.gov/publicworks/what-do-i-do-with",
-      "https://www.phoenix.gov/publicworks/illegal-dumping",
-      "https://www.census.gov/quickfacts/fact/table/phoenixcityarizona/PST045222"
-    ]
+    "illegal_dumping": {
+      "fine_amount": "Up to $2,500",
+      "citation": "City of Phoenix Code Chapter 27, Article II, Section 27-28 and Chapter 1, Section 1-5"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.phoenix.gov/publicworks/garbage",
+        "https://www.phoenix.gov/publicworks/bulktrash",
+        "https://www.phoenix.gov/publicworks/transferstations",
+        "https://www.census.gov/quickfacts/fact/table/phoenixcityarizona/PST045222",
+        "https://www.phoenix.gov/citycode/27/27-28.html",
+        "https://www.phoenix.gov/citycode/1/1-5.html"
+      ],
+      "last_updated": "2024-05-18"
+    }
   },
   {
     "city_slug": "philadelphia-pa",
@@ -217,44 +361,82 @@
     "state_name": "Pennsylvania",
     "state_slug": "pennsylvania",
     "state_abbr": "PA",
-    "population": 1603797,
-    "mattress_rules": "Mattresses and box springs are considered bulky items. They must be sealed in a plastic bag before being placed out for collection. There are no limits on the number of bulky items you can place out each week. Residents can put out bulky items with their regular trash and recycling on their collection day. No appointment is needed.",
-    "dropoff_locations": [
+    "population": {
+      "count": 1603797,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/philadelphiacountypennsylvania"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (City General Line)",
+      "department_name": "Philadelphia Streets Department",
+      "website_url": "https://www.philadelphiastreets.com/"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Mattresses and box springs MUST BE SEALED IN PLASTIC MATTRESS BAGS",
+      "placement_time": "By 7:00 AM on collection day, but no earlier than 7:00 PM the evening before",
+      "size_limits": "Up to two (2) bulk items per week. Each item must weigh less than 50 pounds."
+    },
+    "drop_off_locations": [
       {
-        "name": "Northeast Philadelphia Sanitation Convenience Center",
-        "address": "3901 Grant Ave., Philadelphia, PA 19114",
-        "phone": "(215) 685-8072",
-        "hours": "Monday through Saturday, 8 a.m.\u20136 p.m.",
-        "accepts_mattresses": true
+        "name": "West Philadelphia Sanitation Convenience Center",
+        "address": "5100 Grays Ave, Philadelphia, PA 19143",
+        "type": "Transfer Station",
+        "hours": "Mon-Sun 8am-6pm",
+        "notes": "Proof of Philadelphia residency required. Mattresses accepted."
       },
       {
         "name": "Northwest Philadelphia Sanitation Convenience Center",
-        "address": "Domino Lane & Umbria St., Philadelphia, PA 19128",
-        "phone": "(215) 685-8072",
-        "hours": "Monday through Saturday, 8 a.m.\u20136 p.m.",
-        "accepts_mattresses": true
+        "address": "300 Domino Lane, Philadelphia, PA 19128",
+        "type": "Transfer Station",
+        "hours": "Mon-Sun 8am-6pm",
+        "notes": "Proof of Philadelphia residency required. Mattresses accepted."
       },
       {
-        "name": "West Philadelphia Sanitation Convenience Center",
-        "address": "5100 Grays Ave., Philadelphia, PA 19143",
-        "phone": "(215) 685-8072",
-        "hours": "Monday through Saturday, 8 a.m.\u20136 p.m.",
-        "accepts_mattresses": true
+        "name": "Northeast Philadelphia Sanitation Convenience Center",
+        "address": "3901 Neill Drive, Philadelphia, PA 19136",
+        "type": "Transfer Station",
+        "hours": "Mon-Sun 8am-6pm",
+        "notes": "Proof of Philadelphia residency required. Mattresses accepted."
+      },
+      {
+        "name": "Central Philadelphia Sanitation Convenience Center (Strawberry Mansion)",
+        "address": "2601 W. Glenwood Ave., Philadelphia, PA 19132",
+        "type": "Transfer Station",
+        "hours": "Mon-Sun 8am-6pm",
+        "notes": "Proof of Philadelphia residency required. Mattresses accepted."
+      },
+      {
+        "name": "South Philadelphia Sanitation Convenience Center (Pier 78)",
+        "address": "333 Fort Mifflin Rd., Philadelphia, PA 19153",
+        "type": "Transfer Station",
+        "hours": "Mon-Sun 8am-6pm",
+        "notes": "Proof of Philadelphia residency required. Mattresses accepted."
       }
     ],
-    "pickup_service_available": true,
-    "pickup_phone": "(215) 686-8686",
-    "illegal_dumping_fine": "Up to $2,000",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.phila.gov/services/trash-recycling-pruning/",
-      "https://www.phila.gov/services/trash-recycling-pruning/dispose-of-large-items/",
-      "https://www.phila.gov/services/trash-recycling-pruning/drop-off-locations/",
-      "https://www.phila.gov/311/",
-      "https://www.phila.gov/services/clean-safe-communities/illegal-dumping-enforcement/",
-      "https://www.census.gov/quickfacts/fact/table/philadelphiacountyphiladelphia/PST045223"
-    ]
+    "illegal_dumping": {
+      "fine_amount": "$100 to $300",
+      "citation": "https://www.phila.gov/services/clean-safe-communities/report-illegal-dumping/"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.philadelphiastreets.com/",
+        "https://www.philadelphiastreets.com/sanitation/residential/bulk-trash-collection",
+        "https://www.philadelphiastreets.com/sanitation/residential/sanitation-convenience-centers",
+        "https://www.philadelphiastreets.com/sanitation/residential/trash-recycling",
+        "https://www.phila.gov/services/clean-safe-communities/report-illegal-dumping/",
+        "https://www.census.gov/quickfacts/philadelphiacountypennsylvania"
+      ],
+      "last_updated": "2024-05-15"
+    }
   },
   {
     "city_slug": "san-antonio-tx",
@@ -262,22 +444,74 @@
     "state_name": "Texas",
     "state_slug": "texas",
     "state_abbr": "TX",
-    "population": 1472909,
-    "mattress_rules": "Customers receive two (2) free bulk waste collections per year during their designated collection months. Any additional collections are subject to a fee. Mattresses and box springs must be completely wrapped and sealed in plastic to prevent the spread of bed bugs. Items must be placed on the curb/right-of-way in front of your home no earlier than 48 hours prior to your scheduled collection date, and no later than 6:00 a.m. on your collection day. Items must not exceed 8 cubic yards (the size of two small refrigerators). Schedule your collection by calling 311 or visiting sanantonio.gov/swmd to view your collection schedule.",
-    "dropoff_locations": [],
-    "pickup_service_available": true,
-    "pickup_phone": "(210) 207-6000",
-    "illegal_dumping_fine": "$500-$2,000",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.sanantonio.gov/swmd",
-      "https://www.sanantonio.gov/swmd/Residential/BulkWaste",
-      "https://www.sanantonio.gov/swmd/Residential/DropOffs",
-      "https://www.sanantonio.gov/311",
-      "https://www.sanantonio.gov/swmd/IllegalDumping",
-      "https://www.census.gov/quickfacts/fact/table/sanantoniocitytexas/PST045222"
-    ]
+    "population": {
+      "count": 1434625,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/fact/table/sanantoniocitytexas/PST045222"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (City General Line)",
+      "department_name": "San Antonio Solid Waste Management Department",
+      "website_url": "https://www.sanantonio.gov/swmd"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Mattresses must be wrapped in plastic to be collected at the curb and placed at least 3 feet from other carts.",
+      "placement_time": "Items must be curbside by 7 a.m. on your collection day.",
+      "size_limits": "No item greater than 8 feet in length or weighing more than 300 pounds."
+    },
+    "drop_off_locations": [
+      {
+        "name": "Bitters Neighborhood Drop-Off Center",
+        "address": "1800 Bitters Rd, San Antonio, TX 78216",
+        "type": "Heavy Trash",
+        "hours": "Tue-Sat 8am-5pm",
+        "notes": "Proof of residency required. Accepts bulky items, including mattresses."
+      },
+      {
+        "name": "Culebra Neighborhood Drop-Off Center",
+        "address": "7030 Culebra Rd, San Antonio, TX 78238",
+        "type": "Heavy Trash",
+        "hours": "Tue-Sat 8am-5pm",
+        "notes": "Proof of residency required. Accepts bulky items, including mattresses."
+      },
+      {
+        "name": "Frio City Rd Neighborhood Drop-Off Center",
+        "address": "1531 Frio City Rd, San Antonio, TX 78226",
+        "type": "Heavy Trash",
+        "hours": "Tue-Sat 8am-5pm",
+        "notes": "Proof of residency required. Accepts bulky items, including mattresses."
+      },
+      {
+        "name": "Rigsby Neighborhood Drop-Off Center",
+        "address": "3820 Rigsby Ave, San Antonio, TX 78222",
+        "type": "Heavy Trash",
+        "hours": "Tue-Sat 8am-5pm",
+        "notes": "Proof of residency required. Accepts bulky items, including mattresses."
+      }
+    ],
+    "illegal_dumping": {
+      "fine_amount": "Up to $4,000",
+      "citation": "City Code Chapter 15, Article III, Division 2, Section 15-45"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.sanantonio.gov/swmd",
+        "https://www.sanantonio.gov/swmd/Bulky",
+        "https://www.sanantonio.gov/SWMD/Services/Bulky-Waste/DropOff",
+        "https://www.sanantonio.gov/swmd/About/Environmental-Enforcement",
+        "https://www.census.gov/quickfacts/fact/table/sanantoniocitytexas/PST045222"
+      ],
+      "last_updated": "2026-02-14"
+    }
   },
   {
     "city_slug": "san-diego-ca",
@@ -285,29 +519,53 @@
     "state_name": "California",
     "state_slug": "california",
     "state_abbr": "CA",
-    "population": 1386932,
-    "mattress_rules": "Residential customers who receive City trash and recycling collection services can schedule free collection of large, bulky items, including mattresses. Customers are limited to four (4) bulky items per scheduled collection (e.g., one mattress and one box spring count as two items). Schedule a bulky item collection at least one day in advance; same-day collection is not available. All items must be placed at the curb (or in the alley) by 6 a.m. on your collection day, and not more than 24 hours in advance. Mattresses must be wrapped and sealed in plastic prior to collection to ensure the safety of collection crews and help prevent the spread of bed bugs.",
-    "dropoff_locations": [
+    "population": {
+      "count": 1386932,
+      "year": 2020,
+      "source": "https://www.census.gov/quickfacts/sandiegocitycalifornia"
+    },
+    "contacts": {
+      "official_phone": "858-694-7000",
+      "department_name": "Environmental Services Department",
+      "website_url": "https://www.sandiego.gov/environmental-services"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Mattresses and box springs must be completely covered with plastic (e.g., mattress bag, tarp or plastic sheeting) to protect collection crews from potential bed bug infestations.",
+      "placement_time": "Place items curbside by 6:30 a.m. on your collection day.",
+      "size_limits": "Items must not exceed 8 feet in length or weigh more than 200 pounds."
+    },
+    "drop_off_locations": [
       {
-        "name": "Miramar Landfill Buyback Center",
-        "address": "5165 Convoy St, San Diego, CA 92111",
-        "phone": "(858) 268-8971",
-        "hours": "Mon-Sat 7:30AM-4:30PM. Closed Sundays, New Year's Day, Thanksgiving Day, Christmas Day.",
-        "accepts_mattresses": true
+        "name": "Miramar Landfill",
+        "address": "5180 Convoy St., San Diego, CA 92111",
+        "type": "Landfill",
+        "hours": "Mon-Sun 7am-4:30pm (entrance closes 4pm)",
+        "notes": "Fees apply for disposal. Proof of residency may be required for certain services. Accepts mattresses, furniture, and other bulky items."
       }
     ],
-    "pickup_service_available": true,
-    "pickup_phone": "(858) 694-7000",
-    "illegal_dumping_fine": "Up to $10,000 and six months in jail or both. First offense littering/dumping fines range from $250 to $1,000, plus administrative fees.",
-    "last_updated": "2026-02-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://www.sandiego.gov/environmental-services/collection/bulky",
-      "https://www.sandiego.gov/environmental-services/recycling/mattress",
-      "https://www.sandiego.gov/environmental-services/miramarlandfill",
-      "https://www.sandiego.gov/environmental-services/code-compliance",
-      "https://www.census.gov/quickfacts/fact/table/sandiegocitycalifornia/PST045222"
-    ]
+    "illegal_dumping": {
+      "fine_amount": "Up to $10,000 per incident",
+      "citation": "City of San Diego Municipal Code Sections 66.0125 and 66.0127"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.sandiego.gov/environmental-services/collection/bulky-item-collection",
+        "https://www.sandiego.gov/environmental-services/refuse-disposal-recycling-facilities",
+        "https://www.sandiego.gov/environmental-services/miramar-landfill",
+        "https://www.sandiego.gov/environmental-services/services/illegal-dumping",
+        "https://www.census.gov/quickfacts/sandiegocitycalifornia"
+      ],
+      "last_updated": "2026-02-14"
+    }
   },
   {
     "city_slug": "dallas-tx",
@@ -315,36 +573,74 @@
     "state_name": "Texas",
     "state_slug": "texas",
     "state_abbr": "TX",
-    "population": 1304379,
-    "mattress_rules": "Mattresses and box springs must be completely sealed in a heavy-duty plastic bag or wrapped tightly in plastic sheeting. Place items at your front curb by 7 a.m. on the first day of your designated monthly collection week. Do not place items behind an obstruction or overhanging wire, or too close to your mailbox, gas meter, or other structures. There are no fees associated with this service.",
-    "dropoff_locations": [
-      {
-        "name": "McCommas Bluff Landfill",
-        "address": "5100 Youngblood Rd, Dallas, TX 75241",
-        "phone": "(214) 670-0901",
-        "hours": "Mon-Sat: 7:00 a.m. - 5:00 p.m.",
-        "accepts_mattresses": true
-      },
+    "population": {
+      "count": 1304379,
+      "year": 2020,
+      "source": "https://data.census.gov/table/DECENNIALDP2020.P1?q=Dallas+city,+Texas"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (City General Line)",
+      "department_name": "Dallas Sanitation Services",
+      "website_url": "https://www.dallas.gov/departments/sanitation/"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Mattresses fall under general bulk waste rules. Items that are heavier than 150 pounds or larger than 8 feet will not be collected by the City of Dallas Bulk & Brush Collection.",
+      "placement_time": "Place your bulk waste neatly at the curb by 7:00 a.m. on your collection day. Bulk waste must not be placed out more than seven days prior to your collection day.",
+      "size_limits": "All items must be less than 8 feet long and weigh no more than 150 lbs."
+    },
+    "drop_off_locations": [
       {
         "name": "Northwest Transfer Station",
-        "address": "9500 Warfield Rd, Dallas, TX 75220",
-        "phone": "(214) 670-6582",
-        "hours": "Mon-Sat: 7:00 a.m. - 5:00 p.m.",
-        "accepts_mattresses": true
+        "address": "9740 Harry Hines Blvd., Dallas, TX 75220",
+        "type": "Transfer Station",
+        "hours": "Mon-Fri 7am-5pm, Sat 7am-3pm",
+        "notes": "Proof of Dallas residency required, accepts mattresses and bulk waste."
+      },
+      {
+        "name": "South Central Transfer Station",
+        "address": "4660 Merrifield Rd., Dallas, TX 75237",
+        "type": "Transfer Station",
+        "hours": "Mon-Fri 7am-5pm, Sat 7am-3pm",
+        "notes": "Proof of Dallas residency required, accepts mattresses and bulk waste."
+      },
+      {
+        "name": "Bachman Neighborhood Depository",
+        "address": "11000 N. Stemmons Fwy., Dallas, TX 75229",
+        "type": "Heavy Trash",
+        "hours": "Mon, Tue, Thu-Sat 8am-5pm (Closed Wed & Sun)",
+        "notes": "Proof of Dallas residency required, accepts mattresses and bulk waste."
+      },
+      {
+        "name": "McCommas Bluff Landfill",
+        "address": "5100 Youngblood Rd., Dallas, TX 75241",
+        "type": "Landfill",
+        "hours": "Mon-Sat 7am-5pm",
+        "notes": "Fees apply, proof of Dallas residency may be required for residential rates, accepts mattresses and general waste."
       }
     ],
-    "pickup_service_available": true,
-    "pickup_phone": "(214) 670-3111",
-    "illegal_dumping_fine": "Up to $4,000",
-    "last_updated": "2024-05-14",
-    "data_confidence": "HIGH",
-    "sources_checked": [
-      "https://dallascityhall.com/departments/sanitation/Pages/default.aspx",
-      "https://dallascityhall.com/departments/sanitation/Pages/residential-bulk-item-collection.aspx",
-      "https://dallascityhall.com/departments/sanitation/Pages/transfer-stations-landfill.aspx",
-      "https://dallascityhall.com/pages/311.aspx",
-      "https://library.municode.com/tx/dallas/codes/code_of_ordinances?nodeId=CH18SOWAMA",
-      "https://www.census.gov/quickfacts/fact/table/dallascitytexas/PST045222"
-    ]
+    "illegal_dumping": {
+      "fine_amount": "Up to $500",
+      "citation": "City of Dallas Sanitation Services: Illegal Dumping (Class C Misdemeanor)"
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": true
+      },
+      "sources_used": [
+        "https://www.dallas.gov/departments/sanitation/",
+        "https://www.dallas.gov/departments/sanitation/residential-services/bulk-and-brush-collection/",
+        "https://www.dallas.gov/departments/sanitation/residential-services/bulk-and-brush-collection/bulk-and-brush-faqs/",
+        "https://www.dallas.gov/departments/sanitation/residential-services/city-of-dallas-drop-off-locations/",
+        "https://www.dallas.gov/departments/sanitation/residential-services/illegal-dumping/",
+        "https://data.census.gov/table/DECENNIALDP2020.P1?q=Dallas+city,+Texas"
+      ],
+      "last_updated": "2024-05-18"
+    }
   }
 ]
