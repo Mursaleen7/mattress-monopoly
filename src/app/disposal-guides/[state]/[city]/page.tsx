@@ -309,48 +309,48 @@ export default async function CityPage({ params }: PageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="py-20 bg-[#d1e8f5] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
         </div>
 
         <div className="relative max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-white font-bold text-5xl mb-6">
+          <h2 className="text-gray-900 font-bold text-5xl mb-6">
             Skip the Hassle
           </h2>
-          <p className="text-blue-100 text-xl mb-12 max-w-2xl mx-auto">
+          <p className="text-gray-700 text-xl mb-12 max-w-2xl mx-auto">
             Professional pickup service available in {cityData.city_name}. Same-day or next-day scheduling.
           </p>
 
           {/* Benefits */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-white/80 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-white font-bold text-lg mb-2">Fast Service</h3>
-              <p className="text-blue-200 text-sm">As soon as tomorrow</p>
+              <h3 className="text-gray-900 font-bold text-lg mb-2">Fast Service</h3>
+              <p className="text-gray-600 text-sm">As soon as tomorrow</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-white/80 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-white font-bold text-lg mb-2">No Heavy Lifting</h3>
-              <p className="text-blue-200 text-sm">We do all the work</p>
+              <h3 className="text-gray-900 font-bold text-lg mb-2">No Heavy Lifting</h3>
+              <p className="text-gray-600 text-sm">We do all the work</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-white/80 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-white font-bold text-lg mb-2">Insured & Vetted</h3>
-              <p className="text-blue-200 text-sm">Trusted professionals</p>
+              <h3 className="text-gray-900 font-bold text-lg mb-2">Insured & Vetted</h3>
+              <p className="text-gray-600 text-sm">Trusted professionals</p>
             </div>
           </div>
 
@@ -361,7 +361,7 @@ export default async function CityPage({ params }: PageProps) {
             </svg>
           </Link>
 
-          <p className="text-blue-200 text-sm mt-6">
+          <p className="text-gray-600 text-sm mt-6">
             ✓ Vetted partners • ✓ Insured • ✓ Eco-friendly disposal
           </p>
         </div>
