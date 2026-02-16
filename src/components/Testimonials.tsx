@@ -23,16 +23,16 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-[#f8f9fa]">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-[#e8734a]/10 text-[#e8734a] rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 bg-gray-100 text-[#1A1A1A] rounded-full text-sm font-bold mb-4 uppercase tracking-wide">
             Customer Stories
           </span>
-          <h2 className="text-[#1a2830] font-bold text-4xl md:text-5xl mb-4 text-balance">
+          <h2 className="text-[#1A1A1A] font-bold text-4xl md:text-5xl mb-4">
             What our customers say
           </h2>
-          <p className="text-[#5a6e78] text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#808080] text-lg max-w-2xl mx-auto leading-relaxed">
             Real experiences from people who made disposal simple
           </p>
         </div>
@@ -41,15 +41,15 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-white rounded-2xl p-8 shadow-sm border border-[#e2e8ed] hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-2xl p-8 shadow-md border border-gray-200 hover:shadow-lg hover:border-[#0055FF] transition-all duration-300"
             >
-              <svg className="w-8 h-8 text-[#e2e8ed] mb-4" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 text-[#FFD700] mb-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
-              <blockquote className="text-[#3a4d54] leading-relaxed mb-6">
+              <blockquote className="text-[#1A1A1A] leading-relaxed mb-6">
                 {testimonial.quote}
               </blockquote>
-              <div className="flex items-center gap-4 pt-4 border-t border-[#e2e8ed]">
+              <div className="flex items-center gap-4 pt-4 border-t border-gray-300">
                 <div className="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0">
                   <Image
                     src={testimonial.image}
@@ -59,8 +59,8 @@ export default function Testimonials() {
                   />
                 </div>
                 <div>
-                  <p className="text-[#1a2830] font-semibold text-sm">{testimonial.name}</p>
-                  <p className="text-[#8a9ca5] text-xs">{testimonial.location}</p>
+                  <p className="text-[#1A1A1A] font-semibold text-sm">{testimonial.name}</p>
+                  <p className="text-[#808080] text-xs">{testimonial.location}</p>
                 </div>
               </div>
             </div>

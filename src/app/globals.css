@@ -2,14 +2,20 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a2830;
-  --muted: #f8f9fa;
-  --muted-foreground: #5a6e78;
-  --border: #e2e8ed;
-  --primary: #e8734a;
+  --foreground: #1A1A1A;
+  --muted: #f5f5f5;
+  --muted-foreground: #808080;
+  --border: #e5e7eb;
+  --primary: #1A1A1A;
   --primary-foreground: #ffffff;
-  --accent: #1a2830;
+  --accent: #0055FF;
   --accent-foreground: #ffffff;
+  --asphalt-black: #1A1A1A;
+  --dark-charcoal: #2B2B2B;
+  --taxi-yellow: #FFD700;
+  --electric-blue: #0055FF;
+  --steel-grey: #808080;
+  --silver: #A9A9A9;
 }
 
 @theme inline {
@@ -37,6 +43,13 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Better text rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Remove dark mode override to keep consistent light theme */

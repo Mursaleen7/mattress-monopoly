@@ -77,7 +77,7 @@ export default function LocationMap({ locations, cityName }: LocationMapProps) {
               icon: {
                 path: google.maps.SymbolPath.CIRCLE,
                 scale: 10,
-                fillColor: '#ea580c',
+                fillColor: '#0055FF',
                 fillOpacity: 1,
                 strokeColor: '#ffffff',
                 strokeWeight: 2,
@@ -110,7 +110,7 @@ export default function LocationMap({ locations, cityName }: LocationMapProps) {
                       href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #ea580c; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 14px;"
+                      style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #FFD700; color: #1A1A1A; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 14px;"
                     >
                       Get Directions
                     </a>
@@ -159,7 +159,7 @@ export default function LocationMap({ locations, cityName }: LocationMapProps) {
       {!process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY && (
         <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
           <div className="text-center p-6">
-            <svg className="w-16 h-16 text-orange-600 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-16 h-16 text-[#0055FF] mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
             </svg>
             <p className="text-gray-600 font-semibold mb-2">Interactive Map</p>

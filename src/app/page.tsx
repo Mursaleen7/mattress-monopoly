@@ -18,36 +18,36 @@ export default function Home() {
       <HowItWorks />
 
       {/* Cities Section */}
-      <section id="cities" className="bg-[#f8f9fa] py-24">
+      <section id="cities" className="bg-white py-32">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-[#1a2830]/10 text-[#1a2830] rounded-full text-sm font-semibold mb-4">
+          <div className="text-center mb-20">
+            <span className="inline-block px-4 py-2 bg-gray-100 text-[#1A1A1A] rounded-full text-xs font-bold mb-6 uppercase tracking-wider">
               Available Locations
             </span>
-            <h2 className="text-[#1a2830] font-bold text-4xl md:text-5xl mb-4 text-balance">
+            <h2 className="text-[#1A1A1A] font-black text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight">
               Browse by City
             </h2>
-            <p className="text-[#5a6e78] text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#808080] text-xl max-w-2xl mx-auto leading-relaxed">
               Select your city to view local disposal regulations and options
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {citiesData.map((city) => (
               <Link
                 key={`${city.state_slug}-${city.city_slug}`}
                 href={`/disposal-guides/${city.state_slug}/${city.city_slug}`}
-                className="group flex items-center justify-between bg-white rounded-xl p-5 border border-[#e2e8ed] hover:border-[#e8734a] hover:shadow-md transition-all duration-300"
+                className="group flex items-center justify-between bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-[#0055FF] hover:shadow-xl transition-all duration-300"
               >
                 <div>
-                  <h3 className="font-semibold text-[#1a2830] group-hover:text-[#e8734a] transition-colors">
+                  <h3 className="font-bold text-lg text-[#1A1A1A] group-hover:text-[#0055FF] transition-colors">
                     {city.city_name}
                   </h3>
-                  <p className="text-[#8a9ca5] text-sm mt-0.5">{city.state_name}</p>
+                  <p className="text-[#808080] text-sm mt-1">{city.state_name}</p>
                 </div>
-                <div className="w-8 h-8 bg-[#f0f3f5] rounded-lg flex items-center justify-center group-hover:bg-[#e8734a] transition-colors duration-300">
-                  <svg className="w-4 h-4 text-[#8a9ca5] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center group-hover:bg-[#FFD700] transition-all duration-300">
+                  <svg className="w-5 h-5 text-[#808080] group-hover:text-[#1A1A1A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
               </Link>

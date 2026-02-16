@@ -35,12 +35,12 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image side */}
-          <div className="flex-1 relative max-w-md mx-auto lg:mx-0">
-            <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5]">
+          <div className="flex-1 relative max-w-lg mx-auto lg:mx-0">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
               <Image
                 src="/images/booking-process.jpg"
                 alt="Booking a pickup service on a smartphone"
@@ -52,31 +52,31 @@ export default function HowItWorks() {
 
           {/* Steps side */}
           <div className="flex-1">
-            <span className="inline-block px-4 py-2 bg-[#e8734a]/10 text-[#e8734a] rounded-full text-sm font-semibold mb-4">
+            <span className="inline-block px-4 py-2 bg-gray-100 text-[#1A1A1A] rounded-full text-xs font-bold mb-6 uppercase tracking-wider">
               How It Works
             </span>
-            <h2 className="text-[#1a2830] font-bold text-4xl md:text-5xl mb-6 text-balance">
+            <h2 className="text-[#1A1A1A] font-black text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight">
               Three simple steps
             </h2>
-            <p className="text-[#5a6e78] text-lg mb-12 leading-relaxed">
+            <p className="text-[#808080] text-xl mb-14 leading-relaxed">
               Our streamlined process gets your items out of the way fast, whether you do it yourself or let us handle it.
             </p>
 
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-10">
               {steps.map((step, index) => (
-                <div key={step.number} className="flex gap-5 group">
+                <div key={step.number} className="flex gap-6 group">
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-xl bg-[#e8734a]/10 text-[#e8734a] flex items-center justify-center group-hover:bg-[#e8734a] group-hover:text-white transition-all duration-300">
+                    <div className="w-14 h-14 rounded-2xl bg-gray-100 text-[#1A1A1A] flex items-center justify-center group-hover:bg-[#FFD700] group-hover:text-[#1A1A1A] transition-all duration-300 shadow-md">
                       {step.icon}
                     </div>
                     {index < steps.length - 1 && (
-                      <div className="w-px flex-1 bg-[#e2e8ed] mt-3" />
+                      <div className="w-0.5 flex-1 bg-gray-200 mt-4" />
                     )}
                   </div>
-                  <div className="pb-6">
-                    <p className="text-[#e8734a] text-xs font-bold tracking-wider uppercase mb-1">Step {step.number}</p>
-                    <h3 className="text-[#1a2830] font-bold text-lg mb-1.5">{step.title}</h3>
-                    <p className="text-[#5a6e78] leading-relaxed text-sm">{step.description}</p>
+                  <div className="pb-8">
+                    <p className="text-[#808080] text-xs font-bold tracking-wider uppercase mb-2">Step {step.number}</p>
+                    <h3 className="text-[#1A1A1A] font-bold text-xl mb-2">{step.title}</h3>
+                    <p className="text-[#808080] leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}

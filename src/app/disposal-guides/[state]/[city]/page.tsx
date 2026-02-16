@@ -152,8 +152,8 @@ export default async function CityPage({ params }: PageProps) {
             {/* Self-Haul / Curbside */}
             <div className="bg-white rounded-2xl border border-[#e2e8ed] p-6 hover:border-[#1a2830] hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-[#0055FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                   </svg>
                 </div>
@@ -161,7 +161,7 @@ export default async function CityPage({ params }: PageProps) {
                   <h3 className="font-bold text-[#1a2830]">
                     {cityData.curbside_rules.is_available ? 'Curbside Pickup' : 'Self-Haul Drop-off'}
                   </h3>
-                  <p className="text-emerald-600 text-xs font-semibold">Free</p>
+                  <p className="text-[#0055FF] text-xs font-semibold">Free</p>
                 </div>
               </div>
               <p className="text-[#5a6e78] text-sm leading-relaxed">
@@ -253,13 +253,13 @@ export default async function CityPage({ params }: PageProps) {
           </div>
 
           {/* Illegal Dumping Warning */}
-          <div className="flex items-start gap-4 bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10">
-            <svg className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+          <div className="flex items-start gap-4 bg-yellow-50 border border-[#FFD700] rounded-xl p-5 mb-10">
+            <svg className="w-5 h-5 text-[#1A1A1A] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
             </svg>
             <div>
-              <p className="text-amber-900 font-semibold text-sm">Illegal dumping fine: {cityData.illegal_dumping.fine_amount}</p>
-              <p className="text-amber-800 text-xs mt-1">{cityData.illegal_dumping.citation}</p>
+              <p className="text-[#1A1A1A] font-semibold text-sm">Illegal dumping fine: {cityData.illegal_dumping.fine_amount}</p>
+              <p className="text-[#808080] text-xs mt-1">{cityData.illegal_dumping.citation}</p>
             </div>
           </div>
 
