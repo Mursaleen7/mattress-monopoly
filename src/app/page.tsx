@@ -37,16 +37,16 @@ export default function Home() {
               <Link
                 key={`${city.state_slug}-${city.city_slug}`}
                 href={`/disposal-guides/${city.state_slug}/${city.city_slug}`}
-                className="group flex items-center justify-between bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-[#0055FF] hover:shadow-xl transition-all duration-300"
+                className="group flex items-center justify-between bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-[#0055FF] hover:shadow-xl transition-all duration-500 ease-out transform hover:-translate-y-1"
               >
                 <div>
-                  <h3 className="font-bold text-lg text-[#1A1A1A] group-hover:text-[#0055FF] transition-colors">
+                  <h3 className="font-bold text-lg text-[#1A1A1A] group-hover:text-[#0055FF] transition-colors duration-500">
                     {city.city_name}
                   </h3>
-                  <p className="text-[#808080] text-sm mt-1">{city.state_name}</p>
+                  <p className="text-[#808080] text-sm mt-1 transition-colors duration-500">{city.state_name}</p>
                 </div>
-                <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center group-hover:bg-[#FFD700] transition-all duration-300">
-                  <svg className="w-5 h-5 text-[#808080] group-hover:text-[#1A1A1A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center group-hover:bg-[#FFD700] transition-all duration-500 group-hover:scale-110">
+                  <svg className="w-5 h-5 text-[#808080] group-hover:text-[#1A1A1A] transition-all duration-500 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>

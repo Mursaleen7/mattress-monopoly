@@ -25,16 +25,16 @@ export default function CTASection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/book"
-            className="inline-flex items-center gap-3 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] px-10 py-4 rounded-lg text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group"
+            className="inline-flex items-center gap-3 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] px-10 py-4 rounded-lg text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-500 ease-out group transform hover:scale-105"
           >
             Book Pickup Now
-            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </Link>
           <Link
             href="/#cities"
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 hover:border-white/50 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-500 ease-out transform hover:scale-105"
           >
             Browse Cities
           </Link>

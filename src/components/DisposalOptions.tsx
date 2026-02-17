@@ -19,15 +19,15 @@ export default function DisposalOptions() {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Card 1 - Self-Haul */}
-          <div className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 hover:border-gray-300 transform hover:-translate-y-2">
+          <div className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 ease-out border-2 border-gray-200 hover:border-gray-300 transform hover:-translate-y-2">
             <div className="relative h-64 overflow-hidden">
               <Image
                 src="/images/selfhaul.jpg"
                 alt="Loading items onto a pickup truck for self-haul disposal"
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent" />
+              <div className="absolute inset-0" />
               <div className="absolute top-6 right-6">
                 <span className="px-4 py-2 bg-[#0055FF] text-white rounded-full text-sm font-bold shadow-lg">
                   FREE
@@ -62,7 +62,7 @@ export default function DisposalOptions() {
                 </li>
               </ul>
 
-              <Link href="/#cities" className="flex w-full items-center justify-center gap-2 bg-[#2B2B2B] hover:bg-[#1A1A1A] text-white py-4 rounded-xl font-bold transition-all duration-300 text-base group/btn">
+              <Link href="/#cities" className="flex w-full items-center justify-center gap-2 bg-[#2B2B2B] hover:bg-[#1A1A1A] text-white py-4 rounded-xl font-bold transition-all duration-500 ease-out text-base group/btn transform hover:scale-[1.02]">
                 Find Drop-off Sites
                 <svg className="w-5 h-5 group-hover/btn:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -72,15 +72,15 @@ export default function DisposalOptions() {
           </div>
 
           {/* Card 2 - Paid Pickup */}
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-4 border-[#FFD700]">
+          <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out transform hover:-translate-y-2 border-4 border-[#FFD700]">
             <div className="relative h-64 overflow-hidden">
               <Image
                 src="/images/paidpickup.jpg"
                 alt="Professional crew handling a pickup service"
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/20 to-transparent" />
+              <div className="absolute inset-0" />
               <div className="absolute top-6 right-6">
                 <span className="px-4 py-2 bg-[#FFD700] text-[#1A1A1A] rounded-full text-sm font-bold shadow-lg">
                   POPULAR
@@ -115,7 +115,7 @@ export default function DisposalOptions() {
                 </li>
               </ul>
 
-              <Link href="/book" className="flex w-full items-center justify-center gap-2 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] py-4 rounded-xl font-bold transition-all duration-300 text-base group/btn shadow-xl">
+              <Link href="/book" className="flex w-full items-center justify-center gap-2 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] py-4 rounded-xl font-bold transition-all duration-500 ease-out text-base group/btn shadow-xl transform hover:scale-[1.02]">
                 Book Pickup Now
                 <svg className="w-5 h-5 group-hover/btn:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />

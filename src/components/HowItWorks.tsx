@@ -42,7 +42,7 @@ export default function HowItWorks() {
           <div className="flex-1 relative max-w-lg mx-auto lg:mx-0">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
               <Image
-                src="/images/booking-process.jpg"
+                src="/images/finalprocess.jpg"
                 alt="Booking a pickup service on a smartphone"
                 fill
                 className="object-cover"
@@ -66,7 +66,7 @@ export default function HowItWorks() {
               {steps.map((step, index) => (
                 <div key={step.number} className="flex gap-6 group">
                   <div className="flex flex-col items-center">
-                    <div className="w-14 h-14 rounded-2xl bg-gray-100 text-[#1A1A1A] flex items-center justify-center group-hover:bg-[#FFD700] group-hover:text-[#1A1A1A] transition-all duration-300 shadow-md">
+                    <div className="w-14 h-14 rounded-2xl bg-gray-100 text-[#1A1A1A] flex items-center justify-center group-hover:bg-[#FFD700] group-hover:text-[#1A1A1A] transition-all duration-500 ease-out shadow-md group-hover:scale-110">
                       {step.icon}
                     </div>
                     {index < steps.length - 1 && (
