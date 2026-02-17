@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function DisposalOptions() {
   return (
-    <section className="py-32 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20">
+    <section className="py-20 sm:py-24 md:py-32 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <span className="inline-block px-4 py-2 bg-gray-100 text-[#1A1A1A] rounded-full text-xs font-bold mb-6 uppercase tracking-wider">
             Choose Your Method
           </span>
@@ -17,7 +17,7 @@ export default function DisposalOptions() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {/* Card 1 - Self-Haul */}
           <div className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 ease-out border-2 border-gray-200 hover:border-gray-300 transform hover:-translate-y-2">
             <div className="relative h-64 overflow-hidden">
@@ -35,7 +35,7 @@ export default function DisposalOptions() {
               </div>
             </div>
 
-            <div className="p-10">
+            <div className="p-8 sm:p-10">
               <h3 className="font-black text-3xl mb-4 text-[#1A1A1A]">Self-Haul</h3>
               <p className="text-[#808080] text-lg mb-8 leading-relaxed">
                 Find nearby mattress drop-off sites and follow local regulations. Ideal if you have a vehicle and prefer to handle it yourself.
@@ -62,7 +62,7 @@ export default function DisposalOptions() {
                 </li>
               </ul>
 
-              <Link href="/#cities" className="flex w-full items-center justify-center gap-2 bg-[#2B2B2B] hover:bg-[#1A1A1A] text-white py-4 rounded-xl font-bold transition-all duration-500 ease-out text-base group/btn transform hover:scale-[1.02]">
+              <Link href="/#cities" className="flex w-full items-center justify-center gap-2 bg-[#2B2B2B] hover:bg-[#1A1A1A] text-white py-4 min-h-[48px] rounded-xl font-bold transition-all duration-500 ease-out text-base group/btn transform hover:scale-[1.02]" aria-label="Find drop-off sites in your city">
                 Find Drop-off Sites
                 <svg className="w-5 h-5 group-hover/btn:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -72,7 +72,7 @@ export default function DisposalOptions() {
           </div>
 
           {/* Card 2 - Paid Pickup */}
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out transform hover:-translate-y-2 border-4 border-[#FFD700]">
+          <div className="group relative bg-[#1A1A1A] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out transform hover:-translate-y-2 border-4 border-[#FFD700]">
             <div className="relative h-64 overflow-hidden">
               <Image
                 src="/images/paidpickup.jpg"
@@ -115,7 +115,7 @@ export default function DisposalOptions() {
                 </li>
               </ul>
 
-              <Link href="/book" className="flex w-full items-center justify-center gap-2 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] py-4 rounded-xl font-bold transition-all duration-500 ease-out text-base group/btn shadow-xl transform hover:scale-[1.02]">
+              <Link href="/book" className="flex w-full items-center justify-center gap-2 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] py-4 min-h-[48px] rounded-xl font-bold transition-all duration-500 ease-out text-base group/btn shadow-xl transform hover:scale-[1.02]" aria-label="Book professional mattress pickup service">
                 Book Pickup Now
                 <svg className="w-5 h-5 group-hover/btn:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />

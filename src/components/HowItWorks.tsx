@@ -35,7 +35,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-32 bg-white">
+    <section id="how-it-works" className="py-32 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-20">
           {/* Image side */}

@@ -11,7 +11,7 @@ export default function HeroSection() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const router = useRouter();
 
-  const phrases = ['Without The Truck', 'Without The Fines', 'Without The Bedbugs'];
+  const phrases = ['Without the truck', 'Without the fines', 'Without the bedbugs'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -138,12 +138,12 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed font-light px-4">
+          <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed font-light px-4">
             Find local disposal regulations and book professional pickup services
           </p>
 
-          {/* Search Bar */}
-          <div className="max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 px-4">
+          {/* Search Bar - Primary CTA */}
+          <div className="max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             <form onSubmit={handleSearch} className="relative">
               <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-transparent focus-within:border-[#0055FF] transition-all">
                 <div className="flex items-center pl-4 sm:pl-6 pr-3 pt-4 sm:pt-0">
@@ -167,7 +167,8 @@ export default function HeroSection() {
                 />
                 <button
                   type="submit"
-                  className="m-2 px-6 sm:px-10 py-3 sm:py-4 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] rounded-xl font-bold text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                  className="m-2 min-h-[44px] px-6 sm:px-10 py-3 sm:py-4 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] rounded-xl font-bold text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                  aria-label="Search for your city"
                 >
                   <span className="hidden sm:inline">Search</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,7 +214,13 @@ export default function HeroSection() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
                       <p className="text-gray-600 font-medium mb-1">No cities found</p>
-                      <p className="text-sm text-gray-500">Try searching for: Austin, New York, Los Angeles, Chicago, Houston, Phoenix, Philadelphia, San Antonio, San Diego, or Dallas</p>
+                      <p className="text-sm text-gray-500 mb-4">Try searching for: Austin, New York, Los Angeles, Chicago, Houston, Phoenix, Philadelphia, San Antonio, San Diego, or Dallas</p>
+                      <button
+                        onClick={() => setSearchQuery('')}
+                        className="text-[#0055FF] hover:text-[#0044CC] font-semibold text-sm transition-colors"
+                      >
+                        Clear search
+                      </button>
                     </div>
                   )}
                 </div>
@@ -221,11 +228,21 @@ export default function HeroSection() {
             </form>
           </div>
 
+          {/* Help Link - Secondary action */}
+          <div className="mb-8 sm:mb-10">
+            <a href="#how-it-works" className="text-white/70 hover:text-white text-sm font-medium transition-colors inline-flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white/10">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              How it works
+            </a>
+          </div>
+
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 text-xs sm:text-sm text-white/90 px-4">
-            <span className="flex items-center gap-2 sm:gap-2.5">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
-                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
+          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 md:gap-12 text-xs sm:text-sm text-white/90 px-4">
+            <span className="flex items-center gap-2.5 sm:gap-3">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
+                <svg className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
@@ -239,9 +256,9 @@ export default function HeroSection() {
               </div>
               <span className="font-medium">Same-Day Service</span>
             </span>
-            <span className="flex items-center gap-2 sm:gap-2.5">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
-                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
+            <span className="flex items-center gap-2.5 sm:gap-3">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
+                <svg className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
