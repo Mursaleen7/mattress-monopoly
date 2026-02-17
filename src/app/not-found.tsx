@@ -49,10 +49,10 @@ export default function NotFound() {
               <svg className="w-5 h-5 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
               </svg>
-              <h3 className="font-bold text-xl text-[#1A1A1A]">Need Disposal Now?</h3>
+              <h3 className="font-bold text-xl text-[#1A1A1A]">Need Mattress Disposal Now?</h3>
             </div>
             <p className="text-[#808080] mb-6">
-              In the meantime, you can still book a professional pickup service in your area
+              In the meantime, you can still book a professional mattress pickup service in your area
             </p>
             <Link
               href="/book"

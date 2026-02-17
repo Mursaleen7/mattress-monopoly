@@ -19,15 +19,15 @@ export default function DisposalOptions() {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Card 1 - Self-Haul */}
-          <div className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 hover:border-gray-300">
+          <div className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 hover:border-gray-300 transform hover:-translate-y-2">
             <div className="relative h-64 overflow-hidden">
               <Image
-                src="/images/self-haul.jpg"
+                src="/images/selfhaul.jpg"
                 alt="Loading items onto a pickup truck for self-haul disposal"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent" />
               <div className="absolute top-6 right-6">
                 <span className="px-4 py-2 bg-[#0055FF] text-white rounded-full text-sm font-bold shadow-lg">
                   FREE
@@ -38,7 +38,7 @@ export default function DisposalOptions() {
             <div className="p-10">
               <h3 className="font-black text-3xl mb-4 text-[#1A1A1A]">Self-Haul</h3>
               <p className="text-[#808080] text-lg mb-8 leading-relaxed">
-                Find nearby drop-off sites and follow local regulations. Ideal if you have a vehicle and prefer to handle it yourself.
+                Find nearby mattress drop-off sites and follow local regulations. Ideal if you have a vehicle and prefer to handle it yourself.
               </p>
 
               <ul className="flex flex-col gap-4 mb-10">
@@ -75,12 +75,12 @@ export default function DisposalOptions() {
           <div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-4 border-[#FFD700]">
             <div className="relative h-64 overflow-hidden">
               <Image
-                src="/images/paid-pickup.jpg"
+                src="/images/paidpickup.jpg"
                 alt="Professional crew handling a pickup service"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/20 to-transparent" />
               <div className="absolute top-6 right-6">
                 <span className="px-4 py-2 bg-[#FFD700] text-[#1A1A1A] rounded-full text-sm font-bold shadow-lg">
                   POPULAR
@@ -91,7 +91,7 @@ export default function DisposalOptions() {
             <div className="bg-[#1A1A1A] p-10">
               <h3 className="font-black text-3xl mb-4 text-white">Paid Pickup</h3>
               <p className="text-white/90 text-lg mb-8 leading-relaxed">
-                Professional team removes items from inside your home. Fast, insured, and completely hassle-free.
+                Professional team removes your mattress from inside your home. Fast, insured, and completely hassle-free.
               </p>
 
               <ul className="flex flex-col gap-4 mb-10">

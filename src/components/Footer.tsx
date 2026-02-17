@@ -14,7 +14,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Making bulk item disposal simple, eco-friendly, and accessible for everyone.
+              Making mattress disposal simple, eco-friendly, and accessible for everyone.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 flex items-center justify-center transition-all group">

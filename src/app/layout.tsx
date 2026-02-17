@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DisposalGrid | Mattress & Bulk Item Disposal Made Simple",
+  title: "DisposalGrid | Mattress Disposal Made Simple",
   description: "Find local mattress disposal regulations and book professional eco-friendly pickup services in your city. Trusted by thousands of homeowners nationwide.",
-  keywords: ["mattress disposal", "mattress recycling", "bulk trash pickup", "furniture disposal", "eco-friendly disposal", "junk removal"],
+  keywords: ["mattress disposal", "mattress recycling", "mattress pickup", "dispose of mattress", "eco-friendly mattress disposal", "mattress removal"],
   openGraph: {
-    title: "DisposalGrid | Mattress & Bulk Item Disposal Made Simple",
-    description: "Find local disposal rules and book professional pickup services in seconds.",
+    title: "DisposalGrid | Mattress Disposal Made Simple",
+    description: "Find local mattress disposal rules and book professional pickup services in seconds.",
     type: "website",
   },
 };

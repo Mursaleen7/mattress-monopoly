@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: 'Sarah Mitchell',
     location: 'Austin, TX',
-    quote: 'I was dreading getting rid of our old furniture. Booked a pickup on Monday, they came Tuesday morning. The crew was professional, friendly, and had everything out in under 10 minutes.',
+    quote: 'I was dreading getting rid of our old mattress. Booked a pickup on Monday, they came Tuesday morning. The crew was professional, friendly, and had everything out in under 10 minutes.',
     image: '/images/testimonial-1.jpg',
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: 'Linda Chen',
     location: 'Portland, OR',
-    quote: 'As a senior living alone, I could not move heavy items myself. The pickup team was gentle, respectful, and took care of everything. They even cleaned up afterward.',
+    quote: 'As a senior living alone, I could not move my old mattress myself. The pickup team was gentle, respectful, and took care of everything. They even cleaned up afterward.',
     image: '/images/testimonial-3.jpg',
   },
 ];
