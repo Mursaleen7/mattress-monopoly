@@ -41,6 +41,10 @@ html, body {
   position: relative;
 }
 
+html {
+  background: #1A1A1A;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -70,6 +74,7 @@ html {
 @supports (-webkit-touch-callout: none) {
   html {
     height: -webkit-fill-available;
+    background: #1A1A1A;
   }
   
   body {
@@ -84,26 +89,11 @@ html {
     min-height: -webkit-fill-available;
   }
   
-  /* Make the top safe area match header color */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: env(safe-area-inset-top);
-    background: #1A1A1A;
-    z-index: 9999;
+  /* Extend header background into safe area */
+  header {
+    margin-top: calc(-1 * env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
   }
-}
-
-/* Safe area utilities */
-.pt-safe {
-  padding-top: env(safe-area-inset-top);
-}
-
-.pb-safe {
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Prevent overscroll bounce on iOS */
