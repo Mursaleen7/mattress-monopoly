@@ -75,12 +75,35 @@ html {
   body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
   }
   
   main {
     min-height: 100vh;
     min-height: -webkit-fill-available;
   }
+  
+  /* Make the top safe area match header color */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: env(safe-area-inset-top);
+    background: #1A1A1A;
+    z-index: 9999;
+  }
+}
+
+/* Safe area utilities */
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Prevent overscroll bounce on iOS */
