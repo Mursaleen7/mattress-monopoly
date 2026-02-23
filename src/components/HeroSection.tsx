@@ -83,7 +83,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden">
+    <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden pt-4 sm:pt-0">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-main.jpg"
@@ -162,7 +162,7 @@ export default function HeroSection() {
                   onFocus={() => setShowSuggestions(true)}
                   onBlur={handleInputBlur}
                   placeholder="Enter your city name (e.g., Austin, New York, LA)..."
-                  className="flex-1 py-4 sm:py-6 px-3 text-base sm:text-lg text-gray-800 placeholder-gray-400 focus:outline-none bg-transparent"
+                  className="flex-1 py-4 sm:py-6 px-3 text-base sm:text-lg text-gray-800 placeholder-gray-500 focus:outline-none bg-transparent"
                   autoComplete="off"
                 />
                 <button
@@ -239,30 +239,30 @@ export default function HeroSection() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-10 md:gap-12 text-xs sm:text-sm text-white/90 px-4">
+          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-12 text-sm sm:text-sm text-white/90 px-4">
             <span className="flex items-center gap-2.5 sm:gap-3">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
-                <svg className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
+              <div className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 sm:w-4.5 sm:h-4.5 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <span className="font-medium">Licensed & Insured</span>
+              <span className="font-semibold">Licensed & Insured</span>
             </span>
-            <span className="flex items-center gap-2 sm:gap-2.5">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
-                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
+            <span className="flex items-center gap-2.5 sm:gap-2.5">
+              <div className="w-10 h-10 sm:w-8 sm:h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 sm:w-4 sm:h-4 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <span className="font-medium">Same-Day Service</span>
+              <span className="font-semibold">Same-Day Service</span>
             </span>
             <span className="flex items-center gap-2.5 sm:gap-3">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
-                <svg className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
+              <div className="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-[#FFD700]/20 flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 sm:w-4.5 sm:h-4.5 text-[#FFD700]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <span className="font-medium">Eco-Friendly</span>
+              <span className="font-semibold">Eco-Friendly</span>
             </span>
           </div>
         </div>

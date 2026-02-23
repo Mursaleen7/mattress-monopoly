@@ -7,7 +7,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#1A1A1A]/95 backdrop-blur-xl border-b border-white/5 shadow-2xl pt-safe">
+    <header className="sticky top-0 z-50 bg-[#1A1A1A]/95 backdrop-blur-xl border-b border-white/5 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
@@ -56,7 +56,7 @@ export default function Header() {
 
           {/* Mobile Hamburger */}
           <button
-            className="md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center text-white/70 hover:text-white rounded-lg transition-colors"
+            className="md:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center text-white/70 hover:text-white rounded-lg transition-colors active:bg-white/10"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           >
