@@ -41,7 +41,6 @@ export default function RootLayout({
     <html lang="en" className="bg-[#1A1A1A]">
       <head>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="impact-site-verification" content="917b1ec7-dc5d-4706-a9d7-b4eb50adadea" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-[#1A1A1A]`}

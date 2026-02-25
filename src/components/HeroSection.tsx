@@ -98,6 +98,9 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 w-full">
+        {/* Hidden Impact Verification Text */}
+        <div className="sr-only">Impact-Site-Verification: 917b1ec7-dc5d-4706-a9d7-b4eb50adadea</div>
+        
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-white font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 sm:mb-8 leading-[1.1] tracking-tight">
             Mattress Disposal
