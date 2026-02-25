@@ -1,0 +1,118 @@
+{
+  "city_slug": "austin-tx",
+  "city_name": "Austin",
+  "state_name": "Texas",
+  "state_slug": "texas",
+  "state_abbr": "TX",
+  "geo": {
+    "latitude": 30.267153,
+    "longitude": -97.7430608,
+    "zip_codes": []
+  },
+  "seo": {
+    "title_override": "Austin TX Mattress Disposal Guide 2026: Easy & Legal",
+    "meta_desc_override": "Navigating Austin TX mattress disposal? Avoid a Class B misdemeanor and fines up to $2,000. Discover rules for legal curbside pickup & eco-friendly options."
+  },
+  "hero_hook": "Don't let an old mattress become a $2,000 problem in Austin \u2013 learn the easy way to dispose of it legally.",
+  "neighborhoods": "South Congress, Zilker, Bouldin Creek, Travis Heights, Clarksville, Hyde Park, East Austin, Mueller, Allandale, Crestview, Tarrytown, Barton Hills, Cherrywood, North Loop, Downtown Austin",
+  "population": {
+    "count": null,
+    "year": 2020,
+    "source": "https://www.census.gov/quickfacts/fact/table/austincitytx",
+    "_needs_api_call": true
+  },
+  "contacts": {
+    "official_phone": "3-1-1 (512-974-2000)",
+    "department_name": "Austin Resource Recovery",
+    "website_url": "https://www.AustinTexas.gov"
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": "Furniture",
+    "placement_time": "by 5:30 a.m. on your appointment date.",
+    "the_catch": "Appointments are required for collection \u2014 items will not be picked up without one. Keep items 5 feet away from your carts, mailbox, fences or walls, water meter, telephone connection box, fire hydrants and parked cars. Do not place any items under low-hanging tree limbs or power lines. Items will not be collected if they are in an alley, in front of a vacant lot, or in front of a business. Do not put items in bags, boxes or other containers. Bags will be treated as extra trash and may incur additional trash fees. Bulk collection is only for residential customers and homes in certain Limited Districts. Brush collection is only for residential customers, homes in certain Limited Districts and Emergency Services Districts (ESD). Items not accepted for bulk collection include: Automotive chassis and bodies, Boats, Brush, Cardboard boxes, Carpet (from construction/demolition), Hazardous materials, Household trash, Mirrors, Motorcycles, Sheet glass and other construction and remodeling debris, Tile (whole or broken), Tires that are still mounted"
+  },
+  "weather_profile": {
+    "is_rain_heavy": false,
+    "rejection_risk_copy": null
+  },
+  "drop_off_locations": [
+    {
+      "name": "WM - Austin Community Landfill",
+      "address": "9900 Giles Ln, Austin, TX 78754, USA",
+      "type": "Landfill",
+      "hours": "Monday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJS10y9W3IRIYRPfMj3-ieXLE",
+      "source": "google_places"
+    },
+    {
+      "name": "TRAVIS COUNTY LANDFILL",
+      "address": "9600 FM812, Austin, TX 78719, USA",
+      "type": "Landfill",
+      "hours": "Monday: 7:00\u202fAM\u2009\u2013\u20094:30\u202fPM | Tuesday: 7:00\u202fAM\u2009\u2013\u20094:30\u202fPM | Wednesday: 7:00\u202fAM\u2009\u2013\u20094:30\u202fPM | Thursday: 7:00\u202fAM\u2009\u2013\u20094:30\u202fPM | Friday: 7:00\u202fAM\u2009\u2013\u20094:30\u202fPM | Saturday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJVZTi7pixRIYRFAoUPGfG5aU",
+      "source": "google_places"
+    },
+    {
+      "name": "Austin Recycle & Reuse Drop-off Center",
+      "address": "2514 Business Center Dr, Austin, TX 78744, USA",
+      "type": "Drop-Off Center",
+      "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJsTYmIXy0RIYRZ5anWOjjc-0",
+      "source": "google_places"
+    }
+  ],
+  "donation_policy": null,
+  "illegal_dumping": {
+    "fine_amount": "Up to $2,000 (Class B misdemeanor)",
+    "citation": "Austin City Code Chapter 12-8"
+  },
+  "affiliate_config": {
+    "partner_name": "LoadUp",
+    "custom_link_slug": "austin-tx-mattress-disposal",
+    "base_price_display": "$80",
+    "competitor_comparison": {
+      "competitor_name": "National Junk Chains",
+      "competitor_price": "$129+",
+      "value_prop": "No franchise fees. Just local haulers."
+    }
+  },
+  "audit_metadata": {
+    "confidence_score": "HIGH",
+    "confidence_breakdown": {
+      "has_phone": true,
+      "has_website": true,
+      "has_curb_rule": true,
+      "has_facilities": true,
+      "has_fine": true,
+      "has_geo": true
+    },
+    "verification_checklist": {
+      "gov_source_found": true,
+      "mattress_rule_verified": true,
+      "facility_hours_verified": true,
+      "facility_type_verified": true,
+      "population_census_verified": false
+    },
+    "sources_used": [
+      "https://www.austintexas.gov/ondemand",
+      "https://www.austintexas.gov/residentialservices",
+      "https://www.traviscountytx.gov/tnr/environmental-quality/conserve/disposal-recycling",
+      "https://www.austintexas.gov/page/illegal-dumping",
+      "https://www.austintexas.gov/department/common-austin-code-violations",
+      "https://www.austintexas.gov/sites/default/files/files/CHAPTER_15-6_-_Ordinance__4-15-2016_.pdf",
+      "https://www.austintexas.gov/sites/default/files/files/Municipal_Court/ActiveStatuteFee_01042023.pdf"
+    ],
+    "last_updated": "2026-02-24",
+    "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+  }
+}
