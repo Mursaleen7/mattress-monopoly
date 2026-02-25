@@ -1,0 +1,107 @@
+{
+  "city_slug": "miami-fl",
+  "city_name": "Miami",
+  "state_name": "Florida",
+  "state_slug": "florida",
+  "state_abbr": "FL",
+  "geo": {
+    "latitude": 25.7616798,
+    "longitude": -80.1917902,
+    "zip_codes": [
+      "33014",
+      "33140",
+      "33142",
+      "33143",
+      "33160",
+      "33166",
+      "33169"
+    ]
+  },
+  "seo": {
+    "title_override": "Miami Mattress Disposal Guide 2026: Easy & Eco-Friendly",
+    "meta_desc_override": "Navigate Miami mattress disposal effortlessly. Enjoy convenient curbside pickup options with no fines for proper disposal. Your complete guide to a clutter-free home."
+  },
+  "hero_hook": "Don't let Miami's rainy weather and the hassle of a bulky old mattress dampen your day; discover easy disposal solutions.",
+  "neighborhoods": "Brickell, Wynwood, Little Havana, Coconut Grove, Edgewater, Midtown, Design District, Downtown Miami, Allapattah, Overtown, Little Haiti, Shenandoah, Flagami, The Roads, West Flagler",
+  "population": {
+    "count": 443665,
+    "year": 2022,
+    "source": "https://www.census.gov/quickfacts/fact/table/miamicityfl"
+  },
+  "contacts": {
+    "official_phone": "311",
+    "department_name": "Department of Solid Waste",
+    "website_url": null
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": null,
+    "placement_time": null,
+    "size_limits": null,
+    "the_catch": null,
+    "schedule_logic": null
+  },
+  "weather_profile": {
+    "is_rain_heavy": true,
+    "rejection_risk_copy": "WARNING: Miami averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+  },
+  "drop_off_locations": [
+    {
+      "name": "The City of Miami, Department of Solid Waste, Mini Dump Facility",
+      "address": "1290 NW 20 STREET, Miami, FL",
+      "type": "Drop-Off Center",
+      "hours": "MONDAY - FRIDAY 8:00 AM - 4:00 PM SATURDAY: 8:00 AM - 12 Noon CLOSED: Sunday, Dr. Martin Luther King, Jr. & Christmas Day",
+      "tipping_fee": null,
+      "residency_required": true,
+      "notes": "Open for all City of Miami residents to dispose of their bulky items and yard trash. A MAXIMUM OF ONE (1) TRIP PER DAY ALLOWED (Each trip is no more than a pickup truck load). WILL NOT ACCEPT THE FOLLOWING: VEHICLES WITH COMMERCIAL MARKINGS, DUMP-TYPE OR PANEL TYPE TRUCKS, COMMERCIAL TRUCKS OR VANS OR MATERIALS FROM COMMERCIAL CONTRACTORS. Accepts: HOUSEHOLD FURNITURE ex. bed frames, dressers, dining tables, chairs, sofa, mattresses, large empty boxes, etc. HOUSEHOLD ELECTRONICS ex. computer monitors, printers, scanners, fax machines, keyboards, laptops, TV's, VCR & DVD players, cellular phones, small kitchen appliances such as toasters, toaster ovens, blenders, mixers, etc. WHITE GOODS ex. large appliances such as refrigerators, stoves, microwaves, dishwashers, etc. CLEAN YARD TRASH ex. tree cuttings, yard clippings, shrubbery and hedge trimmings, and leaves and grass (bagged).",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1290+NW+20+STREET,+Miami,+FL"
+    }
+  ],
+  "donation_policy": null,
+  "illegal_dumping": {
+    "fine_amount": null,
+    "citation": null
+  },
+  "affiliate_config": {
+    "partner_name": "LoadUp",
+    "custom_link_slug": "miami-fl-mattress-disposal",
+    "base_price_display": "$80",
+    "competitor_comparison": {
+      "competitor_name": "National Junk Chains",
+      "competitor_price": "$129+",
+      "value_prop": "No franchise fees. Just local haulers."
+    }
+  },
+  "audit_metadata": {
+    "confidence_score": "MEDIUM",
+    "confidence_breakdown": {
+      "has_phone": true,
+      "has_website": false,
+      "has_curb_rule": false,
+      "has_facilities": true,
+      "has_fine": false,
+      "has_geo": true
+    },
+    "verification_checklist": {
+      "gov_source_found": false,
+      "mattress_rule_verified": false,
+      "facility_hours_verified": true,
+      "facility_type_verified": true,
+      "population_census_verified": true,
+      "geo_validation_passed": true,
+      "content_validation_passed": true
+    },
+    "sources_used": [
+      "https://www.miamidade.gov/bulkywaste/",
+      "https://www.miami.gov/My-Home-Neighborhood/Garbage-Recycling/About-Mini-Dump-and-Bulky-Trash",
+      "https://www.miamibeachfl.gov/city-hall/public-works/sanitation-division/bulk-disposal/",
+      "https://www.miami.gov/My-Home-Neighborhood/Illegal-Dumping/Lets-Get-Rid-of-Illegal-Dumping-Landing-Page",
+      "https://www.miamidade.gov/illegaldumping/",
+      "https://www.muscalaw.com/blog/florida-illegal-dumping-defense-attorneys",
+      "https://www.miamidade.gov/solidwaste/library/brochures/illegal-dumping-english.pdf"
+    ],
+    "rejected_sources": [],
+    "last_updated": "2026-02-24",
+    "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+  }
+}

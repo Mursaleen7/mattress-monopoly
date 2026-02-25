@@ -1,0 +1,128 @@
+{
+  "city_slug": "boston-ma",
+  "city_name": "Boston",
+  "state_name": "Massachusetts",
+  "state_slug": "massachusetts",
+  "state_abbr": "MA",
+  "geo": {
+    "latitude": 42.3555076,
+    "longitude": -71.0565364,
+    "zip_codes": [
+      "02090",
+      "02171",
+      "02184",
+      "02459",
+      "02478"
+    ]
+  },
+  "seo": {
+    "title_override": "Boston MA Mattress Disposal Guide 2026: Easy & Legal Options",
+    "meta_desc_override": "No fines for proper disposal! Discover Boston, MA's 2026 mattress disposal rules, including curbside pickup options. Your guide to hassle-free removal."
+  },
+  "hero_hook": "Navigating Boston's narrow streets and stairs with an old mattress can be a real headache, especially on a rainy day.",
+  "neighborhoods": "Beacon Hill, Back Bay, North End, South End, Fenway-Kenmore, Seaport District, Dorchester, Roxbury, Jamaica Plain, Roslindale, West Roxbury, Hyde Park, Mattapan, Charlestown, East Boston",
+  "population": {
+    "count": 665945,
+    "year": 2022,
+    "source": "https://www.census.gov/quickfacts/fact/table/bostoncityma"
+  },
+  "contacts": {
+    "official_phone": "617-635-4500",
+    "department_name": null,
+    "website_url": "https://www.Boston.gov"
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": "The City of Boston requires an appointment for the collection of all mattresses and box springs. The City of Boston will not collect mattresses or box springs with your curbside trash. You must schedule an appointment for curbside pick-up. Place your mattress on the curb by 6 a.m. on the day of your appointment, or after 5 p.m. the night before.",
+    "placement_time": "Place your mattress on the curb by 6 a.m. on the day of your appointment, or after 5 p.m. the night before.",
+    "size_limits": null,
+    "the_catch": "The City only picks-up mattresses from residents who live in buildings with six units or fewer. If you live in a building with more than six units, you will need to contact your property manager for proper mattress disposal. We cannot collect mattresses on private property. Mattresses must be in a publicly accessible space. The City of Boston will not collect any mattress without an appointment.",
+    "schedule_logic": "You must schedule an appointment for curbside pick-up online."
+  },
+  "weather_profile": {
+    "is_rain_heavy": true,
+    "rejection_risk_copy": "WARNING: Boston averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+  },
+  "drop_off_locations": [
+    {
+      "name": "Casella Waste Systems",
+      "address": "24 Bunker Hill Industrial Park, Boston, MA 02129, USA",
+      "type": "Drop-Off Center",
+      "hours": "Monday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk7C92L5x44kRQ8Tsq9WyIQM",
+      "source": "google_places"
+    },
+    {
+      "name": "Republic Services Howard Transfer Station",
+      "address": "66 Norfolk Ave, Boston, MA 02119, USA",
+      "type": "Transfer Station",
+      "hours": "Monday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Tuesday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Wednesday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Thursday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Friday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Saturday: 4:00\u202fAM\u2009\u2013\u200912:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2bBGiUd644kRA9nZ3jyqOS0",
+      "source": "google_places"
+    },
+    {
+      "name": "Recycle Boston",
+      "address": "516 E 2nd St, Boston, MA 02127, USA",
+      "type": "Drop-Off Center",
+      "hours": "Monday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Tuesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Wednesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Thursday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Friday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Sunday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEcYXgf5744kR3tm2iRoGr8c",
+      "source": "google_places"
+    }
+  ],
+  "donation_policy": null,
+  "illegal_dumping": {
+    "fine_amount": null,
+    "citation": null
+  },
+  "affiliate_config": {
+    "partner_name": "LoadUp",
+    "custom_link_slug": "boston-ma-mattress-disposal",
+    "base_price_display": "$80",
+    "competitor_comparison": {
+      "competitor_name": "National Junk Chains",
+      "competitor_price": "$139+",
+      "value_prop": "No franchise fees. Just local haulers."
+    }
+  },
+  "audit_metadata": {
+    "confidence_score": "HIGH",
+    "confidence_breakdown": {
+      "has_phone": true,
+      "has_website": true,
+      "has_curb_rule": true,
+      "has_facilities": true,
+      "has_fine": false,
+      "has_geo": true
+    },
+    "verification_checklist": {
+      "gov_source_found": true,
+      "mattress_rule_verified": true,
+      "facility_hours_verified": true,
+      "facility_type_verified": true,
+      "population_census_verified": true,
+      "geo_validation_passed": true,
+      "content_validation_passed": true
+    },
+    "sources_used": [
+      "https://www.boston.gov/departments/public-works/mattress-recycling",
+      "https://www.boston.gov/departments/public-works/special-collection-items",
+      "https://www.boston.gov/departments/public-works/trash",
+      "https://www.boston.gov/departments/public-works/how-code-enforcement-works-boston",
+      "https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleI/Chapter270/Section16",
+      "https://www.mass.gov/doc/master-crime-list/download",
+      "https://codelibrary.amlegal.com/codes/boston/latest/boston_ma/0-0-0-15497"
+    ],
+    "rejected_sources": [],
+    "last_updated": "2026-02-24",
+    "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+  }
+}

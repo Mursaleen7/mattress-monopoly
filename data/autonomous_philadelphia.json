@@ -1,0 +1,154 @@
+{
+  "city_slug": "philadelphia-pa",
+  "city_name": "Philadelphia",
+  "state_name": "Pennsylvania",
+  "state_slug": "pennsylvania",
+  "state_abbr": "PA",
+  "geo": {
+    "latitude": 39.9525839,
+    "longitude": -75.1652215,
+    "zip_codes": [
+      "08003",
+      "08075",
+      "19003",
+      "19020",
+      "19029",
+      "19090",
+      "19134",
+      "19422"
+    ]
+  },
+  "seo": {
+    "title_override": "Philadelphia Mattress Disposal Guide 2026",
+    "meta_desc_override": "Learn Philadelphia's 2026 mattress disposal rules to avoid $300-$1,000 fines. Discover curbside pickup options and proper disposal methods for residents."
+  },
+  "hero_hook": "Don't risk a $300-$1,000 fine trying to dispose of your mattress improperly in rainy Philadelphia.",
+  "neighborhoods": "Center City, Old City, Fishtown, Northern Liberties, Manayunk, Chestnut Hill, Germantown, East Falls, Queen Village, Bella Vista, Rittenhouse Square, Fairmount, University City, South Philadelphia, West Philadelphia",
+  "population": {
+    "count": 1052,
+    "year": 2022,
+    "source": "https://www.census.gov/quickfacts/fact/table/philadelphiacitypa"
+  },
+  "contacts": {
+    "official_phone": "311",
+    "department_name": "Department of Sanitation",
+    "website_url": "https://www.phila.gov/departments/streets-department"
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": "The Department of Sanitation will continue to collect up to two (2) large items (non-metal) per household on regularly scheduled trash collection days, including mattresses wrapped in plastic and other compactable furniture.",
+    "placement_time": null,
+    "size_limits": "Philadelphia residents can schedule bulk item pickups for up to four (4) items per appointment. The Department of Sanitation will continue to collect up to two (2) large items (non-metal) per household on regularly scheduled trash collection days, including mattresses wrapped in plastic and other compactable furniture.",
+    "the_catch": null,
+    "schedule_logic": "Residents can schedule appointments through the Department of Sanitation\u2019s website or by contacting 311. Appointments are limited and will be scheduled on a first-come, first-serve basis."
+  },
+  "weather_profile": {
+    "is_rain_heavy": true,
+    "rejection_risk_copy": "WARNING: Philadelphia averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+  },
+  "drop_off_locations": [
+    {
+      "name": "Sanitation Convenience Center",
+      "address": "3033 S 63rd St, Philadelphia, PA 19153, USA",
+      "type": "Drop-Off Center",
+      "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ7Q1QjSTExokR1CIjui1Zymg",
+      "source": "google_places"
+    },
+    {
+      "name": "WM - Philadelphia Transfer Station",
+      "address": "3605 Grays Ferry Ave, Philadelphia, PA 19146, USA",
+      "type": "Transfer Station",
+      "hours": "Monday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Tuesday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Wednesday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Thursday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Friday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Saturday: 6:00\u2009\u2013\u200910:30\u202fAM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ713Ae4rGxokRgoqn4np_yBo",
+      "source": "google_places"
+    },
+    {
+      "name": "Republic Services Quickway Transfer Station",
+      "address": "2960 Orthodox St, Philadelphia, PA 19137, USA",
+      "type": "Transfer Station",
+      "hours": "Monday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u200912:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBfgjIQW2xokRTSmD_CYFpvM",
+      "source": "google_places"
+    },
+    {
+      "name": "Sanitation Convenience Center (Strawberry Mansion)",
+      "address": "2564 W Glenwood Ave, Philadelphia, PA 19121, USA",
+      "type": "Drop-Off Center",
+      "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ3GTl-zHxokR40a2dXGtC_c",
+      "source": "google_places"
+    },
+    {
+      "name": "Northwest Sanitation Convenience Center",
+      "address": "320 Domino Ln, Philadelphia, PA 19128, USA",
+      "type": "Drop-Off Center",
+      "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR7NQLNC4xokRL-oC4AC09hY",
+      "source": "google_places"
+    }
+  ],
+  "donation_policy": null,
+  "illegal_dumping": {
+    "fine_amount": "$300-$1,000",
+    "citation": "Philadelphia Code Section 10-720"
+  },
+  "affiliate_config": {
+    "partner_name": "LoadUp",
+    "custom_link_slug": "philadelphia-pa-mattress-disposal",
+    "base_price_display": "$80",
+    "competitor_comparison": {
+      "competitor_name": "National Junk Chains",
+      "competitor_price": "$129+",
+      "value_prop": "No franchise fees. Just local haulers."
+    }
+  },
+  "audit_metadata": {
+    "confidence_score": "HIGH",
+    "confidence_breakdown": {
+      "has_phone": true,
+      "has_website": true,
+      "has_curb_rule": true,
+      "has_facilities": true,
+      "has_fine": true,
+      "has_geo": true
+    },
+    "verification_checklist": {
+      "gov_source_found": true,
+      "mattress_rule_verified": true,
+      "facility_hours_verified": true,
+      "facility_type_verified": true,
+      "population_census_verified": false,
+      "geo_validation_passed": true,
+      "content_validation_passed": true
+    },
+    "sources_used": [
+      "https://bulkcollection.phila.gov/",
+      "https://www.phila.gov/2024-09-23-city-of-philadelphia-residential-bulk-collection-program/",
+      "https://www.phila.gov/services/trash-recycling-city-upkeep/schedule-trash-collection-for-bulky-household-items/",
+      "https://www.phila.gov/2022-11-01-streets-department-announces-historic-prosecution-in-illegal-dumping/",
+      "https://www.phila.gov/2022-10-26-streets-department-announces-successful-prosecution-of-illegal-dumper/",
+      "https://penncapital-star.com/government-politics/pa-house-moves-legislation-on-illegal-dumping-and-retirement-savings/",
+      "https://www.pennlive.com/politics/2023/05/addressing-pas-litter-problem-could-involve-making-people-pick-it-up-and-pay-more.html",
+      "https://codelibrary.amlegal.com/codes/philadelphia/latest/philadelphia_pa/0-0-0-303886"
+    ],
+    "rejected_sources": [],
+    "last_updated": "2026-02-24",
+    "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+  }
+}

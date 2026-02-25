@@ -1,0 +1,1332 @@
+[
+  {
+    "city_slug": "phoenix-az",
+    "city_name": "Phoenix",
+    "state_name": "Arizona",
+    "state_slug": "arizona",
+    "state_abbr": "AZ",
+    "geo": {
+      "latitude": 33.4482948,
+      "longitude": -112.0725488,
+      "zip_codes": [
+        "85029",
+        "85045",
+        "85087",
+        "85226",
+        "85260",
+        "85331",
+        "85335",
+        "85339",
+        "85342"
+      ]
+    },
+    "seo": {
+      "title_override": "Phoenix AZ Mattress Disposal Guide 2026 | Legal & Easy",
+      "meta_desc_override": "Phoenix, AZ mattress disposal can be tricky. Avoid fines up to $2,500! Discover legal options, including convenient curbside pickup, to properly dispose of your old mattress."
+    },
+    "hero_hook": "Struggling with old mattress disposal in Phoenix? Avoid hefty fines and the desert heat with our easy guide.",
+    "neighborhoods": "Ahwatukee Foothills, Alhambra, Arcadia, Biltmore, Camelback East, Deer Valley, Desert Ridge, Downtown Phoenix, Encanto, Estrella Village, Laveen, Maryvale, North Mountain, Paradise Valley Village, South Mountain",
+    "population": {
+      "count": 1609456,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/phoenixcityaz"
+    },
+    "contacts": {
+      "official_phone": "602-262-6251",
+      "department_name": "Public Works",
+      "website_url": "https://www.phoenix.gov/publicworks/solidwaste"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Materials such as furniture, small appliances, toilets, and large amounts of vegetation are often considered bulk trash.",
+      "placement_time": "Make an appointment before setting out your bulk item. Have your items placed by 5:30 a.m. on your scheduled appointment date. Make sure you have your appointment scheduled before you begin placing your bulk items at the curb (no more than 7 days ahead of your scheduled date). It is a violation of city ordinance to place trash out more than 7 days before your scheduled appointment.",
+      "size_limits": "Set bulk items out in a single pile no larger than ten (10) cubic yards per residence\u200b (all material should be placed no more than 5 feet from the street/curb or front edge of the property). Don't Include:\u200b \u200bMore than ten (10) cubic yards of bulk trash per residence. Cut tree trimmings down to less than 12 inches in diameter and 4 feet in length\u200b. More than 2 wooden pallets. Construction or demolition materials in excess of 25 pounds or over four feet long. Metal or car parts in excess of 20 pounds or over four feet long. Tree trunks or stumps longer than 4 feet and bigger than 12 inches in diameter.",
+      "the_catch": "There are specific guidelines that must be followed or we cannot collect bulk trash from your property. Customers will have four (4) collection opportunities each year. Keep pile at least 5 feet away from any fixed objects. Do not place pile on top of water meters. Place on the edge of your property. Don't Include:\u200b Loose debris and litter, and any ordinary household trash. Loose grass, leaves, weeds, twigs and hedge clippings. Household hazardous waste (HHW), such as antifreeze, pool chemicals, oil, batteries and paint. Community piles \u2013 avoid combining piles from multiple house"
+    },
+    "weather_profile": {
+      "is_rain_heavy": false,
+      "rejection_risk_copy": null
+    },
+    "drop_off_locations": [
+      {
+        "name": "City of Phoenix Transfer Station",
+        "address": "3060 S 27th Ave, Phoenix, AZ 85009, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJE-GDskERK4cR9nkHQfKloow",
+        "source": "google_places"
+      },
+      {
+        "name": "City of Phoenix North Gateway Transfer Station",
+        "address": "30205 N Black Cyn Hwy, Phoenix, AZ 85085, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJSx8JgWxkK4cRRTto1r8NBxQ",
+        "source": "google_places"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": "Up to $2,500",
+      "citation": "Phoenix City Code Section 23-18"
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "phoenix-az-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$150+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "confidence_breakdown": {
+        "has_phone": true,
+        "has_website": true,
+        "has_curb_rule": true,
+        "has_facilities": true,
+        "has_fine": true,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://www.phoenix.gov/administration/departments/publicworks/residential-trash-recycling/bulk-trash-pickup.html",
+        "https://www.phoenix.gov/residents/trash-recycling.html",
+        "https://www.phoenix.gov/administration/departments/publicworks/about-us/transfer-stations.html",
+        "https://apps-secure.phoenix.gov/PublicRecordsSearch/Home/RenderPDF/?id=aELKT4ma7iD3du7TF948oS7PsBn4WT9SmpHpy4MSgKA=",
+        "https://www.maricopa.gov/2196/Illegal-Dumping"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "philadelphia-pa",
+    "city_name": "Philadelphia",
+    "state_name": "Pennsylvania",
+    "state_slug": "pennsylvania",
+    "state_abbr": "PA",
+    "geo": {
+      "latitude": 39.9525839,
+      "longitude": -75.1652215,
+      "zip_codes": [
+        "08003",
+        "08075",
+        "19003",
+        "19020",
+        "19029",
+        "19090",
+        "19134",
+        "19422"
+      ]
+    },
+    "seo": {
+      "title_override": "Philadelphia Mattress Disposal Guide 2026",
+      "meta_desc_override": "Learn Philadelphia's 2026 mattress disposal rules to avoid $300-$1,000 fines. Discover curbside pickup options and proper disposal methods for residents."
+    },
+    "hero_hook": "Don't risk a $300-$1,000 fine trying to dispose of your mattress improperly in rainy Philadelphia.",
+    "neighborhoods": "Center City, Old City, Fishtown, Northern Liberties, Manayunk, Chestnut Hill, Germantown, East Falls, Queen Village, Bella Vista, Rittenhouse Square, Fairmount, University City, South Philadelphia, West Philadelphia",
+    "population": {
+      "count": 1052,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/philadelphiacitypa"
+    },
+    "contacts": {
+      "official_phone": "311",
+      "department_name": "Department of Sanitation",
+      "website_url": "https://www.phila.gov/departments/streets-department"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "The Department of Sanitation will continue to collect up to two (2) large items (non-metal) per household on regularly scheduled trash collection days, including mattresses wrapped in plastic and other compactable furniture.",
+      "placement_time": null,
+      "size_limits": "Philadelphia residents can schedule bulk item pickups for up to four (4) items per appointment. The Department of Sanitation will continue to collect up to two (2) large items (non-metal) per household on regularly scheduled trash collection days, including mattresses wrapped in plastic and other compactable furniture.",
+      "the_catch": null,
+      "schedule_logic": "Residents can schedule appointments through the Department of Sanitation\u2019s website or by contacting 311. Appointments are limited and will be scheduled on a first-come, first-serve basis."
+    },
+    "weather_profile": {
+      "is_rain_heavy": true,
+      "rejection_risk_copy": "WARNING: Philadelphia averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+    },
+    "drop_off_locations": [
+      {
+        "name": "Sanitation Convenience Center",
+        "address": "3033 S 63rd St, Philadelphia, PA 19153, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ7Q1QjSTExokR1CIjui1Zymg",
+        "source": "google_places"
+      },
+      {
+        "name": "WM - Philadelphia Transfer Station",
+        "address": "3605 Grays Ferry Ave, Philadelphia, PA 19146, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Tuesday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Wednesday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Thursday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Friday: 4:30\u202fAM\u2009\u2013\u20094:30\u202fPM | Saturday: 6:00\u2009\u2013\u200910:30\u202fAM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ713Ae4rGxokRgoqn4np_yBo",
+        "source": "google_places"
+      },
+      {
+        "name": "Republic Services Quickway Transfer Station",
+        "address": "2960 Orthodox St, Philadelphia, PA 19137, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u200912:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJBfgjIQW2xokRTSmD_CYFpvM",
+        "source": "google_places"
+      },
+      {
+        "name": "Sanitation Convenience Center (Strawberry Mansion)",
+        "address": "2564 W Glenwood Ave, Philadelphia, PA 19121, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ3GTl-zHxokR40a2dXGtC_c",
+        "source": "google_places"
+      },
+      {
+        "name": "Northwest Sanitation Convenience Center",
+        "address": "320 Domino Ln, Philadelphia, PA 19128, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJR7NQLNC4xokRL-oC4AC09hY",
+        "source": "google_places"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": "$300-$1,000",
+      "citation": "Philadelphia Code Section 10-720"
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "philadelphia-pa-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$129+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "confidence_breakdown": {
+        "has_phone": true,
+        "has_website": true,
+        "has_curb_rule": true,
+        "has_facilities": true,
+        "has_fine": true,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://bulkcollection.phila.gov/",
+        "https://www.phila.gov/2024-09-23-city-of-philadelphia-residential-bulk-collection-program/",
+        "https://www.phila.gov/services/trash-recycling-city-upkeep/schedule-trash-collection-for-bulky-household-items/",
+        "https://www.phila.gov/2022-11-01-streets-department-announces-historic-prosecution-in-illegal-dumping/",
+        "https://www.phila.gov/2022-10-26-streets-department-announces-successful-prosecution-of-illegal-dumper/",
+        "https://penncapital-star.com/government-politics/pa-house-moves-legislation-on-illegal-dumping-and-retirement-savings/",
+        "https://www.pennlive.com/politics/2023/05/addressing-pas-litter-problem-could-involve-making-people-pick-it-up-and-pay-more.html",
+        "https://codelibrary.amlegal.com/codes/philadelphia/latest/philadelphia_pa/0-0-0-303886"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "san-diego-ca",
+    "city_name": "San Diego",
+    "state_name": "California",
+    "state_slug": "california",
+    "state_abbr": "CA",
+    "geo": {
+      "latitude": 32.715738,
+      "longitude": -117.1610838,
+      "zip_codes": [
+        "22444",
+        "22504",
+        "92011",
+        "92021",
+        "92027",
+        "92029",
+        "92124"
+      ]
+    },
+    "seo": {
+      "title_override": "San Diego Mattress Disposal Guide 2026 - Easy & Eco-Friendly",
+      "meta_desc_override": "San Diego mattress disposal made easy! Learn rules for 2026. No fines, dry weather tips. Curbside pickup status unclear\u2014check with the City of San Diego for options."
+    },
+    "hero_hook": "Struggling to figure out how to responsibly dispose of your old mattress in sunny San Diego?",
+    "neighborhoods": "La Jolla, Pacific Beach, North Park, Hillcrest, Gaslamp Quarter, Little Italy, Ocean Beach, Mission Beach, Clairemont, Mira Mesa, Carmel Valley, University City, Bankers Hill, Golden Hill, Point Loma",
+    "population": {
+      "count": 21759,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/sandiegocityca"
+    },
+    "contacts": {
+      "official_phone": null,
+      "department_name": "Environmental Services Department",
+      "website_url": null
+    },
+    "curbside_rules": {
+      "is_available": null,
+      "mattress_specific_rule": null,
+      "placement_time": null,
+      "size_limits": null,
+      "the_catch": null,
+      "schedule_logic": null
+    },
+    "weather_profile": {
+      "is_rain_heavy": false,
+      "rejection_risk_copy": null
+    },
+    "drop_off_locations": [
+      {
+        "name": "Miramar Landfill",
+        "address": "5161 Convoy St., San Diego, CA 92111",
+        "type": "Landfill/Drop-Off Center",
+        "hours": "Monday to Friday from 7 a.m. to 3 p.m. The site is closed on Saturdays and Sundays. The Mattress Collection Site is CLOSED on the following holidays: New Year\u2019s Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day and Christmas Day.",
+        "tipping_fee": "Free for mattresses and box springs.",
+        "residency_required": null,
+        "notes": "Accepts traditional mattresses and box springs. Futon mattresses are also eligible, but must be removed from the frame or base. Futon mattresses that do not detach are not accepted for recycling. Items must not be severely damaged, wet, twisted, frozen, soiled or infested with bedbugs. No drop-off limit. All items accepted for recycling must have been used and discarded in the state of California. Unacceptable items include: Severely damaged, wet, twisted, frozen or soiled mattresses or box springs; mattresses infested with bedbugs; mattress pads or toppers; sleeping bags and cots; pillows, cushions, blankets, sheets and other loose bedding.",
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=5161+Convoy+St.,+San+Diego,+CA+92111"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": null,
+      "citation": null
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "san-diego-ca-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$59+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "LOW",
+      "confidence_breakdown": {
+        "has_phone": false,
+        "has_website": false,
+        "has_curb_rule": false,
+        "has_facilities": true,
+        "has_fine": false,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": false,
+        "mattress_rule_verified": false,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://www.sandiego.gov/environmental-services/recycling/residential/mattresses",
+        "https://www.sandiegocounty.gov/content/dam/sdc/dpw/WATERSHED_PROTECTION_PROGRAM/watershedpdf/Residential-Outreach/English/Bulk_Waste_Single-Family.pdf",
+        "https://www.sandiego.gov/get-it-done/mattress-recycling",
+        "https://www.sandiego.gov/environmental-services/collection/schedule",
+        "https://www.sandiego.gov/environmental-services",
+        "https://www.sandiegocounty.gov/content/dam/sdc/dpw/SOLID_WASTE_PLANNING_and_RECYCLING/swo/Waiver%20Application-SF_Final.pdf",
+        "https://www.sandiegocounty.gov/content/sdc/dpw/recycling/residentialrecycling.html",
+        "https://www.sandiego.gov/environmental-services/clean-sd/newsrelease180329",
+        "https://www.thebulldog.law/illegal-dumping-charges-california-penal-code-374-3",
+        "https://www.thebulldog.law/california-pc-374-3-defending-against-illegal-dumping-and-highway-littering-charges",
+        "https://timesofsandiego.com/politics/2018/03/29/city-increases-penalties-for-illegal-dumping-as-part-of-faulconers-clean-sd-initiative/"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "san-jose-ca",
+    "city_name": "San Jose",
+    "state_name": "California",
+    "state_slug": "california",
+    "state_abbr": "CA",
+    "geo": {
+      "latitude": 37.33874,
+      "longitude": -121.8852525,
+      "zip_codes": [
+        "94550",
+        "94560",
+        "95014",
+        "95018",
+        "95037",
+        "95046",
+        "95121"
+      ]
+    },
+    "seo": {
+      "title_override": "San Jose Mattress Disposal 2026: Your Complete Guide",
+      "meta_desc_override": "Avoid a $2,500 fine! Discover San Jose's 2026 mattress disposal rules, including convenient curbside pickup options. Keep San Jose clean and stay compliant."
+    },
+    "hero_hook": "Don't let an old mattress become a costly problem in San Jose.",
+    "neighborhoods": "Willow Glen, Rose Garden, Almaden Valley, Evergreen, Cambrian Park, Naglee Park, Japantown, Berryessa, Silver Creek, Santa Teresa, Edenvale, West San Jose, Downtown San Jose, North San Jose, East San Jose",
+    "population": {
+      "count": 1001176,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/sanjosecityca"
+    },
+    "contacts": {
+      "official_phone": "(408) 535-3500",
+      "department_name": null,
+      "website_url": "https://www.sanjoseca.gov/311"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "See the list of acceptable junk items , such as mattresses, furniture, tires, and more.",
+      "placement_time": "Set out your items up to 24 hours before your scheduled appointment. Set out your Junk Pickup items the same way you set out your carts \u2013 on the street next to the curb.",
+      "size_limits": "Requests may include up to 12 items for pickup.",
+      "the_catch": "All items must be generated from your home. Do you have construction and demolition (C&D) material? Hire an authorized hauler for larger clean-out projects and/or Construction & Demolition material.",
+      "schedule_logic": "Visit 311.SanJoseCA.gov , dial 3-1-1, or call (408) 535-3500 to request a junk pickup appointment at no cost. Appointments are scheduled on the same day(s) as your regular recycling and garbage collection. Residents can schedule unlimited junk pickups for free. Residents in homes and mobile home parks can schedule a pickup by calling their recycling collection company directly. Apartment and condominium residents can contact their property managers or GreenTeam of San Jose at (408) 282-4400."
+    },
+    "weather_profile": {
+      "is_rain_heavy": false,
+      "rejection_risk_copy": null
+    },
+    "drop_off_locations": [],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": "$2,500",
+      "citation": "Early and/or improper set out may result in the items not being picked up or a citation, as it may be considered illegal dumping."
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "san-jose-ca-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$100+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "confidence_breakdown": {
+        "has_phone": true,
+        "has_website": true,
+        "has_curb_rule": true,
+        "has_facilities": false,
+        "has_fine": true,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": false,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://www.sanjoseca.gov/your-government/environment/recycling-garbage/junk-pickup",
+        "https://www.sanjoseca.gov/your-government/departments-offices/environmental-services/recycling-garbage/residents",
+        "https://www.santaclaraca.gov/our-city/departments-g-z/public-works/environmental-programs/disposal-events-resources",
+        "https://www.sanjoseca.gov/your-government/departments-offices/parks-recreation-neighborhood-services/illegal-dumping",
+        "https://archive.epa.gov/wastes/conserve/tools/payt/web/pdf/illegal.pdf",
+        "https://calrecycle.ca.gov/illegaldump/prevention/",
+        "https://www.thebulldog.law/california-pc-374-3-defending-against-illegal-dumping-and-highway-littering-charges",
+        "https://sanjosespotlight.com/san-jose-considers-increasing-illegal-dumping-fines/"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "seattle-wa",
+    "city_name": "Seattle",
+    "state_name": "Washington",
+    "state_slug": "washington",
+    "state_abbr": "WA",
+    "geo": {
+      "latitude": 47.6061389,
+      "longitude": -122.3328481,
+      "zip_codes": [
+        "98028",
+        "98057",
+        "98070",
+        "98101",
+        "98133",
+        "98146"
+      ]
+    },
+    "seo": {
+      "title_override": "Seattle Mattress Disposal Guide 2026: Easy & Legal Options",
+      "meta_desc_override": "Navigate Seattle mattress disposal rules effortlessly. Avoid fines up to $5,000! Learn about curbside pickup, donation, and recycling options for a smooth process."
+    },
+    "hero_hook": "Don't let Seattle's notorious rain or a hefty $5,000 fine make mattress disposal a nightmare.",
+    "neighborhoods": "Ballard, Capitol Hill, Queen Anne, Fremont, West Seattle, Belltown, South Lake Union, Columbia City, Georgetown, Beacon Hill, Phinney Ridge, Ravenna, University District, Wallingford, Pioneer Square",
+    "population": {
+      "count": 734603,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/seattlecitywa"
+    },
+    "contacts": {
+      "official_phone": "(206) 684-3000",
+      "department_name": "Seattle Public Utilities",
+      "website_url": "https://www.seattle.gov"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": null,
+      "placement_time": null,
+      "size_limits": null,
+      "the_catch": "Costs vary by the type of item collected. Charges for special item collections will appear on your combined utility bill. The utility account holder must make the request. Utility Discount Program (UDP) customers can get two free special item pickups per year. Specific costs: No cost for foam blocks and used cooking/motor oil. $5.00 per pick up, per item type for small propane canisters, CFLs, household batteries. $20.00 per pick up for a Special Items box. $30.00 per item for large furniture, appliances, and TVs larger than 2' x 2' x 2'. $38.00 per item for items containing CFCs (e.g., refrigerators/freezers manufactured before 2005). Specific instructions on how to prepare items for collection will be provided when you schedule the pickup.",
+      "schedule_logic": "To request the collection of large or hard to dispose of items at your home, schedule online or call Seattle Public Utilities Customer Service at (206) 684-3000."
+    },
+    "weather_profile": {
+      "is_rain_heavy": true,
+      "rejection_risk_copy": "WARNING: Seattle averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+    },
+    "drop_off_locations": [
+      {
+        "name": "North Transfer Station",
+        "address": "1350 N 34th St, Seattle, WA 98103, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Sunday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLbv6OgIVkFQRAkZNLTwdkGg",
+        "source": "google_places"
+      },
+      {
+        "name": "South Transfer Station",
+        "address": "130 S Kenyon St, Seattle, WA 98108, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM | Sunday: 8:00\u202fAM\u2009\u2013\u20095:30\u202fPM",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJLx7udYRBkFQRzEUFtL7l35k",
+        "source": "google_places"
+      },
+      {
+        "name": "Transfer Station Public Viewing Room",
+        "address": "1350 N 34th St, Seattle, WA 98103, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Tuesday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Wednesday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Thursday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Friday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Saturday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Sunday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJY49APN4VkFQRl7RqpzdkNlk",
+        "source": "google_places"
+      },
+      {
+        "name": "Bow Lake Recycling & Transfer Station",
+        "address": "18800 Orillia Rd S, Seattle, WA 98188, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: 12:00\u202fAM\u2009\u2013\u200911:30\u202fPM | Saturday: 8:30\u202fAM\u2009\u2013\u20095:30\u202fPM | Sunday: 8:30\u202fAM\u2009\u2013\u20095:30\u202fPM",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJCzJ-ZnxbkFQR3YHhNN93hzM",
+        "source": "google_places"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": "Up to $5,000",
+      "citation": "Seattle Municipal Code Section 21.36"
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "seattle-wa-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$220+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "confidence_breakdown": {
+        "has_phone": true,
+        "has_website": true,
+        "has_curb_rule": false,
+        "has_facilities": true,
+        "has_fine": true,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": false,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://www.seattle.gov/utilities/your-services/collection-and-disposal/recycling/special-item-pickups",
+        "https://www.seattle.gov/utilities/your-services/collection-and-disposal/transfer-stations/save-yourself-a-trip",
+        "https://info.kingcounty.gov/services/recycling-garbage/solid-waste/what-do-i-do-with/Restrictions?m=73",
+        "https://www.seattle.gov/sdci/codes/common-code-questions/junk-storage-cars-and-illegal-dumping-rules",
+        "https://aqua.kingcounty.gov/council/clerk/code/32_Title_23.htm",
+        "https://www.seattle.gov/utilities/your-services/collection-and-disposal/transfer-stations/fee-for-uncovered-load",
+        "https://zerowastewashington.org/wp-content/uploads/2022/08/Trim-Washington-Litter-Summit-Presentation.pdf"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "denver-co",
+    "city_name": "Denver",
+    "state_name": "Colorado",
+    "state_slug": "colorado",
+    "state_abbr": "CO",
+    "geo": {
+      "latitude": 39.7392358,
+      "longitude": -104.990251,
+      "zip_codes": [
+        "80010",
+        "80021",
+        "80033",
+        "80111",
+        "80127",
+        "80137",
+        "80640",
+        "80642"
+      ]
+    },
+    "seo": {
+      "title_override": "Denver Mattress Disposal Guide 2026: Easy & Eco-Friendly",
+      "meta_desc_override": "Avoid Denver's steep mattress disposal fines (up to $999!). Learn 2026 rules, check city guidelines for curbside pickup, and find eco-friendly options to dispose of your old mattress."
+    },
+    "hero_hook": "Navigating mattress disposal in Denver can be tricky, risking fines up to $999 if you don't know the rules.",
+    "neighborhoods": "Capitol Hill, Highlands, Cherry Creek, LoDo, RiNo, Five Points, Sloan's Lake, Platt Park, Washington Park, Baker, Congress Park, Central Park, Sunnyside, University Park, Park Hill",
+    "population": {
+      "count": 710800,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/denvercityco"
+    },
+    "contacts": {
+      "official_phone": "3-1-1 (720-913-1311)",
+      "department_name": "Denver Department of Transportation and Infrastructure",
+      "website_url": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Transportation-and-Infrastructure/Solid-Waste-Management"
+    },
+    "curbside_rules": {
+      "is_available": null,
+      "mattress_specific_rule": null,
+      "placement_time": null,
+      "size_limits": null,
+      "the_catch": null,
+      "schedule_logic": null
+    },
+    "weather_profile": {
+      "is_rain_heavy": false,
+      "rejection_risk_copy": null
+    },
+    "drop_off_locations": [
+      {
+        "name": "Republic Services Landfill",
+        "address": "19260 E 88th Ave, Commerce City, CO 80022, USA",
+        "type": "Landfill",
+        "hours": "Monday: Open 24 hours | Tuesday: Open 24 hours | Wednesday: Open 24 hours | Thursday: Open 24 hours | Friday: Open 24 hours | Saturday: 12:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJdy-IVlpvbIcRrp4g6C31uc4",
+        "source": "google_places"
+      },
+      {
+        "name": "WM - Denver Arapahoe Disposal Site Landfill",
+        "address": "3500 S Gun Club Rd, Aurora, CO 80018, USA",
+        "type": "Landfill",
+        "hours": "Monday: 6:00\u202fAM\u2009\u2013\u20097:30\u202fPM | Tuesday: 6:00\u202fAM\u2009\u2013\u20097:30\u202fPM | Wednesday: 6:00\u202fAM\u2009\u2013\u20097:30\u202fPM | Thursday: 6:00\u202fAM\u2009\u2013\u20097:30\u202fPM | Friday: 6:00\u202fAM\u2009\u2013\u20097:30\u202fPM | Saturday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk_BNlOKIbIcR_zPdYVy3EVo",
+        "source": "google_places"
+      },
+      {
+        "name": "Republic Services Denver South Transfer Station",
+        "address": "7750 Cherry Creek S Dr, Denver, CO 80231, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 5:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 5:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 5:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 5:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 5:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: Closed | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-WSX69p9bIcR7cBP17t2Lzg",
+        "source": "google_places"
+      },
+      {
+        "name": "STS North Waste and Recycling",
+        "address": "3711 E 54th Ave, Denver, CO 80022, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 5:30\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJRa-VawB5bIcRxP6AlnnnDJw",
+        "source": "google_places"
+      },
+      {
+        "name": "City & County of Denver Recycle Dropoff",
+        "address": "7400 Cherry Creek S Dr, Denver, CO 80231, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: Closed | Tuesday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fPM, 1:00\u2009\u2013\u20094:30\u202fPM | Wednesday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fPM, 1:00\u2009\u2013\u20094:30\u202fPM | Thursday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fPM, 1:00\u2009\u2013\u20094:30\u202fPM | Friday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fPM, 1:00\u2009\u2013\u20094:30\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fPM, 1:00\u2009\u2013\u20093:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJUR0fjZl9bIcRtIJhMwEybGM",
+        "source": "google_places"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": "Up to $999",
+      "citation": "Denver Revised Municipal Code Section 48-76"
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "denver-co-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$240+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "HIGH",
+      "confidence_breakdown": {
+        "has_phone": true,
+        "has_website": true,
+        "has_curb_rule": false,
+        "has_facilities": true,
+        "has_fine": true,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": false,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://adamscountyco.gov/our-county/community-economic-development/environmental-programs/recycling-waste-diversion/",
+        "https://www.lakewoodco.gov/City-Hall/Departments/Sustainability-and-Community-Development/Sustainability/Programs/Zero-Waste-and-Circularity/Hard-to-Recycle-Materials",
+        "https://cdphe.colorado.gov/hm/prep-home-products-disposal",
+        "http://leg.colorado.gov/bill_files/66101/download",
+        "https://www.cheyenneandarapaho-nsn.gov/news/public-announcement-department-of-justice-will-be-enforcing-penalties-against-those-engaged-in-illegal-dumping",
+        "https://codes.findlaw.com/co/title-18-criminal-code/co-rev-st-sect-18-4-511/",
+        "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/City-Attorneys-Office/Practices/Prosecution-and-Enforcement/Public-Nuisance-Abatement",
+        "https://www.denvergov.org/files/assets/public/public-health-and-environment/documents/eq/eqfineschedule_updated_2-2022.pdf",
+        "https://kdvr.com/denver-guide/is-it-legal-to-put-furniture-on-the-curb-for-people-to-pick-up-in-denver/"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "boston-ma",
+    "city_name": "Boston",
+    "state_name": "Massachusetts",
+    "state_slug": "massachusetts",
+    "state_abbr": "MA",
+    "geo": {
+      "latitude": 42.3555076,
+      "longitude": -71.0565364,
+      "zip_codes": [
+        "02090",
+        "02171",
+        "02184",
+        "02459",
+        "02478"
+      ]
+    },
+    "seo": {
+      "title_override": "Boston Mattress Disposal Guide 2026: Curbside & Rules",
+      "meta_desc_override": "Boston residents, easily dispose of your old mattress! Curbside pickup is available, and there are no fines for proper disposal. Find all 2026 rules here."
+    },
+    "hero_hook": "Struggling with where and how to get rid of your old mattress in Boston?",
+    "neighborhoods": "Back Bay,Beacon Hill,South End,North End,Seaport District,Fenway-Kenmore,Allston,Brighton,Dorchester,Roxbury,Jamaica Plain,Roslindale,West Roxbury,Hyde Park,Charlestown",
+    "population": {
+      "count": 665945,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/bostoncityma"
+    },
+    "contacts": {
+      "official_phone": null,
+      "department_name": "Public Works",
+      "website_url": "https://www.boston.gov/departments/public-works/trash"
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": "Curbside mattress pick-up is limited to 10 items per calendar year.",
+      "placement_time": "Place your item where trash is typically placed (curbside, public alley, or dumpster area) by 6 a.m. on the day of your appointment or after 5 ...",
+      "size_limits": null,
+      "the_catch": "The City of Boston will not collect any mattress without an appointment.",
+      "schedule_logic": "schedule special item and mattress pickups via BOS:311 with limits for each program."
+    },
+    "weather_profile": {
+      "is_rain_heavy": true,
+      "rejection_risk_copy": "WARNING: Boston averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+    },
+    "drop_off_locations": [
+      {
+        "name": "Republic Services Howard Transfer Station",
+        "address": "66 Norfolk Ave, Boston, MA 02119, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Tuesday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Wednesday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Thursday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Friday: 12:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Saturday: 4:00\u202fAM\u2009\u2013\u200912:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ2bBGiUd644kRA9nZ3jyqOS0",
+        "source": "google_places"
+      },
+      {
+        "name": "Casella Waste Systems",
+        "address": "24 Bunker Hill Industrial Park, Boston, MA 02129, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 4:00\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJk7C92L5x44kRQ8Tsq9WyIQM",
+        "source": "google_places"
+      },
+      {
+        "name": "Recycle Boston",
+        "address": "516 E 2nd St, Boston, MA 02127, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Tuesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Wednesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Thursday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Friday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM | Sunday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJEcYXgf5744kR3tm2iRoGr8c",
+        "source": "google_places"
+      },
+      {
+        "name": "Boston Public Works",
+        "address": "400 Frontage Rd # A, Boston, MA 02118, USA",
+        "type": "Drop-Off Center",
+        "hours": null,
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJq-ohf2V644kRla5LWEKUEAU",
+        "source": "google_places"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": null,
+      "citation": null
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "boston-ma-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$139+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "MEDIUM",
+      "confidence_breakdown": {
+        "has_phone": false,
+        "has_website": true,
+        "has_curb_rule": true,
+        "has_facilities": true,
+        "has_fine": false,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": true,
+        "mattress_rule_verified": true,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://www.boston.gov/departments/public-works/mattress-recycling",
+        "https://www.boston.gov/departments/public-works/special-collection-items",
+        "https://www.boston.gov/departments/public-works/trash",
+        "https://www.boston.gov/departments/public-works/how-code-enforcement-works-boston",
+        "https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleI/Chapter270/Section16",
+        "https://www.mass.gov/doc/master-crime-list/download",
+        "https://codelibrary.amlegal.com/codes/boston/latest/boston_ma/0-0-0-15497"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "miami-fl",
+    "city_name": "Miami",
+    "state_name": "Florida",
+    "state_slug": "florida",
+    "state_abbr": "FL",
+    "geo": {
+      "latitude": 25.7616798,
+      "longitude": -80.1917902,
+      "zip_codes": [
+        "33014",
+        "33140",
+        "33142",
+        "33143",
+        "33160",
+        "33166",
+        "33169"
+      ]
+    },
+    "seo": {
+      "title_override": "Miami Mattress Disposal Guide 2026: Easy & Eco-Friendly",
+      "meta_desc_override": "Dispose of your mattress in Miami without a fine! Learn local rules, check city guidelines for curbside pickup, and find hassle-free options for 2026. Stay informed."
+    },
+    "hero_hook": "Don't let Miami's rainy weather and unclear curbside rules make mattress disposal a soggy, confusing chore.",
+    "neighborhoods": "Brickell, Wynwood, Little Havana, Coconut Grove, Downtown Miami, Edgewater, Midtown, Design District, Allapattah, Overtown, Little Haiti, Upper East Side, Flagami, West Flagler, Shenandoah",
+    "population": {
+      "count": 443665,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/miamicityfl"
+    },
+    "contacts": {
+      "official_phone": "311",
+      "department_name": "Department of Solid Waste",
+      "website_url": null
+    },
+    "curbside_rules": {
+      "is_available": null,
+      "mattress_specific_rule": null,
+      "placement_time": null,
+      "size_limits": null,
+      "the_catch": null,
+      "schedule_logic": null
+    },
+    "weather_profile": {
+      "is_rain_heavy": true,
+      "rejection_risk_copy": "WARNING: Miami averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+    },
+    "drop_off_locations": [
+      {
+        "name": "The City of Miami, Department of Solid Waste, Mini Dump Facility",
+        "address": "1290 NW 20 STREET, Miami, FL",
+        "type": "Drop-Off Center",
+        "hours": "MONDAY - FRIDAY 8:00 AM - 4:00 PM SATURDAY: 8:00 AM - 12 Noon CLOSED: Sunday, Dr. Martin Luther King, Jr. & Christmas Day",
+        "tipping_fee": null,
+        "residency_required": true,
+        "notes": "ONE (1) PROOF OF CITY OF MIAMI RESIDENCY: Florida Driver's license or Florida ID, utility statements for the last 3 months (ex. electricity, cell phone, water or trash compactor bill), a rental agreement, a tax bill or other documents that prove City of Miami residency. A MAXIMUM OF ONE (1) TRIP PER DAY ALLOWED (Each trip is no more than a pickup truck load). WILL NOT ACCEPT THE FOLLOWING: VEHICLES WITH COMMERCIAL MARKINGS, DUMP-TYPE OR PANEL TYPE TRUCKS, COMMERCIAL TRUCKS OR VANS OR MATERIALS FROM COMMERCIAL CONTRACTORS.",
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1290+NW+20+STREET,+Miami,+FL"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": null,
+      "citation": null
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "miami-fl-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$129+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "MEDIUM",
+      "confidence_breakdown": {
+        "has_phone": true,
+        "has_website": false,
+        "has_curb_rule": false,
+        "has_facilities": true,
+        "has_fine": false,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": false,
+        "mattress_rule_verified": false,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://www.miamidade.gov/bulkywaste/",
+        "https://www.miami.gov/My-Home-Neighborhood/Garbage-Recycling/About-Mini-Dump-and-Bulky-Trash",
+        "https://www.miamibeachfl.gov/city-hall/public-works/sanitation-division/bulk-disposal/",
+        "https://www.miamidade.gov/illegaldumping/",
+        "https://www.miami.gov/My-Home-Neighborhood/Illegal-Dumping/Lets-Get-Rid-of-Illegal-Dumping-Landing-Page",
+        "https://www.muscalaw.com/blog/florida-illegal-dumping-defense-attorneys",
+        "https://www.miamidade.gov/solidwaste/library/brochures/illegal-dumping-english.pdf"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "atlanta-ga",
+    "city_name": "Atlanta",
+    "state_name": "Georgia",
+    "state_slug": "georgia",
+    "state_abbr": "GA",
+    "geo": {
+      "latitude": 33.7501275,
+      "longitude": -84.3885209,
+      "zip_codes": [
+        "30030",
+        "30082",
+        "30168",
+        "30294",
+        "30318",
+        "30327",
+        "30337",
+        "30341",
+        "30349"
+      ]
+    },
+    "seo": {
+      "title_override": "Atlanta Mattress Disposal Guide 2026 | Easy & Eco-Friendly",
+      "meta_desc_override": "Atlanta residents, dispose of your mattress easily! Enjoy curbside pickup with no fines. Learn the rules for hassle-free mattress removal in 2026."
+    },
+    "hero_hook": "Tired of your old mattress taking up space, especially on a rainy Atlanta day?",
+    "neighborhoods": "Midtown, Buckhead, Old Fourth Ward, Virginia-Highland, Inman Park, Candler Park, Grant Park, West End, East Atlanta Village, Little Five Points, Ansley Park, Cabbagetown, Kirkwood, Druid Hills, Morningside-Lenox Park",
+    "population": {
+      "count": 494838,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/atlantacityga"
+    },
+    "contacts": {
+      "official_phone": "3-1-1",
+      "department_name": "Office of Solid Waste Services (SWS)",
+      "website_url": null
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": null,
+      "placement_time": "Place in green cart(s) curbside no later than 7 a.m. on collection day. Remove cart(s) by 9 a.m. the day after collection day.",
+      "size_limits": "96-gallon roll cart for solid waste collection.",
+      "the_catch": null,
+      "schedule_logic": null
+    },
+    "weather_profile": {
+      "is_rain_heavy": true,
+      "rejection_risk_copy": "WARNING: Atlanta averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+    },
+    "drop_off_locations": [
+      {
+        "name": "Dekalb County Landfill",
+        "address": "4203 Clevemont Rd, Ellenwood, GA 30294, USA",
+        "type": "Landfill",
+        "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJofbSFU9V9IgRtXTxXBTxLyM",
+        "source": "google_places"
+      },
+      {
+        "name": "GFL Environmental",
+        "address": "5225 Welcome All Rd, College Park, GA 30349, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 12:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 12:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 12:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 12:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 12:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 1:00\u2009\u2013\u20099:00\u202fAM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJOayHPmHh9IgR3vh-Ts2oDNc",
+        "source": "google_places"
+      },
+      {
+        "name": "WM - Plant Atkinson Transfer Station",
+        "address": "207 Plant Atkinson Rd, Smyrna, GA 30080, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 3:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 3:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 3:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 3:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 3:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 6:00\u2009\u2013\u200911:00\u202fAM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJkcpHN2Aa9YgRl48Q61R_MBw",
+        "source": "google_places"
+      },
+      {
+        "name": "WM - Gateway Transfer Station",
+        "address": "1625 Westgate Pkwy SW, Atlanta, GA 30336, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 4:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Tuesday: 4:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Wednesday: 4:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Thursday: 4:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Friday: 4:00\u202fAM\u2009\u2013\u20093:00\u202fPM | Saturday: Closed | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJe3fj1pEf9YgRn4ceYGVqgAc",
+        "source": "google_places"
+      },
+      {
+        "name": "The Center for Hard to Recycle Materials CHaRM",
+        "address": "1110 Hill St SE, Atlanta, GA 30315, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: Closed | Tuesday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fPM | Wednesday: Closed | Thursday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fPM | Friday: Closed | Saturday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJf7tMnLcD9YgRJRvY1i3LpN8",
+        "source": "google_places"
+      },
+      {
+        "name": "Solid Waste Services",
+        "address": "1540 Northside Dr NW, Atlanta, GA 30318, USA",
+        "type": "Drop-Off Center",
+        "hours": null,
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJOYwPweQE9YgRGH1Fz4dVq7k",
+        "source": "google_places"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": null,
+      "citation": null
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "atlanta-ga-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$107+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "MEDIUM",
+      "confidence_breakdown": {
+        "has_phone": true,
+        "has_website": false,
+        "has_curb_rule": false,
+        "has_facilities": true,
+        "has_fine": false,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": false,
+        "mattress_rule_verified": false,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://www.atlantaga.gov/government/departments/public-works/office-of-solid-waste-services#!rc-cpage=284325",
+        "https://www.atlantaga.gov/government/departments/public-works/solid-waste-services-collection-tool#!rc-cpage=284325",
+        "https://www.cityofsouthfultonga.gov/3504/Bulk-Waste",
+        "https://www.atlantaga.gov/government/departments/city-planning/inspections-code-enforcement/report-a-code-violation",
+        "https://rules.sos.ga.gov/gac/391-3-4",
+        "https://www.atlantanewsfirst.com/2026/01/15/douglas-county-faces-increase-illegal-tire-dumping/",
+        "https://www.atlantaga.gov/Home/Components/News/News/2067/"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  },
+  {
+    "city_slug": "detroit-mi",
+    "city_name": "Detroit",
+    "state_name": "Michigan",
+    "state_slug": "michigan",
+    "state_abbr": "MI",
+    "geo": {
+      "latitude": 42.32971819999999,
+      "longitude": -83.0424533,
+      "zip_codes": [
+        "48030",
+        "48033",
+        "48127",
+        "48180",
+        "48208",
+        "48236",
+        "N0R",
+        "N0R 1K0",
+        "N9J",
+        "N9J 3W9"
+      ]
+    },
+    "seo": {
+      "title_override": "Detroit Mattress Disposal Guide 2026: Easy & Legal Options",
+      "meta_desc_override": "Detroit residents, easily dispose of your old mattress with convenient curbside pickup! Learn all the rules for proper disposal in 2026. No fines to worry about."
+    },
+    "hero_hook": "Struggling to haul your old mattress to the curb in Detroit's rainy weather?",
+    "neighborhoods": "Midtown, Corktown, Indian Village, Palmer Woods, Boston-Edison, New Center, Jefferson-Chalmers, West Village, Lafayette Park, Bagley, Livernois-McNichols, Woodbridge, Grandmont-Rosedale, Mexicantown, University District",
+    "population": {
+      "count": 636787,
+      "year": 2022,
+      "source": "https://www.census.gov/quickfacts/fact/table/detroitcitymi"
+    },
+    "contacts": {
+      "official_phone": null,
+      "department_name": null,
+      "website_url": null
+    },
+    "curbside_rules": {
+      "is_available": true,
+      "mattress_specific_rule": null,
+      "placement_time": null,
+      "size_limits": "Grass clippings, leaves, and small twigs no more than two inches in diameter. Branches and twigs up to four feet in length and no more than four inches in diameter should be bundled and tied securely.",
+      "the_catch": null,
+      "schedule_logic": "Yard waste collection runs March 31 through December 19 and will be picked up weekly at the curbline with the rest of your solid waste. Residents can place grass clippings, leaves, and small twigs that are no more than two inches in diameter in biodegradable paper bags on their bi-weekly scheduled bulk collection day."
+    },
+    "weather_profile": {
+      "is_rain_heavy": true,
+      "rejection_risk_copy": "WARNING: Detroit averages 100+ rainy days per year. If your mattress gets wet before pickup, the city WILL NOT take it (too heavy, mold risk). Our haulers pick up from inside your home \u2014 rain or shine."
+    },
+    "drop_off_locations": [
+      {
+        "name": "J. Fons Co.",
+        "address": "6451 E McNichols Rd, Detroit, MI 48212, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Tuesday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Wednesday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Thursday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Friday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Saturday: Closed | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV3AV1YHRJIgR-xnAUn_2TLg",
+        "source": "google_places"
+      },
+      {
+        "name": "Metropolitan Transfer Center",
+        "address": "6451 E McNichols Rd, Hamtramck, MI 48212, USA",
+        "type": "Transfer Station",
+        "hours": "Monday: 6:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 6:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 6:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 6:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 6:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 6:00\u202fAM\u2009\u2013\u20091:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJV3AV1YHRJIgRYxbdoaok-mQ",
+        "source": "google_places"
+      },
+      {
+        "name": "Detroit Disposal & Recycling",
+        "address": "1475 E Milwaukee Ave, Detroit, MI 48211, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Tuesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 7:00\u2009\u2013\u200911:00\u202fAM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJh05IrYzSJIgRP0lEkrMah2M",
+        "source": "google_places"
+      },
+      {
+        "name": "City of Detroit Department of Public Works Southfield Yard",
+        "address": "12255 Southfield Rd, Detroit, MI 48228, USA",
+        "type": "Drop-Off Center",
+        "hours": "Monday: 10:30\u202fAM\u2009\u2013\u20096:00\u202fPM | Tuesday: 10:30\u202fAM\u2009\u2013\u20096:00\u202fPM | Wednesday: 10:30\u202fAM\u2009\u2013\u20096:00\u202fPM | Thursday: 10:30\u202fAM\u2009\u2013\u20096:00\u202fPM | Friday: 10:30\u202fAM\u2009\u2013\u20096:00\u202fPM | Saturday: 10:30\u202fAM\u2009\u2013\u20096:00\u202fPM | Sunday: Closed",
+        "tipping_fee": null,
+        "residency_required": null,
+        "notes": "Verify accepts mattresses before visiting",
+        "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ661bd-_KJIgRA0wst40yGy0",
+        "source": "google_places"
+      }
+    ],
+    "donation_policy": null,
+    "illegal_dumping": {
+      "fine_amount": null,
+      "citation": null
+    },
+    "affiliate_config": {
+      "partner_name": "LoadUp",
+      "custom_link_slug": "detroit-mi-mattress-disposal",
+      "base_price_display": "$80",
+      "competitor_comparison": {
+        "competitor_name": "National Junk Chains",
+        "competitor_price": "$107+",
+        "value_prop": "No franchise fees. Just local haulers."
+      }
+    },
+    "audit_metadata": {
+      "confidence_score": "LOW",
+      "confidence_breakdown": {
+        "has_phone": false,
+        "has_website": false,
+        "has_curb_rule": false,
+        "has_facilities": true,
+        "has_fine": false,
+        "has_geo": true
+      },
+      "verification_checklist": {
+        "gov_source_found": false,
+        "mattress_rule_verified": false,
+        "facility_hours_verified": true,
+        "facility_type_verified": true,
+        "population_census_verified": false,
+        "geo_validation_passed": true,
+        "content_validation_passed": true
+      },
+      "sources_used": [
+        "https://detroitmi.gov/departments/department-public-works/refuse-collection/bulk-yard-waste",
+        "https://detroitmi.gov/departments/department-public-works/refuse-collection/bulk-yard-waste/paid-pick-bulk-collection-service",
+        "https://www.wm.com/us/en/location/mi/detroit/trash-pickup-detroit-mi",
+        "https://detroitmi.gov/sites/detroitmi.localhost/files/2020-07/Excerpts%20of%20Chapter%2042%20for%20Bulk%20Solid%20Materials%20Storage.pdf",
+        "https://detroitmi.gov/how-do-i/report-problem/blight-complaints",
+        "https://www.notafraidtowin.com/illegal-dumping-charges-michigan/",
+        "https://detroitmi.gov/sites/detroitmi.localhost/files/2022-07/Operation%20Compliance.pdf"
+      ],
+      "rejected_sources": [],
+      "last_updated": "2026-02-24",
+      "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+    }
+  }
+]

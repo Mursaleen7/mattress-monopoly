@@ -31,10 +31,10 @@ export default function Header() {
               <span className="relative z-10">Book Pickup</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#FFD700]/0 via-[#FFD700]/5 to-[#FFD700]/0 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity" />
             </Link>
-            <a href="#contact" className="px-5 py-2.5 text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all duration-200 font-medium text-base relative group">
+            <Link href="/contact" className="px-5 py-2.5 text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all duration-200 font-medium text-base relative group">
               <span className="relative z-10">Contact</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#FFD700]/0 via-[#FFD700]/5 to-[#FFD700]/0 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity" />
-            </a>
+            </Link>
           </nav>
 
           {/* Desktop Actions */}
@@ -86,9 +86,9 @@ export default function Header() {
             <Link href="/book" onClick={() => setMobileOpen(false)} className="px-4 py-3 min-h-[44px] flex items-center text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all text-base font-medium">
               Book Pickup
             </Link>
-            <a href="#contact" onClick={() => setMobileOpen(false)} className="px-4 py-3 min-h-[44px] flex items-center text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all text-base font-medium">
+            <Link href="/contact" onClick={() => setMobileOpen(false)} className="px-4 py-3 min-h-[44px] flex items-center text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all text-base font-medium">
               Contact
-            </a>
+            </Link>
             <div className="border-t border-white/5 mt-2 pt-3 flex flex-col gap-2">
               <Link href="/book" onClick={() => setMobileOpen(false)} className="px-4 py-4 min-h-[48px] bg-gradient-to-r from-[#FFD700] to-[#FFC700] text-[#1A1A1A] rounded-xl text-center font-bold text-base transition-all shadow-lg shadow-[#FFD700]/20">
                 Book Pickup

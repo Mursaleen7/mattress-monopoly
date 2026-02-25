@@ -1,0 +1,97 @@
+{
+  "city_slug": "san-jose-ca",
+  "city_name": "San Jose",
+  "state_name": "California",
+  "state_slug": "california",
+  "state_abbr": "CA",
+  "geo": {
+    "latitude": 37.33874,
+    "longitude": -121.8852525,
+    "zip_codes": [
+      "94550",
+      "94560",
+      "95014",
+      "95018",
+      "95037",
+      "95046",
+      "95121"
+    ]
+  },
+  "seo": {
+    "title_override": "San Jose Mattress Disposal 2026: Your Complete Guide",
+    "meta_desc_override": "Avoid a $2,500 fine! Discover San Jose's 2026 mattress disposal rules, including convenient curbside pickup options. Keep San Jose clean and stay compliant."
+  },
+  "hero_hook": "Don't let an old mattress become a costly problem in San Jose.",
+  "neighborhoods": "Willow Glen, Rose Garden, Almaden Valley, Evergreen, Cambrian Park, Naglee Park, Japantown, Berryessa, Silver Creek, Santa Teresa, Edenvale, West San Jose, Downtown San Jose, North San Jose, East San Jose",
+  "population": {
+    "count": 1001176,
+    "year": 2022,
+    "source": "https://www.census.gov/quickfacts/fact/table/sanjosecityca"
+  },
+  "contacts": {
+    "official_phone": "(408) 535-3500",
+    "department_name": null,
+    "website_url": "https://www.sanjoseca.gov/311"
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": "See the list of acceptable junk items , such as mattresses, furniture, tires, and more.",
+    "placement_time": "Set out your items up to 24 hours before your scheduled appointment. Set out your Junk Pickup items the same way you set out your carts \u2013 on the street next to the curb.",
+    "size_limits": "Requests may include up to 12 items for pickup.",
+    "the_catch": "All items must be generated from your home. Do you have construction and demolition (C&D) material? Hire an authorized hauler for larger clean-out projects and/or Construction & Demolition material.",
+    "schedule_logic": "Visit 311.SanJoseCA.gov , dial 3-1-1, or call (408) 535-3500 to request a junk pickup appointment at no cost. Appointments are scheduled on the same day(s) as your regular recycling and garbage collection. Residents can schedule unlimited junk pickups for free. Residents in homes and mobile home parks can schedule a pickup by calling their recycling collection company directly. Apartment and condominium residents can contact their property managers or GreenTeam of San Jose at (408) 282-4400."
+  },
+  "weather_profile": {
+    "is_rain_heavy": false,
+    "rejection_risk_copy": null
+  },
+  "drop_off_locations": [],
+  "donation_policy": null,
+  "illegal_dumping": {
+    "fine_amount": "$2,500",
+    "citation": "Early and/or improper set out may result in the items not being picked up or a citation, as it may be considered illegal dumping."
+  },
+  "affiliate_config": {
+    "partner_name": "LoadUp",
+    "custom_link_slug": "san-jose-ca-mattress-disposal",
+    "base_price_display": "$80",
+    "competitor_comparison": {
+      "competitor_name": "National Junk Chains",
+      "competitor_price": "$100+",
+      "value_prop": "No franchise fees. Just local haulers."
+    }
+  },
+  "audit_metadata": {
+    "confidence_score": "HIGH",
+    "confidence_breakdown": {
+      "has_phone": true,
+      "has_website": true,
+      "has_curb_rule": true,
+      "has_facilities": false,
+      "has_fine": true,
+      "has_geo": true
+    },
+    "verification_checklist": {
+      "gov_source_found": true,
+      "mattress_rule_verified": true,
+      "facility_hours_verified": false,
+      "facility_type_verified": true,
+      "population_census_verified": false,
+      "geo_validation_passed": true,
+      "content_validation_passed": true
+    },
+    "sources_used": [
+      "https://www.sanjoseca.gov/your-government/environment/recycling-garbage/junk-pickup",
+      "https://www.sanjoseca.gov/your-government/departments-offices/environmental-services/recycling-garbage/residents",
+      "https://www.santaclaraca.gov/our-city/departments-g-z/public-works/environmental-programs/disposal-events-resources",
+      "https://www.sanjoseca.gov/your-government/departments-offices/parks-recreation-neighborhood-services/illegal-dumping",
+      "https://archive.epa.gov/wastes/conserve/tools/payt/web/pdf/illegal.pdf",
+      "https://calrecycle.ca.gov/illegaldump/prevention/",
+      "https://www.thebulldog.law/california-pc-374-3-defending-against-illegal-dumping-and-highway-littering-charges",
+      "https://sanjosespotlight.com/san-jose-considers-increasing-illegal-dumping-fines/"
+    ],
+    "rejected_sources": [],
+    "last_updated": "2026-02-24",
+    "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+  }
+}

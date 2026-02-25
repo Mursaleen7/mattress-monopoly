@@ -61,6 +61,25 @@ html {
   height: -webkit-fill-available;
 }
 
+/* Smooth page transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Disable transitions on elements that shouldn't animate */
+*:where(:not(a):not(button):not(input):not(select):not(textarea)) {
+  transition: none;
+}
+
+/* Re-enable for interactive elements */
+a, button, input, select, textarea {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
 /* Better text rendering */
 * {
   -webkit-font-smoothing: antialiased;

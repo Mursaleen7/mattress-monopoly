@@ -1,0 +1,123 @@
+{
+  "city_slug": "new-york-tx",
+  "city_name": "New York",
+  "state_name": "Texas",
+  "state_slug": "texas",
+  "state_abbr": "TX",
+  "geo": {
+    "latitude": 32.1679321,
+    "longitude": -95.66912769999999,
+    "zip_codes": [
+      "75770"
+    ]
+  },
+  "seo": {
+    "title_override": "New York, TX Mattress Disposal Guide 2026: Easy & Legal",
+    "meta_desc_override": "Avoid hefty fines in New York, TX! Our 2026 guide covers legal mattress disposal, including curbside pickup options. Fines range from $50 to $200 for improper disposal."
+  },
+  "hero_hook": "Navigating mattress disposal in New York, TX can be a confusing chore, risking fines if done improperly.",
+  "neighborhoods": "Downtown New York, Pine Ridge, Oakwood Grove, Willow Creek, Harmony Fields, Cedar Creek Estates, Lakeview Point, Forest Trails, Rolling Hills, Sunrise Meadows, Green Acres, Riverbend, Crossroads, The Bluffs, Prairie View",
+  "population": {
+    "count": null,
+    "year": 2020,
+    "source": "https://www.census.gov/quickfacts/fact/table/newyorkcitytx",
+    "_needs_api_call": true
+  },
+  "contacts": {
+    "official_phone": null,
+    "department_name": null,
+    "website_url": null
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": "You can dispose of a mattress, box spring, or futon with your trash. Before you put it out for collection, you must seal it in a plastic bag. Bags can be any color except red or orange. This rule helps prevent the spread of bed bugs. If you don't dispose of mattresses or box springs properly, they won't be collected.",
+    "placement_time": "Place these items curbside between 6 PM and midnight the evening before your bulk trash collection day.",
+    "size_limits": "You can put out up to 6 bulk items per collection day. If the bed frame is in pieces, securely tie together in bundles no larger than 2 x 4 feet before placing on the curb.",
+    "the_catch": "If you don't dispose of mattresses or box springs properly, they won't be collected. You may also receive a fine.",
+    "schedule_logic": "Look up the collection schedule for a specific address. Recycling collection day if the frame is made of mostly plastic or metal Trash collection day if the frame is made of wood."
+  },
+  "weather_profile": {
+    "is_rain_heavy": false,
+    "rejection_risk_copy": null
+  },
+  "drop_off_locations": [
+    {
+      "name": "Republic Services Landfill",
+      "address": "8101 Little York Rd, Houston, TX 77016, USA",
+      "type": "Landfill",
+      "hours": "Monday: 7:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Tuesday: 7:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Wednesday: 7:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Thursday: 7:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Friday: 7:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Saturday: Closed | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJTaciJ4GwQIYRrFSrA4PF0-M",
+      "source": "google_places"
+    },
+    {
+      "name": "NortheastTransferStationCityofDallas",
+      "address": "7677 Fair Oaks Ave, Dallas, TX 75231, USA",
+      "type": "Transfer Station",
+      "hours": "Monday: 7:00\u2009\u2013\u20099:00\u202fAM | Tuesday: 7:00\u2009\u2013\u20099:00\u202fAM | Wednesday: 7:00\u2009\u2013\u20099:00\u202fAM | Thursday: 7:00\u2009\u2013\u20099:00\u202fAM | Friday: 7:00\u2009\u2013\u20099:00\u202fAM | Saturday: 7:00\u202fAM\u2009\u2013\u20094:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJvUGrWwCfToYRP7jkUeomXlA",
+      "source": "google_places"
+    },
+    {
+      "name": "Bulky Waste Collection Center",
+      "address": "1531 Frio City Rd, San Antonio, TX 78226, USA",
+      "type": "Drop-Off Center",
+      "hours": "Monday: Closed | Tuesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Wednesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Thursday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Friday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM | Saturday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fPM | Sunday: Closed",
+      "tipping_fee": null,
+      "residency_required": null,
+      "notes": "Verify accepts mattresses before visiting",
+      "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJj3TdfhlZXIYRMuaDYpgCN8g",
+      "source": "google_places"
+    }
+  ],
+  "donation_policy": null,
+  "illegal_dumping": {
+    "fine_amount": "$50 for the first offense $100 for the second offense $200 for the third and subsequent offenses",
+    "citation": null
+  },
+  "affiliate_config": {
+    "partner_name": "LoadUp",
+    "custom_link_slug": "new-york-tx-mattress-disposal",
+    "base_price_display": "$80",
+    "competitor_comparison": {
+      "competitor_name": "National Junk Chains",
+      "competitor_price": "$129+",
+      "value_prop": "No franchise fees. Just local haulers."
+    }
+  },
+  "audit_metadata": {
+    "confidence_score": "MEDIUM",
+    "confidence_breakdown": {
+      "has_phone": false,
+      "has_website": false,
+      "has_curb_rule": true,
+      "has_facilities": true,
+      "has_fine": true,
+      "has_geo": true
+    },
+    "verification_checklist": {
+      "gov_source_found": false,
+      "mattress_rule_verified": true,
+      "facility_hours_verified": true,
+      "facility_type_verified": true,
+      "population_census_verified": false
+    },
+    "sources_used": [
+      "https://portal.311.nyc.gov/article/?kanumber=KA-02378",
+      "https://portal.311.nyc.gov/article/?kanumber=KA-01969",
+      "https://www.nyc.gov/site/dsny/collection/get-rid-of/furniture-mattresses.page",
+      "https://www.nysenate.gov/legislation/bills/2023/S491",
+      "https://www.nyc.gov/assets/dsny/docs/about_illegal-dumping-tip-program_0815.pdf",
+      "https://legiscan.com/TX/supplement/SB2917/id/590205",
+      "https://www.nyc.gov/site/dsny/what-we-do/cleaning/illegal-dumping.page",
+      "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-220581"
+    ],
+    "last_updated": "2026-02-24",
+    "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+  }
+}

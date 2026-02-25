@@ -1,0 +1,85 @@
+{
+  "city_slug": "san-antonio-tx",
+  "city_name": "San Antonio",
+  "state_name": "Texas",
+  "state_slug": "texas",
+  "state_abbr": "TX",
+  "geo": {
+    "latitude": 29.4251905,
+    "longitude": -98.4945922,
+    "zip_codes": []
+  },
+  "seo": {
+    "title_override": "San Antonio Mattress Disposal Guide 2026 - Avoid Fines",
+    "meta_desc_override": "Avoid up to a $2,000 fine in San Antonio! Learn the rules for legal mattress disposal, including curbside options and other easy methods in 2026."
+  },
+  "hero_hook": "Navigating the proper way to dispose of an old mattress in San Antonio can be a surprisingly complicated and time-consuming task.",
+  "neighborhoods": "Alamo Heights, Stone Oak, The Dominion, Helotes, Olmos Park, Monte Vista, King William, Southtown, Lavaca, Tobin Hill, Beacon Hill, Government Hill, Mahncke Park, Terrell Hills, Shavano Park",
+  "population": {
+    "count": null,
+    "year": 2020,
+    "source": "https://www.census.gov/quickfacts/fact/table/sanantoniocitytx",
+    "_needs_api_call": true
+  },
+  "contacts": {
+    "official_phone": "210-207-6000",
+    "department_name": "Solid Waste Management",
+    "website_url": "https://www.sanantonio.gov/Solid-Waste"
+  },
+  "curbside_rules": {
+    "is_available": true,
+    "mattress_specific_rule": null,
+    "placement_time": "The date on the door hanger states when your pile should be set out. It is NOT the actual day of collection. Collections can take up to a week to complete.",
+    "size_limits": "Piles should be no more than eight cubic yards and placed within eight feet of the curb.",
+    "the_catch": "Piles should not be obstructed, in front of parked cars or under low hanging tree limbs. Do not place any material on vacant lots, or on top of water meters. Even if your garbage is serviced in the alley, your brush or bulky pile must be placed at curbside in front of your house for collection. If your pile contains non-brush material (for brush) or brush material (for bulky items), is obstructed, or set out after crews have passed, you could receive a fine of up to $2,000 per day. Additionally, you will be charged a collection and disposal fee.",
+    "schedule_logic": "Curbside brush and bulky item collection is provided twice for each per year. Use Find My Collection Day for an estimated timeframe of your collection date. Customers will be notified of their collection week 7-10 days before collection via a door hanger."
+  },
+  "weather_profile": {
+    "is_rain_heavy": false,
+    "rejection_risk_copy": null
+  },
+  "drop_off_locations": [],
+  "donation_policy": null,
+  "illegal_dumping": {
+    "fine_amount": "Up to $2,000",
+    "citation": "San Antonio City Code Chapter 21"
+  },
+  "affiliate_config": {
+    "partner_name": "LoadUp",
+    "custom_link_slug": "san-antonio-tx-mattress-disposal",
+    "base_price_display": "$80",
+    "competitor_comparison": {
+      "competitor_name": "National Junk Chains",
+      "competitor_price": "$107+",
+      "value_prop": "No franchise fees. Just local haulers."
+    }
+  },
+  "audit_metadata": {
+    "confidence_score": "MEDIUM",
+    "confidence_breakdown": {
+      "has_phone": true,
+      "has_website": true,
+      "has_curb_rule": false,
+      "has_facilities": false,
+      "has_fine": true,
+      "has_geo": true
+    },
+    "verification_checklist": {
+      "gov_source_found": true,
+      "mattress_rule_verified": false,
+      "facility_hours_verified": false,
+      "facility_type_verified": true,
+      "population_census_verified": false
+    },
+    "sources_used": [
+      "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Curbside",
+      "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
+      "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky",
+      "https://www.sa.gov/Directory/Departments/DSD/CES/Process/Violation-Notice-Process",
+      "https://docsonline.sanantonio.gov/DSDUploads/CodeFactsBookletEN.pdf",
+      "https://www.sa.gov/Directory/Departments/DSD/CES/Permits-Licenses/Commercial"
+    ],
+    "last_updated": "2026-02-24",
+    "scraping_method": "AUTONOMOUS_MULTI_AGENT_PIPELINE_V2"
+  }
+}
