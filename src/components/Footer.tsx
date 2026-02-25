@@ -39,10 +39,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-6 uppercase tracking-wider text-white/50">Company</h4>
             <ul className="flex flex-col gap-3">
-              <li><a href="#" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
+              <li><Link href="/about" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
                 <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
                 About Us
-              </a></li>
+              </Link></li>
             </ul>
           </div>
 
@@ -86,15 +86,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-
-        {/* Affiliate Disclosure */}
-        <div className="border-t border-white/5 pt-8 pb-6">
-          <div className="bg-white/5 rounded-xl p-6 border border-white/5">
-            <p className="text-white/70 text-sm leading-relaxed">
-              <strong className="text-white">Affiliate Disclosure:</strong> DisposalGrid is a participant in the Amazon Services LLC Associates Program and other affiliate programs. We may earn a commission if you book a service or make a purchase through our links, at no additional cost to you. This helps us keep our service free. <Link href="/disclosure" className="text-[#FFD700] hover:text-[#FFD700]/80 transition-colors underline">Learn more</Link>
-            </p>
           </div>
         </div>
 
