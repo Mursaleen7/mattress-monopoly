@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#1A1A1A] to-[#0F0F0F] text-white" id="contact">
+    <footer className="bg-gradient-to-b from-[#1A1A1A] to-[#0F0F0F] text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -109,15 +109,24 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Affiliate Disclosure */}
+        <div className="border-t border-white/5 pt-8 pb-6">
+          <div className="bg-white/5 rounded-xl p-6 border border-white/5">
+            <p className="text-white/70 text-sm leading-relaxed">
+              <strong className="text-white">Affiliate Disclosure:</strong> DisposalGrid is a participant in the Amazon Services LLC Associates Program and other affiliate programs. We may earn a commission if you book a service or make a purchase through our links, at no additional cost to you. This helps us keep our service free. <Link href="/disclosure" className="text-[#FFD700] hover:text-[#FFD700]/80 transition-colors underline">Learn more</Link>
+            </p>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-xs">
             &copy; 2026 DisposalGrid. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs">
-            <a href="#" className="text-white/50 hover:text-[#FFD700] transition-colors">Privacy Policy</a>
-            <a href="#" className="text-white/50 hover:text-[#FFD700] transition-colors">Terms of Service</a>
-            <a href="#" className="text-white/50 hover:text-[#FFD700] transition-colors">Cookie Policy</a>
+            <Link href="/privacy" className="text-white/50 hover:text-[#FFD700] transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-white/50 hover:text-[#FFD700] transition-colors">Terms of Service</Link>
+            <Link href="/disclosure" className="text-white/50 hover:text-[#FFD700] transition-colors">Affiliate Disclosure</Link>
           </div>
         </div>
       </div>
