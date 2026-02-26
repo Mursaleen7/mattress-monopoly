@@ -8,24 +8,16 @@ export default function SmoothScroll() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Disable smooth scroll on mobile devices for better native performance
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    
-    if (isMobile) {
-      // Use native scroll on mobile
-      return;
-    }
-
-    // Initialize Lenis with optimized configuration for desktop
+    // Initialize Lenis with optimized configuration for all devices
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
       mouseMultiplier: 1,
-      smoothTouch: false,
+      smoothTouch: true, // Enable smooth scrolling on touch devices
       touchMultiplier: 1.5,
       infinite: false,
-      syncTouch: false,
+      syncTouch: false, // Let Lenis handle touch independently for smoother feel
       syncTouchLerp: 0.1,
       touchInertiaMultiplier: 25,
     } as any);

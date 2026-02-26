@@ -7,7 +7,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="relative z-50 bg-[#1A1A1A] border-b border-white/5 shadow-lg" style={{ position: 'relative' }}>
+    <header className="sticky top-0 z-50 bg-[#1A1A1A] border-b border-white/5 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
