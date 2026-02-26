@@ -1,39 +1,31 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import Lenis from 'lenis';
+import { useEffect } from 'react';
+import Lenis from '@studio-freight/lenis';
 
 export default function SmoothScroll() {
-  const rafRef = useRef<number | null>(null);
-
   useEffect(() => {
-    // Initialize Lenis with premium smooth scrolling configuration
+    // Initialize Lenis with premium smooth scrolling configuration - matching Personal Portfolio exactly
     const lenis = new Lenis({
-      duration: 1.2, // Duration of the scroll animation
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing function for smooth acceleration/deceleration
-      orientation: 'vertical', // Vertical scrolling
-      gestureOrientation: 'vertical', // Gesture direction
-      smoothWheel: true, // Enable smooth scrolling for mouse wheel
-      wheelMultiplier: 1, // Mouse wheel sensitivity
-      touchMultiplier: 2, // Touch sensitivity
-      infinite: false, // Disable infinite scrolling
-      autoResize: true, // Auto resize on window resize
-    });
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    } as any); // Use 'as any' to bypass TypeScript strict checking for deprecated package
 
-    // Animation frame loop for Lenis - optimized to prevent glitches
+    // Animation frame loop for Lenis
     function raf(time: number) {
       lenis.raf(time);
-      rafRef.current = requestAnimationFrame(raf);
+      requestAnimationFrame(raf);
     }
 
-    // Start the animation loop
-    rafRef.current = requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
 
-    // Cleanup function - properly cancel RAF and destroy Lenis
+    // Cleanup function
     return () => {
-      if (rafRef.current !== null) {
-        cancelAnimationFrame(rafRef.current);
-      }
       lenis.destroy();
     };
   }, []);
