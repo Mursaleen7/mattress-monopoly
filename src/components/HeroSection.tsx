@@ -83,7 +83,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden pt-4 sm:pt-0">
+    <section className="relative w-full min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex items-center overflow-hidden pt-14 sm:pt-16">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-main.jpg"
