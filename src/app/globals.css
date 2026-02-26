@@ -76,10 +76,17 @@ body {
   min-height: -webkit-fill-available;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling - disabled when Lenis is active */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   height: -webkit-fill-available;
+}
+
+/* Enable smooth scroll only for reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  html:not(.lenis) {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Smooth page transitions */

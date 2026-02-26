@@ -5,6 +5,9 @@ import Lenis from 'lenis';
 
 export default function SmoothScroll() {
   useEffect(() => {
+    // Add lenis class to html element
+    document.documentElement.classList.add('lenis');
+
     // Initialize Lenis with premium smooth scrolling configuration
     const lenis = new Lenis({
       duration: 1.2, // Duration of the scroll animation
@@ -27,6 +30,7 @@ export default function SmoothScroll() {
 
     // Cleanup function
     return () => {
+      document.documentElement.classList.remove('lenis');
       lenis.destroy();
     };
   }, []);
