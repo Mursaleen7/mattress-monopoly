@@ -90,12 +90,6 @@ body {
   will-change: transform;
 }
 
-/* Optimize scroll performance for specific elements */
-header.sticky {
-  transform: translateZ(0);
-  will-change: transform;
-}
-
 /* Hero text animation - optimized with CSS classes */
 .hero-text-slide {
   position: absolute;

@@ -8,18 +8,18 @@ export default function SmoothScroll() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Initialize Lenis with optimized configuration
+    // Initialize Lenis with optimized configuration for all devices
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
       mouseMultiplier: 1,
-      smoothTouch: false,
-      touchMultiplier: 2,
+      smoothTouch: true, // Enable smooth scrolling on touch devices
+      touchMultiplier: 1.5,
       infinite: false,
-      syncTouch: true,
-      syncTouchLerp: 0.075,
-      touchInertiaMultiplier: 35,
+      syncTouch: false, // Let Lenis handle touch independently for smoother feel
+      syncTouchLerp: 0.1,
+      touchInertiaMultiplier: 25,
     } as any);
 
     // Properly tracked RAF loop
