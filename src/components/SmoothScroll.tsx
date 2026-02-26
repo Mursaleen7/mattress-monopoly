@@ -8,7 +8,7 @@ export default function SmoothScroll() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Initialize Lenis with premium smooth scrolling configuration - matching Personal Portfolio exactly
+    // Initialize Lenis with optimized configuration
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -17,17 +17,21 @@ export default function SmoothScroll() {
       smoothTouch: false,
       touchMultiplier: 2,
       infinite: false,
+      syncTouch: true,
+      syncTouchLerp: 0.075,
+      touchInertiaMultiplier: 35,
     } as any);
 
-    // Animation frame loop for Lenis
+    // Properly tracked RAF loop
+    let rafId: number;
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
-    // Handle anchor links
+    // Handle anchor links with passive: false for better control
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const anchor = target.closest('a');
@@ -46,7 +50,7 @@ export default function SmoothScroll() {
       }
     };
 
-    document.addEventListener('click', handleAnchorClick);
+    document.addEventListener('click', handleAnchorClick, { passive: false });
 
     // Scroll to hash on page load
     if (window.location.hash) {
@@ -61,9 +65,10 @@ export default function SmoothScroll() {
       }, 100);
     }
 
-    // Cleanup function
+    // Proper cleanup
     return () => {
       document.removeEventListener('click', handleAnchorClick);
+      cancelAnimationFrame(rafId);
       lenis.destroy();
     };
   }, [pathname]);

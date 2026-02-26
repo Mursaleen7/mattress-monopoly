@@ -36,14 +36,13 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
 }
 
 html {
   background: #1A1A1A;
-  /* Disable native smooth scroll when Lenis is active */
   scroll-behavior: auto;
+  height: 100%;
 }
 
 /* Lenis smooth scroll - Critical for performance */
@@ -75,14 +74,90 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  will-change: scroll-position;
 }
 
-/* Better text rendering */
+/* Better text rendering - optimized */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   box-sizing: border-box;
+}
+
+/* Selective GPU acceleration - only for elements that need it */
+.gpu-accelerate {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Optimize scroll performance for specific elements */
+header.sticky {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Hero text animation - optimized with CSS classes */
+.hero-text-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  will-change: transform, opacity;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), 
+              opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.hero-text-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hero-text-next {
+  transform: translateY(100%);
+  opacity: 0.3;
+}
+
+.hero-text-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Optimize shadow transitions for interactive elements */
+.shadow-interactive {
+  will-change: box-shadow;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Optimize hover transforms */
+.hover-lift {
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Standardized transition durations for consistency */
+.transition-fast {
+  transition-duration: 200ms;
+}
+
+.transition-normal {
+  transition-duration: 300ms;
+}
+
+/* Prevent transition jank during scroll */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Remove dark mode override to keep consistent light theme */

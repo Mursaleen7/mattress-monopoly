@@ -7,7 +7,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#1A1A1A]/95 backdrop-blur-xl border-b border-white/5 shadow-2xl">
+    <header className="sticky top-0 z-50 bg-[#1A1A1A] border-b border-white/5 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
@@ -45,7 +45,7 @@ export default function Header() {
               </svg>
               1-800-DISPOSE
             </a>
-            <Link href="/book" className="group relative px-8 py-3 min-h-[48px] bg-gradient-to-r from-[#FFD700] to-[#FFC700] hover:from-[#FFC700] hover:to-[#FFD700] text-[#1A1A1A] rounded-xl font-bold shadow-lg shadow-[#FFD700]/25 hover:shadow-xl hover:shadow-[#FFD700]/40 transition-all duration-300 flex items-center gap-2 text-base overflow-hidden">
+            <Link href="/book" className="group relative px-8 py-3 min-h-[48px] bg-gradient-to-r from-[#FFD700] to-[#FFC700] hover:from-[#FFC700] hover:to-[#FFD700] text-[#1A1A1A] rounded-xl font-bold shadow-lg transition-all duration-300 flex items-center gap-2 text-base overflow-hidden will-change-transform">
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
               <span className="relative z-10">Book Pickup</span>
               <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,10 +73,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="md:hidden border-t border-white/5 bg-[#1A1A1A]/98 backdrop-blur-xl">
-          <nav className="flex flex-col px-6 py-4 gap-1" aria-label="Mobile navigation">
+      {/* Mobile Menu - CSS-only visibility toggle */}
+      <div className={`md:hidden border-t border-white/5 bg-[#1A1A1A] transition-all duration-300 ${mobileOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+        <nav className="flex flex-col px-6 py-4 gap-1" aria-label="Mobile navigation">
             <Link href="/" onClick={() => setMobileOpen(false)} className="px-4 py-3 min-h-[44px] flex items-center text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all text-base font-medium">
               Home
             </Link>
@@ -90,13 +89,13 @@ export default function Header() {
               Contact
             </Link>
             <div className="border-t border-white/5 mt-2 pt-3 flex flex-col gap-2">
-              <Link href="/book" onClick={() => setMobileOpen(false)} className="px-4 py-4 min-h-[48px] bg-gradient-to-r from-[#FFD700] to-[#FFC700] text-[#1A1A1A] rounded-xl text-center font-bold text-base transition-all shadow-lg shadow-[#FFD700]/20">
+              <Link href="/book" onClick={() => setMobileOpen(false)} className="px-4 py-4 min-h-[48px] bg-gradient-to-r from-[#FFD700] to-[#FFC700] text-[#1A1A1A] rounded-xl text-center font-bold text-base transition-all shadow-md">
                 Book Pickup
               </Link>
             </div>
           </nav>
         </div>
-      )}
-    </header>
-  );
-}
+      </header>
+    );
+  }
+

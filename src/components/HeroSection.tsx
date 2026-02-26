@@ -108,31 +108,20 @@ export default function HeroSection() {
             <span className="relative inline-block overflow-hidden h-[1.2em] sm:h-[1.3em] md:h-[1.4em] w-full max-w-[280px] sm:max-w-[400px] md:max-w-[620px] lg:max-w-[750px] px-4 sm:px-6 md:px-10">
               {phrases.map((phrase, index) => {
                 // Calculate the display position for smooth continuous scroll
-                let displayPosition;
+                let displayClass;
                 
                 if (index === currentWordIndex) {
-                  // Current phrase at center
-                  displayPosition = 0;
+                  displayClass = 'hero-text-active';
                 } else if (index === (currentWordIndex + 1) % phrases.length) {
-                  // Next phrase below, ready to slide up
-                  displayPosition = 1;
-                } else if (index === (currentWordIndex + 2) % phrases.length) {
-                  // Third phrase further below
-                  displayPosition = 2;
+                  displayClass = 'hero-text-next';
                 } else {
-                  // Previous phrase above, out of view
-                  displayPosition = -1;
+                  displayClass = 'hero-text-hidden';
                 }
                 
                 return (
                   <span
                     key={index}
-                    className="absolute inset-0 text-[#FFD700] whitespace-nowrap flex items-center justify-center px-4 sm:px-6 md:px-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl"
-                    style={{
-                      transform: `translateY(${displayPosition * 100}%)`,
-                      opacity: displayPosition === 0 ? 1 : displayPosition === 1 ? 0.3 : 0,
-                      transition: 'transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1)',
-                    }}
+                    className={`hero-text-slide text-[#FFD700] px-4 sm:px-6 md:px-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl ${displayClass}`}
                   >
                     {phrase}
                   </span>
@@ -148,7 +137,7 @@ export default function HeroSection() {
           {/* Search Bar - Primary CTA */}
           <div className="max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             <form onSubmit={handleSearch} className="relative">
-              <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-transparent focus-within:border-[#0055FF] transition-all">
+              <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent focus-within:border-[#0055FF] transition-all">
                 <div className="flex items-center pl-4 sm:pl-6 pr-3 pt-4 sm:pt-0">
                   <svg className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -170,7 +159,7 @@ export default function HeroSection() {
                 />
                 <button
                   type="submit"
-                  className="m-2 min-h-[44px] px-6 sm:px-10 py-3 sm:py-4 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] rounded-xl font-bold text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                  className="m-2 min-h-[44px] px-6 sm:px-10 py-3 sm:py-4 bg-[#FFD700] hover:bg-[#F4C430] text-[#1A1A1A] rounded-xl font-bold text-base sm:text-lg transition-all duration-300 shadow-md flex items-center justify-center gap-2 will-change-transform"
                   aria-label="Search for your city"
                 >
                   <span className="hidden sm:inline">Search</span>
@@ -182,7 +171,10 @@ export default function HeroSection() {
 
               {/* Suggestions Dropdown */}
               {showSuggestions && searchQuery.trim() && (
-                <div className="absolute top-full left-0 right-0 mt-3 bg-white rounded-2xl shadow-2xl overflow-hidden z-10 border border-gray-100 max-h-96 overflow-y-auto">
+                <div 
+                  data-lenis-prevent 
+                  className="absolute top-full left-0 right-0 mt-3 bg-white rounded-2xl shadow-xl overflow-hidden z-10 border border-gray-100 max-h-96 overflow-y-auto"
+                >
                   {filteredCities.length > 0 ? (
                     <>
                       {filteredCities.map((city, index) => (
