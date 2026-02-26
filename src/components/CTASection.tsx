@@ -32,12 +32,6 @@ export default function CTASection() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </Link>
-          <Link
-            href="/#cities"
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 hover:border-white/50 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-500 ease-out transform hover:scale-105"
-          >
-            Browse Cities
-          </Link>
         </div>
       </div>
     </section>

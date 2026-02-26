@@ -43,6 +43,14 @@ export default function Footer() {
                 <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
                 About Us
               </Link></li>
+              <li><Link href="/contact" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
+                <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
+                Contact
+              </Link></li>
+              <li><Link href="/#how-it-works" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
+                <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
+                How It Works
+              </Link></li>
             </ul>
           </div>
 
@@ -52,7 +60,15 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li><Link href="/#cities" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
                 <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
-                Cities
+                City Guides
+              </Link></li>
+              <li><Link href="/#eco" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
+                <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
+                Eco-Friendly Disposal
+              </Link></li>
+              <li><Link href="/#pricing" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
+                <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
+                Pricing
               </Link></li>
               <li><a href="#" className="text-white/70 hover:text-[#FFD700] transition-colors text-sm flex items-center gap-2 group">
                 <span className="w-1 h-1 rounded-full bg-white/30 group-hover:bg-[#FFD700] transition-colors" />
