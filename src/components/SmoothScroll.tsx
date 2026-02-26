@@ -1,13 +1,12 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 
 export default function SmoothScroll() {
-  useEffect(() => {
-    // Add lenis class to html element
-    document.documentElement.classList.add('lenis');
+  const rafRef = useRef<number | null>(null);
 
+  useEffect(() => {
     // Initialize Lenis with premium smooth scrolling configuration
     const lenis = new Lenis({
       duration: 1.2, // Duration of the scroll animation
@@ -18,19 +17,23 @@ export default function SmoothScroll() {
       wheelMultiplier: 1, // Mouse wheel sensitivity
       touchMultiplier: 2, // Touch sensitivity
       infinite: false, // Disable infinite scrolling
+      autoResize: true, // Auto resize on window resize
     });
 
-    // Animation frame loop for Lenis
+    // Animation frame loop for Lenis - optimized to prevent glitches
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafRef.current = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    // Start the animation loop
+    rafRef.current = requestAnimationFrame(raf);
 
-    // Cleanup function
+    // Cleanup function - properly cancel RAF and destroy Lenis
     return () => {
-      document.documentElement.classList.remove('lenis');
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current);
+      }
       lenis.destroy();
     };
   }, []);
