@@ -20,7 +20,7 @@ export default function Home() {
   const zip = "90012";
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
+    <div className="min-h-screen bg-background font-sans">
       <HeroSection city={city} onSearch={setSearchQuery} searchQuery={searchQuery} />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

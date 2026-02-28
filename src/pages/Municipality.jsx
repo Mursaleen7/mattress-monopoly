@@ -49,7 +49,7 @@ const MUNI_DATA = {
 
 export default function Municipality() {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-background font-sans">
       <MunicipalityHero data={MUNI_DATA} />
       <MunicipalityProFeed data={MUNI_DATA} />
       <MunicipalityRules data={MUNI_DATA} />

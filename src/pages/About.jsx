@@ -73,19 +73,19 @@ const GRID_IMAGES = [
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-background font-sans">
       {/* Hero */}
-      <section className="bg-gray-950 text-white">
+      <section className="bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-400/30 rounded-full px-4 py-1.5 mb-6">
-              <Award className="w-3.5 h-3.5 text-blue-400" />
-              <span className="text-blue-300 text-xs font-semibold tracking-widest uppercase">Our Story & Mission</span>
+            <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <Award className="w-3.5 h-3.5 text-accent" />
+              <span className="text-accent text-xs font-semibold tracking-widest uppercase">Our Story & Mission</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-black leading-[1.08] tracking-tight mb-6">
               Engineering a<br />
-              <span className="text-blue-400">Cleaner Local Economy.</span>
+              <span className="text-accent">Cleaner Local Economy.</span>
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
@@ -111,20 +111,20 @@ export default function About() {
               </div>
             </div>
             <div className="absolute bottom-4 left-4">
-              <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1.5 rounded-full">▶ Watch: How DisposalGrid Works</span>
+              <span className="bg-accent text-primary text-xs font-bold px-3 py-1.5 rounded-full">▶ Watch: How DisposalGrid Works</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="border-b border-gray-100 bg-white">
+      <section className="border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {STATS.map(({ value, suffix, prefix = "", label, icon: Icon, color }, i) => (
               <div key={i} className="text-center group">
-                <div className={`w-12 h-12 rounded-2xl bg-${color}-50 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
-                  <Icon className={`w-6 h-6 text-${color}-600`} />
+                <div className={color === "blue" ? "w-12 h-12 rounded-2xl bg-secondary flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform" : `w-12 h-12 rounded-2xl bg-${color}-50 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
+                  <Icon className={color === "blue" ? "w-6 h-6 text-primary" : `w-6 h-6 text-${color}-600`} />
                 </div>
                 <div className="text-4xl font-black text-gray-900 tracking-tight">
                   <AnimatedCounter target={value} suffix={suffix} prefix={prefix} />
@@ -137,7 +137,7 @@ export default function About() {
       </section>
 
       {/* Masonry UGC Grid */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-secondary py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-black text-gray-900 tracking-tight">The Network at Work</h2>
@@ -163,7 +163,7 @@ export default function About() {
       </section>
 
       {/* Our Standards */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-black text-gray-900 tracking-tight">Our Hauler Standards</h2>
@@ -174,9 +174,9 @@ export default function About() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {STANDARDS.map(({ icon: Icon, title, body, color }, i) => (
-              <div key={i} className="border border-gray-200 rounded-2xl p-8 hover:shadow-lg hover:border-blue-200 transition-all duration-200">
-                <div className={`w-14 h-14 rounded-2xl bg-${color}-50 flex items-center justify-center mb-5`}>
-                  <Icon className={`w-7 h-7 text-${color}-600`} />
+              <div key={i} className="border border-border rounded-2xl p-8 hover:shadow-lg hover:border-accent transition-all duration-200">
+                <div className={color === "blue" ? "w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center mb-5" : `w-14 h-14 rounded-2xl bg-${color}-50 flex items-center justify-center mb-5`}>
+                  <Icon className={color === "blue" ? "w-7 h-7 text-primary" : `w-7 h-7 text-${color}-600`} />
                 </div>
                 <h3 className="font-extrabold text-gray-900 text-lg mb-3">{title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{body}</p>

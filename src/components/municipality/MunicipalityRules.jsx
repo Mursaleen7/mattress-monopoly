@@ -5,7 +5,7 @@ export default function MunicipalityRules({ data }) {
   const { name, availabilityStatus, baggingRules, hoursDays, theCatch, fineAmount, officialDept, officialPhone, websiteUrl, waitDays } = data;
 
   return (
-    <section className="py-10 bg-gray-50 border-b border-gray-100">
+    <section className="py-10 bg-secondary border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-8 items-start">
 
@@ -37,7 +37,7 @@ export default function MunicipalityRules({ data }) {
                 { icon: FileText, label: "Bagging Requirement", value: baggingRules, color: "orange" },
                 { icon: AlertTriangle, label: "Key Restriction", value: theCatch, color: "red" },
               ].map(({ icon: Icon, label, value, color }) => (
-                <div key={label} className="bg-white border border-gray-200 rounded-xl p-4">
+                <div key={label} className={color === "blue" ? "bg-background border border-border rounded-xl p-4" : "bg-background border border-border rounded-xl p-4"}>
                   <div className="flex items-center gap-1.5 text-gray-500 mb-2">
                     <Icon className="w-3.5 h-3.5" />
                     <span className="text-[10px] font-bold uppercase tracking-widest">{label}</span>
@@ -59,22 +59,22 @@ export default function MunicipalityRules({ data }) {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
+            <div className="bg-background border border-border rounded-2xl p-5 shadow-sm">
               <div className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Official Contact</div>
               <div className="font-bold text-gray-900 text-sm mb-3">{officialDept}</div>
-              <a href={`tel:${officialPhone}`} className="flex items-center gap-2 text-blue-600 text-sm font-semibold mb-2 hover:underline">
+              <a href={`tel:${officialPhone}`} className="flex items-center gap-2 text-accent text-sm font-semibold mb-2 hover:underline">
                 <Phone className="w-3.5 h-3.5" /> {officialPhone}
               </a>
-              <a href={websiteUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-gray-500 text-xs hover:text-blue-600 transition-colors">
+              <a href={websiteUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-gray-500 text-xs hover:text-accent transition-colors">
                 <ExternalLink className="w-3 h-3" /> Official Website
               </a>
             </div>
 
-            <div className="bg-blue-600 rounded-2xl p-5 text-white text-center shadow-lg">
-              <div className="text-xs font-bold uppercase tracking-widest text-blue-200 mb-1">Skip the Wait</div>
+            <div className="bg-accent rounded-2xl p-5 text-primary text-center shadow-lg">
+              <div className="text-xs font-bold uppercase tracking-widest text-primary/70 mb-1">Skip the Wait</div>
               <div className="text-2xl font-black mb-1">Same-Day Available</div>
-              <p className="text-blue-200 text-xs mb-4 leading-relaxed">No bags, no scheduling, no forms. A pro handles everything.</p>
-              <button className="w-full bg-white text-blue-700 font-extrabold py-3 rounded-xl text-sm hover:bg-blue-50 transition-colors">
+              <p className="text-primary/70 text-xs mb-4 leading-relaxed">No bags, no scheduling, no forms. A pro handles everything.</p>
+              <button className="w-full bg-primary text-white font-extrabold py-3 rounded-xl text-sm hover:bg-primary/90 transition-colors">
                 Get Instant Quote →
               </button>
             </div>

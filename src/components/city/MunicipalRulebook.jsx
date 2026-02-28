@@ -11,7 +11,7 @@ export default function MunicipalRulebook({ data }) {
   const isConditional = availabilityStatus === "conditional";
 
   return (
-    <section className="py-14 bg-white border-b border-gray-200">
+    <section className="py-14 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-black text-gray-900 tracking-tight mb-2">
           Can I Leave It on the Curb in {city}?
@@ -60,10 +60,10 @@ export default function MunicipalRulebook({ data }) {
             { icon: Clock, label: "Placement Time", value: placementTime, color: "orange" },
             { icon: Ruler, label: "Size Limits", value: sizeLimits, color: "purple" },
           ].map(({ icon: Icon, label, value, color }, i) => (
-            <div key={i} className={`bg-${color}-50 border border-${color}-200 rounded-2xl p-5`}>
+            <div key={i} className={color === "blue" ? "bg-secondary border border-border rounded-2xl p-5" : `bg-${color}-50 border border-${color}-200 rounded-2xl p-5`}>
               <div className="flex items-center gap-2 mb-2">
-                <Icon className={`w-4 h-4 text-${color}-600`} />
-                <span className={`text-xs font-bold text-${color}-700 uppercase tracking-wide`}>
+                <Icon className={color === "blue" ? "w-4 h-4 text-primary" : `w-4 h-4 text-${color}-600`} />
+                <span className={color === "blue" ? "text-xs font-bold text-primary uppercase tracking-wide" : `text-xs font-bold text-${color}-700 uppercase tracking-wide`}>
                   {label}
                 </span>
               </div>
@@ -98,17 +98,17 @@ export default function MunicipalRulebook({ data }) {
           <div className="flex flex-wrap gap-3">
             <a 
               href={`tel:${officialPhone}`} 
-              className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-700 hover:border-blue-300 transition-colors shadow-sm"
+              className="flex items-center gap-2 bg-background border border-border rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-700 hover:border-accent transition-colors shadow-sm"
             >
-              <Phone className="w-4 h-4 text-blue-500" /> {officialPhone}
+              <Phone className="w-4 h-4 text-accent" /> {officialPhone}
             </a>
             <a 
               href={websiteUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-700 hover:border-blue-300 transition-colors shadow-sm"
+              className="flex items-center gap-2 bg-background border border-border rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-700 hover:border-accent transition-colors shadow-sm"
             >
-              <Globe className="w-4 h-4 text-blue-500" /> Official Site
+              <Globe className="w-4 h-4 text-accent" /> Official Site
             </a>
           </div>
         </div>

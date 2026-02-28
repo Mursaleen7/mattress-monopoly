@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Truck, Phone, ShieldCheck, Leaf } from "lucide-react";
+import { MapPin, Phone, ShieldCheck, Leaf, Clock } from "lucide-react";
 
 const NEARBY_CITIES = [
   "Mattress Removal in Santa Monica",
@@ -31,12 +31,12 @@ export default function MarketplaceFooter({ city }) {
           {[
             { icon: ShieldCheck, label: "4,500+ Verified Pros Nationwide" },
             { icon: Leaf, label: "Eco-Compliant Disposal Partners" },
-            { icon: Truck, label: "Same-Day Availability in Most Areas" },
+            { icon: Clock, label: "Same-Day Availability in Most Areas" },
             { icon: Phone, label: "Live Support 7am–9pm Daily" },
           ].map(({ icon: Icon, label }, i) => (
             <div key={i} className="flex items-center gap-2.5">
-              <Icon className="w-4 h-4 text-blue-400" />
-              <span className="text-sm font-medium text-gray-300">{label}</span>
+              <Icon className="w-4 h-4 text-accent" />
+              <span className="text-sm font-medium text-gray-200">{label}</span>
             </div>
           ))}
         </div>
@@ -46,20 +46,20 @@ export default function MarketplaceFooter({ city }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                <Truck className="w-4 h-4 text-white" />
-              </div>
-              <span className="font-black text-white text-lg tracking-tight">DisposalGrid</span>
+            <div className="flex items-center gap-0 mb-4">
+              <span className="font-black text-white text-2xl tracking-tight italic">
+                <span className="text-white">Disposal</span>
+                <span className="text-accent">Grid</span>
+              </span>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
               The #1 local directory for verified mattress and junk removal professionals. Compare pricing, read real reviews, and book in minutes.
             </p>
             <div className="mt-5 flex gap-3">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors">
+              <button className="bg-accent hover:opacity-90 text-accent-foreground text-sm font-bold px-4 py-2 rounded-lg transition-all duration-200 focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-gray-950 active:scale-95 shadow-lg">
                 Get a Free Quote
               </button>
-              <button className="border border-gray-700 hover:border-gray-500 text-gray-300 text-sm font-medium px-4 py-2 rounded-lg transition-colors">
+              <button className="border border-gray-700 hover:border-gray-500 hover:bg-gray-800 text-gray-300 text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-950 active:scale-95">
                 For Pros
               </button>
             </div>
@@ -71,7 +71,7 @@ export default function MarketplaceFooter({ city }) {
             <ul className="space-y-2">
               {SERVICES.map((s, i) => (
                 <li key={i}>
-                  <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">{s}</a>
+                  <a href="#" className="text-gray-300 hover:text-accent hover:underline text-sm transition-all duration-200 focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-gray-950 rounded">{s}</a>
                 </li>
               ))}
             </ul>
@@ -80,12 +80,12 @@ export default function MarketplaceFooter({ city }) {
           {/* Nearby Service Areas */}
           <div>
             <h3 className="font-bold text-white text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-blue-400" /> Nearby Service Areas
+              <MapPin className="w-4 h-4 text-accent" /> Nearby Service Areas
             </h3>
             <div className="grid grid-cols-1 gap-2">
               {NEARBY_CITIES.map((c, i) => (
-                <a key={i} href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors flex items-center gap-1.5">
-                  <span className="w-1 h-1 rounded-full bg-gray-600 flex-shrink-0" />
+                <a key={i} href="#" className="text-gray-300 hover:text-accent hover:underline text-sm transition-all duration-200 flex items-center gap-1.5 focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-gray-950 rounded">
+                  <span className="w-1 h-1 rounded-full bg-gray-500 flex-shrink-0" />
                   {c}
                 </a>
               ))}
@@ -95,10 +95,10 @@ export default function MarketplaceFooter({ city }) {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-gray-800 flex flex-wrap justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs">© 2026 HaulPros. All rights reserved. Serving {city} and surrounding areas.</p>
+          <p className="text-gray-400 text-xs">© 2026 HaulPros. All rights reserved. Serving {city} and surrounding areas.</p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service", "Sitemap", "Accessibility"].map((l, i) => (
-              <a key={i} href="#" className="text-gray-500 hover:text-gray-300 text-xs transition-colors">{l}</a>
+              <a key={i} href="#" className="text-gray-400 hover:text-gray-200 hover:underline text-xs transition-all duration-200 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-950 rounded">{l}</a>
             ))}
           </div>
         </div>

@@ -47,23 +47,23 @@ export default function TriggerRibbon({ data }) {
       title: "text-orange-900" 
     },
     blue: { 
-      bg: "bg-blue-50", 
-      border: "border-blue-200", 
-      icon: "text-blue-600", 
-      badge: "bg-blue-100 text-blue-800", 
-      title: "text-blue-900" 
+      bg: "bg-secondary", 
+      border: "border-border", 
+      icon: "text-primary", 
+      badge: "bg-secondary text-primary", 
+      title: "text-primary" 
     },
   };
 
   return (
-    <div className="bg-white border-b border-gray-200 py-6">
+    <div className="bg-background border-b border-border py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-3 gap-4">
           {cards.map(({ icon: Icon, label, title, body, accent, badge }, i) => {
             const a = accentMap[accent];
             return (
               <div key={i} className={`flex gap-4 p-4 rounded-2xl border ${a.bg} ${a.border}`}>
-                <div className={`w-10 h-10 rounded-xl bg-white border ${a.border} flex items-center justify-center flex-shrink-0 shadow-sm`}>
+                <div className={`w-10 h-10 rounded-xl bg-background border ${a.border} flex items-center justify-center flex-shrink-0 shadow-sm`}>
                   <Icon className={`w-5 h-5 ${a.icon}`} />
                 </div>
                 <div>

@@ -17,9 +17,9 @@ const CITY_PROS = [
     afterImage: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=200&q=80",
     description: "We specialize in rapid, eco-compliant mattress and bulky item removal. No wall scrapes, transparent pricing, and a certified green disposal process that diverts 80% from landfills.",
     tags: [
-      { label: "Background Checked", icon: ShieldCheck, style: "bg-blue-50 text-blue-700 border-blue-200" },
+      { label: "Background Checked", icon: ShieldCheck, style: "bg-secondary text-primary border-border" },
       { label: "Eco-Partner", icon: Leaf, style: "bg-green-50 text-green-700 border-green-200" },
-      { label: "Same-Day", icon: Zap, style: "bg-yellow-50 text-yellow-700 border-yellow-200" },
+      { label: "Same-Day", icon: Zap, style: "bg-accent/10 text-accent-foreground border-accent/30" },
     ]
   },
   {
@@ -36,8 +36,8 @@ const CITY_PROS = [
     afterImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=200&q=80",
     description: "Full-service junk hauling with upfront quotes and zero hidden fees. Mattresses, furniture, appliances — we haul it all with a crew that treats your home with respect.",
     tags: [
-      { label: "Background Checked", icon: ShieldCheck, style: "bg-blue-50 text-blue-700 border-blue-200" },
-      { label: "Upfront Pricing", icon: Tag, style: "bg-purple-50 text-purple-700 border-purple-200" },
+      { label: "Background Checked", icon: ShieldCheck, style: "bg-secondary text-primary border-border" },
+      { label: "Upfront Pricing", icon: Tag, style: "bg-secondary text-primary border-border" },
     ]
   },
   {
@@ -54,9 +54,9 @@ const CITY_PROS = [
     afterImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&q=80",
     description: "Licensed, insured, and highly reviewed by 170+ local customers. We handle full-load hauls, single-item pickups, and estate cleanouts with military-grade efficiency.",
     tags: [
-      { label: "Licensed & Insured", icon: ShieldCheck, style: "bg-blue-50 text-blue-700 border-blue-200" },
+      { label: "Licensed & Insured", icon: ShieldCheck, style: "bg-secondary text-primary border-border" },
       { label: "Eco-Partner", icon: Leaf, style: "bg-green-50 text-green-700 border-green-200" },
-      { label: "Same-Day", icon: Zap, style: "bg-yellow-50 text-yellow-700 border-yellow-200" },
+      { label: "Same-Day", icon: Zap, style: "bg-accent/10 text-accent-foreground border-accent/30" },
     ]
   },
   {
@@ -73,8 +73,8 @@ const CITY_PROS = [
     afterImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=200&q=80",
     description: "Budget-friendly removal without cutting corners. BulkHaul Express offers same-week scheduling, upfront flat-rate pricing, and a 100% satisfaction guarantee on every job.",
     tags: [
-      { label: "Upfront Pricing", icon: Tag, style: "bg-purple-50 text-purple-700 border-purple-200" },
-      { label: "Same-Day", icon: Zap, style: "bg-yellow-50 text-yellow-700 border-yellow-200" },
+      { label: "Upfront Pricing", icon: Tag, style: "bg-secondary text-primary border-border" },
+      { label: "Same-Day", icon: Zap, style: "bg-accent/10 text-accent-foreground border-accent/30" },
     ]
   }
 ];
@@ -85,7 +85,7 @@ const Toggle = ({ checked, onChange, label, icon: Icon, color = "blue" }) => (
       <Icon className={`w-4 h-4 text-${color}-500`} />
       <span className="text-sm font-medium text-gray-700">{label}</span>
     </div>
-    <div onClick={onChange} className={`relative w-10 h-5 rounded-full transition-colors duration-200 ${checked ? "bg-blue-600" : "bg-gray-200"}`}>
+    <div onClick={onChange} className={`relative w-10 h-5 rounded-full transition-colors duration-200 ${checked ? "bg-primary" : "bg-gray-200"}`}>
       <div className={`absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform duration-200 ${checked ? "translate-x-5" : "translate-x-0"}`} />
     </div>
   </label>
@@ -105,7 +105,7 @@ export default function CityProFeed({ data }) {
   ];
 
   return (
-    <section className="py-10 bg-white border-b border-gray-100">
+    <section className="py-10 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex gap-8 items-start">
 
@@ -143,10 +143,10 @@ export default function CityProFeed({ data }) {
             </div>
 
             {/* Filter Sidebar */}
-            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
-              <div className="bg-gray-50 border-b border-gray-200 px-5 py-4 flex items-center gap-2">
-                <SlidersHorizontal className="w-4 h-4 text-blue-600" />
-                <h2 className="font-bold text-gray-800 text-sm tracking-wide uppercase">Refine Search</h2>
+            <div className="bg-card border border-border rounded-2xl shadow-sm overflow-hidden">
+              <div className="bg-secondary border-b border-border px-5 py-4 flex items-center gap-2">
+                <SlidersHorizontal className="w-4 h-4 text-primary" />
+                <h2 className="font-bold text-card-foreground text-sm tracking-wide uppercase">Refine Search</h2>
               </div>
               <div className="px-5 py-3">
                 <Toggle checked={filters.ecoFriendly} onChange={() => toggle("ecoFriendly")} label="Eco-Friendly / Recycling" icon={Leaf} color="green" />
@@ -155,8 +155,8 @@ export default function CityProFeed({ data }) {
                 <Toggle checked={filters.upfrontPricing} onChange={() => toggle("upfrontPricing")} label="Upfront Pricing Only" icon={Tag} color="purple" />
               </div>
               <div className="px-5 pb-5">
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 text-center">
-                  <p className="text-blue-700 text-xs font-semibold">🔒 All pros are background-checked & verified.</p>
+                <div className="bg-secondary border border-border rounded-xl p-3 text-center">
+                  <p className="text-primary text-xs font-semibold">🔒 All pros are background-checked & verified.</p>
                 </div>
               </div>
             </div>
@@ -171,8 +171,8 @@ export default function CityProFeed({ data }) {
                 </h2>
                 <p className="text-gray-500 text-sm mt-0.5">matching your criteria · updated 2 min ago</p>
               </div>
-              <button className="flex items-center gap-1.5 bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:border-blue-400 transition-colors shadow-sm">
-                Best Match <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
+              <button className="flex items-center gap-1.5 bg-card border border-border rounded-lg px-3 py-2 text-sm font-semibold text-card-foreground hover:border-primary/30 transition-colors shadow-sm">
+                Best Match <ChevronDown className="w-3.5 h-3.5 text-muted-foreground" />
               </button>
             </div>
 
@@ -183,7 +183,7 @@ export default function CityProFeed({ data }) {
             </div>
 
             <div className="mt-8 text-center">
-              <button className="bg-white border-2 border-blue-600 text-blue-600 font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">
+              <button className="bg-card border-2 border-primary text-primary font-bold px-8 py-3 rounded-xl hover:bg-secondary transition-colors text-sm">
                 Show 8 More Haulers
               </button>
             </div>

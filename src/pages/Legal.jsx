@@ -124,9 +124,9 @@ export default function Legal() {
   const content = CONTENT[active];
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-background font-sans">
       {/* Header */}
-      <div className="bg-gray-950 text-white py-10">
+      <div className="bg-primary text-white py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-black tracking-tight">Legal & Compliance Center</h1>
           <p className="text-gray-400 mt-2 text-sm">Last updated: February 27, 2026. View our transparent operational policies.</p>
@@ -137,8 +137,8 @@ export default function Legal() {
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Sidebar */}
           <aside className="lg:w-64 flex-shrink-0">
-            <div className="lg:sticky lg:top-6 border border-gray-200 rounded-2xl overflow-hidden">
-              <div className="bg-gray-50 border-b border-gray-200 px-4 py-3">
+            <div className="lg:sticky lg:top-6 border border-border rounded-2xl overflow-hidden">
+              <div className="bg-secondary border-b border-border px-4 py-3">
                 <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Legal Documents</span>
               </div>
               <nav>
@@ -146,15 +146,15 @@ export default function Legal() {
                   <button
                     key={id}
                     onClick={() => setActive(id)}
-                    className={`w-full flex items-center justify-between gap-3 px-5 py-3.5 text-left border-b border-gray-100 last:border-0 transition-colors ${
-                      active === id ? "bg-blue-50 text-blue-700" : "text-gray-600 hover:bg-gray-50"
+                    className={`w-full flex items-center justify-between gap-3 px-5 py-3.5 text-left border-b border-border last:border-0 transition-colors ${
+                      active === id ? "bg-secondary text-primary" : "text-gray-600 hover:bg-secondary"
                     }`}
                   >
                     <div className="flex items-center gap-2.5">
-                      <Icon className={`w-4 h-4 ${active === id ? "text-blue-600" : "text-gray-400"}`} />
+                      <Icon className={`w-4 h-4 ${active === id ? "text-accent" : "text-gray-400"}`} />
                       <span className={`text-sm font-semibold`}>{label}</span>
                     </div>
-                    {active === id && <ChevronRight className="w-3.5 h-3.5 text-blue-600" />}
+                    {active === id && <ChevronRight className="w-3.5 h-3.5 text-accent" />}
                   </button>
                 ))}
               </nav>
@@ -163,7 +163,7 @@ export default function Legal() {
 
           {/* Main Content */}
           <main className="flex-1 min-w-0">
-            <div className="border-b border-gray-200 pb-6 mb-8">
+            <div className="border-b border-border pb-6 mb-8">
               <h2 className="text-2xl font-black text-gray-900 tracking-tight">{content.title}</h2>
               <p className="text-gray-500 text-sm mt-1">DisposalGrid, Inc. — Effective February 27, 2026</p>
             </div>
@@ -173,7 +173,7 @@ export default function Legal() {
                 <div key={i}>
                   <h3 className="text-base font-extrabold text-gray-900 mb-3">{heading}</h3>
                   {callout ? (
-                    <div className="bg-gray-50 border-l-4 border-blue-600 rounded-r-xl p-5">
+                    <div className="bg-secondary border-l-4 border-accent rounded-r-xl p-5">
                       <p className="text-gray-700 text-sm leading-relaxed">{body}</p>
                     </div>
                   ) : (
@@ -183,9 +183,9 @@ export default function Legal() {
               ))}
             </div>
 
-            <div className="mt-12 pt-8 border-t border-gray-200">
+            <div className="mt-12 pt-8 border-t border-border">
               <p className="text-gray-400 text-xs">
-                Questions about our legal policies? <button onClick={() => window.location.href='#'} className="text-blue-600 font-semibold hover:underline">Contact our Legal team →</button>
+                Questions about our legal policies? <button onClick={() => window.location.href='#'} className="text-accent font-semibold hover:underline">Contact our Legal team →</button>
               </p>
             </div>
           </main>

@@ -42,13 +42,13 @@ export default function Contact() {
   const topics = userType ? HELP_TOPICS[userType] || [] : [];
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-background font-sans">
       {/* Header */}
-      <section className="bg-gray-950 text-white py-16">
+      <section className="bg-primary text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-400/30 rounded-full px-4 py-1.5 mb-5">
-            <MapPin className="w-3.5 h-3.5 text-blue-400" />
-            <span className="text-blue-300 text-xs font-semibold tracking-widest uppercase">National Support & Local Dispatch</span>
+          <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-1.5 mb-5">
+            <MapPin className="w-3.5 h-3.5 text-accent" />
+            <span className="text-accent text-xs font-semibold tracking-widest uppercase">National Support & Local Dispatch</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight mb-4">Contact DisposalGrid</h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -62,7 +62,7 @@ export default function Contact() {
           {/* Left: Map + Departments */}
           <div>
             {/* Map Placeholder */}
-            <div className="relative rounded-2xl overflow-hidden h-56 mb-8 bg-gray-100 border border-gray-200">
+            <div className="relative rounded-2xl overflow-hidden h-56 mb-8 bg-gray-100 border border-border">
               <img
                 src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=80"
                 alt="Map"
@@ -70,7 +70,7 @@ export default function Contact() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
               <div className="absolute bottom-4 left-4">
-                <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                <span className="bg-accent text-primary text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5">
                   <MapPin className="w-3 h-3" /> 320+ Active Service Zones
                 </span>
               </div>
@@ -89,9 +89,9 @@ export default function Contact() {
             <h2 className="text-xl font-extrabold text-gray-900 mb-5">Route to a Department</h2>
             <div className="flex flex-col gap-4">
               {DEPARTMENTS.map(({ icon: Icon, title, desc, sla, color }, i) => (
-                <div key={i} className="flex gap-4 p-5 border border-gray-200 rounded-2xl hover:border-blue-200 hover:shadow-sm transition-all">
-                  <div className={`w-11 h-11 rounded-xl bg-${color}-50 flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                    <Icon className={`w-5 h-5 text-${color}-600`} />
+                <div key={i} className="flex gap-4 p-5 border border-border rounded-2xl hover:border-accent hover:shadow-sm transition-all">
+                  <div className={color === "blue" ? "w-11 h-11 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5" : `w-11 h-11 rounded-xl bg-${color}-50 flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                    <Icon className={color === "blue" ? "w-5 h-5 text-primary" : `w-5 h-5 text-${color}-600`} />
                   </div>
                   <div>
                     <h3 className="font-extrabold text-gray-900 text-sm mb-1">{title}</h3>
@@ -107,8 +107,8 @@ export default function Contact() {
 
           {/* Right: Smart Triage Form */}
           <div>
-            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
-              <div className="bg-gray-50 border-b border-gray-200 px-6 py-5">
+            <div className="bg-background border border-border rounded-2xl shadow-sm overflow-hidden">
+              <div className="bg-secondary border-b border-border px-6 py-5">
                 <h2 className="font-extrabold text-gray-900 text-lg">Smart Routing Form</h2>
                 <p className="text-gray-500 text-sm mt-1">Answer two quick questions to route your request instantly.</p>
               </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                       <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1.5">I am a...</label>
                       <div className="relative">
                         <select
-                          className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 font-medium focus:outline-none focus:border-blue-400"
+                          className="w-full appearance-none bg-secondary border border-border rounded-xl px-4 py-3 text-sm text-gray-800 font-medium focus:outline-none focus:border-accent"
                           value={userType}
                           onChange={(e) => { setUserType(e.target.value); setHelpTopic(""); }}
                           required
@@ -145,7 +145,7 @@ export default function Contact() {
                       <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1.5">I need help with...</label>
                       <div className="relative">
                         <select
-                          className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 font-medium focus:outline-none focus:border-blue-400 disabled:opacity-50"
+                          className="w-full appearance-none bg-secondary border border-border rounded-xl px-4 py-3 text-sm text-gray-800 font-medium focus:outline-none focus:border-accent disabled:opacity-50"
                           value={helpTopic}
                           onChange={(e) => setHelpTopic(e.target.value)}
                           disabled={!userType}
@@ -162,25 +162,25 @@ export default function Contact() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1.5">Full Name</label>
-                      <input required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-blue-400 placeholder-gray-400" placeholder="Jane Smith" />
+                      <input required className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-accent placeholder-gray-400" placeholder="Jane Smith" />
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1.5">Zip Code</label>
-                      <input required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-blue-400 placeholder-gray-400" placeholder="90012" />
+                      <input required className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-accent placeholder-gray-400" placeholder="90012" />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1.5">Email Address</label>
-                    <input required type="email" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-blue-400 placeholder-gray-400" placeholder="jane@email.com" />
+                    <input required type="email" className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-accent placeholder-gray-400" placeholder="jane@email.com" />
                   </div>
 
                   <div>
                     <label className="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1.5">Message</label>
-                    <textarea required rows={4} className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-blue-400 placeholder-gray-400 resize-none" placeholder="Describe your situation in detail..." />
+                    <textarea required rows={4} className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-sm text-gray-800 focus:outline-none focus:border-accent placeholder-gray-400 resize-none" placeholder="Describe your situation in detail..." />
                   </div>
 
-                  <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold py-3.5 rounded-xl text-sm tracking-wide transition-all duration-150 flex items-center justify-center gap-2 shadow-lg shadow-blue-200">
+                  <button type="submit" className="w-full bg-accent hover:bg-accent/90 active:scale-95 text-primary font-extrabold py-3.5 rounded-xl text-sm tracking-wide transition-all duration-150 flex items-center justify-center gap-2 shadow-lg">
                     <Send className="w-4 h-4" /> Route to Department
                   </button>
                 </form>

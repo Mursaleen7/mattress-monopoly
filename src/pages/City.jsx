@@ -95,7 +95,7 @@ const CITY_DATA = {
 
 export default function City() {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-background font-sans">
       <CityHero data={CITY_DATA} />
       <TriggerRibbon data={CITY_DATA} />
       <CityProFeed data={CITY_DATA} />

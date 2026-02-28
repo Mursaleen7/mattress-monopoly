@@ -5,7 +5,7 @@ export default function ZipCTA({ data }) {
   const { zip, neighborhood, activePros, basePriceDisplay, urgencyNote } = data;
 
   return (
-    <section className="py-14 bg-gray-950 text-white">
+    <section className="py-14 bg-primary text-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 bg-green-600/20 border border-green-400/30 rounded-full px-4 py-1.5 mb-5">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
@@ -14,7 +14,7 @@ export default function ZipCTA({ data }) {
 
         <h2 className="text-4xl font-black tracking-tight mb-3">
           Your Mattress Gone.<br />
-          <span className="text-blue-400">Today. Done.</span>
+          <span className="text-accent">Today. Done.</span>
         </h2>
 
         <p className="text-gray-400 text-base mb-4 leading-relaxed">
@@ -27,7 +27,7 @@ export default function ZipCTA({ data }) {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <button className="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold px-10 py-4 rounded-xl text-lg transition-all shadow-xl shadow-blue-600/30 flex items-center gap-2 justify-center">
+          <button className="bg-accent hover:bg-accent/90 active:scale-95 text-primary font-extrabold px-10 py-4 rounded-xl text-lg transition-all shadow-xl flex items-center gap-2 justify-center">
             <Zap className="w-5 h-5" />
             Book My Same-Day Pickup — {basePriceDisplay}
           </button>

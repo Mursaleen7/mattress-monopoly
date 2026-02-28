@@ -26,7 +26,7 @@ const ZIP_DATA = {
 
 export default function ZipCode() {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-background font-sans">
       <ZipHero data={ZIP_DATA} />
       <ZipTrustBar data={ZIP_DATA} />
       <ZipProFeed data={ZIP_DATA} />

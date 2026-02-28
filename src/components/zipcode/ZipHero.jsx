@@ -16,7 +16,7 @@ export default function ZipHero({ data }) {
   const secs = countdown % 60;
 
   return (
-    <section className="relative overflow-hidden bg-gray-950 text-white">
+    <section className="relative overflow-hidden bg-primary text-white">
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
@@ -38,7 +38,7 @@ export default function ZipHero({ data }) {
 
           <h1 className="text-4xl sm:text-5xl font-black leading-[1.06] tracking-tight mb-3">
             Mattress Pickup<br />
-            <span className="text-blue-400">{neighborhood}</span>
+            <span className="text-accent">{neighborhood}</span>
             <span className="text-gray-500 text-3xl"> · {zip}</span>
           </h1>
 
@@ -57,7 +57,7 @@ export default function ZipHero({ data }) {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <button className="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold px-8 py-4 rounded-xl text-base tracking-wide transition-all shadow-xl shadow-blue-600/30 flex items-center gap-2 justify-center">
+            <button className="bg-accent hover:bg-accent/90 active:scale-95 text-primary font-extrabold px-8 py-4 rounded-xl text-base tracking-wide transition-all shadow-xl flex items-center gap-2 justify-center">
               <Zap className="w-4 h-4" />
               Get My Free Quote — {basePriceDisplay}
             </button>
@@ -68,8 +68,8 @@ export default function ZipHero({ data }) {
         </div>
 
         <div className="lg:col-span-2 flex flex-col gap-3">
-          <div className="bg-blue-600/10 border border-blue-400/30 rounded-2xl p-5 text-center">
-            <div className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-2">Next Same-Day Slot Fills In</div>
+          <div className="bg-accent/10 border border-accent/30 rounded-2xl p-5 text-center">
+            <div className="text-xs font-bold text-accent uppercase tracking-widest mb-2">Next Same-Day Slot Fills In</div>
             <div className="text-5xl font-black text-white tabular-nums">{mins}:{secs.toString().padStart(2, "0")}</div>
             <div className="text-gray-400 text-xs mt-1.5">Book now to lock in today's availability</div>
           </div>
@@ -82,11 +82,11 @@ export default function ZipHero({ data }) {
                 <div className="text-gray-500 text-[10px] mt-1">Avg. wait to pickup</div>
                 <div className="mt-2 text-[10px] text-gray-600 leading-relaxed">Bag required · Schedule 2+ weeks out · Limited slots</div>
               </div>
-              <div className="p-4 text-center bg-blue-600/10">
-                <div className="text-xs text-blue-400 font-bold uppercase tracking-wider mb-1.5">Pro Hauler</div>
-                <div className="text-2xl font-black text-blue-400">{nextAvailable}</div>
+              <div className="p-4 text-center bg-accent/10">
+                <div className="text-xs text-accent font-bold uppercase tracking-wider mb-1.5">Pro Hauler</div>
+                <div className="text-2xl font-black text-accent">{nextAvailable}</div>
                 <div className="text-gray-400 text-[10px] mt-1">Availability</div>
-                <div className="mt-2 text-[10px] text-blue-300/70 leading-relaxed">{basePriceDisplay} · Door-to-door · Eco-certified</div>
+                <div className="mt-2 text-[10px] text-accent/70 leading-relaxed">{basePriceDisplay} · Door-to-door · Eco-certified</div>
               </div>
             </div>
           </div>

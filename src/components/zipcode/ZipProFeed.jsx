@@ -66,32 +66,32 @@ export default function ZipProFeed({ data }) {
   const toggle = (key) => setFilters(f => ({ ...f, [key]: !f[key] }));
 
   return (
-    <section className="py-10 bg-white border-b border-gray-100">
+    <section className="py-10 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="grid grid-cols-3 gap-4 mb-8 bg-gray-50 border border-gray-200 rounded-2xl p-4">
+        <div className="grid grid-cols-3 gap-4 mb-8 bg-secondary border border-border rounded-2xl p-4">
           <div className="text-center">
             <div className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">DIY Cost</div>
             <div className="text-2xl font-black text-gray-400 line-through">{diyCostEstimate}</div>
             <div className="text-gray-400 text-[11px] mt-0.5">Truck rental + tip fee + time</div>
           </div>
-          <div className="text-center border-x border-gray-200">
+          <div className="text-center border-x border-border">
             <div className="text-xs font-bold text-red-500 uppercase tracking-wider mb-1">City Wait</div>
             <div className="text-2xl font-black text-red-400">{avgWaitCityDays} days</div>
             <div className="text-gray-400 text-[11px] mt-0.5">Bag, schedule, wait, haul yourself</div>
           </div>
           <div className="text-center">
-            <div className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Pro Hauler</div>
-            <div className="text-2xl font-black text-blue-600">{proPrice}</div>
-            <div className="text-blue-400 text-[11px] mt-0.5">Today · Door-to-door · Done</div>
+            <div className="text-xs font-bold text-primary uppercase tracking-wider mb-1">Pro Hauler</div>
+            <div className="text-2xl font-black text-primary">{proPrice}</div>
+            <div className="text-accent text-[11px] mt-0.5">Today · Door-to-door · Done</div>
           </div>
         </div>
 
         <div className="flex gap-8 items-start">
           <aside className="hidden lg:block w-64 flex-shrink-0 sticky top-20">
-            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
-              <div className="bg-blue-600 px-5 py-4">
-                <h2 className="font-bold text-white text-sm tracking-wide uppercase">Filter Pros in {zip}</h2>
+            <div className="bg-background border border-border rounded-2xl shadow-sm overflow-hidden">
+              <div className="bg-accent px-5 py-4">
+                <h2 className="font-bold text-primary text-sm tracking-wide uppercase">Filter Pros in {zip}</h2>
               </div>
               <div className="px-5 py-3 space-y-0">
                 {[
@@ -99,30 +99,30 @@ export default function ZipProFeed({ data }) {
                   { key: "sameDay", label: "Same-Day Only", icon: Zap, color: "yellow" },
                   { key: "licensed", label: "Licensed & Insured", icon: ShieldCheck, color: "blue" },
                 ].map(({ key, label, icon: Icon }) => (
-                  <label key={key} className="flex items-center justify-between cursor-pointer py-2.5 border-b border-gray-100 last:border-0">
+                  <label key={key} className="flex items-center justify-between cursor-pointer py-2.5 border-b border-border last:border-0">
                     <div className="flex items-center gap-2.5">
-                      <Icon className="w-4 h-4 text-blue-500" />
+                      <Icon className="w-4 h-4 text-accent" />
                       <span className="text-sm font-medium text-gray-700">{label}</span>
                     </div>
-                    <div onClick={() => toggle(key)} className={`relative w-10 h-5 rounded-full transition-colors duration-200 ${filters[key] ? "bg-blue-600" : "bg-gray-200"}`}>
-                      <div className={`absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform duration-200 ${filters[key] ? "translate-x-5" : "translate-x-0"}`} />
+                    <div onClick={() => toggle(key)} className={`relative w-10 h-5 rounded-full transition-colors duration-200 ${filters[key] ? "bg-accent" : "bg-gray-200"}`}>
+                      <div className={`absolute top-0.5 left-0.5 w-4 h-4 bg-background rounded-full shadow transition-transform duration-200 ${filters[key] ? "translate-x-5" : "translate-x-0"}`} />
                     </div>
                   </label>
                 ))}
               </div>
               <div className="px-5 pb-5 pt-1">
-                <div className="bg-green-50 border border-green-100 rounded-xl p-3 text-center">
-                  <div className="text-green-700 text-xs font-bold">✅ All {activePros} pros verified & insured</div>
+                <div className="bg-secondary border border-border rounded-xl p-3 text-center">
+                  <div className="text-primary text-xs font-bold">✅ All {activePros} pros verified & insured</div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-4 bg-blue-50 border border-blue-200 rounded-2xl p-4">
+            <div className="mt-4 bg-secondary border border-border rounded-2xl p-4">
               <div className="flex items-center gap-2 mb-2">
-                <TrendingUp className="w-4 h-4 text-blue-600" />
-                <span className="text-blue-800 font-bold text-xs uppercase tracking-wider">Trending in {zip}</span>
+                <TrendingUp className="w-4 h-4 text-primary" />
+                <span className="text-primary font-bold text-xs uppercase tracking-wider">Trending in {zip}</span>
               </div>
-              <p className="text-blue-700 text-xs leading-relaxed">Same-day bookings in {neighborhood} are up 34% this week. Slots fill fast on weekends.</p>
+              <p className="text-gray-700 text-xs leading-relaxed">Same-day bookings in {neighborhood} are up 34% this week. Slots fill fast on weekends.</p>
             </div>
           </aside>
 
@@ -134,7 +134,7 @@ export default function ZipProFeed({ data }) {
                 </h2>
                 <p className="text-gray-500 text-sm mt-0.5">Sorted by fastest response · updated just now</p>
               </div>
-              <button className="flex items-center gap-1.5 bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:border-blue-400 transition-colors shadow-sm">
+              <button className="flex items-center gap-1.5 bg-background border border-border rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:border-accent transition-colors shadow-sm">
                 Fastest First <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
               </button>
             </div>
@@ -151,7 +151,7 @@ export default function ZipProFeed({ data }) {
             </div>
 
             <div className="mt-8 text-center">
-              <button className="bg-white border-2 border-blue-600 text-blue-600 font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">
+              <button className="bg-background border-2 border-accent text-accent font-bold px-8 py-3 rounded-xl hover:bg-secondary transition-colors text-sm">
                 Show {activePros - ZIP_PROS.length} More Haulers
               </button>
             </div>

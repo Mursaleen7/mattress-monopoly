@@ -12,13 +12,13 @@ export default function ZipTrustBar({ data }) {
   ];
 
   return (
-    <div className="bg-gray-950 border-b border-gray-800">
+    <div className="bg-primary border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {items.map(({ icon: Icon, label, sub }) => (
             <div key={label} className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                <Icon className="w-4 h-4 text-blue-400" />
+                <Icon className="w-4 h-4 text-accent" />
               </div>
               <div>
                 <div className="text-white text-sm font-bold leading-tight">{label}</div>

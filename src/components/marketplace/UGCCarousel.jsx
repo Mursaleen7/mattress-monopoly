@@ -62,14 +62,14 @@ export default function UGCCarousel({ city }) {
     <div className="mt-12">
       <div className="flex items-center justify-between mb-5">
         <div>
-          <h2 className="text-xl font-extrabold text-gray-900 tracking-tight">Recent Jobs Completed in {city}</h2>
-          <p className="text-gray-500 text-sm mt-0.5">Real before &amp; after results from verified customers</p>
+          <h2 className="text-xl font-extrabold text-foreground tracking-tight">Recent Jobs Completed in {city}</h2>
+          <p className="text-gray-600 text-sm mt-0.5">Real before &amp; after results from verified customers</p>
         </div>
         <div className="flex gap-2">
-          <button onClick={() => scroll(-1)} className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
+          <button onClick={() => scroll(-1)} className="w-8 h-8 rounded-full border border-border flex items-center justify-center hover:bg-secondary hover:border-primary/50 transition-all duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-2 active:scale-95 shadow-sm">
             <ChevronLeft className="w-4 h-4 text-gray-600" />
           </button>
-          <button onClick={() => scroll(1)} className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
+          <button onClick={() => scroll(1)} className="w-8 h-8 rounded-full border border-border flex items-center justify-center hover:bg-secondary hover:border-primary/50 transition-all duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-2 active:scale-95 shadow-sm">
             <ChevronRight className="w-4 h-4 text-gray-600" />
           </button>
         </div>
@@ -81,35 +81,35 @@ export default function UGCCarousel({ city }) {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {JOBS.map((job, i) => (
-          <div key={i} className="flex-shrink-0 w-72 bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md hover:border-blue-200 transition-all duration-200">
+          <div key={i} className="flex-shrink-0 w-72 bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all duration-200 shadow-sm group">
             {/* Split image */}
             <div className="flex h-36 relative">
               <div className="w-1/2 relative overflow-hidden">
-                <img src={job.before} alt="Before" className="w-full h-full object-cover" />
-                <span className="absolute bottom-1.5 left-1.5 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">BEFORE</span>
+                <img src={job.before} alt="Before" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span className="absolute bottom-1.5 left-1.5 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-md">BEFORE</span>
               </div>
               <div className="w-1/2 relative overflow-hidden">
-                <img src={job.after} alt="After" className="w-full h-full object-cover" />
-                <span className="absolute bottom-1.5 right-1.5 bg-green-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">AFTER</span>
+                <img src={job.after} alt="After" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span className="absolute bottom-1.5 right-1.5 bg-green-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-md">AFTER</span>
               </div>
-              <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-white/60" />
+              <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-white/80 shadow-sm" />
             </div>
 
             {/* Content */}
             <div className="p-4">
               <div className="flex items-center gap-1 mb-2">
                 {[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 text-yellow-400" fill="#FBBF24" />)}
-                <span className="text-gray-400 text-xs ml-1">{job.time}</span>
+                <span className="text-gray-500 text-xs ml-1">{job.time}</span>
               </div>
               <p className="text-gray-700 text-xs leading-relaxed italic mb-3">"{job.quote}"</p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle className="w-3.5 h-3.5 text-blue-600" />
-                  <span className="text-gray-600 text-xs font-semibold">{job.customer}</span>
+                  <CheckCircle className="w-3.5 h-3.5 text-primary" />
+                  <span className="text-gray-700 text-xs font-semibold">{job.customer}</span>
                 </div>
               </div>
-              <div className="mt-2 bg-blue-50 rounded-lg px-2.5 py-1.5">
-                <span className="text-blue-700 text-[11px] font-semibold">📍 {job.tag}</span>
+              <div className="mt-2 bg-secondary rounded-lg px-2.5 py-1.5 border border-border/50">
+                <span className="text-primary text-[11px] font-semibold">📍 {job.tag}</span>
               </div>
             </div>
           </div>

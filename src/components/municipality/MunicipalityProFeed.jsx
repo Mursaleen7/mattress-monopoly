@@ -66,8 +66,8 @@ const Toggle = ({ checked, onChange, label, icon: Icon, color = "blue" }) => (
       <Icon className={`w-4 h-4 text-${color}-500`} />
       <span className="text-sm font-medium text-gray-700">{label}</span>
     </div>
-    <div onClick={onChange} className={`relative w-10 h-5 rounded-full transition-colors duration-200 ${checked ? "bg-blue-600" : "bg-gray-200"}`}>
-      <div className={`absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform duration-200 ${checked ? "translate-x-5" : "translate-x-0"}`} />
+    <div onClick={onChange} className={`relative w-10 h-5 rounded-full transition-colors duration-200 ${checked ? "bg-accent" : "bg-gray-200"}`}>
+      <div className={`absolute top-0.5 left-0.5 w-4 h-4 bg-background rounded-full shadow transition-transform duration-200 ${checked ? "translate-x-5" : "translate-x-0"}`} />
     </div>
   </label>
 );
@@ -78,12 +78,12 @@ export default function MunicipalityProFeed({ data }) {
   const toggle = (key) => setFilters(f => ({ ...f, [key]: !f[key] }));
 
   return (
-    <section className="py-10 bg-white border-b border-gray-100">
+    <section className="py-10 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex gap-8 items-start">
 
           <aside className="hidden lg:block w-72 flex-shrink-0 sticky top-20">
-            <div className="bg-amber-50 border border-amber-200 rounded-2xl overflow-hidden mb-5">
+            <div className="bg-secondary border border-border rounded-2xl overflow-hidden mb-5">
               <div className="bg-amber-100 border-b border-amber-200 px-4 py-3 flex items-center gap-2">
                 <Truck className="w-4 h-4 text-amber-700" />
                 <div>
@@ -111,16 +111,16 @@ export default function MunicipalityProFeed({ data }) {
                   <AlertTriangle className="w-3 h-3 text-amber-500" />
                   Most {name} residents use a pro instead
                 </div>
-                <div className="bg-blue-50 border border-blue-100 rounded-lg px-3 py-2 text-center mt-1">
-                  <div className="text-blue-700 text-[11px] font-bold">Pro haulers start at {basePriceDisplay}</div>
-                  <div className="text-blue-500 text-[10px]">Same-day · No scheduling · No heavy lifting</div>
+                <div className="bg-secondary border border-border rounded-lg px-3 py-2 text-center mt-1">
+                  <div className="text-primary text-[11px] font-bold">Pro haulers start at {basePriceDisplay}</div>
+                  <div className="text-gray-500 text-[10px]">Same-day · No scheduling · No heavy lifting</div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
-              <div className="bg-gray-50 border-b border-gray-200 px-5 py-4 flex items-center gap-2">
-                <SlidersHorizontal className="w-4 h-4 text-blue-600" />
+            <div className="bg-background border border-border rounded-2xl shadow-sm overflow-hidden">
+              <div className="bg-secondary border-b border-border px-5 py-4 flex items-center gap-2">
+                <SlidersHorizontal className="w-4 h-4 text-primary" />
                 <h2 className="font-bold text-gray-800 text-sm tracking-wide uppercase">Filter Pros</h2>
               </div>
               <div className="px-5 py-3">
@@ -130,8 +130,8 @@ export default function MunicipalityProFeed({ data }) {
                 <Toggle checked={filters.upfrontPricing} onChange={() => toggle("upfrontPricing")} label="Upfront Pricing Only" icon={Tag} color="purple" />
               </div>
               <div className="px-5 pb-5">
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 text-center">
-                  <p className="text-blue-700 text-xs font-semibold">🔒 All pros are background-checked & verified.</p>
+                <div className="bg-secondary border border-border rounded-xl p-3 text-center">
+                  <p className="text-primary text-xs font-semibold">🔒 All pros are background-checked & verified.</p>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function MunicipalityProFeed({ data }) {
                 </h2>
                 <p className="text-gray-500 text-sm mt-0.5">Ready to book · Skip the {waitDays}-day city wait</p>
               </div>
-              <button className="flex items-center gap-1.5 bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:border-blue-400 transition-colors shadow-sm">
+              <button className="flex items-center gap-1.5 bg-background border border-border rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:border-accent transition-colors shadow-sm">
                 Best Match <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
               </button>
             </div>
@@ -162,7 +162,7 @@ export default function MunicipalityProFeed({ data }) {
             </div>
 
             <div className="mt-8 text-center">
-              <button className="bg-white border-2 border-blue-600 text-blue-600 font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">
+              <button className="bg-background border-2 border-accent text-accent font-bold px-8 py-3 rounded-xl hover:bg-secondary transition-colors text-sm">
                 Show 4 More Haulers
               </button>
             </div>

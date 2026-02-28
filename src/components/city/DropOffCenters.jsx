@@ -10,9 +10,9 @@ function DIYCostCalculator({ locations, basePriceDisplay }) {
   const baseNum = parseFloat(basePriceDisplay.replace(/[^0-9]/g, "")) || 89;
 
   return (
-    <div className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden sticky top-6">
-      <div className="bg-gray-900 px-5 py-4 flex items-center gap-2">
-        <Calculator className="w-4 h-4 text-blue-400" />
+    <div className="bg-background border-2 border-border rounded-2xl overflow-hidden sticky top-6">
+      <div className="bg-primary px-5 py-4 flex items-center gap-2">
+        <Calculator className="w-4 h-4 text-accent" />
         <h3 className="text-white font-extrabold text-sm">DIY True Cost Calculator</h3>
       </div>
 
@@ -38,14 +38,14 @@ function DIYCostCalculator({ locations, basePriceDisplay }) {
 
         <div className="text-center text-xs text-gray-400 font-medium">vs.</div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 flex items-center justify-between">
+        <div className="bg-secondary border border-border rounded-xl px-4 py-3 flex items-center justify-between">
           <span className="font-extrabold text-gray-900 text-sm">Professional Pickup</span>
-          <span className="font-black text-blue-600 text-xl">{basePriceDisplay}</span>
+          <span className="font-black text-primary text-xl">{basePriceDisplay}</span>
         </div>
 
         <p className="text-xs text-center text-gray-500 italic">Zero lifting. Done in 30 minutes.</p>
 
-        <button className="w-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold py-3 rounded-xl text-sm transition-all shadow-md shadow-blue-100">
+        <button className="w-full bg-accent hover:bg-accent/90 active:scale-95 text-primary font-extrabold py-3 rounded-xl text-sm transition-all shadow-md">
           Book a Pro Instead →
         </button>
       </div>
@@ -57,7 +57,7 @@ export default function DropOffCenters({ data }) {
   const { city, locations, basePriceDisplay } = data;
 
   return (
-    <section className="py-14 bg-gray-50 border-b border-gray-200">
+    <section className="py-14 bg-secondary border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-black text-gray-900 tracking-tight mb-2">
           Where to Dump a Mattress in {city}
@@ -83,7 +83,7 @@ export default function DropOffCenters({ data }) {
           {/* Location Cards */}
           <div className="lg:col-span-2 space-y-5">
             {locations.map((loc, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md hover:border-blue-200 transition-all">
+              <div key={i} className="bg-background border border-border rounded-2xl overflow-hidden hover:shadow-md hover:border-accent transition-all">
                 <div className="flex flex-col sm:flex-row">
                   {/* Map thumb */}
                   <div className="relative sm:w-36 h-32 sm:h-auto flex-shrink-0 overflow-hidden">
@@ -92,10 +92,10 @@ export default function DropOffCenters({ data }) {
                       alt="Facility map"
                       className="w-full h-full object-cover opacity-60"
                     />
-                    <div className="absolute inset-0 bg-blue-900/40 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-primary/40 flex items-center justify-center">
                       <MapPin className="w-6 h-6 text-white drop-shadow" />
                     </div>
-                    <div className="absolute top-2 left-2 bg-white text-gray-800 text-xs font-extrabold px-2 py-0.5 rounded-full shadow">
+                    <div className="absolute top-2 left-2 bg-background text-gray-800 text-xs font-extrabold px-2 py-0.5 rounded-full shadow">
                       # {i + 1}
                     </div>
                   </div>
@@ -104,7 +104,7 @@ export default function DropOffCenters({ data }) {
                     <div className="flex items-start justify-between gap-3 mb-2">
                       <div>
                         <h3 className="font-extrabold text-gray-900 text-base leading-snug">{loc.name}</h3>
-                        <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                        <span className="text-xs font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full">
                           {loc.type}
                         </span>
                       </div>
@@ -141,7 +141,7 @@ export default function DropOffCenters({ data }) {
                       href={loc.mapsUrl} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="inline-flex items-center gap-1.5 bg-gray-900 hover:bg-gray-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors"
+                      className="inline-flex items-center gap-1.5 bg-primary hover:bg-primary/90 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors"
                     >
                       <Navigation className="w-3.5 h-3.5" /> Get Directions
                     </a>

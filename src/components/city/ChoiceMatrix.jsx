@@ -27,7 +27,7 @@ export default function ChoiceMatrix({ data }) {
   const networkCon = `Cost: ${basePriceDisplay}`;
 
   return (
-    <section className="py-14 bg-white border-b border-gray-200">
+    <section className="py-14 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-black text-gray-900 tracking-tight text-center mb-2">
           Compare Your Options in {city}
@@ -36,7 +36,7 @@ export default function ChoiceMatrix({ data }) {
 
         <div className="grid md:grid-cols-2 gap-5">
           {/* Option A: DIY */}
-          <div className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden">
+          <div className="bg-background border-2 border-border rounded-2xl overflow-hidden">
             <div className="bg-gray-100 border-b border-gray-200 px-6 py-4 flex items-center justify-between">
               <div>
                 <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">DIY Option</span>
@@ -89,14 +89,14 @@ export default function ChoiceMatrix({ data }) {
           </div>
 
           {/* Option B: Network */}
-          <div className="bg-white border-2 border-blue-500 rounded-2xl overflow-hidden shadow-lg shadow-blue-100">
-            <div className="bg-blue-600 border-b border-blue-500 px-6 py-4 flex items-center justify-between">
+          <div className="bg-background border-2 border-accent rounded-2xl overflow-hidden shadow-lg">
+            <div className="bg-accent border-b border-accent px-6 py-4 flex items-center justify-between">
               <div>
-                <span className="text-xs font-bold text-blue-200 uppercase tracking-widest">Professional Haulers</span>
-                <h3 className="font-extrabold text-white text-lg">Licensed Network Pros</h3>
+                <span className="text-xs font-bold text-primary/70 uppercase tracking-widest">Professional Haulers</span>
+                <h3 className="font-extrabold text-primary text-lg">Licensed Network Pros</h3>
               </div>
-              <div className="w-10 h-10 rounded-xl bg-blue-500 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-xl bg-accent/80 flex items-center justify-center">
+                <Zap className="w-5 h-5 text-primary" />
               </div>
             </div>
 
@@ -127,7 +127,7 @@ export default function ChoiceMatrix({ data }) {
                       haulerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                   }}
-                  className="w-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold py-3.5 rounded-xl text-sm tracking-wide transition-all shadow-lg shadow-blue-200"
+                  className="w-full bg-accent hover:bg-accent/90 active:scale-95 text-primary font-extrabold py-3.5 rounded-xl text-sm tracking-wide transition-all shadow-lg"
                 >
                   See Available Haulers Below ↓
                 </button>
