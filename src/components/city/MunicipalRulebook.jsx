@@ -29,7 +29,7 @@ export default function MunicipalRulebook({ data }) {
                 ⚠️ Conditionally Allowed — Strict Rules Apply
               </p>
               <p className="text-yellow-700 text-sm mt-1">
-                Curbside mattress pickup is available in {city} but requires advance scheduling and strict compliance. Non-compliant items will not be collected.
+                Curbside mattress pickup is available in {city} but requires advance scheduling and strict compliance. <strong>Rejected at the curb if:</strong> not wrapped, placed too early, or suspected of bed bugs.
               </p>
             </div>
           </div>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import CityHero from "@/components/city/CityHero";
 import TriggerRibbon from "@/components/city/TriggerRibbon";
-import ChoiceMatrix from "@/components/city/ChoiceMatrix";
+import CityProFeed from "@/components/city/CityProFeed";
+import UGCCarousel from "@/components/marketplace/UGCCarousel";
 import MunicipalRulebook from "@/components/city/MunicipalRulebook";
 import DropOffCenters from "@/components/city/DropOffCenters";
 import CityFAQ from "@/components/city/CityFAQ";
@@ -97,9 +98,12 @@ export default function City() {
     <div className="min-h-screen bg-white font-sans">
       <CityHero data={CITY_DATA} />
       <TriggerRibbon data={CITY_DATA} />
-      <ChoiceMatrix data={CITY_DATA} />
+      <CityProFeed data={CITY_DATA} />
       <MunicipalRulebook data={CITY_DATA} />
       <DropOffCenters data={CITY_DATA} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <UGCCarousel city={CITY_DATA.city} />
+      </div>
       <CityFAQ data={CITY_DATA} />
       <CityCTA data={CITY_DATA} />
     </div>

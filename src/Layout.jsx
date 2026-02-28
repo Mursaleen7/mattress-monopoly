@@ -9,6 +9,8 @@ export default function Layout({ children, currentPageName }) {
   const NAV = [
     { label: "Find Pros", page: "Home" },
     { label: "Cities", page: "City" },
+    { label: "Municipalities", page: "Municipality" },
+    { label: "Zip Codes", page: "ZipCode" },
     { label: "About", page: "About" },
     { label: "Contact", page: "Contact" },
     { label: "Legal", page: "Legal" },

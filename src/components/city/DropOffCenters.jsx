@@ -1,11 +1,11 @@
 import React from "react";
-import { MapPin, Clock, DollarSign, CheckCircle2, Navigation, Calculator } from "lucide-react";
+import { MapPin, Clock, DollarSign, CheckCircle2, Navigation, Calculator, AlertTriangle } from "lucide-react";
 
 function DIYCostCalculator({ locations, basePriceDisplay }) {
   const tippingFee = locations[0]?.tippingFee || "$28.50";
   const tippingNum = parseFloat(tippingFee.replace("$", "")) || 28.5;
   const truckRental = 40;
-  const gasTime = 25;
+  const gasTime = 35; // Increased to include time value
   const total = tippingNum + truckRental + gasTime;
   const baseNum = parseFloat(basePriceDisplay.replace(/[^0-9]/g, "")) || 89;
 
@@ -20,7 +20,7 @@ function DIYCostCalculator({ locations, basePriceDisplay }) {
         {[
           { label: "Dump Tip Fee", value: tippingFee, note: "facility charge" },
           { label: "Truck/Van Rental", value: "$40.00", note: "4-hr minimum" },
-          { label: "Gas & Your Time", value: "$25.00", note: "estimated" },
+          { label: "Gas & Your Time", value: "$35.00", note: "3 hours @ $10/hr + fuel" },
         ].map(({ label, value, note }, i) => (
           <div key={i} className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
             <div>
@@ -62,9 +62,22 @@ export default function DropOffCenters({ data }) {
         <h2 className="text-2xl font-black text-gray-900 tracking-tight mb-2">
           Where to Dump a Mattress in {city}
         </h2>
-        <p className="text-gray-500 text-sm mb-8">
+        <p className="text-gray-500 text-sm mb-4">
           Official drop-off centers — hours and fees verified for 2026.
         </p>
+
+        {/* Truck Requirement Warning */}
+        <div className="bg-orange-50 border-2 border-orange-300 rounded-xl px-5 py-3 flex items-start gap-3 mb-8">
+          <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+          <div>
+            <p className="font-bold text-orange-900 text-sm">
+              🚚 Truck Requirement: Minimum 6ft truck bed required
+            </p>
+            <p className="text-orange-700 text-xs mt-0.5">
+              Mattresses folded in SUVs risk structural damage and voiding warranties. Most facilities will not accept mattresses transported in sedans or compact vehicles.
+            </p>
+          </div>
+        </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Location Cards */}

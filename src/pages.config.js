@@ -53,6 +53,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Legal from './pages/Legal';
 import City from './pages/City';
+import Municipality from './pages/Municipality';
+import ZipCode from './pages/ZipCode';
 import __Layout from './Layout.jsx';
 
 export const PAGES = {
@@ -61,6 +63,8 @@ export const PAGES = {
   "Contact": Contact,
   "Legal": Legal,
   "City": City,
+  "Municipality": Municipality,
+  "ZipCode": ZipCode,
 }
 
 export const pagesConfig = {

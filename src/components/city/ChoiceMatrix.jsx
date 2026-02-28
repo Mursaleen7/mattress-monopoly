@@ -27,20 +27,20 @@ export default function ChoiceMatrix({ data }) {
   const networkCon = `Cost: ${basePriceDisplay}`;
 
   return (
-    <section className="py-14 bg-gray-50 border-b border-gray-200">
+    <section className="py-14 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-black text-gray-900 tracking-tight text-center mb-2">
-          How to Get Rid of a Mattress in {city}
+          Compare Your Options in {city}
         </h2>
-        <p className="text-gray-500 text-center text-sm mb-8">Two paths. One obvious winner.</p>
+        <p className="text-gray-500 text-center text-sm mb-8">Professional haulers vs. DIY — see the difference</p>
 
         <div className="grid md:grid-cols-2 gap-5">
           {/* Option A: DIY */}
           <div className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden">
             <div className="bg-gray-100 border-b border-gray-200 px-6 py-4 flex items-center justify-between">
               <div>
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Option A</span>
-                <h3 className="font-extrabold text-gray-900 text-lg">DIY / City Route</h3>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">DIY Option</span>
+                <h3 className="font-extrabold text-gray-900 text-lg">City Drop-Off / Self-Haul</h3>
               </div>
               <div className="w-10 h-10 rounded-xl bg-gray-200 flex items-center justify-center">
                 <Truck className="w-5 h-5 text-gray-500" />
@@ -92,8 +92,8 @@ export default function ChoiceMatrix({ data }) {
           <div className="bg-white border-2 border-blue-500 rounded-2xl overflow-hidden shadow-lg shadow-blue-100">
             <div className="bg-blue-600 border-b border-blue-500 px-6 py-4 flex items-center justify-between">
               <div>
-                <span className="text-xs font-bold text-blue-200 uppercase tracking-widest">Option B — Recommended</span>
-                <h3 className="font-extrabold text-white text-lg">The Network Route</h3>
+                <span className="text-xs font-bold text-blue-200 uppercase tracking-widest">Professional Haulers</span>
+                <h3 className="font-extrabold text-white text-lg">Licensed Network Pros</h3>
               </div>
               <div className="w-10 h-10 rounded-xl bg-blue-500 flex items-center justify-center">
                 <Zap className="w-5 h-5 text-white" />
@@ -120,8 +120,16 @@ export default function ChoiceMatrix({ data }) {
               </div>
 
               <div className="pt-4">
-                <button className="w-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold py-3.5 rounded-xl text-sm tracking-wide transition-all shadow-lg shadow-blue-200">
-                  Book Option B — Instant Pricing
+                <button 
+                  onClick={() => {
+                    const haulerSection = document.querySelector('section.bg-gray-50.py-12');
+                    if (haulerSection) {
+                      haulerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="w-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold py-3.5 rounded-xl text-sm tracking-wide transition-all shadow-lg shadow-blue-200"
+                >
+                  See Available Haulers Below ↓
                 </button>
               </div>
             </div>
