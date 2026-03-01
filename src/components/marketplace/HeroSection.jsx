@@ -3,19 +3,19 @@ import { MapPin, List, ShieldCheck, Leaf, Zap, Star, ChevronLeft, ChevronRight }
 
 const SLIDES = [
   {
-    url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85",
+    url: "/img/hero1.png",
     label: "Junk Removal · Los Angeles",
   },
   {
-    url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=85",
+    url: "/img/hero2.png",
     label: "Mattress Pickup · Same Day",
   },
   {
-    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=85",
+    url: "/img/hero3.png",
     label: "Estate Cleanout · Eco-Certified",
   },
   {
-    url: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=85",
+    url: "/img/hero4.png",
     label: "Furniture Removal · Licensed Pros",
   },
 ];
@@ -138,16 +138,11 @@ export default function HeroSection({ city, onSearch, searchQuery }) {
 
         {/* Trust Row */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5">
-          {/* Avatars + rating */}
+          {/* Rating */}
           <div className="flex items-center gap-2">
-            <div className="flex -space-x-1.5">
-              {AVATARS.map((u, i) => (
-                <img key={i} src={u} alt="reviewer" className="w-6 h-6 rounded-full border-2 border-white object-cover shadow-sm" />
-              ))}
-            </div>
             <div className="flex items-center gap-0.5">
               {[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 text-yellow-400" fill="#FBBF24" />)}
-              <span className="text-white text-xs font-semibold ml-1">4.8 · 12,000+ reviews</span>
+              <span className="text-white text-xs font-semibold ml-1">Only 5-star rated pros listed</span>
             </div>
           </div>
           <div className="w-px h-3.5 bg-white/40 hidden sm:block" />
