@@ -14,7 +14,7 @@ export default function ProCard({ pro }) {
           />
 
           {/* Before/After pill */}
-          <div className="absolute bottom-2 left-2 right-2 flex gap-1">
+          {/* <div className="absolute bottom-2 left-2 right-2 flex gap-1">
             <div className="relative flex-1 overflow-hidden rounded-lg h-10 border border-white/30 shadow-md">
               <img src={pro.beforeImage} alt="Before" className="w-full h-full object-cover opacity-90" />
               <span className="absolute top-0.5 left-1 bg-black/80 text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm">B4</span>
@@ -23,14 +23,15 @@ export default function ProCard({ pro }) {
               <img src={pro.afterImage} alt="After" className="w-full h-full object-cover" />
               <span className="absolute top-0.5 left-1 bg-green-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm">AFTER</span>
             </div>
-          </div>
+          </div> */}
 
-          {pro.hasVideo && (
+          {/* Video Badge - Commented Out */}
+          {/* {pro.hasVideo && (
             <div className="absolute top-2 left-2 flex items-center gap-1 bg-black/70 backdrop-blur-sm rounded-full px-2.5 py-1 shadow-lg border border-white/20">
               <Play className="w-2.5 h-2.5 text-white fill-white" />
               <span className="text-white text-[10px] font-bold">Video</span>
             </div>
-          )}
+          )} */}
         </div>
 
         {/* Right: Info */}

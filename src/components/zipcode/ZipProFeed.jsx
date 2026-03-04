@@ -4,58 +4,82 @@ import ProCard from "@/components/marketplace/ProCard.jsx";
 
 const ZIP_PROS = [
   {
-    name: "Hollywood Fast Haul",
-    location: "90028 · Hollywood",
-    rating: 4.9,
-    reviewCount: 203,
-    hires: 118,
-    responseTime: "8 mins",
-    price: "$99",
+    name: "LoadUp",
+    location: "Nationwide Service · Available in 170+ Cities",
+    rating: 4.8,
+    reviewCount: 2847,
+    hires: 1523,
+    responseTime: "5 mins",
+    price: "$89",
+    priceValue: 89,
     hasVideo: true,
-    mainImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    mainImage: "/img/LOADimg.png",
     beforeImage: "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=200&q=80",
     afterImage: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=200&q=80",
-    description: "We're based in Hollywood and know every block. Rapid dispatch, in-and-out in under 90 minutes, and a crew that handles tight building access.",
+    description: "Affordable junk removal with upfront pricing. Book online in 2 minutes. We recycle and donate 70% of items. No hidden fees, guaranteed pricing, and same-day service available.",
     tags: [
-      { label: "Background Checked", icon: ShieldCheck, style: "bg-blue-50 text-blue-700 border-blue-200" },
-      { label: "Same-Day", icon: Zap, style: "bg-yellow-50 text-yellow-700 border-yellow-200" },
-      { label: "Eco-Partner", icon: Leaf, style: "bg-green-50 text-green-700 border-green-200" },
+      { label: "Background Checked", icon: ShieldCheck, style: "bg-secondary text-primary border-border" },
+      { label: "Eco-Partner", icon: Leaf, style: "bg-green-50 text-green-700 border-green-300" },
+      { label: "Upfront Pricing", icon: Tag, style: "bg-purple-50 text-purple-700 border-purple-300" },
     ]
   },
   {
-    name: "Apex Eco-Haulers",
-    location: "Serving 90028 & nearby zips",
-    rating: 4.8,
-    reviewCount: 312,
-    hires: 142,
-    responseTime: "14 mins",
-    price: "$129",
-    hasVideo: false,
-    mainImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80",
+    name: "1-800-GOT-JUNK?",
+    location: "Nationwide Service · 200+ Locations",
+    rating: 4.7,
+    reviewCount: 5621,
+    hires: 3842,
+    responseTime: "15 mins",
+    price: "$149",
+    priceValue: 149,
+    hasVideo: true,
+    mainImage: "/img/1800img.png",
     beforeImage: "https://images.unsplash.com/photo-1543674892-7d64d45df18b?w=200&q=80",
     afterImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=200&q=80",
-    description: "Eco-certified removal that diverts 80% of materials from landfill. Transparent pricing, no surprise charges, and a guaranteed on-time arrival window.",
+    description: "North America's largest junk removal service. Full-service hauling from anywhere on your property. We do all the lifting and loading. Licensed, insured, and eco-friendly disposal.",
     tags: [
-      { label: "Eco-Partner", icon: Leaf, style: "bg-green-50 text-green-700 border-green-200" },
-      { label: "Upfront Pricing", icon: Tag, style: "bg-purple-50 text-purple-700 border-purple-200" },
+      { label: "Licensed & Insured", icon: ShieldCheck, style: "bg-secondary text-primary border-border" },
+      { label: "Eco-Partner", icon: Leaf, style: "bg-green-50 text-green-700 border-green-300" },
+      { label: "Same-Day", icon: Zap, style: "bg-accent/10 text-accent-foreground border-accent/40" },
     ]
   },
   {
-    name: "BulkHaul Express",
-    location: "Hollywood, Koreatown, Silver Lake",
-    rating: 4.7,
-    reviewCount: 156,
-    hires: 79,
-    responseTime: "20 mins",
-    price: "$79",
+    name: "College HUNKS Hauling Junk & Moving",
+    location: "Nationwide Service · 150+ Locations",
+    rating: 4.6,
+    reviewCount: 3214,
+    hires: 2156,
+    responseTime: "12 mins",
+    price: "$129",
+    priceValue: 129,
     hasVideo: false,
-    mainImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80",
+    mainImage: "/img/COLLEGEHUNKS.jpg",
     beforeImage: "https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=200&q=80",
     afterImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&q=80",
-    description: "Flat-rate pricing, no haggling. BulkHaul Express is the budget-friendly option that never cuts corners — same-week guaranteed.",
+    description: "Honest, Uniformed, Nice, Knowledgeable Service. Full-service junk removal and moving. We donate and recycle whenever possible. Professional crews with background checks.",
     tags: [
-      { label: "Licensed & Insured", icon: ShieldCheck, style: "bg-blue-50 text-blue-700 border-blue-200" },
-      { label: "Upfront Pricing", icon: Tag, style: "bg-purple-50 text-purple-700 border-purple-200" },
+      { label: "Background Checked", icon: ShieldCheck, style: "bg-secondary text-primary border-border" },
+      { label: "Upfront Pricing", icon: Tag, style: "bg-purple-50 text-purple-700 border-purple-300" },
+      { label: "Same-Day", icon: Zap, style: "bg-accent/10 text-accent-foreground border-accent/40" },
+    ]
+  },
+  {
+    name: "Muvr",
+    location: "Nationwide Service · On-Demand Platform",
+    rating: 4.5,
+    reviewCount: 1892,
+    hires: 1247,
+    responseTime: "8 mins",
+    price: "$79",
+    priceValue: 79,
+    hasVideo: true,
+    mainImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80",
+    beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=200&q=80",
+    afterImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=80",
+    description: "On-demand moving and junk removal platform. Book vetted local movers instantly. Transparent pricing, real-time tracking, and flexible scheduling. Perfect for small to medium jobs.",
+    tags: [
+      { label: "Background Checked", icon: ShieldCheck, style: "bg-secondary text-primary border-border" },
+      { label: "Upfront Pricing", icon: Tag, style: "bg-purple-50 text-purple-700 border-purple-300" },
     ]
   }
 ];
@@ -63,7 +87,26 @@ const ZIP_PROS = [
 export default function ZipProFeed({ data }) {
   const { zip, neighborhood, activePros, avgWaitCityDays, proPrice, diyCostEstimate } = data;
   const [filters, setFilters] = useState({ ecoFriendly: false, sameDay: false, licensed: false });
+  const [showAll, setShowAll] = useState(false);
   const toggle = (key) => setFilters(f => ({ ...f, [key]: !f[key] }));
+
+  // Filter pros based on selected criteria
+  const filteredPros = ZIP_PROS.filter(pro => {
+    // Check eco-friendly filter
+    if (filters.ecoFriendly && !pro.features?.ecoFriendly) return false;
+    
+    // Check same-day filter
+    if (filters.sameDay && !pro.features?.sameDay) return false;
+    
+    // Check licensed filter
+    if (filters.licensed && !pro.features?.licensed) return false;
+    
+    return true;
+  });
+
+  // Show first 3 pros initially, all when "Show More" is clicked
+  const displayedPros = showAll ? filteredPros : filteredPros.slice(0, 3);
+  const remainingCount = filteredPros.length - 3;
 
   return (
     <section className="py-10 bg-background border-b border-border">
@@ -112,7 +155,7 @@ export default function ZipProFeed({ data }) {
               </div>
               <div className="px-5 pb-5 pt-1">
                 <div className="bg-secondary border border-border rounded-xl p-3 text-center">
-                  <div className="text-primary text-xs font-bold">✅ All {activePros} pros verified & insured</div>
+                  <div className="text-primary text-xs font-bold">✅ All {ZIP_PROS.length} pros verified & insured</div>
                 </div>
               </div>
             </div>
@@ -130,7 +173,7 @@ export default function ZipProFeed({ data }) {
             <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
               <div>
                 <h2 className="text-xl font-extrabold text-gray-900 tracking-tight">
-                  {activePros} Haulers Active in {zip}
+                  {filteredPros.length} Hauler{filteredPros.length !== 1 ? 's' : ''} Active in {zip}
                 </h2>
                 <p className="text-gray-500 text-sm mt-0.5">Sorted by fastest response · updated just now</p>
               </div>
@@ -145,16 +188,33 @@ export default function ZipProFeed({ data }) {
             </div>
 
             <div className="flex flex-col gap-5">
-              {ZIP_PROS.map((pro, i) => (
-                <ProCard key={i} pro={pro} />
-              ))}
+              {displayedPros.length > 0 ? (
+                displayedPros.map((pro, i) => (
+                  <ProCard key={i} pro={pro} />
+                ))
+              ) : (
+                <div className="bg-card border border-border rounded-2xl p-12 text-center">
+                  <div className="max-w-md mx-auto">
+                    <div className="text-4xl mb-4">🔍</div>
+                    <h3 className="text-lg font-bold text-foreground mb-2">No haulers match your filters</h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Try adjusting your filters to see more results.
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
 
-            <div className="mt-8 text-center">
-              <button className="bg-background border-2 border-accent text-accent font-bold px-8 py-3 rounded-xl hover:bg-secondary transition-colors text-sm">
-                Show {activePros - ZIP_PROS.length} More Haulers
-              </button>
-            </div>
+            {!showAll && remainingCount > 0 && (
+              <div className="mt-8 text-center">
+                <button 
+                  onClick={() => setShowAll(true)}
+                  className="bg-background border-2 border-accent text-accent font-bold px-8 py-3 rounded-xl hover:bg-secondary transition-colors text-sm"
+                >
+                  Show {remainingCount} More Hauler{remainingCount > 1 ? 's' : ''}
+                </button>
+              </div>
+            )}
           </main>
         </div>
       </div>

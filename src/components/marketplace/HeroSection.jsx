@@ -142,7 +142,7 @@ export default function HeroSection({ city, onSearch, searchQuery }) {
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-0.5">
               {[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 text-yellow-400" fill="#FBBF24" />)}
-              <span className="text-white text-xs font-semibold ml-1">Only 5-star rated pros listed</span>
+              <span className="text-white text-xs font-semibold ml-1">Top-rated local providers</span>
             </div>
           </div>
           <div className="w-px h-3.5 bg-white/40 hidden sm:block" />
