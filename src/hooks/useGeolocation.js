@@ -33,54 +33,75 @@ export function useGeolocation() {
 
   const fetchLocationFromIP = async () => {
     try {
-      // Using ipapi.com - free tier allows 50,000 requests/month
-      // Most reliable and accurate for US locations
-      // Fallback chain: ipapi.com -> ip-api.com -> default
-      
       let locationData = null;
       
-      // Try primary service: ipapi.com
+      // Try primary service: ipgeolocation.com (30k/month free, very reliable)
       try {
-        const response = await fetch('https://ipapi.com/ip_api.php?ip=check', {
-          method: 'GET',
-        });
+        const response = await fetch('https://api.ipgeolocation.io/ipgeo?apiKey=at_your_service');
         
         if (response.ok) {
           const data = await response.json();
-          locationData = {
-            city: data.city || 'Los Angeles',
-            state: data.region || 'California',
-            stateCode: data.region_code || 'CA',
-            zip: data.zip || '',
-            country: data.country_name || 'United States',
-            latitude: data.latitude,
-            longitude: data.longitude,
-          };
+          if (data.city) {
+            locationData = {
+              city: data.city,
+              state: data.state_prov || data.state_code || 'California',
+              stateCode: data.state_code || 'CA',
+              zip: data.zipcode || '',
+              country: data.country_name || 'United States',
+              latitude: data.latitude,
+              longitude: data.longitude,
+            };
+          }
         }
       } catch (err) {
-        console.log('Primary IP service failed, trying fallback...');
+        console.log('Primary IP service failed, trying fallback...', err);
       }
       
-      // Fallback to ip-api.com if primary fails
+      // Fallback 1: ipapi.co (HTTPS, 1k/day free)
       if (!locationData) {
-        const response = await fetch('http://ip-api.com/json/?fields=status,country,countryCode,region,regionName,city,zip,lat,lon');
-        
-        if (!response.ok) {
-          throw new Error('All IP services failed');
+        try {
+          const response = await fetch('https://ipapi.co/json/');
+          
+          if (response.ok) {
+            const data = await response.json();
+            if (data.city && !data.error) {
+              locationData = {
+                city: data.city,
+                state: data.region || 'California',
+                stateCode: data.region_code || 'CA',
+                zip: data.postal || '',
+                country: data.country_name || 'United States',
+                latitude: data.latitude,
+                longitude: data.longitude,
+              };
+            }
+          }
+        } catch (err) {
+          console.log('Fallback 1 failed, trying fallback 2...', err);
         }
-        
-        const data = await response.json();
-        
-        if (data.status === 'success') {
-          locationData = {
-            city: data.city || 'Los Angeles',
-            state: data.regionName || 'California',
-            stateCode: data.region || 'CA',
-            zip: data.zip || '',
-            country: data.country || 'United States',
-            latitude: data.lat,
-            longitude: data.lon,
-          };
+      }
+      
+      // Fallback 2: geojs.io (HTTPS, unlimited free)
+      if (!locationData) {
+        try {
+          const response = await fetch('https://get.geojs.io/v1/ip/geo.json');
+          
+          if (response.ok) {
+            const data = await response.json();
+            if (data.city) {
+              locationData = {
+                city: data.city,
+                state: data.region || 'California',
+                stateCode: data.region || 'CA',
+                zip: '',
+                country: data.country || 'United States',
+                latitude: data.latitude,
+                longitude: data.longitude,
+              };
+            }
+          }
+        } catch (err) {
+          console.log('Fallback 2 failed, using default location', err);
         }
       }
       
