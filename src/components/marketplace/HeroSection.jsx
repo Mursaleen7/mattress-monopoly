@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { MapPin, List, ShieldCheck, Leaf, Zap, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { AVAILABLE_CITIES, searchCities } from "@/data/cities";
 
 const SLIDES = [
   {
@@ -27,11 +28,15 @@ const AVATARS = [
   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&q=80",
 ];
 
+const ZIPCODE_PATTERNS = /^\d{5}$/;
+
 export default function HeroSection({ city, onSearch, searchQuery }) {
   const [service, setService] = useState(searchQuery.service || "");
   const [location, setLocation] = useState(searchQuery.location || "");
   const [current, setCurrent] = useState(0);
   const [fading, setFading] = useState(false);
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -49,13 +54,63 @@ export default function HeroSection({ city, onSearch, searchQuery }) {
     setTimeout(() => { setCurrent(idx); setFading(false); }, 300);
   };
 
+  const handleLocationChange = (e) => {
+    const value = e.target.value;
+    setLocation(value);
+
+    if (value.length >= 1) {
+      // Filter cities that match the search
+      const filtered = searchCities(value);
+      setSuggestions(filtered);
+      setShowSuggestions(filtered.length > 0);
+    } else {
+      setSuggestions([]);
+      setShowSuggestions(false);
+    }
+  };
+
+  const handleSuggestionClick = (citySlug) => {
+    setShowSuggestions(false);
+    window.location.href = `/${citySlug}`;
+  };
+
   const handleSearch = (e) => {
     e.preventDefault();
+    
+    // Check if location is a zipcode
+    if (ZIPCODE_PATTERNS.test(location.trim())) {
+      window.location.href = `/${location.trim()}`;
+      return;
+    }
+
+    // Check if it matches a city
+    const matchedCity = AVAILABLE_CITIES.find(city => 
+      city.name.toLowerCase() === location.toLowerCase() ||
+      city.slug.toLowerCase() === location.toLowerCase()
+    );
+
+    if (matchedCity) {
+      window.location.href = `/${matchedCity.slug}`;
+      return;
+    }
+
+    // Otherwise use the original search handler
     onSearch({ service, location });
   };
 
+  const handleLocationFocus = () => {
+    if (location.length >= 1 && suggestions.length > 0) {
+      setShowSuggestions(true);
+    }
+  };
+
+  const handleLocationBlur = () => {
+    // Delay to allow click on suggestion
+    setTimeout(() => setShowSuggestions(false), 200);
+  };
+
   return (
-    <section className="relative min-h-[520px] flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative min-h-[680px] flex flex-col items-center justify-center overflow-hidden">
       {/* Slideshow Background */}
       <div className="absolute inset-0 z-0">
         {SLIDES.map((slide, i) => (
@@ -76,7 +131,7 @@ export default function HeroSection({ city, onSearch, searchQuery }) {
       </div>
 
       {/* Slide Label */}
-      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+      <div className="absolute bottom-28 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
         {SLIDES.map((_, i) => (
           <button
             key={i}
@@ -97,43 +152,68 @@ export default function HeroSection({ city, onSearch, searchQuery }) {
       </button>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-3xl mx-auto px-4 sm:px-6 text-center py-16">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3">
+      <div className="relative z-10 w-full max-w-3xl mx-auto px-4 sm:px-6 text-center py-20">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
           Find Trusted Removal Pros Near {city}
         </h1>
-        <p className="text-gray-100 text-sm sm:text-base mb-7 max-w-xl mx-auto">
+        <p className="text-gray-100 text-base sm:text-lg mb-8 max-w-xl mx-auto">
           Compare quotes from verified local haulers. Book online in minutes.
         </p>
 
         {/* Search Bar — Yelp-style white pill */}
-        <form onSubmit={handleSearch} className="bg-white rounded-lg shadow-xl p-1 flex flex-col sm:flex-row gap-1 max-w-2xl mx-auto">
-          <div className="flex items-center gap-2.5 flex-1 px-4 py-2.5 rounded-md hover:bg-secondary/50 transition-all duration-200 border-r border-transparent sm:border-r sm:border-border">
-            <List className="w-4 h-4 text-primary flex-shrink-0" />
+        <form onSubmit={handleSearch} className="bg-white rounded-xl shadow-2xl p-1.5 flex flex-col sm:flex-row gap-1.5 max-w-3xl mx-auto relative">
+          <div className="flex items-center gap-3 flex-1 px-5 py-3.5 rounded-lg hover:bg-secondary/50 transition-all duration-200 border-r border-transparent sm:border-r sm:border-border">
+            <List className="w-5 h-5 text-primary flex-shrink-0" />
             <input
               type="text"
               value={service}
               onChange={(e) => setService(e.target.value)}
               placeholder="Mattresses, furniture, junk..."
-              className="bg-transparent w-full text-foreground placeholder-gray-500 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+              className="bg-transparent w-full text-foreground placeholder-gray-500 text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
             />
           </div>
-          <div className="flex items-center gap-2.5 flex-1 px-4 py-2.5 rounded-md hover:bg-secondary/50 transition-all duration-200">
-            <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+          <div className="flex items-center gap-3 flex-1 px-5 py-3.5 rounded-lg hover:bg-secondary/50 transition-all duration-200 relative">
+            <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
             <input
               type="text"
               value={location}
-              onChange={(e) => setLocation(e.target.value)}
+              onChange={handleLocationChange}
+              onFocus={handleLocationFocus}
+              onBlur={handleLocationBlur}
               placeholder="City, neighborhood, or zip"
-              className="bg-transparent w-full text-foreground placeholder-gray-500 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+              className="bg-transparent w-full text-foreground placeholder-gray-500 text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
             />
           </div>
           <button
             type="submit"
             disabled={!service && !location}
-            className="bg-accent hover:opacity-90 text-accent-foreground font-semibold px-6 py-2.5 rounded-md text-sm transition-all duration-200 whitespace-nowrap focus:ring-2 focus:ring-accent focus:ring-offset-2 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
+            className="bg-accent hover:opacity-90 text-accent-foreground font-bold px-8 py-3.5 rounded-lg text-base transition-all duration-200 whitespace-nowrap focus:ring-2 focus:ring-accent focus:ring-offset-2 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
           >
             Search
           </button>
+
+          {/* Suggestions Dropdown */}
+          {showSuggestions && suggestions.length > 0 && (
+            <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-border z-50 max-h-64 overflow-y-auto">
+              {suggestions.map((city) => (
+                <button
+                  key={city.slug}
+                  type="button"
+                  onMouseDown={(e) => {
+                    e.preventDefault(); // Prevent blur
+                    handleSuggestionClick(city.slug);
+                  }}
+                  className="w-full text-left px-4 py-3 hover:bg-secondary transition-colors flex items-center gap-3 border-b border-border last:border-0"
+                >
+                  <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+                  <div>
+                    <div className="text-sm font-semibold text-foreground">{city.name}</div>
+                    <div className="text-xs text-muted-foreground">{city.state}</div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
         </form>
 
         {/* Trust Row */}

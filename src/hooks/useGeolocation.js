@@ -1,79 +1,126 @@
 import { useState, useEffect } from 'react';
 
 /**
- * Custom hook to get user's geolocation using Browser Geolocation API
- * Returns: { location, error, loading, requestLocation }
+ * Custom hook to get user's geolocation using IP-based geolocation
+ * This approach doesn't require browser permission (like Yelp, Google, etc.)
+ * Returns: { location, error, loading }
  */
 export function useGeolocation() {
   const [location, setLocation] = useState(null);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  const requestLocation = () => {
-    if (!navigator.geolocation) {
-      setError('Geolocation is not supported by your browser');
-      return;
+  useEffect(() => {
+    // Check if we have cached location (within last 24 hours)
+    const cachedLocation = localStorage.getItem('userLocation');
+    const cacheTimestamp = localStorage.getItem('userLocationTimestamp');
+    
+    if (cachedLocation && cacheTimestamp) {
+      const age = Date.now() - parseInt(cacheTimestamp);
+      const ONE_DAY = 24 * 60 * 60 * 1000;
+      
+      if (age < ONE_DAY) {
+        // Use cached location
+        setLocation(JSON.parse(cachedLocation));
+        setLoading(false);
+        return;
+      }
     }
 
-    setLoading(true);
-    setError(null);
+    // Fetch location from IP-based service
+    fetchLocationFromIP();
+  }, []);
 
-    navigator.geolocation.getCurrentPosition(
-      async (position) => {
-        const { latitude, longitude } = position.coords;
+  const fetchLocationFromIP = async () => {
+    try {
+      // Using ipapi.com - free tier allows 50,000 requests/month
+      // Most reliable and accurate for US locations
+      // Fallback chain: ipapi.com -> ip-api.com -> default
+      
+      let locationData = null;
+      
+      // Try primary service: ipapi.com
+      try {
+        const response = await fetch('https://ipapi.com/ip_api.php?ip=check', {
+          method: 'GET',
+        });
         
-        try {
-          // Reverse geocode to get city and zip
-          const response = await fetch(
-            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`
-          );
+        if (response.ok) {
           const data = await response.json();
-          
-          const city = data.address.city || data.address.town || data.address.village || 'Unknown';
-          const zip = data.address.postcode || '';
-          const state = data.address.state || '';
-          
-          setLocation({
-            latitude,
-            longitude,
-            city,
-            zip,
-            state,
-            fullAddress: data.display_name,
-          });
-          setLoading(false);
-        } catch (err) {
-          setError('Failed to get location details');
-          setLoading(false);
+          locationData = {
+            city: data.city || 'Los Angeles',
+            state: data.region || 'California',
+            stateCode: data.region_code || 'CA',
+            zip: data.zip || '',
+            country: data.country_name || 'United States',
+            latitude: data.latitude,
+            longitude: data.longitude,
+          };
         }
-      },
-      (err) => {
-        let errorMessage = 'Unable to retrieve your location';
-        
-        switch (err.code) {
-          case err.PERMISSION_DENIED:
-            errorMessage = 'Location permission denied. Please enable location access.';
-            break;
-          case err.POSITION_UNAVAILABLE:
-            errorMessage = 'Location information unavailable.';
-            break;
-          case err.TIMEOUT:
-            errorMessage = 'Location request timed out.';
-            break;
-          default:
-            errorMessage = 'An unknown error occurred.';
-        }
-        
-        setError(errorMessage);
-        setLoading(false);
-      },
-      {
-        enableHighAccuracy: true,
-        timeout: 10000,
-        maximumAge: 300000, // Cache for 5 minutes
+      } catch (err) {
+        console.log('Primary IP service failed, trying fallback...');
       }
-    );
+      
+      // Fallback to ip-api.com if primary fails
+      if (!locationData) {
+        const response = await fetch('http://ip-api.com/json/?fields=status,country,countryCode,region,regionName,city,zip,lat,lon');
+        
+        if (!response.ok) {
+          throw new Error('All IP services failed');
+        }
+        
+        const data = await response.json();
+        
+        if (data.status === 'success') {
+          locationData = {
+            city: data.city || 'Los Angeles',
+            state: data.regionName || 'California',
+            stateCode: data.region || 'CA',
+            zip: data.zip || '',
+            country: data.country || 'United States',
+            latitude: data.lat,
+            longitude: data.lon,
+          };
+        }
+      }
+      
+      if (locationData) {
+        setLocation(locationData);
+        
+        // Cache the location
+        localStorage.setItem('userLocation', JSON.stringify(locationData));
+        localStorage.setItem('userLocationTimestamp', Date.now().toString());
+        
+        setLoading(false);
+      } else {
+        throw new Error('Could not determine location');
+      }
+    } catch (err) {
+      console.error('IP geolocation error:', err);
+      
+      // Fallback to default location
+      const fallbackLocation = {
+        city: 'Los Angeles',
+        state: 'California',
+        stateCode: 'CA',
+        zip: '90012',
+        country: 'United States',
+      };
+      
+      setLocation(fallbackLocation);
+      setError('Using default location');
+      setLoading(false);
+    }
   };
 
-  return { location, error, loading, requestLocation };
+  // Optional: Allow manual refresh of location
+  const refreshLocation = () => {
+    localStorage.removeItem('userLocation');
+    localStorage.removeItem('userLocationTimestamp');
+    setLoading(true);
+    fetchLocationFromIP();
+  };
+
+  return { location, error, loading, refreshLocation };
 }
+

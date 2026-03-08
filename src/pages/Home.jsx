@@ -16,16 +16,11 @@ export default function Home() {
   });
 
   const [searchQuery, setSearchQuery] = useState({ service: "Mattress", location: "" });
-  const { location, error, loading, requestLocation } = useGeolocation();
+  const { location, error, loading } = useGeolocation();
 
   // Default location (fallback)
   const [city, setCity] = useState("Los Angeles");
   const [zip, setZip] = useState("90012");
-
-  // Auto-detect location on mount
-  useEffect(() => {
-    requestLocation();
-  }, []);
 
   // Update city and zip when location is detected
   useEffect(() => {
@@ -41,34 +36,8 @@ export default function Home() {
     <div className="min-h-screen bg-background font-sans">
       <HeroSection city={city} onSearch={setSearchQuery} searchQuery={searchQuery} />
 
-      {/* Location Status Banner */}
-      {loading && (
-        <div className="bg-blue-50 border-b border-blue-200 py-2">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-blue-700 text-sm text-center">📍 Detecting your location...</p>
-          </div>
-        </div>
-      )}
-      
-      {location && (
-        <div className="bg-green-50 border-b border-green-200 py-2">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-green-700 text-sm text-center">
-              ✓ Showing services near <span className="font-semibold">{location.city}, {location.state}</span>
-            </p>
-          </div>
-        </div>
-      )}
-      
-      {error && (
-        <div className="bg-yellow-50 border-b border-yellow-200 py-2">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-yellow-700 text-sm text-center">
-              ⚠️ {error} — Showing default location: {city}
-            </p>
-          </div>
-        </div>
-      )}
+      {/* Spacer to maintain layout - responsive */}
+      <div className="h-6 sm:h-8 md:h-10"></div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex gap-6 items-start">
