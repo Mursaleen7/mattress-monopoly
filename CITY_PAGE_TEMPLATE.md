@@ -65,7 +65,55 @@ This template documents the exact layout and component order for City-level page
 
 ---
 
-### 3. **CityProFeed** (Marketplace Section)
+### 3. **ChoiceMatrix** (THE CONTRAST)
+**Purpose:** Side-by-side comparison showing massive DIY friction vs. zero-friction Pro option  
+**Location:** `src/components/city/ChoiceMatrix.jsx`
+
+**Contains:**
+- Heading: "Compare Your Options in [City]"
+- Subheading: "Professional haulers vs. DIY — see the difference"
+
+**Two-column comparison:**
+
+**Left Card - DIY Option** (Gray border)
+- Header: "City Drop-Off / Self-Haul"
+- Pros (green checkmarks):
+  - Cost info (e.g., "Free with permit or $28.50 tip fee")
+- Cons (red X marks):
+  - Truck required
+  - Heavy lifting (75-100 lbs)
+  - Strict bagging rules
+  - Limited hours
+  - **Highlighted catch**: Scheduling requirement
+- Warning: "High friction — most people abandon this route"
+
+**Right Card - Professional Haulers** (Blue border, recommended)
+- Header: "Licensed Network Pros"
+- Badge: "Professional Haulers"
+- Pros (green checkmarks):
+  - In-home removal
+  - Zero heavy lifting
+  - Eco-recycling certified
+  - Same/next-day availability
+  - Instant online pricing
+- Cost: Starting price (e.g., "From $89")
+- CTA button: "See Available Haulers Below ↓" (scrolls down)
+
+**Data Required:**
+```javascript
+{
+  city: "Los Angeles",
+  cityCostInfo: "Free (permit required) or $28.50 tip fee",
+  baggingRules: "Plastic wrap required (city mandate)",
+  hoursDays: "Sat–Sun 7AM–3PM only",
+  theCatch: "Must schedule 14 days in advance online",
+  basePriceDisplay: "From $89"
+}
+```
+
+---
+
+### 4. **CityProFeed** (THE SALE)
 **Purpose:** Shows available haulers with filters  
 **Location:** `src/components/city/CityProFeed.jsx`
 
@@ -101,9 +149,61 @@ This template documents the exact layout and component order for City-level page
 
 ---
 
-### 4. **MunicipalRulebook** (THE AGITATION)
-**Purpose:** Show the red tape and strict rules of DIY  
+### 5. **CityFAQ** (OBJECTION HANDLING)
+**Purpose:** Answer questions specifically about booking a pro  
+**Location:** `src/components/city/CityFAQ.jsx`
+
+**Contains:**
+- Heading: "Frequently Asked Questions"
+- Subheading: "Local rules, costs, and policies — answered."
+- FAQ accordion (4-6 questions)
+  - Questions focus on booking pros, pricing, requirements
+  - Examples: "Do I need to be home?", "Are there hidden fees?", "What if I need to cancel?"
+- Neighborhoods section showing service coverage
+
+**Data Required:**
+```javascript
+{
+  city: "Los Angeles",
+  faqs: [
+    {
+      q: "Is mattress disposal free in Los Angeles?",
+      a: "The City of LA offers free bulky item pickup twice per year..."
+    }
+    // ... more FAQs
+  ],
+  neighborhoods: ["Downtown LA", "Silver Lake", ...]
+}
+```
+
+---
+
+### 6. **CityCTA** (FINAL PUSH)
+**Purpose:** Final conversion push to book  
+**Location:** `src/components/city/CityCTA.jsx`
+
+**Contains:**
+- Badge: "Local Pros Available Now"
+- Headline: "Skip the Hassle in [City]."
+- Subheadline: Benefits summary
+- Trust badges (background-checked, eco-compliant, same-day)
+- Primary CTA button: "Check Availability in [City]"
+- Fine print: "No credit card required to check pricing"
+
+**Data Required:**
+```javascript
+{
+  city: "Los Angeles",
+  basePriceDisplay: "From $89"
+}
+```
+
+---
+
+### 7. **MunicipalRulebook** (SEO ANCHOR - DE-EMPHASIZED)
+**Purpose:** Show the red tape and strict rules of DIY (for SEO and hard "no" buyers)  
 **Location:** `src/components/city/MunicipalRulebook.jsx`
+**Styling:** Light gray background (bg-gray-50) to visually de-emphasize
 
 **Contains:**
 - Heading: "Can I Leave It on the Curb in [City]?"
@@ -142,9 +242,10 @@ This template documents the exact layout and component order for City-level page
 
 ---
 
-### 5. **DropOffCenters** (THE REALITY CHECK)
-**Purpose:** Show true cost of DIY with calculator  
+### 8. **DropOffCenters** (SEO ANCHOR - DE-EMPHASIZED)
+**Purpose:** Show true cost of DIY with calculator (for SEO and time-on-page metrics)  
 **Location:** `src/components/city/DropOffCenters.jsx`
+**Styling:** Light gray background (bg-gray-50) to visually de-emphasize
 
 **Contains:**
 - Heading: "Where to Dump a Mattress in [City]"
@@ -198,55 +299,33 @@ This template documents the exact layout and component order for City-level page
 
 ---
 
-### 6. **ChoiceMatrix** (THE PIVOT)
-**Purpose:** Side-by-side comparison after pain is established  
-**Location:** `src/components/city/ChoiceMatrix.jsx`
+## Summary: The Conversion-Optimized Flow
 
-**Contains:**
-- Heading: "Compare Your Options in [City]"
-- Subheading: "Professional haulers vs. DIY — see the difference"
+**The New Order (Education to Conversion):**
 
-**Two-column comparison:**
+1. **CityHero** - Hook with big promise and clear CTA
+2. **TriggerRibbon** - Establish urgency (weather, delays, pricing)
+3. **ChoiceMatrix** - Visual contrast of DIY friction vs. Pro ease
+4. **CityProFeed** - Show the pros, let them see ratings and prices
+5. **CityFAQ** - Answer objections about booking a pro
+6. **CityCTA** - Final push to book
+7. **MunicipalRulebook** - SEO anchor (de-emphasized with light gray bg)
+8. **DropOffCenters** - SEO anchor (de-emphasized with light gray bg)
 
-**Left Card - DIY Option** (Gray border)
-- Header: "City Drop-Off / Self-Haul"
-- Pros (green checkmarks):
-  - Cost info (e.g., "Free with permit or $28.50 tip fee")
-- Cons (red X marks):
-  - Truck required
-  - Heavy lifting (75-100 lbs)
-  - Strict bagging rules
-  - Limited hours
-  - **Highlighted catch**: Scheduling requirement
-- Warning: "High friction — most people abandon this route"
+**Key Changes:**
+- ChoiceMatrix moved up to position 3 (right after urgency triggers)
+- CityProFeed immediately follows the contrast
+- CityFAQ moved up to handle objections right after seeing pros
+- CityCTA provides final conversion push
+- MunicipalRulebook & DropOffCenters pushed to bottom with lighter backgrounds
+- Removed UGCCarousel to minimize distractions from conversion path
 
-**Right Card - Professional Haulers** (Blue border, recommended)
-- Header: "Licensed Network Pros"
-- Badge: "Professional Haulers"
-- Pros (green checkmarks):
-  - In-home removal
-  - Zero heavy lifting
-  - Eco-recycling certified
-  - Same/next-day availability
-  - Instant online pricing
-- Cost: Starting price (e.g., "From $89")
-- CTA button: "See Available Haulers Below ↓" (scrolls down)
-
-**Data Required:**
-```javascript
-{
-  city: "Los Angeles",
-  cityCostInfo: "Free (permit required) or $28.50 tip fee",
-  baggingRules: "Plastic wrap required (city mandate)",
-  hoursDays: "Sat–Sun 7AM–3PM only",
-  theCatch: "Must schedule 14 days in advance online",
-  basePriceDisplay: "From $89"
-}
-```
+**Rationale:**
+Users who scroll past CityCTA to MunicipalRulebook/DropOffCenters are likely hard "no" buyers on professional services. We still provide DIY info for SEO value and time-on-page metrics, but visually de-emphasize it to avoid distracting conversion-ready users.
 
 ---
 
-### 7. **UGCCarousel**
+### UGCCarousel (REMOVED FROM FLOW)
 **Purpose:** Social proof with recent jobs  
 **Location:** `src/components/marketplace/UGCCarousel.jsx`
 

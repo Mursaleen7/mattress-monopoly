@@ -1,15 +1,39 @@
 import React from "react";
 import { ChevronRight, MapPin, Zap, ShieldCheck } from "lucide-react";
 import { createPageUrl } from "@/utils";
+import CitySearchBar from "./CitySearchBar";
 
 export default function CityHero({ data }) {
-  const { city, state, stateAbbr, heroHookStatement, fineAmount, lastUpdated, zipCodes } = data;
+  const { city, state, stateAbbr, heroHookStatement, fineAmount, lastUpdated, zipCodes, citySlug } = data;
+
+  // Dynamic city images - you can customize these per city
+  const getCityImage = (cityName) => {
+    const cityImages = {
+      'Boston': 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1600&q=80',
+      'Los Angeles': 'https://images.unsplash.com/photo-1534190239940-9ba8944ea261?w=1600&q=80',
+      'Cambridge': 'https://images.unsplash.com/photo-1605642636195-b4d8c4e0e3c6?w=1600&q=80',
+      'Somerville': 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1600&q=80',
+    };
+    return cityImages[cityName] || 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1600&q=80';
+  };
 
   return (
-    <section className="relative overflow-hidden bg-primary text-white">
+    <section className="relative overflow-hidden min-h-[680px] flex items-center">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <img
+          src={getCityImage(city)}
+          alt={`${city} skyline`}
+          className="w-full h-full object-cover"
+        />
+        {/* Dark gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+      </div>
+
       {/* Breadcrumb */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
-        <nav className="flex items-center gap-1.5 text-xs text-gray-400 font-medium">
+      <div className="absolute top-0 left-0 right-0 z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
+        <nav className="flex items-center gap-1.5 text-xs text-white/70 font-medium">
           <a href={createPageUrl("Home")} className="hover:text-white transition-colors">Home</a>
           <ChevronRight className="w-3 h-3" />
           <span>Cities</span>
@@ -20,70 +44,65 @@ export default function CityHero({ data }) {
         </nav>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid lg:grid-cols-2 gap-10 items-center">
-        {/* Left: Content */}
-        <div>
-          <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 py-1 mb-5">
-            <MapPin className="w-3 h-3 text-accent" />
-            <span className="text-accent text-xs font-bold tracking-widest uppercase">
-              {city}, {stateAbbr} · Updated {lastUpdated}
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-3xl">
+          {/* Location Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
+            <MapPin className="w-4 h-4 text-white" />
+            <span className="text-white text-sm font-semibold">
+              {city}, {stateAbbr}
             </span>
+            <span className="text-white/60 text-sm">•</span>
+            <span className="text-white/80 text-sm">Updated {lastUpdated}</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-black leading-[1.06] tracking-tight mb-3">
-            Mattress Disposal<br />in <span className="text-accent">{city}, {state}</span>
+          {/* Main Heading */}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-6 text-white">
+            Mattress Disposal<br />in {city}
           </h1>
 
-          <h2 className="text-gray-300 text-lg font-light mb-5 leading-relaxed">
+          {/* Subheading */}
+          <p className="text-xl sm:text-2xl text-white/90 font-light mb-8 leading-relaxed">
             The 2026 Guide to Drop-off Centers, Curbside Rules, and Private Haulers.
-          </h2>
+          </p>
 
-          <div className="bg-red-500/10 border border-red-400/30 rounded-xl px-4 py-3 mb-7 flex items-start gap-3">
-            <span className="text-xl">⚠️</span>
-            <p className="text-red-300 text-sm font-semibold leading-snug">{heroHookStatement}</p>
+          {/* Warning Box */}
+          <div className="bg-red-500/20 backdrop-blur-sm border border-red-400/40 rounded-2xl px-5 py-4 mb-8 flex items-start gap-3 shadow-xl">
+            <span className="text-2xl">⚠️</span>
+            <p className="text-white text-base font-semibold leading-snug">{heroHookStatement}</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <button className="bg-accent hover:bg-accent/90 active:scale-95 text-accent-foreground font-extrabold px-8 py-4 rounded-xl text-base tracking-wide transition-all shadow-xl shadow-accent/30 hover:shadow-accent/50 flex items-center gap-2 justify-center">
-              <Zap className="w-4 h-4" />
-              Skip the Hassle — See Instant Pro Pricing
+          {/* Search Bar */}
+          <div className="mb-8">
+            <CitySearchBar currentCity={citySlug || city.toLowerCase()} />
+          </div>
+
+          {/* CTA Button */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <button className="bg-accent hover:bg-accent/90 active:scale-[0.98] text-accent-foreground font-bold px-10 py-5 rounded-xl text-lg tracking-wide transition-all shadow-2xl hover:shadow-accent/50 flex items-center gap-3 justify-center group">
+              <Zap className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              See Instant Pro Pricing
+            </button>
+            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold px-10 py-5 rounded-xl text-lg transition-all flex items-center gap-3 justify-center">
+              <ShieldCheck className="w-5 h-5" />
+              View City Rules
             </button>
           </div>
 
-          <div className="mt-5 flex flex-wrap gap-2">
-            {zipCodes.map(z => (
-              <span key={z} className="bg-gray-800 text-gray-400 text-xs font-mono px-2.5 py-1 rounded-md border border-gray-700">
+          {/* Zip Codes */}
+          <div className="flex flex-wrap gap-2">
+            <span className="text-white/70 text-sm font-medium mr-2">Coverage areas:</span>
+            {zipCodes.slice(0, 8).map(z => (
+              <span key={z} className="bg-white/10 backdrop-blur-sm text-white text-sm font-mono px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                 {z}
               </span>
             ))}
-          </div>
-        </div>
-
-        {/* Right: Map Placeholder */}
-        <div className="relative h-72 lg:h-80 rounded-2xl overflow-hidden border border-gray-700 shadow-2xl">
-          <img
-            src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800&q=80"
-            alt={`${city} map`}
-            className="w-full h-full object-cover opacity-50 blur-[1px]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-gray-900/60 to-transparent" />
-
-          {/* Radar Blip */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative">
-              <div className="w-4 h-4 bg-accent rounded-full z-10 relative shadow-lg" />
-              <div className="absolute inset-0 -m-4 w-12 h-12 rounded-full border-2 border-accent/60 animate-ping" />
-              <div className="absolute inset-0 -m-8 w-20 h-20 rounded-full border border-accent/30 animate-pulse" />
-            </div>
-          </div>
-
-          <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-            <span className="bg-accent/90 text-accent-foreground text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5">
-              <MapPin className="w-3 h-3" /> {city}, {stateAbbr}
-            </span>
-            <div className="flex items-center gap-1.5 bg-gray-900/80 text-green-400 text-xs font-bold px-3 py-1.5 rounded-full border border-green-500/30">
-              <ShieldCheck className="w-3 h-3" /> Live Coverage Area
-            </div>
+            {zipCodes.length > 8 && (
+              <span className="text-white/70 text-sm font-medium px-3 py-1.5">
+                +{zipCodes.length - 8} more
+              </span>
+            )}
           </div>
         </div>
       </div>

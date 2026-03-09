@@ -57,7 +57,7 @@ export default function DropOffCenters({ data }) {
   const { city, locations, basePriceDisplay } = data;
 
   return (
-    <section className="py-14 bg-secondary border-b border-border">
+    <section className="py-14 bg-gray-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-black text-gray-900 tracking-tight mb-2">
           Where to Dump a Mattress in {city}
@@ -124,6 +124,19 @@ export default function DropOffCenters({ data }) {
                         <span>{loc.hours}</span>
                       </div>
                     </div>
+
+                    {/* Phone number if available */}
+                    {loc.phone && (
+                      <div className="flex items-center gap-1.5 text-xs text-gray-600 mb-3 font-semibold">
+                        <span className="text-gray-400">📞</span>
+                        <a href={`tel:${loc.phone}`} className="hover:text-primary transition-colors">
+                          {loc.phone}
+                        </a>
+                        {(loc.hours === 'Call for hours' || loc.tippingFee === 'Call for fees') && (
+                          <span className="text-gray-400 italic">(call for hours/fees)</span>
+                        )}
+                      </div>
+                    )}
 
                     <div className="flex flex-wrap gap-1.5 mb-3">
                       {loc.accepted.map(item => (

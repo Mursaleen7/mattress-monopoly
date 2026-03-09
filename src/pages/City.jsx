@@ -6,7 +6,7 @@ import UGCCarousel from "@/components/marketplace/UGCCarousel";
 import MunicipalRulebook from "@/components/city/MunicipalRulebook";
 import DropOffCenters from "@/components/city/DropOffCenters";
 import CityFAQ from "@/components/city/CityFAQ";
-import CityCTA from "@/components/city/CityCTA";
+import MarketplaceFooter from "@/components/marketplace/MarketplaceFooter";
 
 // ─── Dynamic City Data (replace via DB injection) ───────────────────────────
 const CITY_DATA = {
@@ -105,7 +105,7 @@ export default function City() {
         <UGCCarousel city={CITY_DATA.city} />
       </div>
       <CityFAQ data={CITY_DATA} />
-      <CityCTA data={CITY_DATA} />
+      <MarketplaceFooter city={CITY_DATA.city} />
     </div>
   );
 }

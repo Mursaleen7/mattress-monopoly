@@ -1,5 +1,5 @@
 import React from "react";
-import { AlertTriangle, CheckCircle2, XCircle, Clock, Ruler, FileText, Phone, Globe } from "lucide-react";
+import { AlertTriangle, Phone, Globe } from "lucide-react";
 
 export default function MunicipalRulebook({ data }) {
   const {
@@ -11,104 +11,84 @@ export default function MunicipalRulebook({ data }) {
   const isConditional = availabilityStatus === "conditional";
 
   return (
-    <section className="py-14 bg-background border-b border-border">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-gray-900 tracking-tight mb-2">
+        {/* Header */}
+        <h2 className="text-2xl font-black text-gray-900 mb-6">
           Can I Leave It on the Curb in {city}?
         </h2>
-        <p className="text-gray-500 text-sm mb-6">
-          Official municipal rules — sourced from city sanitation.
-        </p>
 
-        {/* Status Banner */}
-        {isConditional && (
-          <div className="bg-yellow-50 border-2 border-yellow-300 rounded-2xl px-6 py-4 flex items-start gap-4 mb-7">
-            <CheckCircle2 className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-extrabold text-yellow-900 text-base">
-                ⚠️ Conditionally Allowed — Strict Rules Apply
-              </p>
-              <p className="text-yellow-700 text-sm mt-1">
-                Curbside mattress pickup is available in {city} but requires advance scheduling and strict compliance. <strong>Rejected at the curb if:</strong> not wrapped, placed too early, or suspected of bed bugs.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {isAllowed && (
-          <div className="bg-green-50 border-2 border-green-300 rounded-2xl px-6 py-4 flex items-start gap-4 mb-7">
-            <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-            <p className="font-extrabold text-green-900">
-              ✅ Allowed — Schedule required. See rules below.
+        {/* Status Line */}
+        <div className="mb-6">
+          {isConditional && (
+            <p className="text-base text-gray-700 leading-relaxed">
+              <span className="inline-flex items-center gap-1.5 bg-yellow-100 text-yellow-800 px-2.5 py-1 rounded-md font-bold text-sm mr-2">
+                ⚠️ Conditionally Allowed
+              </span>
+              Curbside pickup is available in {city}, but you'll need to schedule in advance and follow strict rules. If your mattress isn't wrapped properly or you place it out too early, it won't be picked up.
             </p>
-          </div>
-        )}
-
-        {!isAllowed && !isConditional && (
-          <div className="bg-red-50 border-2 border-red-400 rounded-2xl px-6 py-4 flex items-start gap-4 mb-7">
-            <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-            <p className="font-extrabold text-red-900">
-              🚫 NOT ALLOWED — {city} prohibits curbside mattress disposal. See alternatives below.
+          )}
+          {isAllowed && (
+            <p className="text-base text-gray-700 leading-relaxed">
+              <span className="inline-flex items-center gap-1.5 bg-green-100 text-green-800 px-2.5 py-1 rounded-md font-bold text-sm mr-2">
+                ✓ Allowed
+              </span>
+              Curbside pickup is available in {city}. Schedule required — see rules below.
             </p>
-          </div>
-        )}
-
-        {/* Data Grid */}
-        <div className="grid sm:grid-cols-3 gap-4 mb-8">
-          {[
-            { icon: FileText, label: "Mattress Rule", value: mattressSpecificRule, color: "blue" },
-            { icon: Clock, label: "Placement Time", value: placementTime, color: "orange" },
-            { icon: Ruler, label: "Size Limits", value: sizeLimits, color: "purple" },
-          ].map(({ icon: Icon, label, value, color }, i) => (
-            <div key={i} className={color === "blue" ? "bg-secondary border border-border rounded-2xl p-5" : `bg-${color}-50 border border-${color}-200 rounded-2xl p-5`}>
-              <div className="flex items-center gap-2 mb-2">
-                <Icon className={color === "blue" ? "w-4 h-4 text-primary" : `w-4 h-4 text-${color}-600`} />
-                <span className={color === "blue" ? "text-xs font-bold text-primary uppercase tracking-wide" : `text-xs font-bold text-${color}-700 uppercase tracking-wide`}>
-                  {label}
-                </span>
-              </div>
-              <p className="text-gray-800 font-semibold text-sm leading-snug">{value}</p>
-            </div>
-          ))}
+          )}
+          {!isAllowed && !isConditional && (
+            <p className="text-base text-gray-700 leading-relaxed">
+              <span className="inline-flex items-center gap-1.5 bg-red-100 text-red-800 px-2.5 py-1 rounded-md font-bold text-sm mr-2">
+                ✗ Not Allowed
+              </span>
+              {city} doesn't allow curbside mattress disposal. You'll need to use a drop-off facility or hire a hauler.
+            </p>
+          )}
         </div>
 
-        {/* Fine Warning */}
-        <div className="bg-red-50 border-2 border-red-500 rounded-2xl p-6 mb-8">
-          <div className="flex items-start gap-4">
-            <AlertTriangle className="w-8 h-8 text-red-600 flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-extrabold text-red-900 text-base mb-1">
-                ⚠️ ILLEGAL DUMPING WARNING
-              </p>
-              <p className="text-red-700 text-sm leading-relaxed">
-                Fines in <strong>{city}</strong> reach up to <strong className="text-red-900 text-base">{fineAmount}</strong> per incident. The City of LA has active enforcement cameras and anonymous reporting hotlines in high-violation neighborhoods. Fines are issued per item, per location.
-              </p>
-            </div>
+        {/* Rules Paragraph */}
+        <div className="prose prose-sm max-w-none mb-6">
+          <p className="text-gray-700 leading-relaxed mb-3">
+            <strong className="text-gray-900">The mattress rule:</strong> {mattressSpecificRule}
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-3">
+            <strong className="text-gray-900">When to put it out:</strong> {placementTime}
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            <strong className="text-gray-900">Size limits:</strong> {sizeLimits}
+          </p>
+        </div>
+
+        {/* Fine Warning - Inline Style */}
+        <div className="bg-red-50 border-l-4 border-red-500 px-4 py-3 mb-6">
+          <div className="flex gap-3">
+            <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+            <p className="text-sm text-red-800 leading-relaxed">
+              <strong className="font-bold">Don't risk it.</strong> Illegal dumping fines in {city} can reach <strong>{fineAmount}</strong> per incident. The city uses enforcement cameras and anonymous tip lines in high-violation areas.
+            </p>
           </div>
         </div>
 
-        {/* Official Contact Card */}
-        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center gap-5">
-          <div className="flex-1">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1 block">
-              Official Authority
-            </span>
-            <p className="font-extrabold text-gray-900 text-base">{officialDept}</p>
-          </div>
+        {/* Contact Info - Inline */}
+        <div className="border-t border-gray-200 pt-5">
+          <p className="text-sm text-gray-600 mb-3">
+            Questions? Contact <strong className="text-gray-900">{officialDept}</strong> directly:
+          </p>
           <div className="flex flex-wrap gap-3">
             <a 
               href={`tel:${officialPhone}`} 
-              className="flex items-center gap-2 bg-background border border-border rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-700 hover:border-accent transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-700 hover:text-accent transition-colors"
             >
-              <Phone className="w-4 h-4 text-accent" /> {officialPhone}
+              <Phone className="w-4 h-4" /> {officialPhone}
             </a>
+            <span className="text-gray-300">•</span>
             <a 
               href={websiteUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center gap-2 bg-background border border-border rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-700 hover:border-accent transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-700 hover:text-accent transition-colors"
             >
-              <Globe className="w-4 h-4 text-accent" /> Official Site
+              <Globe className="w-4 h-4" /> Official Website
             </a>
           </div>
         </div>
