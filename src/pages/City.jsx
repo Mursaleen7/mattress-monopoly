@@ -95,15 +95,13 @@ const CITY_DATA = {
 
 export default function City() {
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background font-sans antialiased">
       <CityHero data={CITY_DATA} />
       <TriggerRibbon data={CITY_DATA} />
       <CityProFeed data={CITY_DATA} />
+      <UGCCarousel city={CITY_DATA.city} />
       <MunicipalRulebook data={CITY_DATA} />
       <DropOffCenters data={CITY_DATA} />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <UGCCarousel city={CITY_DATA.city} />
-      </div>
       <CityFAQ data={CITY_DATA} />
       <CityCTA data={CITY_DATA} />
     </div>
