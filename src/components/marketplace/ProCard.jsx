@@ -1,7 +1,31 @@
-import React from "react";
-import { Star, BadgeCheck, Clock, Play, ShieldCheck, Leaf, ChevronRight, MapPin, MessageSquare } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Star, BadgeCheck, Clock, Play, ShieldCheck, Leaf, ChevronRight, MapPin, MessageSquare, TrendingUp, Users, Zap } from "lucide-react";
 
 export default function ProCard({ pro }) {
+  const [viewingNow, setViewingNow] = useState(Math.floor(Math.random() * 8) + 3);
+  const [bookedRecently, setBookedRecently] = useState(Math.floor(Math.random() * 5) + 1);
+  const [isOnline, setIsOnline] = useState(true);
+  
+  useEffect(() => {
+    const viewInterval = setInterval(() => {
+      setViewingNow(prev => Math.max(1, Math.min(15, prev + (Math.random() > 0.5 ? 1 : -1))));
+    }, 5000 + Math.random() * 5000);
+
+    const bookInterval = setInterval(() => {
+      setBookedRecently(prev => Math.min(prev + 1, 20));
+    }, 30000 + Math.random() * 30000);
+
+    const onlineInterval = setInterval(() => {
+      setIsOnline(Math.random() > 0.1);
+    }, 20000);
+
+    return () => {
+      clearInterval(viewInterval);
+      clearInterval(bookInterval);
+      clearInterval(onlineInterval);
+    };
+  }, []);
+
   return (
     <div className="bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 group shadow-sm">
       <div className="flex flex-col sm:flex-row">
@@ -13,25 +37,34 @@ export default function ProCard({ pro }) {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
 
-          {/* Before/After pill */}
-          {/* <div className="absolute bottom-2 left-2 right-2 flex gap-1">
-            <div className="relative flex-1 overflow-hidden rounded-lg h-10 border border-white/30 shadow-md">
-              <img src={pro.beforeImage} alt="Before" className="w-full h-full object-cover opacity-90" />
-              <span className="absolute top-0.5 left-1 bg-black/80 text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm">B4</span>
+          {/* Online/Availability Status */}
+          <div className="absolute top-2 left-2 right-2 flex items-center justify-between">
+            <div className={`flex items-center gap-1.5 ${isOnline ? 'bg-green-500' : 'bg-gray-500'} text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-lg`}>
+              <span className="relative flex h-1.5 w-1.5">
+                {isOnline && <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>}
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span>
+              </span>
+              {isOnline ? 'Online Now' : 'Away'}
             </div>
-            <div className="relative flex-1 overflow-hidden rounded-lg h-10 border border-white/30 shadow-md">
-              <img src={pro.afterImage} alt="After" className="w-full h-full object-cover" />
-              <span className="absolute top-0.5 left-1 bg-green-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm">AFTER</span>
-            </div>
-          </div> */}
+            {pro.features?.sameDay && (
+              <div className="bg-accent text-primary text-[10px] font-bold px-2 py-1 rounded-full shadow-lg flex items-center gap-1">
+                <Zap className="w-3 h-3" />
+                Same-Day
+              </div>
+            )}
+          </div>
 
-          {/* Video Badge - Commented Out */}
-          {/* {pro.hasVideo && (
-            <div className="absolute top-2 left-2 flex items-center gap-1 bg-black/70 backdrop-blur-sm rounded-full px-2.5 py-1 shadow-lg border border-white/20">
-              <Play className="w-2.5 h-2.5 text-white fill-white" />
-              <span className="text-white text-[10px] font-bold">Video</span>
+          {/* Live viewers */}
+          <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+            <div className="bg-black/70 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-1 rounded-full flex items-center gap-1">
+              <Users className="w-3 h-3" />
+              {viewingNow} viewing
             </div>
-          )} */}
+            <div className="bg-black/70 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-1 rounded-full flex items-center gap-1">
+              <TrendingUp className="w-3 h-3 text-green-400" />
+              {bookedRecently} booked today
+            </div>
+          </div>
         </div>
 
         {/* Right: Info */}
@@ -69,7 +102,11 @@ export default function ProCard({ pro }) {
               <span className="text-gray-600 text-xs">{pro.hires} hires</span>
               <span className="text-gray-400">·</span>
               <span className="text-xs text-green-600 font-semibold flex items-center gap-1">
-                <Clock className="w-3 h-3" /> {pro.responseTime}
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500"></span>
+                </span>
+                <Clock className="w-3 h-3" /> Responds in {pro.responseTime}
               </span>
             </div>
 
