@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MapPin, Clock, DollarSign, CheckCircle2, Navigation, Calculator, AlertTriangle, Users, TrendingUp, Car } from "lucide-react";
+import { MapPin, Clock, CheckCircle2, Navigation, Calculator, AlertTriangle, Users, TrendingUp, Car, Building, Truck, DollarSign, Timer, ChevronRight, ArrowRight } from "lucide-react";
 
 function DIYCostCalculator({ locations, basePriceDisplay }) {
   const tippingFee = locations[0]?.tippingFee || "$28.50";
@@ -11,77 +11,191 @@ function DIYCostCalculator({ locations, basePriceDisplay }) {
   const savings = total - baseNum;
 
   const [peopleComparing, setPeopleComparing] = useState(7);
-  const [recentChoice, setRecentChoice] = useState("pro");
+  const [showSavings, setShowSavings] = useState(false);
   
   useEffect(() => {
     const interval = setInterval(() => {
       setPeopleComparing(prev => Math.max(3, Math.min(15, prev + (Math.random() > 0.5 ? 1 : -1))));
-      setRecentChoice(Math.random() > 0.2 ? "pro" : "diy");
     }, 8000);
-    return () => clearInterval(interval);
+    
+    const savingsTimer = setTimeout(() => setShowSavings(true), 1000);
+    
+    return () => {
+      clearInterval(interval);
+      clearTimeout(savingsTimer);
+    };
   }, []);
 
   return (
-    <div className="bg-background border-2 border-border rounded-2xl overflow-hidden sticky top-6">
-      <div className="bg-primary px-5 py-4">
-        <div className="flex items-center gap-2 mb-1">
-          <Calculator className="w-4 h-4 text-accent" />
-          <h3 className="text-white font-extrabold text-sm">DIY True Cost Calculator</h3>
+    <div className="bg-card border-2 border-border rounded-3xl overflow-hidden stall-shadow sticky top-6">
+      <div className="bg-gradient-to-r from-foreground to-foreground/90 px-6 py-5">
+        <div className="flex items-center gap-3 mb-2">
+          <Calculator className="w-6 h-6 text-accent" />
+          <h3 className="text-background font-bold text-lg">True Cost Calculator</h3>
         </div>
-        <div className="flex items-center gap-2 text-xs text-white/70">
-          <span className="relative flex h-1.5 w-1.5">
+        <div className="flex items-center gap-2 text-sm text-background/70">
+          <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
           </span>
           {peopleComparing} people comparing right now
         </div>
       </div>
 
-      <div className="p-5 space-y-3">
+      <div className="p-6 space-y-4">
+        <h4 className="font-bold text-foreground text-sm uppercase tracking-wider text-center mb-4">DIY Total Cost</h4>
+        
         {[
-          { label: "Dump Tip Fee", value: tippingFee, note: "facility charge" },
-          { label: "Truck/Van Rental", value: "$40.00", note: "4-hr minimum" },
-          { label: "Gas & Your Time", value: "$35.00", note: "3 hours @ $10/hr + fuel" },
-        ].map(({ label, value, note }, i) => (
-          <div key={i} className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
-            <div>
-              <p className="text-sm font-semibold text-gray-700">{label}</p>
-              <p className="text-xs text-gray-400">{note}</p>
+          { label: "Facility Tip Fee", value: tippingFee, icon: Building },
+          { label: "Truck Rental (4hr)", value: "$40.00", icon: Truck },
+          { label: "Gas & Your Time", value: "$35.00", icon: Timer },
+        ].map(({ label, value, icon: Icon }, i) => (
+          <div key={i} className="flex items-center justify-between py-3 border-b border-border last:border-0">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center">
+                <Icon className="w-4 h-4 text-muted-foreground" />
+              </div>
+              <span className="text-sm font-medium text-foreground">{label}</span>
             </div>
-            <span className="text-sm font-bold text-gray-900">{value}</span>
+            <span className="text-sm font-bold text-foreground">{value}</span>
           </div>
         ))}
 
-        <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 flex items-center justify-between">
-          <span className="font-extrabold text-gray-900 text-sm">Total DIY Cost</span>
-          <span className="font-black text-red-600 text-xl">${total.toFixed(2)}</span>
+        <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl px-5 py-4 text-center">
+          <span className="text-xs text-red-600 font-bold uppercase tracking-wider">DIY Total</span>
+          <div className="text-3xl font-black text-red-600 mt-1">${total.toFixed(2)}</div>
         </div>
 
-        <div className="text-center text-xs text-gray-400 font-medium">vs.</div>
+        <div className="flex items-center justify-center gap-3 py-2">
+          <div className="h-px flex-1 bg-border" />
+          <span className="text-muted-foreground text-sm font-medium">vs</span>
+          <div className="h-px flex-1 bg-border" />
+        </div>
 
-        <div className="bg-green-50 border-2 border-green-300 rounded-xl px-4 py-3">
-          <div className="flex items-center justify-between mb-1">
-            <span className="font-extrabold text-gray-900 text-sm">Professional Pickup</span>
-            <span className="font-black text-primary text-xl">{basePriceDisplay}</span>
+        <div className={`bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-300 rounded-2xl px-5 py-4 text-center transition-all duration-500 ${showSavings ? 'scale-100' : 'scale-95 opacity-80'}`}>
+          <span className="text-xs text-emerald-700 font-bold uppercase tracking-wider">Professional Pickup</span>
+          <div className="text-3xl font-black text-emerald-600 mt-1">{basePriceDisplay}</div>
+          <div className="flex items-center justify-center gap-2 mt-2 text-emerald-700 font-semibold text-sm">
+            <TrendingUp className="w-4 h-4" />
+            Save ${Math.abs(savings).toFixed(0)} + 3 hours of your time
           </div>
-          <div className="flex items-center gap-1 text-xs text-green-700 font-semibold">
-            <TrendingUp className="w-3 h-3" />
-            Save ${Math.abs(savings).toFixed(0)} + your time
+        </div>
+
+        <div className="bg-secondary rounded-xl p-4 text-center space-y-2">
+          <p className="text-xs text-muted-foreground font-medium">What customers choose</p>
+          <div className="flex items-center justify-center gap-2">
+            <div className="h-2.5 flex-1 bg-muted rounded-full overflow-hidden">
+              <div className="h-full w-[87%] bg-accent rounded-full" />
+            </div>
+            <span className="text-sm font-bold text-foreground">87%</span>
           </div>
+          <p className="text-xs text-muted-foreground">choose professional pickup</p>
         </div>
 
-        <div className="bg-gray-50 rounded-lg p-3 text-center">
-          <p className="text-[10px] text-gray-500 mb-1">Most recent choice</p>
-          <p className={`text-xs font-bold ${recentChoice === 'pro' ? 'text-green-600' : 'text-gray-600'}`}>
-            {recentChoice === 'pro' ? '✓ 87% choose Professional Pickup' : '→ Some prefer DIY'}
-          </p>
-        </div>
-
-        <p className="text-xs text-center text-gray-500 italic">Zero lifting. Done in 30 minutes.</p>
-
-        <button className="w-full bg-accent hover:bg-accent/90 active:scale-95 text-primary font-extrabold py-3 rounded-xl text-sm transition-all shadow-md group">
-          Book a Pro Instead →
+        <button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold py-4 rounded-2xl text-base transition-all flex items-center justify-center gap-2 group stall-shadow">
+          Book a Pro Instead
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </button>
+      </div>
+    </div>
+  );
+}
+
+function LocationCard({ loc, index, waitTime, visitors }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div className="bg-card border-2 border-border rounded-3xl overflow-hidden market-hover group">
+      <div className="flex flex-col lg:flex-row">
+        {/* Map Thumbnail */}
+        <div className="relative lg:w-48 h-40 lg:h-auto overflow-hidden bg-secondary flex-shrink-0">
+          <img
+            src={`https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=300&q=70`}
+            alt="Facility location"
+            className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-foreground/40 to-foreground/20 flex items-center justify-center">
+            <MapPin className="w-8 h-8 text-background drop-shadow-lg" />
+          </div>
+          
+          {/* Rank badge */}
+          <div className="absolute top-3 left-3 w-8 h-8 rounded-xl bg-accent text-accent-foreground text-sm font-black flex items-center justify-center shadow-lg">
+            {index + 1}
+          </div>
+
+          {/* Wait time badge */}
+          <div className={`absolute bottom-3 left-3 right-3 ${
+            waitTime > 30 ? 'bg-red-500' : waitTime > 15 ? 'bg-amber-500' : 'bg-emerald-500'
+          } text-white text-xs font-bold px-3 py-2 rounded-xl shadow-lg flex items-center justify-center gap-2`}>
+            <Clock className="w-3.5 h-3.5" />
+            ~{waitTime} min wait
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="flex-1 p-6">
+          <div className="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <h3 className="font-bold text-lg text-foreground mb-1">{loc.name}</h3>
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">
+                  {loc.type}
+                </span>
+                <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                  <Users className="w-3.5 h-3.5" />
+                  {visitors} vehicles now
+                </span>
+              </div>
+            </div>
+            <div className="text-right flex-shrink-0">
+              <div className="text-2xl font-black text-foreground">{loc.tippingFee}</div>
+              <div className="text-xs text-muted-foreground">per item</div>
+            </div>
+          </div>
+
+          {/* Details Grid */}
+          <div className="grid sm:grid-cols-2 gap-3 mb-4">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
+              <span className="truncate">{loc.address}</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Clock className="w-4 h-4 text-accent flex-shrink-0" />
+              <span>{loc.hours}</span>
+            </div>
+          </div>
+
+          {/* Accepted Items */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            {loc.accepted.map(item => (
+              <span 
+                key={item} 
+                className="inline-flex items-center gap-1.5 text-xs bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1.5 rounded-full font-medium"
+              >
+                <CheckCircle2 className="w-3 h-3" />
+                {item}
+              </span>
+            ))}
+          </div>
+
+          {/* Residency Requirement */}
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-sm text-amber-800 font-medium mb-4 flex items-center gap-2">
+            <AlertTriangle className="w-4 h-4 text-amber-500 flex-shrink-0" />
+            <span>{loc.residencyReq}</span>
+          </div>
+
+          {/* Action */}
+          <a 
+            href={loc.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-foreground hover:bg-foreground/90 text-background font-bold px-5 py-3 rounded-xl text-sm transition-all"
+          >
+            <Navigation className="w-4 h-4" />
+            Get Directions
+            <ChevronRight className="w-4 h-4" />
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -90,7 +204,6 @@ function DIYCostCalculator({ locations, basePriceDisplay }) {
 export default function DropOffCenters({ data }) {
   const { city, locations, basePriceDisplay } = data;
   
-  // Live data state
   const [waitTimes, setWaitTimes] = useState([15, 25, 10]);
   const [currentVisitors, setCurrentVisitors] = useState([8, 12, 5]);
   const [lastUpdated, setLastUpdated] = useState(3);
@@ -112,128 +225,63 @@ export default function DropOffCenters({ data }) {
   }, []);
 
   return (
-    <section className="py-14 bg-secondary border-b border-border">
+    <section className="py-16 bg-gradient-to-b from-secondary/30 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-2">
-          <h2 className="text-2xl font-black text-gray-900 tracking-tight">
-            Where to Dump a Mattress in {city}
-          </h2>
-          <div className="flex items-center gap-2 text-xs">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-            </span>
-            <span className="text-gray-600">Live wait times · Updated {lastUpdated}m ago</span>
-          </div>
-        </div>
-        <p className="text-gray-500 text-sm mb-4">
-          Official drop-off centers — hours, fees, and real-time wait estimates.
-        </p>
-
-        {/* Truck Requirement Warning */}
-        <div className="bg-orange-50 border-2 border-orange-300 rounded-xl px-5 py-3 flex items-start gap-3 mb-8">
-          <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+        {/* Section Header */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
           <div>
-            <p className="font-bold text-orange-900 text-sm">
-              🚚 Truck Requirement: Minimum 6ft truck bed required
+            <div className="flex items-center gap-3 mb-3">
+              <Building className="w-8 h-8 text-accent" />
+              <h2 className="text-3xl font-black text-foreground tracking-tight">
+                Drop-Off Locations
+              </h2>
+            </div>
+            <p className="text-muted-foreground text-lg">
+              Official facilities in {city} — live wait times and fees
             </p>
-            <p className="text-orange-700 text-xs mt-0.5">
-              Mattresses folded in SUVs risk structural damage and voiding warranties. Most facilities will not accept mattresses transported in sedans or compact vehicles.
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 text-sm bg-card border border-border rounded-full px-4 py-2">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span className="text-muted-foreground">Updated {lastUpdated}m ago</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Truck Warning Banner */}
+        <div className="bg-gradient-to-r from-orange-50 to-amber-50 border-2 border-orange-300 rounded-3xl px-6 py-5 flex items-start gap-4 mb-10">
+          <div className="w-12 h-12 rounded-2xl bg-orange-200 flex items-center justify-center flex-shrink-0">
+            <Truck className="w-6 h-6 text-orange-700" />
+          </div>
+          <div>
+            <h3 className="font-bold text-orange-900 text-lg mb-1">🚚 Truck Required</h3>
+            <p className="text-orange-800 text-sm leading-relaxed">
+              Minimum 6ft truck bed required. Mattresses folded in SUVs risk structural damage. 
+              Most facilities will not accept mattresses transported in sedans or compact vehicles.
             </p>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-12 gap-8">
           {/* Location Cards */}
-          <div className="lg:col-span-2 space-y-5">
+          <div className="lg:col-span-8 space-y-6">
             {locations.map((loc, i) => (
-              <div key={i} className="bg-background border border-border rounded-2xl overflow-hidden hover:shadow-md hover:border-accent transition-all">
-                <div className="flex flex-col sm:flex-row">
-                  {/* Map thumb */}
-                  <div className="relative sm:w-36 h-32 sm:h-auto flex-shrink-0 overflow-hidden">
-                    <img
-                      src={`https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=300&q=70`}
-                      alt="Facility map"
-                      className="w-full h-full object-cover opacity-60"
-                    />
-                    <div className="absolute inset-0 bg-primary/40 flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-white drop-shadow" />
-                    </div>
-                    <div className="absolute top-2 left-2 bg-background text-gray-800 text-xs font-extrabold px-2 py-0.5 rounded-full shadow">
-                      # {i + 1}
-                    </div>
-                    {/* Live wait time badge */}
-                    <div className={`absolute bottom-2 left-2 right-2 ${waitTimes[i] > 30 ? 'bg-red-500' : waitTimes[i] > 15 ? 'bg-yellow-500' : 'bg-green-500'} text-white text-[10px] font-bold px-2 py-1 rounded-lg shadow flex items-center justify-center gap-1`}>
-                      <Clock className="w-3 h-3" />
-                      ~{waitTimes[i]} min wait
-                    </div>
-                  </div>
-
-                  <div className="flex-1 p-5">
-                    <div className="flex items-start justify-between gap-3 mb-2">
-                      <div>
-                        <h3 className="font-extrabold text-gray-900 text-base leading-snug">{loc.name}</h3>
-                        <div className="flex items-center gap-2 mt-1">
-                          <span className="text-xs font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full">
-                            {loc.type}
-                          </span>
-                          <span className="flex items-center gap-1 text-xs text-gray-500">
-                            <Users className="w-3 h-3" />
-                            {currentVisitors[i]} vehicles now
-                          </span>
-                        </div>
-                      </div>
-                      <span className="text-xl font-black text-gray-900 whitespace-nowrap">
-                        {loc.tippingFee}
-                        <span className="text-xs text-gray-400 font-normal">/item</span>
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2 mb-3">
-                      <div className="flex items-center gap-1.5 text-xs text-gray-500">
-                        <MapPin className="w-3.5 h-3.5 flex-shrink-0 text-gray-400" />
-                        <span>{loc.address}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 text-xs text-gray-500">
-                        <Clock className="w-3.5 h-3.5 flex-shrink-0 text-gray-400" />
-                        <span>{loc.hours}</span>
-                      </div>
-                    </div>
-
-                    <div className="flex flex-wrap gap-1.5 mb-3">
-                      {loc.accepted.map(item => (
-                        <span key={item} className="flex items-center gap-1 text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full">
-                          <CheckCircle2 className="w-2.5 h-2.5" /> {item}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg px-3 py-2 text-xs text-yellow-800 font-semibold mb-3">
-                      🪪 Residency Requirement: {loc.residencyReq}
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                      <a 
-                        href={loc.mapsUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 bg-primary hover:bg-primary/90 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors"
-                      >
-                        <Navigation className="w-3.5 h-3.5" /> Get Directions
-                      </a>
-                      <span className="text-[10px] text-gray-400 flex items-center gap-1">
-                        <Car className="w-3 h-3" />
-                        {Math.floor(Math.random() * 10) + 5} min drive
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <LocationCard 
+                key={i} 
+                loc={loc} 
+                index={i}
+                waitTime={waitTimes[i]}
+                visitors={currentVisitors[i]}
+              />
             ))}
           </div>
 
-          {/* Calculator */}
-          <div>
+          {/* Calculator Sidebar */}
+          <div className="lg:col-span-4">
             <DIYCostCalculator locations={locations} basePriceDisplay={basePriceDisplay} />
           </div>
         </div>
