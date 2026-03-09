@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { X, Check, AlertTriangle, Truck, SlidersHorizontal, Leaf, Zap, ShieldCheck, Tag, ChevronDown } from "lucide-react";
+import { SlidersHorizontal, Leaf, Zap, ShieldCheck, Tag, ChevronDown } from "lucide-react";
 import ProCard from "@/components/marketplace/ProCard.jsx";
 
 const CITY_PROS = [
@@ -121,7 +121,7 @@ const Toggle = ({ checked, onChange, label, icon: Icon, color = "blue" }) => (
 );
 
 export default function CityProFeed({ data }) {
-  const { city, cityCostInfo, baggingRules, hoursDays, theCatch } = data;
+  const { city } = data;
   const [filters, setFilters] = useState({ ecoFriendly: false, sameDay: false, licensed: false, upfrontPricing: false });
   const [showAll, setShowAll] = useState(false);
   const toggle = (key) => setFilters(f => ({ ...f, [key]: !f[key] }));
@@ -147,14 +147,6 @@ export default function CityProFeed({ data }) {
   const displayedPros = showAll ? filteredPros : filteredPros.slice(0, 3);
   const remainingCount = filteredPros.length - 3;
 
-  const diyCons = [
-    `Only available: ${hoursDays}`,
-    `Rule: ${baggingRules}`,
-    `Catch: ${theCatch}`,
-    "Truck or large vehicle required",
-    "Heavy lifting (75–100 lbs)",
-  ];
-
   return (
     <section className="py-10 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -162,37 +154,6 @@ export default function CityProFeed({ data }) {
 
           {/* Sidebar */}
           <aside className="hidden lg:block w-72 flex-shrink-0 sticky top-20">
-            {/* DIY Info Card */}
-            <div className="bg-amber-50 border border-amber-200 rounded-2xl overflow-hidden mb-5">
-              <div className="bg-amber-100 border-b border-amber-200 px-4 py-3 flex items-center gap-2">
-                <Truck className="w-4 h-4 text-amber-700" />
-                <div>
-                  <span className="text-[10px] font-bold text-amber-600 uppercase tracking-widest block">Option A</span>
-                  <h3 className="font-extrabold text-amber-900 text-sm">DIY / City Route</h3>
-                </div>
-              </div>
-              <div className="p-4 space-y-2">
-                <div className="flex items-start gap-2">
-                  <div className="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-2.5 h-2.5 text-green-600" />
-                  </div>
-                  <span className="text-xs text-gray-700 font-semibold">Cost: {cityCostInfo}</span>
-                </div>
-                {diyCons.map((c, i) => (
-                  <div key={i} className="flex items-start gap-2">
-                    <div className="w-4 h-4 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <X className="w-2.5 h-2.5 text-red-500" />
-                    </div>
-                    <span className="text-xs text-gray-600">{c}</span>
-                  </div>
-                ))}
-                <div className="pt-2 flex items-center gap-1.5 text-[11px] text-amber-700 font-medium border-t border-amber-200">
-                  <AlertTriangle className="w-3 h-3 text-amber-500" />
-                  Most residents abandon this route
-                </div>
-              </div>
-            </div>
-
             {/* Filter Sidebar */}
             <div className="bg-card border border-border rounded-2xl shadow-sm overflow-hidden">
               <div className="bg-secondary border-b border-border px-5 py-4 flex items-center gap-2">

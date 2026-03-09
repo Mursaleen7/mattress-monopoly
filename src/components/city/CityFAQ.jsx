@@ -20,23 +20,22 @@ export default function CityFAQ({ data }) {
               {faqs.map(({ q, a }, i) => (
                 <div 
                   key={i} 
-                  className={`border rounded-2xl overflow-hidden transition-all ${
-                    open === i ? "border-primary/30 shadow-sm" : "border-border"
+                  className={`border border-border rounded-2xl overflow-hidden transition-all duration-200 ${
+                    open === i ? "bg-secondary/50" : "bg-background"
                   }`}
                 >
                   <button
                     onClick={() => setOpen(open === i ? -1 : i)}
                     className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
                   >
-                    <span className={`font-bold text-sm ${
-                      open === i ? "text-primary" : "text-card-foreground"
-                    }`}>
+                    <span className="font-semibold text-base text-foreground">
                       {q}
                     </span>
                     <ChevronDown 
-                      className={`w-4 h-4 flex-shrink-0 text-muted-foreground transition-transform ${
+                      className={`w-5 h-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 ${
                         open === i ? "rotate-180" : ""
-                      }`} 
+                      }`}
+                      strokeWidth={2}
                     />
                   </button>
                   {open === i && (

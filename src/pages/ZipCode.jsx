@@ -1,5 +1,6 @@
 import React from "react";
 import ZipHero from "@/components/zipcode/ZipHero";
+import ZipTriggerRibbon from "@/components/zipcode/ZipTriggerRibbon";
 import ZipProFeed from "@/components/zipcode/ZipProFeed";
 import ZipTrustBar from "@/components/zipcode/ZipTrustBar";
 import UGCCarousel from "@/components/marketplace/UGCCarousel";
@@ -28,6 +29,7 @@ export default function ZipCode() {
   return (
     <div className="min-h-screen bg-background font-sans">
       <ZipHero data={ZIP_DATA} />
+      <ZipTriggerRibbon data={ZIP_DATA} />
       <ZipTrustBar data={ZIP_DATA} />
       <ZipProFeed data={ZIP_DATA} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

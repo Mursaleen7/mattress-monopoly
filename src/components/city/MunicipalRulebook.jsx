@@ -18,31 +18,43 @@ export default function MunicipalRulebook({ data }) {
           Can I Leave It on the Curb in {city}?
         </h2>
 
-        {/* Status Line */}
+        {/* Status Badge */}
         <div className="mb-6">
           {isConditional && (
-            <p className="text-base text-gray-700 leading-relaxed">
-              <span className="inline-flex items-center gap-1.5 bg-yellow-100 text-yellow-800 px-2.5 py-1 rounded-md font-bold text-sm mr-2">
-                ⚠️ Conditionally Allowed
-              </span>
-              Curbside pickup is available in {city}, but you'll need to schedule in advance and follow strict rules. If your mattress isn't wrapped properly or you place it out too early, it won't be picked up.
-            </p>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+              <div className="flex items-start gap-3">
+                <span className="inline-flex items-center gap-1.5 bg-yellow-100 text-yellow-800 px-3 py-1.5 rounded-md font-bold text-sm flex-shrink-0">
+                  ⚠️ Conditionally Allowed
+                </span>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Curbside pickup is available in {city}, but you'll need to schedule in advance and follow strict rules. If your mattress isn't wrapped properly or you place it out too early, it won't be picked up.
+                </p>
+              </div>
+            </div>
           )}
           {isAllowed && (
-            <p className="text-base text-gray-700 leading-relaxed">
-              <span className="inline-flex items-center gap-1.5 bg-green-100 text-green-800 px-2.5 py-1 rounded-md font-bold text-sm mr-2">
-                ✓ Allowed
-              </span>
-              Curbside pickup is available in {city}. Schedule required — see rules below.
-            </p>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+              <div className="flex items-start gap-3">
+                <span className="inline-flex items-center gap-1.5 bg-green-100 text-green-800 px-3 py-1.5 rounded-md font-bold text-sm flex-shrink-0">
+                  ✓ Allowed
+                </span>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Curbside pickup is available in {city}. Schedule required — see rules below.
+                </p>
+              </div>
+            </div>
           )}
           {!isAllowed && !isConditional && (
-            <p className="text-base text-gray-700 leading-relaxed">
-              <span className="inline-flex items-center gap-1.5 bg-red-100 text-red-800 px-2.5 py-1 rounded-md font-bold text-sm mr-2">
-                ✗ Not Allowed
-              </span>
-              {city} doesn't allow curbside mattress disposal. You'll need to use a drop-off facility or hire a hauler.
-            </p>
+            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+              <div className="flex items-start gap-3">
+                <span className="inline-flex items-center gap-1.5 bg-red-100 text-red-800 px-3 py-1.5 rounded-md font-bold text-sm flex-shrink-0">
+                  ✗ Not Allowed
+                </span>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {city} doesn't allow curbside mattress disposal. You'll need to use a drop-off facility or hire a hauler.
+                </p>
+              </div>
+            </div>
           )}
         </div>
 

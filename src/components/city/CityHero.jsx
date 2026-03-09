@@ -6,24 +6,13 @@ import CitySearchBar from "./CitySearchBar";
 export default function CityHero({ data }) {
   const { city, state, stateAbbr, heroHookStatement, fineAmount, lastUpdated, zipCodes, citySlug } = data;
 
-  // Dynamic city images - you can customize these per city
-  const getCityImage = (cityName) => {
-    const cityImages = {
-      'Boston': 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1600&q=80',
-      'Los Angeles': 'https://images.unsplash.com/photo-1534190239940-9ba8944ea261?w=1600&q=80',
-      'Cambridge': 'https://images.unsplash.com/photo-1605642636195-b4d8c4e0e3c6?w=1600&q=80',
-      'Somerville': 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1600&q=80',
-    };
-    return cityImages[cityName] || 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1600&q=80';
-  };
-
   return (
     <section className="relative overflow-hidden min-h-[680px] flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src={getCityImage(city)}
-          alt={`${city} skyline`}
+          src="/hero11.png"
+          alt={`${city} mattress removal service`}
           className="w-full h-full object-cover"
         />
         {/* Dark gradient overlay for text readability */}
@@ -67,19 +56,13 @@ export default function CityHero({ data }) {
             The 2026 Guide to Drop-off Centers, Curbside Rules, and Private Haulers.
           </p>
 
-          {/* Warning Box */}
-          <div className="bg-red-500/20 backdrop-blur-sm border border-red-400/40 rounded-2xl px-5 py-4 mb-8 flex items-start gap-3 shadow-xl">
-            <span className="text-2xl">⚠️</span>
-            <p className="text-white text-base font-semibold leading-snug">{heroHookStatement}</p>
-          </div>
-
           {/* Search Bar */}
           <div className="mb-8">
             <CitySearchBar currentCity={citySlug || city.toLowerCase()} />
           </div>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-accent hover:bg-accent/90 active:scale-[0.98] text-accent-foreground font-bold px-10 py-5 rounded-xl text-lg tracking-wide transition-all shadow-2xl hover:shadow-accent/50 flex items-center gap-3 justify-center group">
               <Zap className="w-5 h-5 group-hover:scale-110 transition-transform" />
               See Instant Pro Pricing
@@ -88,21 +71,6 @@ export default function CityHero({ data }) {
               <ShieldCheck className="w-5 h-5" />
               View City Rules
             </button>
-          </div>
-
-          {/* Zip Codes */}
-          <div className="flex flex-wrap gap-2">
-            <span className="text-white/70 text-sm font-medium mr-2">Coverage areas:</span>
-            {zipCodes.slice(0, 8).map(z => (
-              <span key={z} className="bg-white/10 backdrop-blur-sm text-white text-sm font-mono px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
-                {z}
-              </span>
-            ))}
-            {zipCodes.length > 8 && (
-              <span className="text-white/70 text-sm font-medium px-3 py-1.5">
-                +{zipCodes.length - 8} more
-              </span>
-            )}
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import MunicipalityHero from "@/components/municipality/MunicipalityHero";
+import MunicipalityTriggerRibbon from "@/components/municipality/MunicipalityTriggerRibbon";
 import MunicipalityProFeed from "@/components/municipality/MunicipalityProFeed";
 import MunicipalityRules from "@/components/municipality/MunicipalityRules";
 import UGCCarousel from "@/components/marketplace/UGCCarousel";
@@ -51,8 +52,9 @@ export default function Municipality() {
   return (
     <div className="min-h-screen bg-background font-sans">
       <MunicipalityHero data={MUNI_DATA} />
-      <MunicipalityProFeed data={MUNI_DATA} />
+      <MunicipalityTriggerRibbon data={MUNI_DATA} />
       <MunicipalityRules data={MUNI_DATA} />
+      <MunicipalityProFeed data={MUNI_DATA} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <UGCCarousel city={MUNI_DATA.name} />
       </div>

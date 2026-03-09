@@ -50,7 +50,9 @@ const CITY_DATA = {
       tippingFee: "$28.50",
       accepted: ["Mattresses", "Box Springs", "Furniture", "Appliances"],
       residencyReq: "LA County residents only. Photo ID required.",
-      mapsUrl: "https://maps.google.com/?q=Antelope+Valley+Recycling+Center"
+      mapsUrl: "https://maps.google.com/?q=Antelope+Valley+Recycling+Center",
+      lat: 34.5794,
+      lon: -118.1165
     },
     {
       name: "Sun Valley Recycle Center",
@@ -60,7 +62,9 @@ const CITY_DATA = {
       tippingFee: "$18.00",
       accepted: ["Mattresses", "Box Springs", "Yard Waste"],
       residencyReq: "City of LA residents only. Utility bill required.",
-      mapsUrl: "https://maps.google.com/?q=Sun+Valley+Recycle+Center"
+      mapsUrl: "https://maps.google.com/?q=Sun+Valley+Recycle+Center",
+      lat: 34.2167,
+      lon: -118.3897
     },
     {
       name: "GreenWaste Solutions — Commerce",
@@ -70,7 +74,9 @@ const CITY_DATA = {
       tippingFee: "$35.00",
       accepted: ["Mattresses", "Box Springs", "Electronics", "Furniture", "Appliances"],
       residencyReq: "Open to all LA County residents and businesses.",
-      mapsUrl: "https://maps.google.com/?q=GreenWaste+Solutions+Commerce"
+      mapsUrl: "https://maps.google.com/?q=GreenWaste+Solutions+Commerce",
+      lat: 33.9983,
+      lon: -118.1598
     }
   ],
   faqs: [

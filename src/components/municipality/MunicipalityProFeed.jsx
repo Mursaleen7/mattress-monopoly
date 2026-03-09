@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { X, AlertTriangle, Truck, SlidersHorizontal, Leaf, Zap, ShieldCheck, Tag, ChevronDown, Clock } from "lucide-react";
+import { SlidersHorizontal, Leaf, Zap, ShieldCheck, Tag, ChevronDown, Clock } from "lucide-react";
 import ProCard from "@/components/marketplace/ProCard.jsx";
 
 const MUNI_PROS = [
@@ -97,7 +97,7 @@ const Toggle = ({ checked, onChange, label, icon: Icon, color = "blue" }) => (
 );
 
 export default function MunicipalityProFeed({ data }) {
-  const { name, cityCostInfo, baggingRules, pickupSchedule, theCatch, waitDays, basePriceDisplay } = data;
+  const { name, waitDays } = data;
   const [filters, setFilters] = useState({ ecoFriendly: false, sameDay: false, licensed: false, upfrontPricing: false });
   const [showAll, setShowAll] = useState(false);
   const toggle = (key) => setFilters(f => ({ ...f, [key]: !f[key] }));
@@ -129,41 +129,6 @@ export default function MunicipalityProFeed({ data }) {
         <div className="flex gap-8 items-start">
 
           <aside className="hidden lg:block w-72 flex-shrink-0 sticky top-20">
-            <div className="bg-secondary border border-border rounded-2xl overflow-hidden mb-5">
-              <div className="bg-amber-100 border-b border-amber-200 px-4 py-3 flex items-center gap-2">
-                <Truck className="w-4 h-4 text-amber-700" />
-                <div>
-                  <span className="text-[10px] font-bold text-amber-600 uppercase tracking-widest block">City Route</span>
-                  <h3 className="font-extrabold text-amber-900 text-sm">Why Most Skip It</h3>
-                </div>
-              </div>
-              <div className="p-4 space-y-2.5">
-                {[
-                  `${waitDays}-day advance booking required`,
-                  pickupSchedule,
-                  baggingRules,
-                  theCatch,
-                  "Heavy lifting (75–100 lbs) on your own",
-                  "Slot cancelled? Wait another full cycle",
-                ].map((c, i) => (
-                  <div key={i} className="flex items-start gap-2">
-                    <div className="w-4 h-4 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <X className="w-2.5 h-2.5 text-red-500" />
-                    </div>
-                    <span className="text-xs text-gray-600">{c}</span>
-                  </div>
-                ))}
-                <div className="pt-2 flex items-center gap-1.5 text-[11px] text-amber-700 font-medium border-t border-amber-200">
-                  <AlertTriangle className="w-3 h-3 text-amber-500" />
-                  Most {name} residents use a pro instead
-                </div>
-                <div className="bg-secondary border border-border rounded-lg px-3 py-2 text-center mt-1">
-                  <div className="text-primary text-[11px] font-bold">Pro haulers start at {basePriceDisplay}</div>
-                  <div className="text-gray-500 text-[10px]">Same-day · No scheduling · No heavy lifting</div>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-background border border-border rounded-2xl shadow-sm overflow-hidden">
               <div className="bg-secondary border-b border-border px-5 py-4 flex items-center gap-2">
                 <SlidersHorizontal className="w-4 h-4 text-primary" />
