@@ -1,23 +1,27 @@
 import React from "react";
 import { ChevronRight, MapPin, Zap, ShieldCheck } from "lucide-react";
 import { createPageUrl } from "@/utils";
+import { getHeroImageForCity } from "@/data/cities";
 import CitySearchBar from "./CitySearchBar";
 
 export default function CityHero({ data }) {
   const { city, state, stateAbbr, heroHookStatement, fineAmount, lastUpdated, zipCodes, citySlug } = data;
+  
+  // Get the appropriate hero image based on metro area
+  const heroImage = getHeroImageForCity(citySlug || city.toLowerCase()) || "/GreaterBostonArea_hero.png";
 
   return (
     <section className="relative overflow-hidden min-h-[680px] flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="/hero11.png"
+          src={heroImage}
           alt={`${city} mattress removal service`}
           className="w-full h-full object-cover"
         />
-        {/* Dark gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+        {/* Subtle gradient overlay for text readability - lighter and more professional */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/35 to-transparent" />
       </div>
 
       {/* Breadcrumb */}
@@ -52,7 +56,7 @@ export default function CityHero({ data }) {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl sm:text-2xl text-white/90 font-light mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/90 font-light mb-8 leading-relaxed">
             The 2026 Guide to Drop-off Centers, Curbside Rules, and Private Haulers.
           </p>
 

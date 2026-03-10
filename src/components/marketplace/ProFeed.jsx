@@ -139,8 +139,8 @@ export default function ProFeed({ city, zip, filters }) {
       {/* Feed Header */}
       <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
         <div>
-          <h2 className="text-lg font-bold text-foreground">{filteredPros.length} Available Hauler{filteredPros.length !== 1 ? 's' : ''} near {zip || city}</h2>
-          <p className="text-gray-600 text-xs mt-0.5">matching your criteria · updated 2 min ago</p>
+          <h2 className="text-2xl font-bold text-foreground">{filteredPros.length} Available Hauler{filteredPros.length !== 1 ? 's' : ''} near {zip || city}</h2>
+          <p className="text-gray-600 text-sm mt-1">matching your criteria · updated 2 min ago</p>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-600">Sort by:</span>

@@ -55,6 +55,9 @@ import Legal from './pages/Legal';
 import City from './pages/City';
 import Municipality from './pages/Municipality';
 import ZipCode from './pages/ZipCode';
+import BostonCity from './pages/BostonCity';
+import CambridgeCity from './pages/CambridgeCity';
+import SomervilleCity from './pages/SomervilleCity';
 import __Layout from './Layout.jsx';
 
 export const PAGES = {
@@ -65,6 +68,9 @@ export const PAGES = {
   "City": City,
   "Municipality": Municipality,
   "ZipCode": ZipCode,
+  "boston": BostonCity,
+  "cambridge": CambridgeCity,
+  "somerville": SomervilleCity,
 }
 
 export const pagesConfig = {

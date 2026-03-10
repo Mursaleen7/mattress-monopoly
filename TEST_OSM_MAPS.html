@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test OSM Static Maps</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        img { max-width: 100%; border: 1px solid #ddd; }
+        .url { background: #f5f5f5; padding: 10px; margin: 10px 0; word-break: break-all; }
+    </style>
+</head>
+<body>
+    <h1>Testing Free Static Map Services</h1>
+    
+    <div class="test">
+        <h2>Test 1: staticmap.openstreetmap.de</h2>
+        <p>Antelope Valley (34.5794, -118.1165)</p>
+        <div class="url">https://staticmap.openstreetmap.de/staticmap.php?center=34.5794,-118.1165&zoom=14&size=300x200&maptype=mapnik&markers=34.5794,-118.1165,lightblue1</div>
+        <img src="https://staticmap.openstreetmap.de/staticmap.php?center=34.5794,-118.1165&zoom=14&size=300x200&maptype=mapnik&markers=34.5794,-118.1165,lightblue1" alt="Test 1">
+    </div>
+
+    <div class="test">
+        <h2>Test 2: Different marker style</h2>
+        <p>Boston (42.3601, -71.0589)</p>
+        <div class="url">https://staticmap.openstreetmap.de/staticmap.php?center=42.3601,-71.0589&zoom=14&size=300x200&maptype=mapnik&markers=42.3601,-71.0589,red</div>
+        <img src="https://staticmap.openstreetmap.de/staticmap.php?center=42.3601,-71.0589&zoom=14&size=300x200&maptype=mapnik&markers=42.3601,-71.0589,red" alt="Test 2">
+    </div>
+
+    <div class="test">
+        <h2>Test 3: tile.openstreetmap.org (single tile)</h2>
+        <p>Note: This shows a single tile, not a static map</p>
+        <div class="url">https://tile.openstreetmap.org/14/2621/6333.png</div>
+        <img src="https://tile.openstreetmap.org/14/2621/6333.png" alt="Test 3">
+    </div>
+
+    <script>
+        // Log which images load successfully
+        document.querySelectorAll('img').forEach((img, index) => {
+            img.onload = () => console.log(`Test ${index + 1} loaded successfully`);
+            img.onerror = () => console.error(`Test ${index + 1} failed to load`);
+        });
+    </script>
+</body>
+</html>

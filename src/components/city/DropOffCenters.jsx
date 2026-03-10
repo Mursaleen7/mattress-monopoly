@@ -124,20 +124,20 @@ export default function DropOffCenters({ data }) {
   };
 
   return (
-    <section className="py-14 bg-gray-50 border-b border-gray-100">
+    <section className="py-16 bg-gray-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-gray-900 tracking-tight mb-2">
+        <h2 className="text-3xl font-bold text-gray-900 mb-3">
           Where to Dump a Mattress in {city}
         </h2>
-        <p className="text-gray-500 text-sm mb-8">
+        <p className="text-gray-600 text-base mb-10">
           Official drop-off centers — hours and fees verified for 2026.
         </p>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-7">
           {/* Location Cards */}
-          <div className="lg:col-span-2 space-y-5">
+          <div className="lg:col-span-2 space-y-4">
             {locations.map((loc, i) => (
-              <div key={i} className="bg-background border border-border rounded-2xl overflow-hidden hover:shadow-md hover:border-accent transition-all">
+              <div key={i} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-300 transition-all duration-200">
                 <div className="flex flex-col sm:flex-row">
                   {/* Location thumbnail with map */}
                   <div className="relative sm:w-36 h-32 sm:h-auto flex-shrink-0 overflow-hidden bg-gray-100">
@@ -205,27 +205,27 @@ export default function DropOffCenters({ data }) {
                   </div>
 
                   <div className="flex-1 p-5">
-                    <div className="flex items-start justify-between gap-3 mb-2">
+                    <div className="flex items-start justify-between gap-4 mb-3">
                       <div>
-                        <h3 className="font-extrabold text-gray-900 text-base leading-snug">{loc.name}</h3>
-                        <span className="text-xs font-semibold text-primary bg-secondary px-2 py-0.5 rounded-full">
+                        <h3 className="font-bold text-gray-900 text-base leading-tight mb-1.5">{loc.name}</h3>
+                        <span className="inline-block text-xs font-medium text-primary bg-primary/10 px-2.5 py-1 rounded-full">
                           {loc.type}
                         </span>
                       </div>
-                      <span className="text-xl font-black text-gray-900 whitespace-nowrap">
+                      <span className="text-xl font-bold text-gray-900 whitespace-nowrap">
                         {loc.tippingFee}
-                        <span className="text-xs text-gray-400 font-normal">/item</span>
+                        <span className="text-xs text-gray-500 font-normal">/item</span>
                       </span>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2 mb-3">
-                      <div className="flex items-center gap-1.5 text-xs text-gray-500">
-                        <MapPin className="w-3.5 h-3.5 flex-shrink-0 text-gray-400" />
-                        <span>{loc.address}</span>
+                    <div className="grid grid-cols-2 gap-3 mb-3.5">
+                      <div className="flex items-start gap-2 text-xs text-gray-600">
+                        <MapPin className="w-3.5 h-3.5 flex-shrink-0 text-gray-400 mt-0.5" />
+                        <span className="leading-relaxed">{loc.address}</span>
                       </div>
-                      <div className="flex items-center gap-1.5 text-xs text-gray-500">
-                        <Clock className="w-3.5 h-3.5 flex-shrink-0 text-gray-400" />
-                        <span>{loc.hours}</span>
+                      <div className="flex items-start gap-2 text-xs text-gray-600">
+                        <Clock className="w-3.5 h-3.5 flex-shrink-0 text-gray-400 mt-0.5" />
+                        <span className="leading-relaxed">{loc.hours}</span>
                       </div>
                     </div>
 

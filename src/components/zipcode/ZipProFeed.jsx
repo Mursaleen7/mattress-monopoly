@@ -172,7 +172,7 @@ export default function ZipProFeed({ data }) {
           <main className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
               <div>
-                <h2 className="text-xl font-extrabold text-gray-900 tracking-tight">
+                <h2 className="text-2xl font-bold text-gray-900">
                   {filteredPros.length} Hauler{filteredPros.length !== 1 ? 's' : ''} Active in {zip}
                 </h2>
                 <p className="text-gray-500 text-sm mt-0.5">Sorted by fastest response · updated just now</p>

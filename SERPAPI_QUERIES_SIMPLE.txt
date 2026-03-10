@@ -1,0 +1,58 @@
+=== SERPAPI QUERY TEMPLATES - GREATER BOSTON ===
+
+Replace {LOCATION} with city/neighborhood/zip code name
+
+=== WASTE MANAGEMENT QUERIES (Phase 2A) ===
+site:.gov "{LOCATION}" bulk trash mattress disposal
+site:.gov "{LOCATION}" sanitation large item pickup
+"{LOCATION}" "Massachusetts" official waste management mattress schedule
+"{LOCATION}" "MA" bulk item curbside pickup schedule site:.gov OR site:.us
+"{LOCATION}" solid waste department mattress disposal 2024 OR 2025 OR 2026
+
+=== ORDINANCE/FINE QUERIES (Phase 2B) ===
+site:.gov "{LOCATION}" illegal dumping fine ordinance code
+"{LOCATION}" "MA" illegal dumping penalty "$" misdemeanor
+"{LOCATION}" city code illegal dumping fine amount
+
+=== COMPETITOR PRICING QUERY (Phase 5) ===
+1-800-got-junk mattress removal {LOCATION} MA price
+
+=== ALL 36 CITIES ===
+Boston, Cambridge, Somerville, Brookline, Quincy, Newton, Waltham, Watertown, Medford, Malden, Everett, Chelsea, Revere, Winthrop, Arlington, Belmont, Lynn, Salem, Peabody, Beverly, Danvers, Marblehead, Swampscott, Nahant, Braintree, Weymouth, Milton, Dedham, Needham, Wellesley, Hingham, Lexington, Woburn, Burlington, Winchester, Stoneham
+
+=== EXAMPLE: BOSTON QUERIES ===
+site:.gov "Boston" bulk trash mattress disposal
+site:.gov "Boston" sanitation large item pickup
+"Boston" "Massachusetts" official waste management mattress schedule
+"Boston" "MA" bulk item curbside pickup schedule site:.gov OR site:.us
+"Boston" solid waste department mattress disposal 2024 OR 2025 OR 2026
+site:.gov "Boston" illegal dumping fine ordinance code
+"Boston" "MA" illegal dumping penalty "$" misdemeanor
+"Boston" city code illegal dumping fine amount
+1-800-got-junk mattress removal Boston MA price
+
+=== EXAMPLE: CAMBRIDGE QUERIES ===
+site:.gov "Cambridge" bulk trash mattress disposal
+site:.gov "Cambridge" sanitation large item pickup
+"Cambridge" "Massachusetts" official waste management mattress schedule
+"Cambridge" "MA" bulk item curbside pickup schedule site:.gov OR site:.us
+"Cambridge" solid waste department mattress disposal 2024 OR 2025 OR 2026
+site:.gov "Cambridge" illegal dumping fine ordinance code
+"Cambridge" "MA" illegal dumping penalty "$" misdemeanor
+"Cambridge" city code illegal dumping fine amount
+1-800-got-junk mattress removal Cambridge MA price
+
+=== EXAMPLE: ZIP CODE 02134 (ALLSTON) QUERIES ===
+site:.gov "02134" bulk trash mattress disposal
+site:.gov "02134" sanitation large item pickup
+"02134" "Massachusetts" official waste management mattress schedule
+"02134" "MA" bulk item curbside pickup schedule site:.gov OR site:.us
+"02134" solid waste department mattress disposal 2024 OR 2025 OR 2026
+site:.gov "02134" illegal dumping fine ordinance code
+"02134" "MA" illegal dumping penalty "$" misdemeanor
+"02134" city code illegal dumping fine amount
+1-800-got-junk mattress removal 02134 MA price
+
+=== TOTAL COVERAGE ===
+36 Cities + 105 Municipalities + 179 Zip Codes = 320 Locations
+320 Locations × 9 Queries Each = 2,880 Total Queries

@@ -1,0 +1,1927 @@
+[
+  {
+    "city_name": "Boston",
+    "state_name": "Massachusetts",
+    "state_abbr": "MA",
+    "city_slug": "boston-ma",
+    "last_updated": "March 06, 2026",
+    "scraped_at": "2026-03-06T16:11:17.032342",
+    "contacts": {
+      "website_url": "https://www.boston.gov/trash-and-recycling",
+      "official_dept": "Trash and Recycling | Boston.gov"
+    },
+    "curbside_rules": {
+      "placement_time": "After 7AM on day of pickup",
+      "availability_status": "conditional",
+      "bagging_rules": "Plastic wrap required (city mandate)",
+      "mattress_specific_rule": "Must be wrapped in plastic before curbside placement",
+      "size_limits": "Contact local department for limits",
+      "the_catch": "Appointment or scheduling may be required"
+    },
+    "illegal_dumping": {
+      "fine_amount": "$50,"
+    },
+    "drop_off_locations": [
+      {
+        "name": "Trash and Recycling",
+        "type": "Transfer Station / Recycling Center",
+        "address": "Contact facility for address",
+        "phone": "(617) 561-0331",
+        "hours": "Call for hours",
+        "tipping_fee": "$140",
+        "accepted": [
+          "Mattresses",
+          "Box Springs",
+          "Furniture"
+        ],
+        "residency_req": "Boston residents only. Photo ID may be required.",
+        "google_maps_url": "https://www.boston.gov/trash-and-recycling"
+      },
+      {
+        "name": "Mattress and Boxspring Recycling | waylandma",
+        "type": "Transfer Station / Recycling Center",
+        "address": "484 Boston Post Road. Wayland",
+        "phone": null,
+        "hours": "Call for hours",
+        "tipping_fee": "Call for fees",
+        "accepted": [
+          "Mattresses",
+          "Box Springs",
+          "Furniture"
+        ],
+        "residency_req": "Boston residents only. Photo ID may be required.",
+        "google_maps_url": "https://www.wayland.ma.us/transfer-station-recycling-center/pages/mattress-and-boxspring-recycling"
+      },
+      {
+        "name": "Mattress recycling is easy - Facebook",
+        "type": "Transfer Station / Recycling Center",
+        "address": "Contact facility for address",
+        "phone": null,
+        "hours": "Call for hours",
+        "tipping_fee": "Call for fees",
+        "accepted": [
+          "Mattresses",
+          "Box Springs",
+          "Furniture"
+        ],
+        "residency_req": "Boston residents only. Photo ID may be required.",
+        "google_maps_url": "https://www.facebook.com/groups/dedham.westwood/posts/3368344000001414/"
+      }
+    ],
+    "pricing": {
+      "base_price_display": "From $50",
+      "competitor_comparison": "$50\u2013$200",
+      "market_rate_range": "$50\u2013$200"
+    },
+    "weather_profile": {
+      "profile": "Rainy Season (Nov\u2013Mar)",
+      "risk": "Wet mattresses are automatically rejected"
+    },
+    "donation_policy": "Goodwill & Habitat for Humanity accept clean, non-stained mattresses only",
+    "neighborhoods": [
+      "Beacon Hill",
+      "Charlestown",
+      "Downtown",
+      "East Boston",
+      "Jamaica Plain",
+      "and research",
+      "events",
+      "planning initiatives"
+    ],
+    "faqs": [
+      {
+        "q": "Is mattress disposal free in Boston?",
+        "a": "The City of Boston offers bulky item pickup, but requirements vary. Check with your local sanitation department for scheduling and any fees. Many residents find professional haulers more convenient."
+      },
+      {
+        "q": "Does a mattress need to be wrapped or bagged?",
+        "a": "Check with local department. Unwrapped mattresses may not be collected."
+      },
+      {
+        "q": "Can I donate my mattress instead?",
+        "a": "Goodwill & Habitat for Humanity accept clean, non-stained mattresses only"
+      },
+      {
+        "q": "What are the fines for illegal dumping in Boston?",
+        "a": "Illegal dumping fines in Boston can be $50,. The city has active enforcement including surveillance cameras."
+      }
+    ],
+    "next_pickup_days": null,
+    "sources": [
+      "https://www.boston.gov/trash-and-recycling",
+      "https://www.watertown-ma.gov/804/Trash-and-Recycling-Guide-FAQs?contentId=0060576e-b13a-40e0-bb58-d3ef84d650f0#!rc-cpage=296224",
+      "https://www.somervillema.gov/trash-and-recycling",
+      "https://andoverma.gov/DocumentCenter/View/128/Recycling-and-Trash-Guide-for-Residents-PDF",
+      "https://woburnma.gov/government/health/trash-and-recycling/",
+      "https://www.boston.gov/departments/public-works/how-code-enforcement-works-boston"
+    ],
+    "raw_queries": {
+      "official_dept": {
+        "query": "site:.gov \"Boston\" Massachusetts sanitation department contact",
+        "results": {
+          "searchParameters": {
+            "q": "site:.gov \"Boston\" Massachusetts sanitation department contact",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Trash and Recycling | Boston.gov",
+              "link": "https://www.boston.gov/trash-and-recycling",
+              "snippet": "Contact us at ai@boston.gov. How do I pay a parking ticket? How do I apply for a resident parking permit? Annual Census. /. State law requires ...",
+              "date": "Jan 16, 2026",
+              "position": 1
+            },
+            {
+              "title": "Inspectional Services Contacts - Boston.gov",
+              "link": "https://www.boston.gov/departments/inspectional-services/inspectional-services-contacts",
+              "snippet": "Still have questions? Contact: Inspectional Services \u00b7 617-635-5300 \u00b7 send an email. 1010 Massachusetts Avenue 5th Floor. Boston, MA 02118.",
+              "date": "Nov 17, 2025",
+              "position": 2
+            },
+            {
+              "title": "Filing environmental complaints | Mass.gov",
+              "link": "https://www.mass.gov/info-details/filing-environmental-complaints",
+              "snippet": "In Boston: Contact the Air Pollution Control Commission (APCC). Smoky Vehicles. Contact your local Police Department for complaints about smoky vehicles. See ...",
+              "position": 3
+            },
+            {
+              "title": "Boston 311 | Boston.gov",
+              "link": "https://www.boston.gov/departments/boston-311",
+              "snippet": "Contact us at ai@boston.gov. How do I pay my Taxes? What is my trash pickup schedule? Annual Census. /. State law requires the City to complete an annual ...",
+              "position": 4
+            },
+            {
+              "title": "FAQ | City of Boston",
+              "link": "https://www.cityofboston.gov/isd/health/about.asp",
+              "snippet": "The Health Division of the Boston Inspectional Services Department administers the Massachusetts State Sanitary Code in Boston. ... Contact the Division of Health ...",
+              "position": 5
+            },
+            {
+              "title": "Waste Management - Town of Boston",
+              "link": "https://www.bostonny.gov/wastemanagement",
+              "snippet": "... available at this time. Waste Management FAQ. Fast Facts. Recycle Coach. 8500 Boston State Road, Boston, NY 14025 (716) 941-6113 | supervisor@townofboston.com.",
+              "position": 6
+            },
+            {
+              "title": "Environmental Sanitation Division | Boston.gov",
+              "link": "https://www.boston.gov/departments/inspectional-services/environmental-sanitation-division",
+              "snippet": "617-635-5300 \u00b7 send an email \u00b7 1010 Massachusetts Avenue 5th Floor. Boston, MA 02118. United States.",
+              "date": "Aug 27, 2025",
+              "position": 7
+            },
+            {
+              "title": "Regulatory and Compliance Unit - Mass.gov",
+              "link": "https://www.mass.gov/regulatory-and-compliance-unit",
+              "snippet": "Contact Information. Division of Environmental Health Regulations and Standards (EHRS). +. Address. 250 Washington St., 7th Floor, Boston, MA 02108. Directions ...",
+              "position": 8
+            },
+            {
+              "title": "Trash and Recycling | Watertown, MA - Official Website",
+              "link": "https://www.watertown-ma.gov/738/Trash-and-Recycling",
+              "snippet": "If you are looking for a way to donate your furniture and other home goods to a new home, ReSupply, a Boston-based & Veteran-operated company, provides high ...",
+              "position": 9
+            },
+            {
+              "title": "[PDF] WELCOME TO BOSTON",
+              "link": "https://www.cityofboston.gov/images_documents/11-04-2014%20English%20Guide%20to%20City%20Services_tcm3-16291.pdf",
+              "snippet": "(Fax: 617.635.2851. Mailing address: \u201cOffice of the Mayor' s Scheduling,. Boston City Hall, Boston, MA 02201\u201d).",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "waste_rules": {
+        "query": "\"Boston\" MA mattress disposal curbside pickup rules requirements wrapping bagging",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA mattress disposal curbside pickup rules requirements wrapping bagging",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Hi! Does anyone know the requirements on disposal of a mattress ...",
+              "link": "https://www.facebook.com/groups/598281144033064/posts/2043494262845071/",
+              "snippet": "Mattress disposal banned in Massachusetts. Donnie Boston \u25bb East Boston Network (EBN). 3y \u00b7 Public \u00b7 FYI... Mattresses are banned from disposal ...",
+              "date": "Jul 16, 2025",
+              "sitelinks": [
+                {
+                  "title": "Do items need separate bag for curbside pickup? - Facebook",
+                  "link": "https://www.facebook.com/groups/musquodoboitharbour/posts/10163647631305049/"
+                },
+                {
+                  "title": "Does the Domino Lane recycling center accept old mattresses?",
+                  "link": "https://www.facebook.com/groups/1321346931268703/posts/26380193788290671/"
+                }
+              ],
+              "position": 1
+            },
+            {
+              "title": "How to dispose of or recycle Mattress and boxspring - Watertown, MA",
+              "link": "https://www.watertown-ma.gov/804/Trash-and-Recycling-Guide-FAQs?contentId=0060576e-b13a-40e0-bb58-d3ef84d650f0#!rc-cpage=296224",
+              "snippet": "... Boston-based & Veteran-operated company, provides high service fee-based home pickup option. ReSupply works with local charities to give your unwanted ...",
+              "position": 2
+            },
+            {
+              "title": "Somerville Trash & Recycling Information",
+              "link": "https://www.somervillema.gov/trash-and-recycling",
+              "snippet": "What can I recycle with curbside pickup? What can I recycle with curbside pickup ... Salvation Army \u00b7 Society of St. Vincent de Paul (Archdiocese of Boston) ...",
+              "position": 3
+            },
+            {
+              "title": "[PDF] Recycling & Trash Collection Guide for Residents - Andover, MA",
+              "link": "https://andoverma.gov/DocumentCenter/View/128/Recycling-and-Trash-Guide-for-Residents-PDF",
+              "snippet": "Many items / packaging claim to be recyclable\u2014this is not always true for curbside recycling! ... Boston Rd. Bradley Rd. Bristol Ln. Carter Ln. Center St.",
+              "position": 4
+            },
+            {
+              "title": "Trash & Recycling - City of Woburn",
+              "link": "https://woburnma.gov/government/health/trash-and-recycling/",
+              "snippet": "NEW BOSTON ST, Friday, White. NEW VILLAGE RD, Monday, Orange. NEWBRIDGE AVE, Friday ... All Trash, Recycling, and Yard Waste is to be curbside by 7am the day of ...",
+              "position": 5
+            },
+            {
+              "title": "Recycling, Trash, Composting | Town of Arlington",
+              "link": "https://www.arlingtonma.gov/departments/public-works/recycling-trash-composting",
+              "snippet": "Curbside Recycling- Recycle Smart MA Program ... FixIt Clinics are offered spring and fall in Arlington, and year-round in the Boston area and even globally ...",
+              "position": 6
+            },
+            {
+              "title": "Small Renovation Debris Removal in Boston, MA (Kitchen & Bath)",
+              "link": "https://junksterbag.com/2026/02/13/debris-removal-boston-ma-kitchen-bath-demo/",
+              "snippet": "Mattresses/textiles where required. Boston disposal resources: Trash & Recycling | Special Collection Items | BOS:311 | Construction ...",
+              "date": "Feb 13, 2026",
+              "position": 7
+            },
+            {
+              "title": "Need help sorting your trash the right way for a hassle-free pickup ...",
+              "link": "https://www.facebook.com/CityCharleston/posts/need-help-sorting-your-trash-the-right-way-for-a-hassle-free-pickup-watch-this-q/1031919152305644/",
+              "snippet": "... Boston Public Works Departments Waste Reduction Division is asking East Boston residents to put out their trash on their regular collection day. In a phone ...",
+              "position": 8
+            },
+            {
+              "title": "[PDF] Fact and FAQ Sheet The Why and How of Waste ... - WordPress.com",
+              "link": "https://towardzerowastenbpt.files.wordpress.com/2017/01/the-why-and-how-january-2017.pdf",
+              "snippet": "http://www.bizjournals.com/boston/blog ... Garbage pickup and recycling pickup are very ... \u2022 What materials are banned from curbside garbage pickup?",
+              "position": 9
+            },
+            {
+              "title": "How to dispose of or recycle Concrete - Public Works",
+              "link": "https://www.watertowndpw.org/738/Trash-and-Recycling?contentId=0d7ab265-5c95-4645-a829-51e8fdbbc472#!rc-cpage=296053&contentId=ac6a296a-476b-4eb0-bc0f-faeab1d06d73",
+              "snippet": "If you are looking for a way to donate your furniture and other home goods to a new home, ReSupply, a Boston-based & Veteran-operated company, provides high ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "fines": {
+        "query": "\"Boston\" Massachusetts illegal dumping fine penalty amount",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" Massachusetts illegal dumping fine penalty amount",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "23-22 RUBBISH DISPOSAL; PENALTY.",
+              "link": "https://codelibrary.amlegal.com/codes/boston/latest/boston_ma/0-0-0-15502",
+              "snippet": "CHAPTER XXIV: BOSTON JOBS, LIVING WAGE AND PREVAILING WAGE ORDINANCE \u00b7 PARALLEL REFERENCES \u00b7 MA \u00b7 Boston \u00b7 City of Boston Municipal Code; 23-22 RUBBISH DISPOSAL ...",
+              "position": 1
+            },
+            {
+              "title": "General Law - Part IV, Title I, Chapter 270, Section 16",
+              "link": "https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleI/Chapter270/Section16",
+              "snippet": "In the city of Boston this section shall also be enforced by the commissioner of health and hospitals, by the commissioner of housing inspection, and by the ...",
+              "position": 2
+            },
+            {
+              "title": "How Code Enforcement Works In Boston",
+              "link": "https://www.boston.gov/departments/public-works/how-code-enforcement-works-boston",
+              "snippet": "Fine Amount: $50, but the fine can't be more than $1000. Occupying ... BOSTON, MA 02201. Provide Your Feedback. Back to top. Footer menu.",
+              "date": "Oct 30, 2025",
+              "position": 3
+            },
+            {
+              "title": "Pay a littering or trash disposal violation ticket - Mass.gov",
+              "link": "https://www.mass.gov/how-to/pay-a-littering-or-trash-disposal-violation-ticket",
+              "snippet": "If you receive a littering or trash disposal violation ticket from the District Court or Boston Municipal Court (BMC), you have 21 days to pay it.",
+              "position": 4
+            },
+            {
+              "title": "Boston gets more flexibility to increase fines \u2014 and a new tool ...",
+              "link": "https://www.wbur.org/news/2025/01/10/boston-maximum-fines-state-house-trash-rats-newsletter",
+              "snippet": "Keep it clean: Boston now has the power to fine people up to $2,000 for violating city ordinances. Gov. Maura Healey signed a bill into law this ...",
+              "date": "Jan 10, 2025",
+              "position": 5
+            },
+            {
+              "title": "MassDEP Issues More Than $133,000 in Penalties | Regional ...",
+              "link": "https://regionalassociations.org/massdep-issues-more-than-133000-in-penalties/",
+              "snippet": "A MassDEP inspector responded to a complaint of illegal disposal of asbestos at the Waste Management recycling facility on Old Boston Road in Wilbraham. Waste ...",
+              "position": 6
+            },
+            {
+              "title": "Mattress Dumping in Massachusetts: Why It's a Problem and What to ...",
+              "link": "https://www.junkboxboston.com/blog/why-mattress-dumping-is-a-big-problem",
+              "snippet": "In many Massachusetts cities\u2014like Boston, Worcester, and Springfield\u2014illegal dumping comes with hefty fines and penalties. In some cases, fines ...",
+              "date": "Jun 10, 2025",
+              "position": 7
+            },
+            {
+              "title": "Trash Fine : r/boston - Reddit",
+              "link": "https://www.reddit.com/r/boston/comments/prbspm/trash_fine/",
+              "snippet": "I highly doubt that Boston \"makes so much off of these fines\" since most people just buy a garbage bin at Home Depot for like $20. If your ...",
+              "date": "Sep 19, 2021",
+              "position": 8
+            },
+            {
+              "title": "[PDF] Code Enforcment Brochure final.pub - Boston.gov",
+              "link": "https://www.cityofboston.gov/isd/pdfs/cepbrochure.pdf",
+              "snippet": "The use of \u201cgrocery store\u201d plastic or paper bags is not allowed under Boston's trash ordinance. Improper storage and disposal of trash brings problems with ...",
+              "position": 9
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "facilities": {
+        "query": "\"Boston\" MA transfer station recycling center mattress disposal address hours fees open",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA transfer station recycling center mattress disposal address hours fees open",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Trash and Recycling",
+              "link": "https://www.boston.gov/trash-and-recycling",
+              "snippet": "Watch this 20-minute video for a deep dive into Boston's many programs and services designed to make disposing of waste as safe and simple as ...",
+              "date": "Jan 16, 2026",
+              "attributes": {
+                "Missing": "open | Show results with:open"
+              },
+              "position": 1
+            },
+            {
+              "title": "Mattress and Boxspring Recycling | waylandma",
+              "link": "https://www.wayland.ma.us/transfer-station-recycling-center/pages/mattress-and-boxspring-recycling",
+              "snippet": "Transfer Station & Recycling Center. 484 Boston Post Road. Wayland, MA 01778. United States. See map: Google Maps. Town of Wayland 41 Cochituate Road, Wayland, ...",
+              "position": 2
+            },
+            {
+              "title": "How to get rid of a Mattress in Massachusetts? - Reddit",
+              "link": "https://www.reddit.com/r/massachusetts/comments/1kmyk1a/how_to_get_rid_of_a_mattress_in_massachusetts/",
+              "snippet": "The city of Boston will pick up the mattress for free after you make an appointment. If you put it out with your regular trash, they will not ...",
+              "date": "May 15, 2025",
+              "sitelinks": [
+                {
+                  "title": "Mattress Disposal? : r/massachusetts",
+                  "link": "https://www.reddit.com/r/massachusetts/comments/1c0woh3/mattress_disposal/"
+                },
+                {
+                  "title": "Are there any Boston-area town dumps or transfer stations ...",
+                  "link": "https://www.reddit.com/r/boston/comments/1ams15d/are_there_any_bostonarea_town_dumps_or_transfer/"
+                }
+              ],
+              "position": 3
+            },
+            {
+              "title": "Mattress recycling is easy - Facebook",
+              "link": "https://www.facebook.com/groups/dedham.westwood/posts/3368344000001414/",
+              "snippet": "Ban on disposal of mattresses, clothing, and shoes starts today in Mass. Here's what to know. - The Boston Globe. Eliza Beu and 2 others.",
+              "date": "Feb 9, 2026",
+              "position": 4
+            },
+            {
+              "title": "Wayland Transfer Station & Recycling Center (Residents Only)",
+              "link": "https://recyclesmartma.org/location/wayland-transfer-station-recycling-center/",
+              "snippet": "484 Boston Post Road, Wayland, MA, 01778. http://www.wayland.ma.us/Pages/WaylandMA_DPW/transfer/index. 508-889-3037. Collection Type: Important Note.",
+              "position": 5
+            },
+            {
+              "title": "Mattress Disposal Boston, MA - Last Updated February 2026 - Yelp",
+              "link": "https://www.yelp.com/search?find_desc=Mattress+Disposal&find_loc=Boston%2C+MA",
+              "snippet": "This is a review for a junk removal & hauling business in Boston, MA: \"I drove 3 1/2 hours to put out mattresses and box springs for pickup. Called three times ...",
+              "rating": 4.4,
+              "ratingCount": 1372,
+              "position": 6
+            },
+            {
+              "title": "How to dispose of or recycle Mattress and boxspring - Watertown, MA",
+              "link": "https://watertown-ma.gov/738/Trash-and-Recycling?contentId=ac6a296a-476b-4eb0-bc0f-faeab1d06d73#!rc-cpage=296224",
+              "snippet": "... Boston-based & Veteran-operated company, provides high service fee-based home pickup option. ReSupply works with local charities to give your unwanted ...",
+              "position": 7
+            },
+            {
+              "title": "Transfer Stations - G Mello Disposal Corp.",
+              "link": "https://www.mellodisposal.com/transfer-stations/",
+              "snippet": "Find a Mello Transfer Station Near You \u00b7 Newbury 75 Boston Road Newbury, MA 01951 \u00b7 Georgetown 20 Carleton Drive Georgetown, MA 01833 \u00b7 Our Customer Care Team is ...",
+              "position": 8
+            },
+            {
+              "title": "How to dispose of or recycle Mattress and boxspring",
+              "link": "https://www.arlingtonma.gov/departments/public-works/recycling-trash-composting#!rc-cpage=296224",
+              "snippet": "... transfer station/recycling center. ... FixIt Clinics are offered spring and fall in Arlington, and year-round in the Boston area and even globally online!",
+              "position": 9
+            },
+            {
+              "title": "Transfer Station Information",
+              "link": "https://www.westonma.gov/305/Transfer-Station-Information",
+              "snippet": "... Boston Post Road) and receive free replacement bags (there is no need to ... The town will recycle used mattresses with a fee, starting on November 1st, 2022 ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "facility_hours": {
+        "query": "\"Boston\" MA transfer station phone number hours contact",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA transfer station phone number hours contact",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 5,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Trash and Recycling | Boston.gov",
+              "link": "https://www.boston.gov/trash-and-recycling",
+              "snippet": "Contact us at ai@boston.gov. How do I pay a parking ticket? How ... Boston's Zero Waste Directory. Find locations near you where you can ...",
+              "date": "Jan 16, 2026",
+              "position": 1
+            },
+            {
+              "title": "TOP 10 BEST Transfer Station near Boston, MA 02128 - Yelp",
+              "link": "https://www.yelp.com/search?find_desc=Transfer+Station&find_loc=East+Boston%2C+Boston%2C+MA+02128",
+              "snippet": "Best Transfer Station near Boston, MA 02128 ; Vina East Bottle & Can Return \u00b7 0.3 mi \u00b7 442 Bennington St, Boston, MA 02128. (617) 561-0331 ; Le Redemption \u00b7 2.1 mi ...",
+              "rating": 3.8,
+              "ratingCount": 530,
+              "position": 2
+            },
+            {
+              "title": "484 Boston Post Road, Wayland - Casella Waste Systems",
+              "link": "https://local.casella.com/location/transfer-station/wayland-ma-484-boston-post-road",
+              "snippet": "Sustainable waste and recycling solutions for homes and businesses. Contact Casella Transfer Station at 484 Boston Post Road in Wayland.",
+              "position": 3
+            },
+            {
+              "title": "Trash, Garbage and Recycling Services in Boston, Massachusetts",
+              "link": "https://www.wm.com/us/en/location/ma/boston",
+              "snippet": "Discover WM's services for affordable trash and recycling pickup Services in the Boston, Massachusetts Area.",
+              "position": 4
+            },
+            {
+              "title": "ReSource Roxbury | C&D Recycling Facility",
+              "link": "https://resourcewasteservices.com/our-facilities/resource-roxbury/",
+              "snippet": "... Waste Services to deliver 150\u2026 [...] Read More \u00b7 More News. ReSource Roxbury. 101 Gerard Street Boston, MA 02119. Phone: (617) 442-4800. Email: inforoxbury ...",
+              "position": 5
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "pricing": {
+        "query": "mattress removal \"Boston\" MA price cost \"$\" 2026",
+        "results": {
+          "searchParameters": {
+            "q": "mattress removal \"Boston\" MA price cost \"$\" 2026",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Mattress & Furniture Disposal in Boston, MA - WasteDoor",
+              "link": "https://wastedoor.com/massachusetts/boston/mattress-disposal",
+              "snippet": "The cost of mattress & furniture disposal in Boston typically ranges from $50 to $200, depending on factors such as: Service scope and duration; Location within ...",
+              "position": 1
+            },
+            {
+              "title": "Cost of Junk Removal & Hauling in Boston, MA - March 2026 - Yelp",
+              "link": "https://www.yelp.com/costs/furniture_removal/boston",
+              "snippet": "How much does Furniture removal cost in Boston? Based on 1,071 real quotes from businesses in Boston. $116. TYPICAL. $197. $312. Enter a zip code. Get custom ...",
+              "position": 2
+            },
+            {
+              "title": "Boston's Same-Day Mattress Disposal - 1-800-Got-Junk",
+              "link": "https://www.1800gotjunk.com/us_en/locations/junk-removal-boston/mattress-recycling",
+              "snippet": "Transparent pricing for mattress pickup. Pricing with 1-800-GOT-JUNK? Boston is straightforward. We agree on a price before starting any work, ensuring there ...",
+              "position": 3
+            },
+            {
+              "title": "Mattress and Box Spring Removal in Lynn MA $75 each unit",
+              "link": "https://twoguysandatruckjunkremoval.com/junk-removal-in-e-boston-1/f/mattress-and-box-spring-removal-in-lynn-ma?blogcategory=Junk+removal",
+              "snippet": "Junk Removal in East Boston, MA Blog. All Posts. Mattress and Box Spring Removal in Lynn MA $75 each unit. March 2, 2026. Mattress removal in Lynn MA. Need to ...",
+              "position": 4
+            },
+            {
+              "title": "mattressprorecycling.com",
+              "link": "https://mattressprorecycling.com/",
+              "snippet": "Areas we cover include: Allston, Arlington, Belmont, Boston, Brookline, Brighton, Cambridge, Concord, Dover, Dedham, Framingham, Jamaica Plain, Lexington, ...",
+              "position": 5
+            },
+            {
+              "title": "Junk Removal Boston Prices | Cost Breakdown and Services",
+              "link": "https://www.paulsrubbishanddemo.com/how-much-does-junk-removal-cost-in-boston-price-breakdown-by-service",
+              "snippet": "Boston typically sits slightly above national averages due to labor costs, disposal fees, and local access challenges. National prices range from $100 to $600, ...",
+              "position": 6
+            },
+            {
+              "title": "Furniture Removal in Boston, MA - Costs 02 / 2026 - Homeyou",
+              "link": "https://www.homeyou.com/ma/furniture-removal-boston-costs",
+              "snippet": "The average furniture removal cost in Boston is $55 - $57, but it could vary from $54 to $58. Discover the detailed price range here. Request ...",
+              "date": "Dec 30, 2025",
+              "position": 7
+            },
+            {
+              "title": "Mattress Disposal Boston [10 Ways To Get Rid Of A ... - SleePare",
+              "link": "https://www.sleepare.com/blogs/mattress-disposal-boston/",
+              "snippet": "If you're in need of mattress disposal in Boston, there are various options ranging from garbage, recycling, donations, and more.",
+              "date": "Feb 6, 2026",
+              "position": 8
+            },
+            {
+              "title": "Bed Frame Disposal Boston, MA | Online Pricing",
+              "link": "https://mattressdisposalplus.com/bed-frame-disposal/ma/boston/",
+              "snippet": "Our bed frame disposal service in Boston, MA is not free, but it's fast, reliable, and competitively priced\u2014with rates starting at just $89. The fee covers ...",
+              "position": 9
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "donation": {
+        "query": "\"Boston\" MA mattress donation Goodwill Habitat for Humanity",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA mattress donation Goodwill Habitat for Humanity",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "ReStore - Habitat for Humanity Greater Boston",
+              "link": "https://habitatboston.org/restore/",
+              "snippet": "The ReStore is Habitat Greater Boston's home improvement outlet, offering a wide and ever-changing selection of donated items.",
+              "position": 1
+            },
+            {
+              "title": "Habitat for Humanity donation pickup in Boston, MA | Lugg",
+              "link": "https://lugg.com/boston-ma-habitat-for-humanity-donation-pickup",
+              "snippet": "Schedule a donation pickup for Habitat for Humanity ReStore in Boston, MA. Lugg picks up furniture, appliances, and more, making it easy to donate your large ...",
+              "rating": 4.9,
+              "ratingCount": 8593,
+              "position": 2
+            },
+            {
+              "title": "[PDF] Boston Donation, Resell, Rent, & Repair Directory",
+              "link": "https://www.boston.gov/sites/default/files/file/2024/04/Boston's%20Circular%20Economy%20Directory_0.pdf",
+              "snippet": "Boston's Circular Economy Directory provides locations in the City where you can donate, resell, rent, and repair items in your.",
+              "position": 3
+            },
+            {
+              "title": "Donating Furniture in the Boston Area? Organizations That Will Pick ...",
+              "link": "https://massbaymovers.com/blog/donating-furniture-in-boston/",
+              "snippet": "Do you have some furniture you're looking to donate in Boston? Check out this list of charities for Boston furniture donation pickup!",
+              "date": "Feb 13, 2024",
+              "position": 4
+            },
+            {
+              "title": "Donation & Reuse - Mass.gov",
+              "link": "https://www.mass.gov/lists/donation-reuse",
+              "snippet": "Construction Materials. Boston Building Resources \u00b7 Habitat for Humanity ReStore ... Electronics. Fair Trade Recycling \u00b7 National Cristina Foundation \u00b7 Goodwill ...",
+              "position": 5
+            },
+            {
+              "title": "Where To Donate Furniture Boston - Lug Away Junk Removal",
+              "link": "https://lugaway.com/where-to-donate-furniture-boston/",
+              "snippet": "Habitat for Humanity Greater Boston \u2014 434 Massachusetts Ave Suite 201 ... Morgan Memorial Goodwill Industries \u2014 1010 Harrison Ave, Boston, MA 02119; The ...",
+              "position": 6
+            },
+            {
+              "title": "Best Furniture Donation Drop Off near Central Square, Boston, MA ...",
+              "link": "https://www.m.yelp.ca/search?find_desc=Furniture+Donation+Drop+Off&find_loc=Central+Square%2C+Boston%2C+MA",
+              "snippet": "Womens Shelter Donation Center in Boston, Massachusetts \u00b7 Habitat for Humanity Store in Boston, Massachusetts \u00b7 Goodwill Furniture in Boston, Massachusetts.",
+              "position": 7
+            },
+            {
+              "title": "Schedule Mattress Donation Pickup in Boston, MA - Bulky",
+              "link": "https://bulkydonations.com/mattress-donation-pickup/ma/boston/",
+              "snippet": "Make mattress donation pickup in Boston, MA simple - Bulky hauls away unwanted mattresses and delivers them to local charities near you.",
+              "position": 8
+            },
+            {
+              "title": "Looking to donate furniture. Any places that offer free pickup? - Reddit",
+              "link": "https://www.reddit.com/r/boston/comments/1gzsbai/looking_to_donate_furniture_any_places_that_offer/",
+              "snippet": "I was wondering if there are any charities or nonprofits or other places in the Boston area that will gladly accept the furniture and can offer free pickup ...",
+              "date": "Nov 25, 2024",
+              "position": 9
+            },
+            {
+              "title": "Free furniture donation pickup services in Boston? - Facebook",
+              "link": "https://www.facebook.com/groups/maldenneighborshelping/posts/793466758709577/",
+              "snippet": "Free furniture donation pickup services in Boston? Malden Neighbors ... Habitat for Humanity, Salvation Army charge depending on the size of the ...",
+              "date": "Apr 3, 2022",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "weather": {
+        "query": "\"Boston\" Massachusetts average rainfall climate",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" Massachusetts average rainfall climate",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Average Weather Data for Boston, Massachusetts - World Climate",
+              "link": "http://www.worldclimate.com/climate/us/massachusetts/boston",
+              "snippet": "How Many Inches of Rain per year does Boston get ? 43.76 inches. How Many Rainy Days a year are there in Boston? 137 days. How Much Sunshine each year is there ...",
+              "position": 1
+            },
+            {
+              "title": "Boston Climate, Weather By Month, Average Temperature ...",
+              "link": "https://weatherspark.com/y/26197/Average-Weather-in-Boston-Massachusetts-United-States-Year-Round",
+              "snippet": "The month with the most rain in Boston is October, with an average rainfall of 3.9 inches. The month with the least rain in Boston is January, with an average ...",
+              "position": 2
+            },
+            {
+              "title": "Climate Massachusetts - Temperature, Rainfall and Averages",
+              "link": "https://www.usclimatedata.com/climate/massachusetts/united-states/3191",
+              "snippet": "Boston Climate Graph - Massachusetts Climate Chart ; Mar, 4.29, 31 ; Apr, 3.74, 41 ; May, 3.46, 50 ; Jun, 3.66, 60 ...",
+              "position": 3
+            },
+            {
+              "title": "Boston MA Recent Annual Temperatures, Rain, Snow",
+              "link": "https://www.currentresults.com/Yearly-Weather/USA/MA/Boston/recent-annual-boston-temperature-precipitation.php",
+              "snippet": "Weather in Boston for each year since 2010 including average high and low temperatures, total snowfall and precipitation.",
+              "position": 4
+            },
+            {
+              "title": "Climate in Boston, Massachusetts",
+              "link": "https://rssweather.com/climate/Massachusetts/Boston/",
+              "snippet": "Average Rainfall for Boston ; Jan, 3.92in. ; Feb, 3.30in. ; Mar, 3.85in. ; Apr, 3.60in.",
+              "position": 5
+            },
+            {
+              "title": "Climate of Massachusetts",
+              "link": "https://en.wikipedia.org/wiki/Climate_of_Massachusetts",
+              "snippet": "Average rainfall generally ranges from 1,000 to 1,500 millimetres or 40 ... Climate data for Boston, Massachusetts (Logan Airport), 1991\u22122020 normals ...",
+              "position": 6
+            },
+            {
+              "title": "Boston climate: weather by month, temperature, rain",
+              "link": "https://www.climatestotravel.com/climate/united-states/boston",
+              "snippet": "Precipitation in Boston is quite abundant, since it amounts to 1,100 millimeters (43 inches) per year, and it's well distributed over the seasons. In winter, it ...",
+              "position": 7
+            },
+            {
+              "title": "Check Average Rainfall by Month for Boston (MA)",
+              "link": "https://weather-and-climate.com/average-monthly-precipitation-Rainfall,Boston,United-States-of-America",
+              "snippet": "Boston has a relatively rain/snowy climate with high precipitation levels, averaging 1238 mm of rain/snowfall annually.",
+              "position": 8
+            },
+            {
+              "title": "Boston climate - Average Temperature by month, water temperature",
+              "link": "https://en.climate-data.org/north-america/united-states-of-america/massachusetts/boston-1722/",
+              "snippet": "In Boston, the average annual temperature is 10.1 \u00b0C | 50.1 \u00b0F. Each year, there is an approximate 1162 mm | 45.7 inch of precipitation that occurs.",
+              "position": 9
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "neighborhoods": {
+        "query": "\"Boston\" Massachusetts neighborhoods list complete all",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" Massachusetts neighborhoods list complete all",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Neighborhoods in Boston - Wikipedia",
+              "link": "https://en.wikipedia.org/wiki/Neighborhoods_in_Boston",
+              "snippet": "The City of Boston's Office of Neighborhood Services has designated 23 Neighborhoods in the city: ... List of places and squares within neighborhood areas.",
+              "sitelinks": [
+                {
+                  "title": "History of Boston's...",
+                  "link": "https://en.wikipedia.org/wiki/Neighborhoods_in_Boston#History_of_Boston's_neighborhoods"
+                },
+                {
+                  "title": "Geographic overview",
+                  "link": "https://en.wikipedia.org/wiki/Neighborhoods_in_Boston#Geographic_overview"
+                },
+                {
+                  "title": "List of places and squares...",
+                  "link": "https://en.wikipedia.org/wiki/Neighborhoods_in_Boston#List_of_places_and_squares_within_neighborhood_areas"
+                }
+              ],
+              "position": 1
+            },
+            {
+              "title": "Neighborhoods | Boston.gov",
+              "link": "https://www.boston.gov/neighborhoods",
+              "snippet": "Neighborhoods ; Allston. One of Boston's most diverse and active neighborhoods. ; Back Bay. A picture-perfect neighborhood in the City of Boston. ; Bay Village.",
+              "position": 2
+            },
+            {
+              "title": "Neighborhoods | Bostonplans.org",
+              "link": "http://www.bostonplans.org/neighborhoods",
+              "snippet": "Get to know Boston's unique neighborhoods through overviews, planning initiatives, events, and research.",
+              "position": 3
+            },
+            {
+              "title": "A Guide To Boston's 23 Neighborhoods - Culture Trip",
+              "link": "https://theculturetrip.com/north-america/usa/boston/articles/a-guide-to-bostons-23-neighborhoods",
+              "snippet": "Totaling 23 in all, Boston's neighborhoods can be confusing if you're not familiar with the layout. Here's a quick guide to help you out.",
+              "date": "Nov 10, 2025",
+              "position": 4
+            },
+            {
+              "title": "A Guide to Boston's Neighborhoods - Old Town Trolley Tours",
+              "link": "https://www.trolleytours.com/boston/neighborhoods",
+              "snippet": "The main neighborhoods in Boston include Back Bay, Beacon Hill, Charlestown, Chinatown-Leather District, Downtown, East Boston, Fenway-Kenmore, Jamaica Plain, ...",
+              "position": 5
+            },
+            {
+              "title": "52 Neighborhoods in Boston, MA - Homes.com",
+              "link": "https://www.homes.com/neighborhood-search/boston-ma/",
+              "snippet": "Neighborhoods in Boston, MA \u00b7 Seaport. 1/46 \u00b7 Explore Boston \u00b7 Boston Common. 1/34 \u00b7 Back Bay \u00b7 Beacon Hill \u00b7 Downtown Boston \u00b7 South End \u00b7 Thompson ...",
+              "position": 6
+            },
+            {
+              "title": "[PDF] Neighborhoods | City of Boston",
+              "link": "https://www.cityofboston.gov/images_documents/Neighborhoods_tcm3-8205.pdf",
+              "snippet": "Boston. Beacon. Hill. Back. Bay. Fenway. Kenmore. Allston. Downtown. North. End. West. End. Bay. Village. Chinatown. Mid. Dorchester. City of Boston.",
+              "position": 7
+            },
+            {
+              "title": "Neighborhood Guide | Diversity & Inclusion - Boston University",
+              "link": "https://www.bu.edu/diversity/boston-resources/neighborhoods/",
+              "snippet": "Dorchester. At six square miles, Dorchester is Boston's largest neighborhood and extends all the way down to the Neponset River Reservation. Due to its sheer ...",
+              "position": 8
+            },
+            {
+              "title": "Boston Region MPO - Cities and Towns",
+              "link": "https://www.ctps.org/mpo_communities",
+              "snippet": "Municipalities in the Boston region ; A. Acton; Arlington; Ashland ; B \u00b7 Bedford; Bellingham; Belmont; Beverly; Bolton; Boston; Boxborough; Braintree; Brookline ...",
+              "position": 9
+            },
+            {
+              "title": "Boston Neighborhood Guide for Tourists | From American Holidays",
+              "link": "https://www.americanholidays.com/blog/boston/boston-neighborhood-guide/",
+              "snippet": "Boston neighbourhood guide: Our experts have compiled a list of five Boston neighbourhoods that cater to all different types of travellers.",
+              "date": "Mar 31, 2025",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "neighborhoods_official": {
+        "query": "site:wikipedia.org OR site:.gov \"Boston\" Massachusetts neighborhoods official",
+        "results": {
+          "searchParameters": {
+            "q": "site:wikipedia.org OR site:.gov \"Boston\" Massachusetts neighborhoods official",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 5,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Neighborhoods | Boston.gov",
+              "link": "https://www.boston.gov/neighborhoods",
+              "snippet": "Neighborhoods ; Allston. One of Boston's most diverse and active neighborhoods. ; Back Bay. A picture-perfect neighborhood in the City of Boston. ; Bay Village.",
+              "position": 1
+            },
+            {
+              "title": "Neighborhoods | Bostonplans.org",
+              "link": "http://cityofboston.gov/bra/Neighborhoods",
+              "snippet": "Get to know Boston's unique neighborhoods through overviews, planning initiatives, events, and research.",
+              "position": 2
+            },
+            {
+              "title": "Neighborhoods in Boston - Wikipedia",
+              "link": "https://en.wikipedia.org/wiki/Neighborhoods_in_Boston",
+              "snippet": "The 23 official neighborhoods in Boston are made up of approximately 84 sub-districts, squares and neighborhoods within each official neighborhood. The ...",
+              "position": 3
+            },
+            {
+              "title": "[PDF] Neighborhoods | City of Boston",
+              "link": "https://www.cityofboston.gov/images_documents/Neighborhoods_tcm3-8205.pdf",
+              "snippet": "Boston. Beacon. Hill. Back. Bay. Fenway. Kenmore. Allston. Downtown. North. End. West. End. Bay. Village. Chinatown. Mid. Dorchester. City of Boston.",
+              "position": 4
+            },
+            {
+              "title": "Neighborhoods in Boston",
+              "link": "https://www.boston.gov/departments/early-childhood/neighborhoods-boston",
+              "snippet": "Official websites use .boston.gov. A .boston.gov website belongs to an official government organization in the City of Boston. Secure .gov ...",
+              "date": "Oct 1, 2025",
+              "position": 5
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "schedule": {
+        "query": "\"Boston\" MA bulk trash pickup schedule frequency appointment days",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA bulk trash pickup schedule frequency appointment days",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Boston, MA Waste Collection Schedule 2025 - WasteDoor",
+              "link": "https://wastedoor.com/schedule/massachusetts/boston-ma",
+              "snippet": "Complete waste collection schedule for Boston, Massachusetts. View trash pickup days ... Items must be placed curbside by 6 AM on appointment day.",
+              "date": "Jan 18, 2025",
+              "position": 1
+            },
+            {
+              "title": "[PDF] Site Cleanliness Ordinance - Boston.gov",
+              "link": "https://www.boston.gov/sites/default/files/file/2023/01/Site%20cleanliness%20ordinance.pdf",
+              "snippet": "Chapter IX of the City of Boston Code Ordinances, is hereby amended by adding the following new section: Section 9-9.8. Site Cleanliness Licenses.",
+              "position": 2
+            },
+            {
+              "title": "Boston, MA Trash, Recycling, Yard & Food-Waste Pickup Schedule ...",
+              "link": "https://trashpickupscheduleday.com/boston-trash-pickup-schedule/",
+              "snippet": "Find your Boston trash day, recycling cadence (weekly or biweekly), yard waste & Christmas tree pickup, bulk item appointments, Zero Waste Days, ...",
+              "position": 3
+            },
+            {
+              "title": "The Upside of Bulk Trash Removal Boston - Junk King",
+              "link": "https://www.junk-king.com/locations/boston/blog/article/the-upside-of-bulk-trash-removal-boston",
+              "snippet": "Junk King is a full-service junk removal company that helps with trash removal in Boston. People ask all the time what trash removal actually means.",
+              "date": "Sep 10, 2021",
+              "position": 4
+            },
+            {
+              "title": "Boston's new trash collection contract improvements - Facebook",
+              "link": "https://www.facebook.com/groups/SouthEndCB/posts/4044774789094839/",
+              "snippet": "South End trash pickup schedule changed | Boston, MA. Profile photo ... In a somewhat rare move, Boston has already shifted trash day for the ...",
+              "date": "Jun 26, 2025",
+              "position": 5
+            },
+            {
+              "title": "Simply The Best Composting Service for One-time Pickup in RI+MA",
+              "link": "https://www.bootstrapcompost.com/commercial-composting/one-time-pickup",
+              "snippet": "Boston, MA. FAQs. What services does Bootstrap offer One-time Pickups? A: Our ... Pickup frequency is customized to your business' waste generation, with options ...",
+              "position": 6
+            },
+            {
+              "title": "Boston Mandatory Recycling (7+ Units) | Waste Bans & Fines Guide",
+              "link": "https://www.nationaldoorsteppickup.com/boston-ma-apartment-multifamily-recycling-ordinance",
+              "snippet": "Program: Boston Zero Waste Days (scheduled drop-offs); Example Location: Central DPW Facility \u2014 400 Frontage Rd, Boston, MA 02118; Hours: Varies ...",
+              "position": 7
+            },
+            {
+              "title": "Waste and Recycling Operational Policy - Boston Borough Council",
+              "link": "https://www.boston.gov.uk/Waste-and-Recycling-Operational-Policy",
+              "snippet": "Refuse / recycling sack can be ordered via our main switch board on 01205 314200, at Reception of the Municipal Buildings, West Street, Boston PE21 8QR, or by ...",
+              "position": 8
+            },
+            {
+              "title": "7-2.1 Appointment; Powers and Duties.",
+              "link": "https://codelibrary.amlegal.com/codes/boston/latest/boston_ma/0-0-0-4066",
+              "snippet": "(1) There is established a nine member independent Review Board appointed by the Mayor and approved by the Boston City Council. Members of the Review Board ...",
+              "position": 9
+            },
+            {
+              "title": "Sustainable Materials Management - Trash and Recycling",
+              "link": "https://www.newtonma.gov/government/public-works/sustainable-materials-management#!rc-cpage=141357",
+              "snippet": "... Boston https://habitatboston.org/restore/ For the most current list of ... Bulky Item Pickup Request Appliance, TV & Scrap Metal Pickup Holiday Collection ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "schedule_specific": {
+        "query": "\"Boston\" Massachusetts bulky item next available pickup date wait time",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" Massachusetts bulky item next available pickup date wait time",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Recology big & bulky item pickup in Boston, MA | Lugg",
+              "link": "https://lugg.com/boston-ma-recology-big-item-pickup",
+              "snippet": "Lugg offers same-day recology big item pickup in Boston, MA for your your bulky furniture, appliances and used items. Donate or dispose of your old and used ...",
+              "rating": 4.9,
+              "ratingCount": 8593,
+              "position": 1
+            },
+            {
+              "title": "Trash And Recycling In Large Residential Buildings | Boston.gov",
+              "link": "https://www.boston.gov/departments/public-works/large-residential-buildings",
+              "snippet": "The City of Boston provides many additional ways to help you reduce your waste! Before throwing something away, find out if it can be recycled, ...",
+              "date": "Nov 26, 2025",
+              "position": 2
+            },
+            {
+              "title": "Furniture Removal and Disposal in Boston - TaskRabbit",
+              "link": "https://www.taskrabbit.com/locations/boston/furniture-removal",
+              "snippet": "Out with the old, in with the new! Find the best furniture removal services in Boston for a clean and easy solution.",
+              "rating": 5,
+              "ratingCount": 3246,
+              "position": 3
+            },
+            {
+              "title": "Bulk pickup wait time varies by city - Facebook",
+              "link": "https://www.facebook.com/groups/westcottnation/posts/1692608478250092/",
+              "snippet": "Bulk pick up sign-up process changed in New Boston. Peace BeStille ... Anyone have a date for the next bulk trash pickup? thanks . 0 ...",
+              "date": "Oct 14, 2024",
+              "sitelinks": [
+                {
+                  "title": "Sending a reminder. Bulky item pickup next month.",
+                  "link": "https://www.facebook.com/groups/1603036936459541/posts/25560639270272639/"
+                },
+                {
+                  "title": "How to contact the city of New Boston for bulk pickup day?",
+                  "link": "https://www.facebook.com/groups/1777863145837592/posts/3469250490032174/"
+                }
+              ],
+              "position": 4
+            },
+            {
+              "title": "Furniture Removal in South Boston, MA ~ Instant Price",
+              "link": "https://goloadup.com/south-boston-ma/furniture-removal/?srsltid=AfmBOoqiIwMA1pfQUtiIm8S6OPbNfsLIMre3HWMkTrBLVRnlqc7JDdYU",
+              "snippet": "Old furniture taking up space in South Boston, MA? Let LoadUp remove and responsibly dispose of it for you \u2014 no hassle, no hidden fees, just easy service.",
+              "position": 5
+            },
+            {
+              "title": "Bulk Junk Removal in Boston, MA | $79 Today | Dropcurb",
+              "link": "https://dropcurb.com/ma/boston/bulk-junk-removal",
+              "snippet": "Boston's bulk pickup program has a typical wait time of varies. Limited to 5 per pickup. 10 per year. Not accepted: furniture, bikes, mattresses, ...",
+              "position": 6
+            },
+            {
+              "title": "Furniture Disposal Boston MA - Classic Cleanouts",
+              "link": "https://classiccleanouts.com/junk-removal/furniture-disposal-boston",
+              "snippet": "Can't wait for a junk removal appointment in Boston MA for the bulky waste? Take your used furniture to the scrap dealer yourself. At the recycling center ...",
+              "position": 7
+            },
+            {
+              "title": "THE BEST 10 Junk Removal near Boston, MA 02125 - Yelp",
+              "link": "https://www.yelp.com/search?find_desc=Junk+Removal&find_loc=Boston%2C+MA+02125",
+              "snippet": "All \"Junk Removal\" results near me in Boston, Massachusetts - February 2026 \u00b7 Red's Rubbish Removal - Junk Removal near me - Boston, Massachusetts \u00b7 Residential ...",
+              "rating": 4.7,
+              "ratingCount": 1050,
+              "position": 8
+            },
+            {
+              "title": "Bulk Trash Pickup Vs Junk Removal",
+              "link": "https://www.junk.com/blog/bulk-trash-pickup-vs-junk-removal",
+              "snippet": "Is it May or July? You have to wait. In some cities, like Nashville, Boston, and McKinney, bulk trash pickup must be requested and scheduled. Alternatively, you ...",
+              "position": 9
+            },
+            {
+              "title": "Trash | Boston.gov",
+              "link": "https://www.boston.gov/departments/public-works/trash",
+              "snippet": "You can search what's recyclable in Boston by using our recycling search tool. When in doubt, find out! Search Recycling. Download the Trash Day ...",
+              "date": "Oct 30, 2025",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "schedule_advance": {
+        "query": "\"Boston\" MA mattress pickup how many days advance notice required",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA mattress pickup how many days advance notice required",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Mattress Recycling",
+              "link": "https://www.boston.gov/departments/public-works/mattress-recycling",
+              "snippet": "Curbside mattress pick-up is limited to 10 items per calendar year. \u00b7 The City of Boston will not collect any mattress without an appointment.",
+              "date": "Dec 15, 2025",
+              "position": 1
+            },
+            {
+              "title": "[PDF] Mattress Waste Disposal Ban & Recycling Guidance for ...",
+              "link": "https://www.mass.gov/doc/mattress-waste-disposal-ban-recycling-guidance-for-municipalities/download",
+              "snippet": "Address: 100 Cambridge Street, Suite 900, Boston, MA 02114. Phone: 617-292 ... schedule a pick-up, though some vendors may need as much advance notice as a week.",
+              "position": 2
+            },
+            {
+              "title": "Trash And Recycling In Large Residential Buildings",
+              "link": "https://www.boston.gov/departments/public-works/large-residential-buildings",
+              "snippet": "Pick-up costs $75 per mattress or box spring. Drop-off costs $25 per mattress or box spring, must show proof of Boston residency or business.",
+              "date": "Nov 26, 2025",
+              "position": 3
+            },
+            {
+              "title": "Boston Mandatory Recycling (7+ Units) | Waste Bans & Fines Guide",
+              "link": "https://www.nationaldoorsteppickup.com/boston-ma-apartment-multifamily-recycling-ordinance",
+              "snippet": "Small buildings (1\u20136 units): Boston offers appointment-based mattress pickup for eligible households (schedule through 311 / City instructions). ... Apartments (7 ...",
+              "position": 4
+            },
+            {
+              "title": "Mattress recycling options in Boston? - Facebook",
+              "link": "https://www.facebook.com/groups/Jeffriespoint/posts/10159739860643612/",
+              "snippet": "I saw in the Mass.gov that Boston doesn't have mattress recycling program. ... What are the alternatives for disposing of a mattress in Boston if ...",
+              "date": "Sep 18, 2022",
+              "sitelinks": [
+                {
+                  "title": "Trash pickup and disposal issues in South Boston",
+                  "link": "https://www.facebook.com/groups/grewupinsouthie617/posts/1742032052991224/"
+                },
+                {
+                  "title": "How to contact the city of New Boston for bulk pickup day?",
+                  "link": "https://www.facebook.com/groups/1777863145837592/posts/3469250490032174/"
+                }
+              ],
+              "position": 5
+            },
+            {
+              "title": "How To Dispose of Old Furniture in Boston",
+              "link": "https://www.flashmoving.net/blog/furniture-disposal-in-boston/",
+              "snippet": "Boston's Mattress Recycling Program allows you to schedule a pickup online. The City of Boston requires an appointment for mattress collection, ...",
+              "date": "Jul 11, 2025",
+              "position": 6
+            },
+            {
+              "title": "How to dispose of or recycle Construction & demolition debris",
+              "link": "https://watertown-ma.gov/804/Trash-and-Recycling-Guide-FAQs?contentId=0060576e-b13a-40e0-bb58-d3ef84d650f0#!rc-cpage=296054",
+              "snippet": "If you are looking for a way to donate your furniture and other home goods to a new home, ReSupply, a Boston-based & Veteran-operated company, provides high ...",
+              "position": 7
+            },
+            {
+              "title": "Ban on disposal of mattresses, clothing, and shoes starts today in ...",
+              "link": "https://www.bostonglobe.com/2022/10/31/metro/ban-disposal-mattresses-clothing-shoes-starts-nov-1-mass-heres-what-know/",
+              "snippet": "Students carried mattresses down Commonwealth Avenue to an Allston apartment.Kayana Szymczak for the Boston Globe/file.",
+              "date": "Oct 31, 2022",
+              "position": 8
+            },
+            {
+              "title": "Where to Dump Old Furniture? Furniture Disposal Tips",
+              "link": "https://www.thejunkremovers.com/where-to-dump-old-furniture-the-dos-and-donts-of-furniture-disposal",
+              "snippet": "Estate cleanout services for attorneys in Boston. Reliable property cleanouts supporting probate timelines, documentation needs, and smooth estate transitions.",
+              "position": 9
+            },
+            {
+              "title": "Boston , MA Professional Bulk Trash Pickup Services - Junk Removal",
+              "link": "https://bostonjunkremoval.us/residential/bulk-trash-pickup",
+              "snippet": "Expert Bulk Trash Pickup services in Boston , MA \u2013 Trusted by homeowners and businesses. Eco-friendly disposal, upfront pricing. Get your free quote now!",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "ordinance": {
+        "query": "site:.gov \"Boston\" MA city code illegal dumping ordinance",
+        "results": {
+          "searchParameters": {
+            "q": "site:.gov \"Boston\" MA city code illegal dumping ordinance",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "How Code Enforcement Works In Boston",
+              "link": "https://www.boston.gov/departments/public-works/how-code-enforcement-works-boston",
+              "snippet": "How Code Enforcement Works In Boston \u00b7 Have questions? Contact 311: \u00b7 617-635-4500 \u00b7 1 CITY HALL SQUARE, ROOM 714. BOSTON, MA 02201 ...",
+              "date": "Oct 30, 2025",
+              "position": 1
+            },
+            {
+              "title": "[PDF] Code Enforcment Brochure final.pub - Boston.gov",
+              "link": "https://www.cityofboston.gov/isd/pdfs/cepbrochure.pdf",
+              "snippet": "It is illegal to post any form of signage includ- ing advertisements in the City of Boston. Posters, handbills or any other form of an- nouncement or statement ...",
+              "position": 2
+            },
+            {
+              "title": "[PDF] Disclaimer The Massachusetts Department of Environmental ...",
+              "link": "https://www.mass.gov/doc/310-cmr-30000-hazardous-waste-regulations/download",
+              "snippet": "... Code of Massachusetts Regulations (CMR) Subscription Service. When ... Boston, MA 02210. (k) \"Test Methods for Evaluating Solid Waste, Physical ...",
+              "position": 3
+            },
+            {
+              "title": "Trash and Recycling | Boston.gov",
+              "link": "https://www.boston.gov/trash-and-recycling",
+              "snippet": "Illegal Dumping: $100 - $10,000 Fine. You cannot get rid of ... The City of Boston is dedicated to becoming a zero waste city. Click ...",
+              "date": "Jan 16, 2026",
+              "position": 4
+            },
+            {
+              "title": "Illegal Dumping Prevention Guidebook, March 1996 - epa nepis",
+              "link": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000CNVU.TXT",
+              "snippet": "Sign prohibiting illegal dumping under a city ordinance ... The Environmental Careers Organization 179 South Street Boston, MA 02111 (617)426-4375 http://www.",
+              "position": 5
+            },
+            {
+              "title": "[PDF] THE GOOD NEIGHBOR HANDBOOK - Springfield-MA.gov",
+              "link": "https://www.springfield-ma.gov/cos/fileadmin/mayor/Good_Neighbor/Good_Neighbor_English_2024_March.pdf",
+              "snippet": "Council, 204 Boston Rd Spfld., MA 01109. Office: 455-0205 John Lysak ... Dumping (Massachusetts General Law). MGL 270-16). It is illegal ...",
+              "date": "Mar 31, 2024",
+              "position": 6
+            },
+            {
+              "title": "[PDF] These Guidelines are designed to protect, in both the ... - Boston.gov",
+              "link": "https://www.cityofboston.gov/environment/pdfs/hpb_guidelines.pdf",
+              "snippet": "These Guidelines are designed to protect, in both the short and long term, the environmental health of those who live and work in Boston and to preserve and.",
+              "position": 7
+            },
+            {
+              "title": "[RTF] Record Keeping Responsibilities and Requirements: - Mass.gov",
+              "link": "https://www.mass.gov/doc/board-of-health-manual-of-laws-and-regulations/download",
+              "snippet": "Boston, MA 02108. Table of Contents. Page. PART I.INTRODUCTION3. PART II.General ... A board may investigate illegal dumping and issue orders to clean up after ...",
+              "position": 8
+            },
+            {
+              "title": "Trash And Recycling In Large Residential Buildings | Boston.gov",
+              "link": "https://www.boston.gov/departments/public-works/large-residential-buildings",
+              "snippet": "The City of Boston does not collect mattresses for buildings with more than six (6) units. To dispose of a mattress, you need to contact a ...",
+              "date": "Nov 26, 2025",
+              "position": 9
+            },
+            {
+              "title": "Stormwater Management - City of Cambridge, MA",
+              "link": "https://www.cambridgema.gov/Departments/publicworks/Initiatives/stormwatermanagement",
+              "snippet": "Residents are encouraged to report illegal dumping by calling ... Boston Harbor. The storm drain system on the other hand, discharges ...",
+              "date": "Mar 18, 2019",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "fees_detailed": {
+        "query": "\"Boston\" Massachusetts waste disposal fees tipping cost per ton mattress \"$\"",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" Massachusetts waste disposal fees tipping cost per ton mattress \"$\"",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Massachusetts Waste Management Guide 2025: Costs, Laws & 23 ...",
+              "link": "https://wastedoor.com/article/massachusetts-waste-management-guide",
+              "snippet": "Tipping fees $110-$140/ton at Boston-area facilities. Cambridge/Somerville/Brookline: Similar to Boston. Municipal services funded through ...",
+              "date": "Oct 14, 2025",
+              "position": 1
+            },
+            {
+              "title": "How MASS Mattress Disposal Regulations Impact Retailers",
+              "link": "https://goloadup.com/blog/business-resources/massachusetts-mattress-recycling-regulations/?srsltid=AfmBOoriICokVJdC1BARw2IrgzNj_BCdGf7Nxr2iZ_YGsWY_cFiRXCYc",
+              "snippet": "So why waste valuable time and energy looking for reliable mattress or textile recycling in Boston or trying to figure out how to get rid of mattresses in ...",
+              "position": 2
+            },
+            {
+              "title": "Navigating Massachusetts' Mattress Disposal Regulations",
+              "link": "https://refurn.com/insights/massachusetts-mattress-recycling-regulations/",
+              "snippet": "So why waste valuable time and energy looking for reliable mattress or textile recycling in Boston or trying to figure out how to get rid of mattresses in ...",
+              "position": 3
+            },
+            {
+              "title": "Here's what you need to know about the textile and mattress waste ...",
+              "link": "https://www.reddit.com/r/massachusetts/comments/yja5cv/heres_what_you_need_to_know_about_the_textile_and/",
+              "snippet": "Is there any free/cheap mattress disposal service in Boston? 14. 25 ... r/boston - Citizen complaint of the day: The secret mattress graveyard.",
+              "date": "Nov 1, 2022",
+              "sitelinks": [
+                {
+                  "title": "Best way to get rid of an old mattress when moving out? Apartments ...",
+                  "link": "https://www.reddit.com/r/howto/comments/xf5sx6/best_way_to_get_rid_of_an_old_mattress_when/"
+                },
+                {
+                  "title": "Dump in Boston - Reddit",
+                  "link": "https://www.reddit.com/r/boston/comments/2cfnfv/dump_in_boston/"
+                }
+              ],
+              "position": 4
+            },
+            {
+              "title": "Are there cheaper dump fees in northern Massachusetts for a junk ...",
+              "link": "https://www.facebook.com/groups/743797497428418/posts/1206672374474259/",
+              "snippet": "What are some dump sites north of Boston, Massachusetts? Daniel Dipesa \u25bb Junk Removal Winners \u2122 - How to Start, Get Leads & Grow Your Business.",
+              "date": "Jul 2, 2025",
+              "sitelinks": [
+                {
+                  "title": "Does anyone know why the city is not taking mattresses? They are ...",
+                  "link": "https://www.facebook.com/groups/611094259031723/posts/3488216224652831/"
+                },
+                {
+                  "title": "Junk removal pricing in Boston MA? - Facebook",
+                  "link": "https://www.facebook.com/groups/junkremovalwinners/posts/4217857901826386/"
+                }
+              ],
+              "position": 5
+            },
+            {
+              "title": "[PDF] REUSING AND RECYCLING - MATTRESSES in Rural Communities",
+              "link": "https://www.newmoa.org/wp-content/uploads/2022/07/mattress.pdf",
+              "snippet": "or disposal costs, particularly because many landfills charge a fee for each mattress above their per-ton tipping fee. ... Recently, the Boston Globe published an ...",
+              "position": 6
+            },
+            {
+              "title": "Your Complete Guide to Furniture Removal: Costs, Convenience ...",
+              "link": "https://www.gogreenteamjunk.com/blog/furniture-removal-costs-convenience-smart-choice",
+              "snippet": "Boston \u00b7 Boxborough \u00b7 Boylston \u00b7 Braintree \u00b7 Bridgwater \u00b7 Brookline \u00b7 Canton \u00b7 Carlisle \u00b7 Charlton \u00b7 Clinton \u00b7 Concord \u00b7 Dedham \u00b7 Douglas.",
+              "date": "Jun 2, 2025",
+              "position": 7
+            },
+            {
+              "title": "Disposal Fees - NH Municipal Transfer Stations",
+              "link": "https://www.nhrecycles.org/resources/disposal-fees-nh-municipal-transfer-stations",
+              "snippet": "New Boston, NH Recycling Center \u00b7 Scale Materials - 14\u00a2 per pound ($5 minimum) \u00b7 Furniture - 14\u00a2 per pound ($5 minimum, 30lbs or less) \u00b7 Couch, ...",
+              "date": "Oct 28, 2025",
+              "position": 8
+            },
+            {
+              "title": "[PDF] WASTE BAN REGULATIONS October 15, 2021 REGULATORY AU",
+              "link": "https://www.mass.gov/doc/massdep-response-to-comments-310-cmr-19000-waste-disposal-ban-amendments-october-2021/download",
+              "snippet": "On October 16, 2020, MassDEP published a notice in the Boston Globe announcing the public hearings and public comment ... cost for disposal on a ...",
+              "date": "Oct 15, 2021",
+              "position": 9
+            },
+            {
+              "title": "[PDF] ZERO WASTE BOSTON",
+              "link": "https://www.boston.gov/sites/default/files/imce-uploads/2019-06/zero_waste_bos_recs_final.pdf",
+              "snippet": "Boston is a leader in waste reduction by 2022. STATE OF WASTE IN BOSTON. The Boston community generates over 600,000 tons of solid waste annually. About 60 ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "recycling": {
+        "query": "\"Boston\" MA mattress recycling program free",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA mattress recycling program free",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Mattress Recycling",
+              "link": "https://www.boston.gov/departments/public-works/mattress-recycling",
+              "snippet": "Recycling mattresses is now a state requirement. The City of Boston will not collect mattresses or box springs with your curbside trash.",
+              "date": "Dec 15, 2025",
+              "position": 1
+            },
+            {
+              "title": "Mattress Disposal Boston [10 Ways To Get Rid Of A Mattress]",
+              "link": "https://www.sleepare.com/blogs/mattress-disposal-boston/",
+              "snippet": "Looking for a way to dispose of your mattress in Boston? There are many options including recycling, donation, pick up, and more.",
+              "date": "Feb 6, 2026",
+              "position": 2
+            },
+            {
+              "title": "Need to recycle a mattress in the City of Boston? We're ... - Facebook",
+              "link": "https://www.facebook.com/cityofboston/posts/need-to-recycle-a-mattress-in-the-city-of-boston-were-making-it-easier-than-ever/1269374821887105/",
+              "snippet": "Need to recycle a mattress in the City of Boston? We're making it easier than ever! Visit boston.gov/mattress to schedule a curbside pickup ...",
+              "date": "Nov 18, 2025",
+              "position": 3
+            },
+            {
+              "title": "Mattress Recycling in Boston",
+              "link": "https://toughstuffrecycling.com/municipality/mattress-recycling-in-boston/",
+              "snippet": "Tough Stuff Recycling offers fast, affordable, and environmentally responsible mattress pickup and mattress recycling in Boston.",
+              "position": 4
+            },
+            {
+              "title": "Need to recycle a mattress in the City of Boston? We're making it ...",
+              "link": "https://www.instagram.com/p/DRNXRRjDPOD/",
+              "snippet": "Need to recycle a mattress in the City of Boston? We're making it easier than ever! Visit boston.gov/mattress to schedule a curbside pickup ...",
+              "date": "Nov 18, 2025",
+              "position": 5
+            },
+            {
+              "title": "Mattress Disposal Boston Solutions: Prioritizing the Planet",
+              "link": "https://www.greenmattressco.com/blog/mattress-disposal-boston-solutions",
+              "snippet": "In this post, you'll learn about our recycling process and understand how our Mattress disposal Boston services benefit the planet as well ...",
+              "date": "Aug 29, 2025",
+              "position": 6
+            },
+            {
+              "title": "[PDF] Mattress Waste Disposal Ban & Recycling Guidance for ...",
+              "link": "https://www.mass.gov/doc/mattress-waste-disposal-ban-recycling-guidance-for-municipalities/download",
+              "snippet": "Address: 100 Cambridge Street, Suite 900, Boston, MA 02114. Phone: 617-292 ... Recycling Works is a free business assistance program run under contract.",
+              "position": 7
+            },
+            {
+              "title": "How to Responsibly Dispose of Your Old Mattress - Naturepedic",
+              "link": "https://www.naturepedic.com/blog/responsibly-dispose-of-your-old-mattress?srsltid=AfmBOorukBi9YrJpV2Q89-q--GUpNPWDOl_CF5LHfTNRIJboVXv3adLT",
+              "snippet": "Atlanta, GA Boston, MA - Downtown Boston, MA - Metro Brooklyn, NY ... mattress industry operates statewide mattress recycling programs.",
+              "date": "Apr 2, 2025",
+              "position": 8
+            },
+            {
+              "title": "How to get rid of a Mattress in Massachusetts? - Reddit",
+              "link": "https://www.reddit.com/r/massachusetts/comments/1kmyk1a/how_to_get_rid_of_a_mattress_in_massachusetts/",
+              "snippet": "In Boston you just have to schedule a pickup appointment for it, but it's free. In another town I had to go to the Board of Health office in ...",
+              "date": "May 15, 2025",
+              "position": 9
+            },
+            {
+              "title": "How to navigate the new rules for old mattresses in the Boston area",
+              "link": "https://www.wbur.org/news/2023/08/28/mattress-recycling-move-in-boston-massachusetts-newsletter",
+              "snippet": "Boston offers free, appointment-based mattress pickup for all residents living in a building with six units or less. Just call 311 (or 617-635- ...",
+              "date": "Aug 28, 2023",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "bulky_items": {
+        "query": "\"Boston\" Massachusetts bulky item collection appointment schedule advance",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" Massachusetts bulky item collection appointment schedule advance",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "The city's annual bulky item collection service begins March 2 and ...",
+              "link": "https://www.facebook.com/cityofwinstonsalem/posts/the-citys-annual-bulky-item-collection-service-begins-march-2-and-will-run-throu/1322128059942786/",
+              "snippet": "Peace BeStille \u25bb What's going on in New Boston Texas. 47w \u00b7 Public. Feeling quite annoyed\u2026 So I know they do bulk pick up 4 times a year ...",
+              "date": "Feb 23, 2026",
+              "position": 1
+            },
+            {
+              "title": "How To Dispose of Old Furniture in Boston - Flash Moving & Storage",
+              "link": "https://www.flashmoving.net/blog/furniture-disposal-in-boston/",
+              "snippet": "This page provides all details on acceptable materials, scheduling pickups, and locating nearby recycling centers in Boston. Special Collection ...",
+              "date": "Jul 11, 2025",
+              "position": 2
+            },
+            {
+              "title": "Junk Removal in Boston, MA",
+              "link": "https://www.junk-king.com/locations/boston",
+              "snippet": "Free estimates. Book online or call Junk King Boston at (617) 318-6888. We provide reliable junk removal, trash hauling, and recycling ...",
+              "date": "Sep 24, 2025",
+              "position": 3
+            },
+            {
+              "title": "Update on Bulk Item Pick-Up | northboroughma",
+              "link": "https://www.northboroughma.gov/home/news/update-bulk-item-pick",
+              "snippet": "... Boston in 1775. The early churches of Massachusetts, called \"meeting ... There is no requirement to notify Town Hall in advance. For ...",
+              "date": "Jul 16, 2024",
+              "position": 4
+            },
+            {
+              "title": "Sending a reminder. Bulky item pickup next month. - Facebook",
+              "link": "https://www.facebook.com/groups/1603036936459541/posts/25560639270272639/",
+              "snippet": "Bulk Pick Up Schedule Reminder in Etna. Profile photo of Rhonda ... Bulk pick up sign-up process changed in New Boston. Peace BeStille ...",
+              "date": "Jan 10, 2026",
+              "sitelinks": [
+                {
+                  "title": "When is the city's bulky item pickup schedule?",
+                  "link": "https://www.facebook.com/groups/188202667969872/posts/9256638057792909/"
+                },
+                {
+                  "title": "Are bulk trash pick-ups by appointment only?",
+                  "link": "https://www.facebook.com/groups/152052845486563/posts/1563449071013593/"
+                }
+              ],
+              "position": 5
+            },
+            {
+              "title": "Improving 311 Mattress Pickup and Recycling in Boston: A Digital ...",
+              "link": "https://digitalgovernmenthub.org/publications/improving-311-mattress-pickup-and-recycling-in-boston-a-digital-service-network-spotlight/",
+              "snippet": "This exploratory brief outlines the City of Boston's phased plan to build a digital system for scheduling, managing, and reporting mattress and bulky item ...",
+              "position": 6
+            },
+            {
+              "title": "Junk Removal Boston | Get Your Junk Gone Today",
+              "link": "https://www.paulsrubbishanddemo.com/",
+              "snippet": "Give us a call today at (617) 877-5639 and let's get your space back. We're ready to help keep Boston clean, organized, and clutter-free. CALL TODAY ...",
+              "position": 7
+            },
+            {
+              "title": "Frequently Asked Questions - CivicPlus.CMS.FAQ - Braintree, MA",
+              "link": "https://braintreema.gov/faq.aspx?TID=42",
+              "snippet": "Call Capitol Waste at 855-533-3400 to schedule pickup. ... View the Boston Building Resources website or the Habitat for Humanity Restore website.",
+              "position": 8
+            },
+            {
+              "title": "TOP 10 BEST Free Junk Removal & Hauling in Boston, MA - Yelp",
+              "link": "https://www.yelp.com/search?find_desc=Free+Junk+Removal+%26+Hauling&find_loc=Boston%2C+MA",
+              "snippet": "Top 10 Best Free Junk Removal & Hauling Near Boston, Massachusetts ; Red's Rubbish Removal \u00b7 0.5 mi \u00b7 Boston, MA 02108. (603) 505-2664 ; Residential Cleanouts \u00b7 0.6 ...",
+              "rating": 4.5,
+              "ratingCount": 1705,
+              "position": 9
+            },
+            {
+              "title": "Junk Removal in Melrose, MA",
+              "link": "https://www.junk.com/ma/boston/melrose",
+              "snippet": "Junk.com serves Melrose, MA with junk removal services such as bulk item pickup and property cleanouts ... Located in the Greater Boston Metropolitan area, ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "permits": {
+        "query": "\"Boston\" MA waste disposal permit requirements resident",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA waste disposal permit requirements resident",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "[PDF] Guidelines Boston Public Health Commission Regulation Waste ...",
+              "link": "https://www.boston.gov/sites/default/files/file/2021/03/Guidelines%20-%20Waste%20Containers%20Junk%20Yards%20Recycling.pdf",
+              "snippet": "The following guidelines are issued pursuant to Section 2.01 of the Boston. Public Health Commission Regulation titled \u201cWaster Container Lot, Junk Yard and.",
+              "position": 1
+            },
+            {
+              "title": "Trash and Recycling | Boston.gov",
+              "link": "https://www.boston.gov/trash-and-recycling",
+              "snippet": "How do I apply for a resident parking permit? Annual Census. /. State ... Sign up to receive monthly news and updates from Zero Waste Boston.",
+              "date": "Jan 16, 2026",
+              "position": 2
+            },
+            {
+              "title": "[PDF] NOTICE TO BOSTON COMMERCIAL SOLID WASTE HAULERS ...",
+              "link": "https://www.cityofboston.gov/images_documents/2016%20Trash%20Hauler%20Packet_tcm3-52934.pdf",
+              "snippet": "This notice is to advise you of the requirements for receiving your permit to remove and transport rubbish in. Boston. Your 2015 permit will ...",
+              "date": "Apr 1, 2016",
+              "position": 3
+            },
+            {
+              "title": "[PDF] Wood Waste Reclamation Facilities Siting and Permitting ... - Mass.gov",
+              "link": "https://www.mass.gov/doc/bwp-98-006-wood-waste-reclamation-facilities/download",
+              "snippet": "Questions on this guidance can be directed to Paul Emond in DEP's Boston Office at (617) 292-5974. Page 2. COMMONWEALTH OF MASSACHUSETTS. EXECUTIVE OFFICE OF ...",
+              "position": 4
+            },
+            {
+              "title": "[PDF] chapter 8 - solid waste management",
+              "link": "https://www.mahb.org/wp-content/uploads/2016/01/gbook08.pdf",
+              "snippet": "... Boston, MA 02108, (617) 292-5960; fax (617) 556-1049, and by the four DEP ... $. Rescind, suspend or modify the permit of any solid waste management facility ...",
+              "position": 5
+            },
+            {
+              "title": "Boston Regular Trash Pickup Services - Junk Removal",
+              "link": "https://bostonjunkremoval.us/residential/regular-trash-pickup",
+              "snippet": "Legal and Permit Requirements for Trash Disposal and Collection in Boston \u00b7 Right-of-way permits for street placement \u00b7 Building permits for renovation debris ...",
+              "position": 6
+            },
+            {
+              "title": "Site Cleanliness | Boston.gov",
+              "link": "https://www.boston.gov/departments/inspectional-services/site-cleanliness",
+              "snippet": "The license fee is $50. The fee must be made payable to Boston Inspectional Services, and must be renewed every year. Complete the ...",
+              "date": "Jun 13, 2024",
+              "position": 7
+            },
+            {
+              "title": "[PDF] ENVIRONMENTAL PERMITTING in MASSACHUSETTS",
+              "link": "https://www.mvcommission.org/sites/default/files/docs/Environmental%20Permitting%20in%20MA%202003.pdf",
+              "snippet": "Boston, MA 02114. 617-626-120. 617-626-1240 (fax) http://www.mass.gov/czm. Mitt ... In addition, MassDEP Waste Ban regulations restrict disposal of various.",
+              "position": 8
+            },
+            {
+              "title": "[PDF] Fact Sheet: Your Municipality and Waste Ban Compliance - Mass.gov",
+              "link": "https://www.mass.gov/doc/fact-sheet-your-municipality-waste-ban-compliance/download",
+              "snippet": "Massachusetts Department of. Environmental Protection. 100 Cambridge Street. Suite 900. Boston, MA 02114. Commonwealth of. Massachusetts. Executive Office of.",
+              "position": 9
+            },
+            {
+              "title": "How to get rid of trash in Boston?",
+              "link": "https://www.paulsrubbishanddemo.com/how-to-get-rid-of-trash-in-boston",
+              "snippet": "Open to residents with proof of address \u00b7 Accept household trash, yard waste, and recycling \u00b7 Locations: \u00b7 West Roxbury (Millennium Park area) \u00b7 South Boston ( ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "enforcement": {
+        "query": "\"Boston\" Massachusetts illegal dumping enforcement cameras fine",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" Massachusetts illegal dumping enforcement cameras fine",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "How Code Enforcement Works In Boston",
+              "link": "https://www.boston.gov/departments/public-works/how-code-enforcement-works-boston",
+              "snippet": "Subsequent offenses carry a $300 fine. Have questions? Contact 311: 617-635-4500. 1 CITY HALL SQUARE, ROOM 714. BOSTON, MA 02201. Provide Your ...",
+              "date": "Oct 30, 2025",
+              "position": 1
+            },
+            {
+              "title": "16-62 ORDINANCE BANNING FACE SURVEILLANCE ...",
+              "link": "https://codelibrary.amlegal.com/codes/boston/latest/boston_ma/0-0-0-12810",
+              "snippet": "It shall be unlawful for Boston or any Boston official to: (a) Obtain, retain, possess, access or use: 1. Any face surveillance system; or 2. Information ...",
+              "position": 2
+            },
+            {
+              "title": "General Law - Part I, Title XIV, Chapter 90, Section 14C",
+              "link": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIV/Chapter90/Section14C",
+              "snippet": "Section 20A : Parking regulations; violations; notice to appear; failure to appear; adjudication by mail \u00b7 Section 20A 1/2 : Cities of Boston ...",
+              "date": "Jan 10, 2025",
+              "position": 3
+            },
+            {
+              "title": "Eye on the Sty - Waste360",
+              "link": "https://www.waste360.com/fleet-technology/eye-on-the-sty",
+              "snippet": "They contacted local law enforcement and departments of public works in and around Boston, seeking hot spots on public land to monitor. It wasn't long before ...",
+              "position": 4
+            },
+            {
+              "title": "What happened to cameras and prosecution of dumping? - Facebook",
+              "link": "https://www.facebook.com/groups/106921086011046/posts/24437094175900398/",
+              "snippet": "Illegal dumping in danville area, reporting to law enforcement ... Dumping bust part of coordinated effort to deter dumping | Boston, MA.",
+              "date": "Dec 29, 2025",
+              "sitelinks": [
+                {
+                  "title": "I wonder if this new legislation could fund a nice vacation for ...",
+                  "link": "https://www.facebook.com/groups/patapsco/posts/25810619605239029/"
+                },
+                {
+                  "title": "Dumping bust part of coordinated effort to deter dumping | Boston, MA",
+                  "link": "https://www.facebook.com/groups/182868895092458/posts/25053754600910543/"
+                }
+              ],
+              "position": 5
+            },
+            {
+              "title": "Springfield enforces dumping ban; offender faces $1,500 cleanup fine",
+              "link": "https://www.wwlp.com/news/local-news/hampden-county/springfield-enforces-dumping-ban-offender-faces-1500-cleanup-fine/",
+              "snippet": "... cameras set up in undisclosed areas all over the city\u2026To catch ... Boston Statehouse \u00b7 Newsletters \u00b7 Video Center \u00b7 Contact Us \u00b7 Mass Appeal ...",
+              "date": "Apr 17, 2025",
+              "position": 6
+            },
+            {
+              "title": "Candid Camera Initiative Nabs Two Suspects Who Repeatedly ...",
+              "link": "https://regionalassociations.org/candid-camera-initiative-nabs-two-suspects-who-repeatedly-smashed-dumped-glass-from-scrap-windows-in-middlesex-fells-reservation/",
+              "snippet": "BOSTON MA (3/3/2015) ? Two Revere residents are facing criminal charges stemming from flagrant illegal dumping and the shattering of large quantities of glass ...",
+              "position": 7
+            },
+            {
+              "title": "Video shows man dumping bags of trash on East Boston sidewalk",
+              "link": "https://www.cbsnews.com/boston/news/video-man-dumping-trash-east-boston-sidewalk/",
+              "snippet": "After an investigation was conducted, a $1,000 fine was issued for each location. We thank the residents of East Boston for reporting this ...",
+              "date": "Mar 13, 2025",
+              "position": 8
+            },
+            {
+              "title": "Springfield enforces dumping ban; offender faces $1,500 cleanup fine",
+              "link": "https://www.yahoo.com/news/springfield-enforces-dumping-ban-offender-225314078.html",
+              "snippet": "... cameras set up in undisclosed areas all over the city\u2026 ... Protestors gather on Boston Road in Springfield for 'Standout for Democracy' rally ...",
+              "date": "Apr 17, 2025",
+              "position": 9
+            },
+            {
+              "title": "[PDF] ENFORCEMENT - Mass.gov",
+              "link": "https://www.mass.gov/files/documents/2016/08/pz/wenfman.pdf",
+              "snippet": "Boston MA 02114-2524. (617) 626-1020. Department of Fish and Game. 251 Causeway Street. Suite 400. Boston MA 02114-2152. (617) 626-1590. DFG Inland Enforcement ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "placement_rules": {
+        "query": "\"Boston\" MA curbside mattress placement time rules when",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA curbside mattress placement time rules when",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Trash And Recycling In Large Residential Buildings",
+              "link": "https://www.boston.gov/departments/public-works/large-residential-buildings",
+              "snippet": "Pick-up costs $75 per mattress or box spring. Drop-off costs $25 per mattress or box spring, must show proof of Boston residency or business.",
+              "date": "Nov 26, 2025",
+              "position": 1
+            },
+            {
+              "title": "[PDF] Mattress Waste Disposal Ban & Recycling Guidance for ...",
+              "link": "https://www.mass.gov/doc/mattress-waste-disposal-ban-recycling-guidance-for-municipalities/download",
+              "snippet": "The Commonwealth of Massachusetts. Department of Environmental Protection. Address: 100 Cambridge Street, Suite 900, Boston, MA 02114. Phone: 617-292-5500.",
+              "position": 2
+            },
+            {
+              "title": "Trash and Recycling",
+              "link": "https://www.boston.gov/trash-and-recycling",
+              "snippet": "Watch this 20-minute video for a deep dive into Boston's many programs and services designed to make disposing of waste as safe and simple as ...",
+              "date": "Jan 16, 2026",
+              "position": 3
+            },
+            {
+              "title": "Mattress Removal in South Boston, MA - Lasso That Junk",
+              "link": "https://lassothatjunk.com/mattress-removal/ma/south-boston/",
+              "snippet": "Need mattress removal in South Boston? Get same-day pickup, clear pricing shown upfront, and easy scheduling for in-home or curbside removal.",
+              "position": 4
+            },
+            {
+              "title": "What You Can & Can't Throw Away on Boston Curb",
+              "link": "https://bostonraremovers.com/2023/10/24/curb-trash-vs-junk-removal-what-you-can-cannot-throw-away-in-boston/",
+              "snippet": "As a Boston resident, you may be familiar with the routine of taking your garbage out and placing it on the curb for pickup.",
+              "date": "Oct 24, 2023",
+              "position": 5
+            },
+            {
+              "title": "Somerville Trash & Recycling Information",
+              "link": "https://www.somervillema.gov/trash-and-recycling",
+              "snippet": "New Mattress & Box Spring Fee and Rules in Effect Feb. 1, 2026. Click here to ... Salvation Army \u00b7 Society of St. Vincent de Paul (Archdiocese of Boston) ...",
+              "position": 6
+            },
+            {
+              "title": "Boston Property Management Junk Removal Services",
+              "link": "https://bostonjunkremoval.us/commercial-junk-removal/property-management",
+              "snippet": "Schedule bulk pickups via 3-1-1 or the Boston DPW website; Maximum 10 items per pickup; curbside placement by 6:00 AM ; Electronics, mattresses, and yard waste ...",
+              "position": 7
+            },
+            {
+              "title": "Mattress recycling process in our city needs improvement - Facebook",
+              "link": "https://www.facebook.com/groups/Jeffriespoint/posts/10160657412798612/",
+              "snippet": "Will the city pick up mattresses with regular trash in Boston? Eli ... placement\u201d TODAY 3rd TIME.. I get home from a long day of work ...",
+              "date": "Dec 14, 2023",
+              "sitelinks": [
+                {
+                  "title": "Boston South End small business trash rules",
+                  "link": "https://www.facebook.com/groups/SouthEndCB/posts/2151781608394176/"
+                },
+                {
+                  "title": "How to give away furniture on curb in Somerville?",
+                  "link": "https://www.facebook.com/groups/somerville.ma.community/posts/1825592491361340/"
+                }
+              ],
+              "position": 8
+            },
+            {
+              "title": "The Trash Takedown and Waste Ban Breakdown",
+              "link": "https://pref.northeastern.edu/how-to-go-about-waste-ban/",
+              "snippet": "At Northeastern, mattress recycling and the diversion of food waste are already in practice. ... Boston area, to further this mission. She ...",
+              "date": "Nov 15, 2022",
+              "position": 9
+            },
+            {
+              "title": "Bulk Trash and Yard Waste - Historic Boston-Edison Association",
+              "link": "https://www.historicbostonedison.org/Bulk-Trash-and-Yard-Waste",
+              "snippet": "Bulk trash is collected year-round. Bulk trash is collected every other Wednesday throughout the Boston-Edison neighborhood, beginning Wednesday, June 12, 2019.",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "size_limits": {
+        "query": "\"Boston\" MA mattress disposal limit maximum how many per household",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA mattress disposal limit maximum how many per household",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "[PDF] MATTRESSES - Mass.gov",
+              "link": "https://www.mass.gov/doc/draft-eprcmattress-backgroundrecommendationdocjuly2025/download",
+              "snippet": "2.6% poverty rate, will accept mattresses at the Sudbury Transfer Station on Boston Post. Road for a fee of $50 per item.25,26. \u2022 The more ...",
+              "date": "Jul 9, 2025",
+              "position": 1
+            },
+            {
+              "title": "[PDF] A resident guide to City services - Boston.gov",
+              "link": "https://www.boston.gov/sites/default/files/file/2025/08/resident%20guide%20booklet%20edited%20version%20july25%20copy.pdf",
+              "snippet": "Our job is to help the City respond quickly, track requests, and maintain a clean and livable neighborhood. CONNECT WITH BOSTON 311. \u2022 Download the Boston 311 ...",
+              "position": 2
+            },
+            {
+              "title": "State mattress disposal ban has been 'disastrous' for Boston ... - Reddit",
+              "link": "https://www.reddit.com/r/massachusetts/comments/1ade6xw/state_mattress_disposal_ban_has_been_disastrous/",
+              "snippet": "Key quote: 'Boston has collected roughly 52,000 mattresses over the course of the ban, the councilors wrote, a number that they say does not ...",
+              "date": "Jan 29, 2024",
+              "position": 3
+            },
+            {
+              "title": "What are the alternatives for disposing of a mattress in Boston if city ...",
+              "link": "https://www.facebook.com/groups/SouthEndCB/posts/3745078905731097/",
+              "snippet": "What are the alternatives for disposing of a mattress in Boston if city pickup is not available? ... Each household may recycle up to 6 ...",
+              "date": "Jul 27, 2024",
+              "sitelinks": [
+                {
+                  "title": "Mattress recycling is easy - Facebook",
+                  "link": "https://www.facebook.com/groups/dedham.westwood/posts/3368344000001414/"
+                },
+                {
+                  "title": "Mattress recycling process in our city needs improvement - Facebook",
+                  "link": "https://www.facebook.com/groups/Jeffriespoint/posts/10160657412798612/"
+                }
+              ],
+              "position": 4
+            },
+            {
+              "title": "Massachusetts Waste Management Guide 2025: Costs, Laws & 23 ...",
+              "link": "https://wastedoor.com/article/massachusetts-waste-management-guide",
+              "snippet": "Complete Massachusetts waste management guide. Boston dumpster rental $600-800/week. MassDEP waste bans, commercial organics law, mattress ...",
+              "date": "Oct 14, 2025",
+              "position": 5
+            },
+            {
+              "title": "New MA Rule Now In Effect Bans Trashing Some Household Items",
+              "link": "https://patch.com/massachusetts/across-ma/new-ma-rubbish-rule-no-more-throwing-out-mattresses-textiles",
+              "snippet": "Boston, MA \u00b7 North End, MA \u00b7 Beacon Hill, MA \u00b7 Back Bay, MA \u00b7 Charlestown ... The state has also awarded grants to dozens of cities and towns to ...",
+              "date": "Nov 1, 2022",
+              "position": 6
+            },
+            {
+              "title": "Boston , MA Professional Mattress Disposal Services - Junk Removal",
+              "link": "https://bostonjunkremoval.us/residential/mattress-disposal",
+              "snippet": "Expert Mattress Disposal services in Boston , MA \u2013 Trusted by homeowners and businesses. Eco-friendly disposal, upfront pricing. Get your free quote now!",
+              "position": 7
+            },
+            {
+              "title": "Boston Mandatory Recycling (7+ Units) | Waste Bans & Fines Guide",
+              "link": "https://www.nationaldoorsteppickup.com/boston-ma-apartment-multifamily-recycling-ordinance",
+              "snippet": "The law: Massachusetts bans mattresses and box springs from disposal (statewide waste disposal ban). Small buildings (1\u20136 units): Boston offers appointment- ...",
+              "position": 8
+            },
+            {
+              "title": "Special Collection Items | Boston.gov",
+              "link": "https://www.boston.gov/departments/public-works/special-collection-items",
+              "snippet": "Have a question or need additional assistance? 311 can help answer questions about bulk item pickup in the City of Boston. Please dial 3-1-1 or ...",
+              "date": "Sep 2, 2025",
+              "position": 9
+            },
+            {
+              "title": "[PDF] REUSING AND RECYCLING - MATTRESSES in Rural Communities",
+              "link": "https://www.newmoa.org/wp-content/uploads/2022/07/mattress.pdf",
+              "snippet": "Recently, the Boston Globe published an article highlighting. Massachusetts' grant program to promote mattress recycling. (see page 7 for more information) ...",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      },
+      "hours_specific": {
+        "query": "\"Boston\" MA transfer station hours open close schedule",
+        "results": {
+          "searchParameters": {
+            "q": "\"Boston\" MA transfer station hours open close schedule",
+            "gl": "us",
+            "hl": "en",
+            "type": "search",
+            "num": 10,
+            "engine": "google"
+          },
+          "organic": [
+            {
+              "title": "Trash and Recycling | Boston.gov",
+              "link": "https://www.boston.gov/trash-and-recycling",
+              "snippet": "The City of Boston is dedicated to becoming a zero waste city. Click here to read the Zero Waste Plan, learn about the City's plastic bag ban, ...",
+              "date": "Jan 16, 2026",
+              "position": 1
+            },
+            {
+              "title": "REPUBLIC SERVICES HOWARD TRANSFER STATION - Yelp",
+              "link": "https://www.yelp.com/biz/republic-services-howard-transfer-station-roxbury",
+              "snippet": "BEST of Roxbury, MA Landfill near Republic Services Howard Transfer Station ... Photo of CPR Cell Phone Repair Boston - Back Bay. CPR Cell Phone Repair ...",
+              "rating": 1,
+              "ratingCount": 1,
+              "position": 2
+            },
+            {
+              "title": "Trash and Recycling Day Schedule and Search - Boston.gov",
+              "link": "https://www.boston.gov/departments/public-works/trash-and-recycling-day-schedule-and-search",
+              "snippet": "Download the Boston Trash Schedule & Alerts app for iOS from the Apple App Store. How to search an address ON THE CALENDAR: Include only street number and ...",
+              "position": 3
+            },
+            {
+              "title": "[PDF] powered by What can and cannot be recycled in [Your Town]",
+              "link": "https://massrecycle.org/wp-content/uploads/2024/02/Recycling-Rules-Info.pdf",
+              "snippet": "Your curbside recycling first goes to a transfer station in. Provincetown, MA. It is then transported to a Materials. Recovery Facility (MRF) in Boston, MA, ...",
+              "position": 4
+            },
+            {
+              "title": "484 Boston Post Road, Wayland - Casella Waste Systems",
+              "link": "https://local.casella.com/location/transfer-station/wayland-ma-484-boston-post-road",
+              "snippet": "Sustainable waste and recycling solutions for homes and businesses. Contact Casella Transfer Station at 484 Boston Post Road in Wayland.",
+              "position": 5
+            },
+            {
+              "title": "Read Our Waste Management FAQ - B-P Trucking, Inc.",
+              "link": "https://bptrucking.com/waste-management-faqs/",
+              "snippet": "Residents in Greater Boston Area can rely on B-P Trucking Inc for speedy & reliable waste disposal services. Read our waste management FAQs to learn more.",
+              "position": 6
+            },
+            {
+              "title": "MADISON COUNTY - Boston Mountain Solid Waste District",
+              "link": "https://www.bostonmountain.org/madisoncountyrecycles",
+              "snippet": "Boston Mountain Solid Waste District \u00b7 MADISON COUNTY. DROP OFF. Locations ... Please plan ahead to complete all recycling before closing. \u00b7 Schedule ...",
+              "position": 7
+            },
+            {
+              "title": "ReSource Roxbury | C&D Recycling Facility",
+              "link": "https://resourcewasteservices.com/our-facilities/resource-roxbury/",
+              "snippet": "ReSource Roxbury provides dumpster rental services to businesses and residents located in Greater Boston needing to dispose of waste from clean-outs and ...",
+              "position": 8
+            },
+            {
+              "title": "TOP 10 BEST Transfer Station in Boston, MA - Updated 2026 - Yelp",
+              "link": "https://www.yelp.com/search?find_desc=Transfer+Station&find_loc=Boston%2C+MA",
+              "snippet": "Top 10 Transfer Station Near Boston, Massachusetts ; Republic Services Howard Transfer Station \u00b7 1.3 mi \u00b7 66 Norfolk Ave, Roxbury, MA 02119. (617) 445-1946 ; Junk ...",
+              "rating": 3.8,
+              "ratingCount": 528,
+              "position": 9
+            },
+            {
+              "title": "James G Grant co - Professional waste management and demolition ...",
+              "link": "https://www.jamesggrantco.com/",
+              "snippet": "Boston's Full Service Recycling Transfer Station. We offer professional demolition services and waste management for residential and industrial customers.",
+              "position": 10
+            }
+          ],
+          "credits": 1
+        }
+      }
+    }
+  }
+]

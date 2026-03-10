@@ -178,10 +178,10 @@ export default function CityProFeed({ data }) {
           <main className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
               <div>
-                <h2 className="text-xl font-extrabold text-gray-900 tracking-tight">
+                <h2 className="text-2xl font-bold text-gray-900">
                   {filteredPros.length} Available Hauler{filteredPros.length !== 1 ? 's' : ''} in {city}
                 </h2>
-                <p className="text-gray-500 text-sm mt-0.5">matching your criteria · updated 2 min ago</p>
+                <p className="text-gray-600 text-sm mt-1">matching your criteria · updated 2 min ago</p>
               </div>
               <button className="flex items-center gap-1.5 bg-card border border-border rounded-lg px-3 py-2 text-sm font-semibold text-card-foreground hover:border-primary/30 transition-colors shadow-sm">
                 Best Match <ChevronDown className="w-3.5 h-3.5 text-muted-foreground" />

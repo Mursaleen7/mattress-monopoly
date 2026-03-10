@@ -10,7 +10,7 @@ export default function MunicipalityFAQ({ data }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-xl font-extrabold text-gray-900 mb-1 tracking-tight">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
               Common Questions in {name}
             </h2>
             <p className="text-gray-500 text-sm mb-6">Answered by our local disposal experts.</p>
@@ -37,7 +37,7 @@ export default function MunicipalityFAQ({ data }) {
           </div>
 
           <div>
-            <h2 className="text-xl font-extrabold text-gray-900 mb-1 tracking-tight">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
               Neighborhoods Served
             </h2>
             <p className="text-gray-500 text-sm mb-6">Our pros cover every street in {name}.</p>

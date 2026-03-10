@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Trash2, MapPin, ArrowRight, ShieldCheck, Star, Zap } from "lucide-react";
+import { List, MapPin, ArrowRight, ShieldCheck, Star, Zap, Leaf } from "lucide-react";
 import { createPageUrl } from "@/utils";
 
 const AVATAR_URLS = [
@@ -11,7 +11,7 @@ const AVATAR_URLS = [
 
 export default function PageNotFound() {
   const [service, setService] = useState("");
-  const [zip, setZip] = useState("");
+  const [location, setLocation] = useState("");
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ export default function PageNotFound() {
   };
 
   return (
-    <div className="min-h-screen font-sans relative flex flex-col items-center justify-center overflow-hidden">
+    <div className="min-h-screen font-sans relative flex flex-col items-center justify-center overflow-hidden bg-background">
       {/* Background Map */}
       <div className="absolute inset-0 z-0">
         <img
@@ -39,79 +39,84 @@ export default function PageNotFound() {
           </span>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight leading-[1.1] mb-4">
+        <h1 className="text-4xl sm:text-5xl font-black text-foreground tracking-tight leading-[1.1] mb-4">
           Looks like we took
           <br />
           a wrong turn.
         </h1>
 
-        <p className="text-gray-500 text-lg mb-10 max-w-lg mx-auto leading-relaxed">
-          The page you're looking for was hauled away. But we still have <strong className="text-gray-800">highly-rated mattress removal pros</strong> available in your area today.
+        <p className="text-muted-foreground text-lg mb-10 max-w-lg mx-auto leading-relaxed">
+          The page you're looking for was hauled away. But we still have <strong className="text-foreground">highly-rated mattress removal pros</strong> available in your area today.
         </p>
 
-        {/* Search Bar */}
-        <form onSubmit={handleSearch} className="bg-white rounded-2xl shadow-xl border border-gray-200 p-2 flex flex-col sm:flex-row gap-2">
-          <div className="flex items-center gap-3 flex-1 px-4 py-3 bg-gray-50 rounded-xl border border-gray-100">
-            <Trash2 className="w-5 h-5 text-blue-600 flex-shrink-0" />
+        {/* Search Bar - Matching HeroSection style */}
+        <form onSubmit={handleSearch} className="bg-white rounded-lg shadow-xl p-1 flex flex-col sm:flex-row gap-1 max-w-2xl mx-auto">
+          <div className="flex items-center gap-2.5 flex-1 px-4 py-2.5 rounded-md hover:bg-secondary/50 transition-all duration-200 border-r border-transparent sm:border-r sm:border-border">
+            <List className="w-4 h-4 text-primary flex-shrink-0" />
             <input
               type="text"
               value={service}
               onChange={(e) => setService(e.target.value)}
-              placeholder="What needs to be removed?"
-              className="bg-transparent w-full text-gray-800 placeholder-gray-400 font-medium text-sm focus:outline-none"
+              placeholder="Mattresses, furniture, junk..."
+              className="bg-transparent w-full text-foreground placeholder-gray-500 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
             />
           </div>
 
-          <div className="flex items-center gap-3 flex-1 px-4 py-3 bg-gray-50 rounded-xl border border-gray-100">
-            <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0" />
+          <div className="flex items-center gap-2.5 flex-1 px-4 py-2.5 rounded-md hover:bg-secondary/50 transition-all duration-200">
+            <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
             <input
               type="text"
-              value={zip}
-              onChange={(e) => setZip(e.target.value)}
-              placeholder="Enter Zip Code"
-              className="bg-transparent w-full text-gray-800 placeholder-gray-400 font-medium text-sm focus:outline-none"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+              placeholder="City, neighborhood, or zip"
+              className="bg-transparent w-full text-foreground placeholder-gray-500 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
             />
           </div>
 
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-extrabold px-7 py-3.5 rounded-xl text-sm tracking-wide transition-all duration-150 flex items-center gap-2 justify-center shadow-lg shadow-blue-300/40 hover:shadow-blue-400/50 whitespace-nowrap"
+            disabled={!service && !location}
+            className="bg-accent hover:opacity-90 text-accent-foreground font-semibold px-6 py-2.5 rounded-md text-sm transition-all duration-200 whitespace-nowrap focus:ring-2 focus:ring-accent focus:ring-offset-2 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
           >
-            Find Pros Now <ArrowRight className="w-4 h-4" />
+            Search
           </button>
         </form>
 
-        {/* Trust Strip */}
-        <div className="mt-8 flex items-center justify-center gap-4">
-          <div className="flex -space-x-2.5">
-            {AVATAR_URLS.map((url, i) => (
-              <img
-                key={i}
-                src={url}
-                alt="Pro"
-                className="w-9 h-9 rounded-full border-2 border-white object-cover shadow-sm"
-              />
-            ))}
-          </div>
-          <div className="text-left">
-            <div className="flex items-center gap-1 mb-0.5">
+        {/* Trust Strip - Matching HeroSection style */}
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5">
+          {/* Rating */}
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-0.5">
               {[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 text-yellow-400" fill="#FBBF24" />)}
+              <span className="text-foreground text-xs font-semibold ml-1">Top-rated local providers</span>
             </div>
-            <p className="text-gray-600 text-sm font-semibold">
-              <span className="text-blue-600 font-extrabold">150+ pros</span> are online and ready to quote.
-            </p>
+          </div>
+          <div className="w-px h-3.5 bg-border hidden sm:block" />
+          <div className="flex items-center gap-1.5 text-muted-foreground text-xs font-medium">
+            <ShieldCheck className="w-3.5 h-3.5 text-primary" />
+            Background-verified
+          </div>
+          <div className="w-px h-3.5 bg-border hidden sm:block" />
+          <div className="flex items-center gap-1.5 text-muted-foreground text-xs font-medium">
+            <Leaf className="w-3.5 h-3.5 text-primary" />
+            Eco-compliant
+          </div>
+          <div className="w-px h-3.5 bg-border hidden sm:block" />
+          <div className="flex items-center gap-1.5 text-muted-foreground text-xs font-medium">
+            <Zap className="w-3.5 h-3.5 text-primary" />
+            Same-day available
           </div>
         </div>
 
         {/* Quick links */}
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <a href={createPageUrl("Home")} className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-blue-600 font-medium border border-gray-200 rounded-full px-4 py-2 hover:border-blue-300 transition-colors">
+          <a href={createPageUrl("Home")} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary font-medium border border-border rounded-full px-4 py-2 hover:border-primary transition-colors">
             🏠 Back to Home
           </a>
-          <a href={createPageUrl("About")} className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-blue-600 font-medium border border-gray-200 rounded-full px-4 py-2 hover:border-blue-300 transition-colors">
+          <a href={createPageUrl("About")} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary font-medium border border-border rounded-full px-4 py-2 hover:border-primary transition-colors">
             ℹ️ About DisposalGrid
           </a>
-          <a href={createPageUrl("Contact")} className="flex items-center gap-1.5 text-sm text-gray-600 hover:text-blue-600 font-medium border border-gray-200 rounded-full px-4 py-2 hover:border-blue-300 transition-colors">
+          <a href={createPageUrl("Contact")} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary font-medium border border-border rounded-full px-4 py-2 hover:border-primary transition-colors">
             📬 Contact Support
           </a>
         </div>

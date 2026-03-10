@@ -1,0 +1,287 @@
+[
+  {
+    "city": "Boston",
+    "queries": {
+      "phase2a_query1": {
+        "query": "site:.gov \"Boston\" bulk trash mattress disposal",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Mattress Recycling | Boston.gov",
+          "link": "https://www.boston.gov/departments/public-works/mattress-recycling",
+          "snippet": "Recycling mattresses is now a state requirement. The City of Boston will not collect mattresses or b..."
+        }
+      },
+      "phase2a_query2": {
+        "query": "site:.gov \"Boston\" sanitation large item pickup",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Trash and Recycling | Boston.gov",
+          "link": "https://www.boston.gov/trash-and-recycling",
+          "snippet": "Watch this 20-minute video for a deep dive into Boston's many programs and services designed to make..."
+        }
+      },
+      "phase2a_query3": {
+        "query": "\"Boston\" \"Massachusetts\" official waste management mattress schedule",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Mattress Recycling",
+          "link": "https://www.boston.gov/departments/public-works/mattress-recycling",
+          "snippet": "Boston.gov An official website of the City of Boston ... The Massachusetts Department of Environment..."
+        }
+      },
+      "phase2a_query4": {
+        "query": "\"Boston\" \"MA\" bulk item curbside pickup schedule site:.gov OR site:.us",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Trash and Recycling | Boston.gov",
+          "link": "https://www.boston.gov/trash-and-recycling",
+          "snippet": "Watch this 20-minute video for a deep dive into Boston's many programs and services designed to make..."
+        }
+      },
+      "phase2a_query5": {
+        "query": "\"Boston\" solid waste department mattress disposal 2024 OR 2025 OR 2026",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "[PDF] Mattress Waste Disposal Ban & Recycling Guidance for Municipalities",
+          "link": "https://www.mass.gov/doc/mattress-waste-disposal-ban-recycling-guidance-for-municipalities/download",
+          "snippet": "Department of Environmental Protection. Address: 100 Cambridge Street, Suite 900, Boston, MA 02114. ..."
+        }
+      },
+      "phase2b_query1": {
+        "query": "site:.gov \"Boston\" illegal dumping fine ordinance code",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "How Code Enforcement Works In Boston",
+          "link": "https://www.boston.gov/departments/public-works/how-code-enforcement-works-boston",
+          "snippet": "How to pay the fine for a code violation. How to appeal a code ... Boston Code of Ordinances, 16-12...."
+        }
+      },
+      "phase2b_query2": {
+        "query": "\"Boston\" \"MA\" illegal dumping penalty \"$\" misdemeanor",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "[PDF] Felony and Misdemeanor Master Crime List by MGL Reference",
+          "link": "https://www.mass.gov/doc/master-crime-list/download",
+          "snippet": "... Sentencing Commission p. 147. Page 2. John Adams Courthouse. 1 Pemberton Square. Boston, MA 0210..."
+        }
+      },
+      "phase2b_query3": {
+        "query": "\"Boston\" city code illegal dumping fine amount",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "23-22 RUBBISH DISPOSAL; PENALTY.",
+          "link": "https://codelibrary.amlegal.com/codes/boston/latest/boston_ma/0-0-0-15502",
+          "snippet": "City of Boston Municipal Code; 23-22 RUBBISH DISPOSAL; PENALTY. Annotations ... In the city, fines f..."
+        }
+      },
+      "phase5_query1": {
+        "query": "1-800-got-junk mattress removal Boston MA price",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "1-800-GOT-JUNK? Pricing | How Much We Cost",
+          "link": "https://www.1800gotjunk.com/us_en/how-our-pricing-works",
+          "snippet": "Our junk removal pricing is based on how much space your items takes up in the truck. To give you an..."
+        }
+      }
+    }
+  },
+  {
+    "city": "Cambridge",
+    "queries": {
+      "phase2a_query1": {
+        "query": "site:.gov \"Cambridge\" bulk trash mattress disposal",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "How to dispose of or recycle Mattress & Box Spring",
+          "link": "https://www.cambridgema.gov/Departments/publicworks/getridofitright#!rc-cpage=253104",
+          "snippet": "Contact DPW ... 147 Hampshire St. Cambridge, MA 02139. Ph: 617-349-4800 ......"
+        }
+      },
+      "phase2a_query2": {
+        "query": "site:.gov \"Cambridge\" sanitation large item pickup",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Curbside Collections - City of Cambridge, MA",
+          "link": "https://www.cambridgema.gov/services/curbsidecollections",
+          "snippet": "Public Works. 617-349-4800. Email us \u00b7 Visit Website. 147 Hampshire St. Cambridge ......"
+        }
+      },
+      "phase2a_query3": {
+        "query": "\"Cambridge\" \"Massachusetts\" official waste management mattress schedule",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Mattress Recycling - City of Cambridge, MA",
+          "link": "https://www.cambridgema.gov/services/mattressrecycling",
+          "snippet": "The City of Cambridge has ... As of November 1, 2022 mattresses are banned from disposal or transpor..."
+        }
+      },
+      "phase2a_query4": {
+        "query": "\"Cambridge\" \"MA\" bulk item curbside pickup schedule site:.gov OR site:.us",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Curbside Collections - City of Cambridge, MA",
+          "link": "https://www.cambridgema.gov/services/curbsidecollections",
+          "snippet": "Public Works. 617-349-4800. Email us \u00b7 Visit Website. 147 Hampshire St. Cambridge, MA 02139. Hours o..."
+        }
+      },
+      "phase2a_query5": {
+        "query": "\"Cambridge\" solid waste department mattress disposal 2024 OR 2025 OR 2026",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Mattress Disposal Laws for Ontario Landlords 2026 - Mattress Miracle",
+          "link": "https://mattressmiracle.ca/blogs/mattress-miracle-blog/mattress-disposal-laws-ontario-landlords-2026?srsltid=AfmBOooCCAmQAk_cbGbIf3T0P1WdBGduQDQjW79JH_obDl9MhERnQoLb",
+          "snippet": "Mattresses are solid waste. Disposing of a mattress in an ... Cambridge Mattress Store \u00b7 Mattress St..."
+        }
+      },
+      "phase2b_query1": {
+        "query": "site:.gov \"Cambridge\" illegal dumping fine ordinance code",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "City of Cambridge to Increase Street Cleaning Violation Fines to ...",
+          "link": "https://www.cambridgema.gov/Departments/publicworks/news/2024/08/cityofcambridgetoincreasestreetcleaningviolationfinesto$100startingseptember2024",
+          "snippet": "Beginning the week of September 1, 2024, the City of Cambridge will increase the fine for street cle..."
+        }
+      },
+      "phase2b_query2": {
+        "query": "\"Cambridge\" \"MA\" illegal dumping penalty \"$\" misdemeanor",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "General Law - Part I, Title XIV, Chapter 90, Section 20D",
+          "link": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIV/Chapter90/Section20d",
+          "snippet": "Section 20A : Parking regulations; violations; notice to appear; failure to appear; adjudication by ..."
+        }
+      },
+      "phase2b_query3": {
+        "query": "\"Cambridge\" city code illegal dumping fine amount",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Municipal By-Law Compliance Team - City of Cambridge",
+          "link": "https://www.cambridge.ca/en/your-city/Municipal_By-Law_Compliance_Team.aspx",
+          "snippet": "By-law enforcement information, including reporting by-law issues and common by-law complaints withi..."
+        }
+      },
+      "phase5_query1": {
+        "query": "1-800-got-junk mattress removal Cambridge MA price",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "1-800-GOT-JUNK? Pricing | How Much We Cost",
+          "link": "https://www.1800gotjunk.com/us_en/how-our-pricing-works",
+          "snippet": "Our junk removal pricing is based on how much space your items takes up in the truck. To give you an..."
+        }
+      }
+    }
+  },
+  {
+    "city": "Somerville",
+    "queries": {
+      "phase2a_query1": {
+        "query": "site:.gov \"Somerville\" bulk trash mattress disposal",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Mattress and Box Spring Recycling Program | City of Somerville",
+          "link": "https://www.somervillema.gov/mattressrecycling",
+          "snippet": "Since November 2022, State law has required that all discarded mattresses and box springs be recycle..."
+        }
+      },
+      "phase2a_query2": {
+        "query": "site:.gov \"Somerville\" sanitation large item pickup",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Somerville Trash & Recycling Information",
+          "link": "https://www.somervillema.gov/trash-and-recycling",
+          "snippet": "... Somerville's trash collection is efficient and effective: Consider if item ... Large appliances ..."
+        }
+      },
+      "phase2a_query3": {
+        "query": "\"Somerville\" \"Massachusetts\" official waste management mattress schedule",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Somerville Trash & Recycling Information",
+          "link": "https://www.somervillema.gov/trash-and-recycling",
+          "snippet": "Use the Somerville Waste Wizard tool to find out. Somerville Waste Wizard. Yard Waste. Image. Thumbn..."
+        }
+      },
+      "phase2a_query4": {
+        "query": "\"Somerville\" \"MA\" bulk item curbside pickup schedule site:.gov OR site:.us",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Somerville Trash & Recycling Information",
+          "link": "https://www.somervillema.gov/trash-and-recycling",
+          "snippet": "WHEN: The second Saturday of each month, April through November only, from 9 a.m. - 12 p.m.. WHERE: ..."
+        }
+      },
+      "phase2a_query5": {
+        "query": "\"Somerville\" solid waste department mattress disposal 2024 OR 2025 OR 2026",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Mattress and Box Spring Recycling Program | City of Somerville",
+          "link": "https://www.somervillema.gov/mattressrecycling",
+          "snippet": "Since November 2022, State law has required that all discarded mattresses and box springs be recycle..."
+        }
+      },
+      "phase2b_query1": {
+        "query": "site:.gov \"Somerville\" illegal dumping fine ordinance code",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "[PDF] City of Somerville Final Illicit Discharge Detection and Elimination ...",
+          "link": "https://www.somervillema.gov/sites/default/files/2021-12-somerville-final-idde-plan.pdf",
+          "snippet": "The City of Somerville has adopted Ordinance 2020-11, dated May 14, 2020. A copy of Ordinance 2020-...."
+        }
+      },
+      "phase2b_query2": {
+        "query": "\"Somerville\" \"MA\" illegal dumping penalty \"$\" misdemeanor",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "[PDF] Felony and Misdemeanor Master Crime List by MGL Reference",
+          "link": "https://www.mass.gov/doc/master-crime-list/download",
+          "snippet": "... MA 02108-1706. (617) 788-6867 p. 148. Page 3. Mini-Master Crime List. Offense ... SOMERVILLE, GA..."
+        }
+      },
+      "phase2b_query3": {
+        "query": "\"Somerville\" city code illegal dumping fine amount",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "Received fine for leaving items outside for pickup? - Facebook",
+          "link": "https://www.facebook.com/groups/240860101057854/posts/1261038489040005/",
+          "snippet": "... violation of our new trash regilations punishable by a fine. What is the ... Somerville, MA, see..."
+        }
+      },
+      "phase5_query1": {
+        "query": "1-800-got-junk mattress removal Somerville MA price",
+        "success": true,
+        "results_count": 5,
+        "top_result": {
+          "title": "1-800-GOT-JUNK? Pricing | How Much We Cost",
+          "link": "https://www.1800gotjunk.com/us_en/how-our-pricing-works",
+          "snippet": "Our junk removal pricing is based on how much space your items takes up in the truck. To give you an..."
+        }
+      }
+    }
+  }
+]

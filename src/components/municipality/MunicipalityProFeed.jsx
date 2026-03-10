@@ -151,7 +151,7 @@ export default function MunicipalityProFeed({ data }) {
           <main className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
               <div>
-                <h2 className="text-xl font-extrabold text-gray-900 tracking-tight">
+                <h2 className="text-2xl font-bold text-gray-900">
                   {filteredPros.length} Hauler{filteredPros.length !== 1 ? 's' : ''} Serving {name}
                 </h2>
                 <p className="text-gray-500 text-sm mt-0.5">Ready to book · Skip the {waitDays}-day city wait</p>

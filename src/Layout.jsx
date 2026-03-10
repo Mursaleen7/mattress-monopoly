@@ -29,7 +29,7 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
           {/* Brand */}
           <Link to={createPageUrl("Home")} className="flex items-center gap-0 group">
-            <span className="font-black text-foreground text-xl tracking-tight italic">
+            <span className="font-black text-foreground text-2xl tracking-tight italic">
               <span className="text-primary">Disposal</span>
               <span className="text-accent">Grid</span>
             </span>

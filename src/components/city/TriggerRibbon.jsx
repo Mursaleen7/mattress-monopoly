@@ -1,17 +1,18 @@
 import React from "react";
-import { Cloud, Calendar, TrendingDown, Users, MapPin } from "lucide-react";
+import { Cloud, Calendar, DollarSign, MapPin, AlertTriangle, Shield, Clock, FileText } from "lucide-react";
 
 export default function TriggerRibbon({ data }) {
-  const { weatherProfile, nextPickupDays, competitorComparisonPrice, city } = data;
+  const { weatherProfile, nextPickupDays, competitorComparisonPrice, city, fineAmount, hoursDays } = data;
 
   const items = [
     { icon: MapPin, text: city, type: "location" },
-    { icon: null, text: `Avg response: ${nextPickupDays} minutes`, type: "stat" },
-    { icon: Users, text: "47 haulers online now", type: "live" },
-    { icon: Calendar, text: "12 jobs booked today", type: "stat" },
-    { icon: null, text: `Weather Profile: ${weatherProfile}`, type: "warning" },
-    { icon: TrendingDown, text: `Current rates: ${competitorComparisonPrice}`, type: "stat" },
-    { icon: null, text: `Next municipal pickup: ${nextPickupDays} days`, type: "info" },
+    { icon: AlertTriangle, text: `Illegal dumping fines: ${fineAmount}`, type: "warning" },
+    { icon: Calendar, text: `City pickup wait: ${nextPickupDays}+ days`, type: "info" },
+    { icon: Cloud, text: weatherProfile, type: "info" },
+    { icon: DollarSign, text: `Market rates: ${competitorComparisonPrice}`, type: "stat" },
+    { icon: Shield, text: "Plastic wrap required by law", type: "warning" },
+    { icon: Clock, text: `Facilities: ${hoursDays}`, type: "info" },
+    { icon: FileText, text: "Photo ID required at drop-off", type: "warning" },
   ];
 
   // Duplicate items for seamless loop
@@ -28,19 +29,16 @@ export default function TriggerRibbon({ data }) {
               className="flex items-center gap-2 px-6 py-4 whitespace-nowrap border-r border-border"
             >
               {item.icon && (
-                <item.icon className="w-4 h-4 text-gray-600 flex-shrink-0" strokeWidth={2} />
+                <item.icon className="w-4 h-4 flex-shrink-0" strokeWidth={2} />
               )}
               <span className={`text-base font-medium leading-relaxed ${
-                item.type === "live" ? "text-green-600" :
-                item.type === "warning" ? "text-yellow-600" :
+                item.type === "warning" ? "text-orange-600" :
                 item.type === "location" ? "text-gray-900 font-semibold" :
-                "text-gray-700"
+                item.type === "stat" ? "text-gray-700" :
+                "text-gray-600"
               }`}>
                 {item.text}
               </span>
-              {item.type === "live" && (
-                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              )}
             </div>
           ))}
         </div>

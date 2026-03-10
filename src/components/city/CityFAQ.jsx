@@ -11,10 +11,10 @@ export default function CityFAQ({ data }) {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* FAQ */}
           <div>
-            <h2 className="text-2xl font-black text-foreground tracking-tight mb-2">
+            <h2 className="text-3xl font-bold text-foreground mb-3">
               Frequently Asked Questions
             </h2>
-            <p className="text-muted-foreground text-sm mb-6">Local rules, costs, and policies — answered.</p>
+            <p className="text-muted-foreground text-base mb-8">Local rules, costs, and policies — answered.</p>
 
             <div className="space-y-3">
               {faqs.map(({ q, a }, i) => (
@@ -50,10 +50,10 @@ export default function CityFAQ({ data }) {
 
           {/* Neighborhoods */}
           <div>
-            <h2 className="text-2xl font-black text-foreground tracking-tight mb-2">
+            <h2 className="text-3xl font-bold text-foreground mb-3">
               Neighborhoods Served in {city}
             </h2>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-base mb-8">
               Our pro network covers all of these areas — and more.
             </p>
 

@@ -70,9 +70,9 @@ export default function CitySearchBar({ currentCity }) {
 
   return (
     <div className="relative">
-      <form onSubmit={handleSearch} className="bg-white rounded-lg shadow-xl p-1 flex gap-1">
-        <div className="flex items-center gap-2.5 flex-1 px-4 py-2.5 rounded-md hover:bg-secondary/50 transition-all duration-200 relative">
-          <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+      <form onSubmit={handleSearch} className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-white/20 p-1 flex gap-1.5">
+        <div className="flex items-center gap-2.5 flex-1 px-4 py-2.5 rounded-lg bg-gray-50/50 hover:bg-gray-100/50 transition-all duration-200">
+          <MapPin className="w-4 h-4 text-gray-400 flex-shrink-0" />
           <input
             type="text"
             value={location}
@@ -80,14 +80,14 @@ export default function CitySearchBar({ currentCity }) {
             onFocus={handleFocus}
             onBlur={handleBlur}
             placeholder="Search other cities or enter zipcode..."
-            className="bg-transparent w-full text-foreground placeholder-gray-500 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+            className="bg-transparent w-full text-gray-900 placeholder-gray-400 text-sm focus:outline-none"
           />
         </div>
 
         <button
           type="submit"
           disabled={!location.trim()}
-          className="bg-accent hover:opacity-90 text-accent-foreground font-semibold px-6 py-2.5 rounded-md text-sm transition-all duration-200 whitespace-nowrap focus:ring-2 focus:ring-accent focus:ring-offset-2 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm flex items-center gap-2"
+          className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 py-2.5 rounded-lg text-sm transition-all duration-200 whitespace-nowrap active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed shadow-lg hover:shadow-xl flex items-center gap-2"
         >
           <Search className="w-4 h-4" />
           Search
@@ -96,7 +96,7 @@ export default function CitySearchBar({ currentCity }) {
 
       {/* Suggestions Dropdown */}
       {showSuggestions && suggestions.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-border z-50 max-h-64 overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 max-h-72 overflow-y-auto">
           {suggestions.map((city) => (
             <button
               key={city.slug}
@@ -104,12 +104,14 @@ export default function CitySearchBar({ currentCity }) {
                 e.preventDefault(); // Prevent blur
                 handleSuggestionClick(city.slug);
               }}
-              className="w-full text-left px-4 py-3 hover:bg-secondary transition-colors flex items-center gap-3 border-b border-border last:border-0"
+              className="w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors flex items-center gap-3 border-b border-gray-100 last:border-0 first:rounded-t-xl last:rounded-b-xl"
             >
-              <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+              <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-4 h-4 text-accent" />
+              </div>
               <div>
-                <div className="text-sm font-semibold text-foreground">{city.name}</div>
-                <div className="text-xs text-muted-foreground">{city.state}</div>
+                <div className="text-sm font-semibold text-gray-900">{city.name}</div>
+                <div className="text-xs text-gray-500">{city.state}</div>
               </div>
             </button>
           ))}
